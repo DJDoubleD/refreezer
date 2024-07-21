@@ -22,6 +22,7 @@ The entire codebase has been updated/rewritten to be compatible with the latest 
   - Restored Highest quality streaming and download options (premium account required, free accounts limited to MP3 128kbps)
 - Support downloading to external storage (sdcard) for android 11 and up
 - Restored homescreen and added new Flow & Mood smart playlist options
+- Fixed Log-out (no need for restart anymore)
 - Improved/fixed queue screen and queue handling (shuffle & rearranging)
 - Updated lyrics screen to also support unsynced lyrics
 - Some minor UI changes to better accomadate horizontal/tablet view
