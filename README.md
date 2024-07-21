@@ -46,12 +46,25 @@ git submodule init
 git submodule update
 ```
 
-Compile:
+Build generated files:
+
+Use following script to (re)build generated classes in submodules and main project:
+
+```powershell
+.\run_build_runner.ps1
+```
+
+or run these commands manually in the relevant submodules to (re)build the generated files:
 
 ```powershell
 flutter pub get
 dart run build_runner clean
 dart run build_runner build --delete-conflicting-outputs
+```
+
+Compile:
+
+```powershell
  flutter build apk --split-per-abi --release
 ```
 
