@@ -68,4 +68,4 @@ app.*.map.json
 
 # Envied
 .env
-./lib/utils/env.g.dart
+lib/utils/env.g.dart
