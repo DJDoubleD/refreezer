@@ -1,0 +1,56 @@
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+
+    // This will make sure all the sub projects have an android namespace,
+    // if not it will read it from AndroidManifest.xml
+    // Also sets the compileSdk to 34 and the target javaVersion to 17 
+    // (needs to be changed manually to the latest in the future)
+    afterEvaluate {
+        // check if android block is available
+        if (it.hasProperty('android')) {
+
+            if (it.android.namespace == null) {
+                def manifest = groovy.util.XmlSlurper.parse(file(it.android.sourceSets.main.manifest.srcFile))
+                def packageName = manifest.@package.text()
+                println("Setting ${packageName} as android namespace")
+                android.namespace = packageName
+            }
+
+            def javaVersion = JavaVersion.VERSION_1_8
+            android {
+                def androidApiVersion = 34
+                compileSdk androidApiVersion
+                defaultConfig {
+                    targetSdk androidApiVersion
+                }
+                compileOptions {
+                    sourceCompatibility javaVersion
+                    targetCompatibility javaVersion
+                }
+                tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+                    kotlinOptions {
+                        jvmTarget = javaVersion.toString()
+                    }
+                }
+                println("Setting java version to ${javaVersion.toString()} which is $javaVersion")
+                println("Setting compileSdk and targetSdk to $androidApiVersion")
+            }
+        }
+    }
+}
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
