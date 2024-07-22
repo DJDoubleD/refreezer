@@ -10,10 +10,23 @@
 
 ---
 
-<!--- # ReFreezer --->
-
 An alternative Deezer music streaming & downloading client, based on Freezer.
 The entire codebase has been updated/rewritten to be compatible with the latest version of flutter, the dart SDK & android (current build target is API level 34).
+
+## Screenshots
+
+<p align="center">
+    <img src="./assets/screenshots/Login.jpg" width=200>
+    <img src="./assets/screenshots/Home.jpg" width=200>
+    <img src="./assets/screenshots/Player.jpg" width=200>
+    <img src="./assets/screenshots/Lyrics.jpg" width=200>
+    <img src="./assets/screenshots/Search.jpg" width=200>
+    <img src="./assets/screenshots/SearchResults.jpg" width=200>
+    <img src="./assets/screenshots/Library.jpg" width=200>
+    <img src="./assets/screenshots/DownloadRunning.jpg" width=200>
+    <img src="./assets/screenshots/DownloadFinished.jpg" width=200>
+    <img src="./assets/screenshots/PlayerHorizontal.jpg">
+</p>
 
 ## Features & changes
 
