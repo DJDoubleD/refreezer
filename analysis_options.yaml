@@ -43,4 +43,5 @@ analyzer:
     - "equalizer_flutter/**"
     - "external_path/**"
     - "move_to_background/**"
-    - "saf/**"
+    - "marquee/**"
+  #   - "saf/**"
