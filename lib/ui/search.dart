@@ -1,6 +1,7 @@
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:fluttericon/font_awesome5_icons.dart';
 import 'package:fluttericon/typicons_icons.dart';
 import 'package:get_it/get_it.dart';
@@ -61,8 +62,8 @@ class _SearchScreenState extends State<SearchScreen> {
   bool _offline = false;
   bool _loading = false;
   final TextEditingController _controller = TextEditingController();
-  FocusNode _keyboardListenerFocusNode = FocusNode();
-  FocusNode _textFieldFocusNode = FocusNode();
+  final FocusNode _keyboardListenerFocusNode = FocusNode();
+  final FocusNode _textFieldFocusNode = FocusNode();
   List _suggestions = [];
   bool _cancel = false;
   bool _showCards = true;
@@ -148,6 +149,7 @@ class _SearchScreenState extends State<SearchScreen> {
     _cancel = true;
     _textFieldFocusNode.dispose();
     _keyboardListenerFocusNode.dispose();
+    _controller.dispose();
     super.dispose();
   }
 
@@ -192,15 +194,15 @@ class _SearchScreenState extends State<SearchScreen> {
                     alignment: const Alignment(1.0, 0.0),
                     children: [
                       KeyboardListener(
-                        focusNode: _keyboardListenerFocusNode = FocusNode(),
+                        focusNode: _keyboardListenerFocusNode,
                         onKeyEvent: (event) {
                           // For Android TV: quit search textfield
-                          /*if (event is KeyUpEvent) {
+                          if (event is KeyUpEvent) {
                             if (event.logicalKey ==
                                 LogicalKeyboardKey.arrowDown) {
                               _textFieldFocusNode.unfocus();
                             }
-                          }*/
+                          }
                         },
                         child: TextField(
                           onChanged: (String s) {
@@ -213,7 +215,7 @@ class _SearchScreenState extends State<SearchScreen> {
                           onTap: () {
                             setState(() => _showCards = false);
                           },
-                          focusNode: _textFieldFocusNode = FocusNode(),
+                          focusNode: _textFieldFocusNode,
                           decoration: InputDecoration(
                             labelText: 'Search or paste URL'.i18n,
                             fillColor:
@@ -225,6 +227,7 @@ class _SearchScreenState extends State<SearchScreen> {
                                 borderSide: BorderSide(color: Colors.grey)),
                           ),
                           controller: _controller,
+                          textInputAction: TextInputAction.search,
                           onSubmitted: (String s) {
                             _submit(context, query: s);
                             _textFieldFocusNode.unfocus();
