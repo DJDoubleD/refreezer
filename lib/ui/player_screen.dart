@@ -123,8 +123,6 @@ class _PlayerScreenState extends State<PlayerScreen> {
 
   @override
   Widget build(BuildContext context) {
-    //Responsive
-    ScreenUtil.init(context, minTextAdapt: true);
     //Avoid async gap
     scaffoldBackgroundColor = Theme.of(context).scaffoldBackgroundColor;
 
@@ -166,6 +164,8 @@ class _PlayerScreenState extends State<PlayerScreen> {
 
                         return OrientationBuilder(
                           builder: (context, orientation) {
+                            //Responsive
+                            ScreenUtil.init(context, minTextAdapt: true);
                             //Landscape
                             if (orientation == Orientation.landscape) {
                               // ignore: prefer_const_constructors
