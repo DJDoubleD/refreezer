@@ -24,8 +24,8 @@ The entire codebase has been updated/rewritten to be compatible with the latest 
     <img src="./assets/screenshots/SearchResults.jpg" width=200>
     <img src="./assets/screenshots/Library.jpg" width=200>
     <img src="./assets/screenshots/DownloadRunning.jpg" width=200>
-    <img src="./assets/screenshots/DownloadFinished.jpg" width=200>
-    <img src="./assets/screenshots/PlayerHorizontal.jpg">
+<!---    <img src="./assets/screenshots/DownloadFinished.jpg" width=200> --->
+    <img src="./assets/screenshots/PlayerHorizontal.jpg" height=200>
 </p>
 
 ## Features & changes
