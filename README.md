@@ -27,7 +27,7 @@ The entire codebase has been updated/rewritten to be compatible with the latest 
 - Updated lyrics screen to also support unsynced lyrics
 - Some minor UI changes to better accomadate horizontal/tablet view
 - Updated entire codebase to fully support latest flutter & dart SDK versions
-- Updated to gradle version 8.7
+- Updated to gradle version 8.5.1
 - Removed included c libraries (openssl & opencrypto) and replaced them with custom native java implementation
 - Replaced the included decryptor-jni c library with a custom native java implementation
 - Implemented null-safety
