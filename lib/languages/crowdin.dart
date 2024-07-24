@@ -6182,7 +6182,7 @@ const crowdin = {
     'Your ARL might be expired, try logging out and logging back in using new ARL or browser.':
         'Your ARL might be expired, try logging out and logging back in using new ARL or browser.'
   },
-  'it_id': {
+  'it_it': {
     'Home': 'Home',
     'Search': 'Cerca',
     'Library': 'Libreria',

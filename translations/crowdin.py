@@ -14,7 +14,7 @@ lang_crowdin = {
     "he": "he_il",
     "hr": "hr_hr",
     "id": "id_id",
-    "it": "it_id",
+    "it": "it_it",
     "ko": "ko_ko",
     "pt-BR": "pt_br",
     "ro": "ro_ro",
