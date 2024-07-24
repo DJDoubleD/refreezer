@@ -310,24 +310,6 @@ public class DownloadService extends Service {
                 try {
                     trackJson = deezer.callPublicAPI("track", download.trackId);
                     albumJson = deezer.callPublicAPI("album", Integer.toString(trackJson.getJSONObject("album").getInt("id")));
-
-                    try {
-                        lyricsData = deezer.getlyricsNew(download.trackId);
-
-                        if (lyricsData.getErrorMessage() != null || !lyricsData.isLoaded()) {
-                            logger.error("Unable the get lyrics from Pipe API: " + lyricsData.getErrorMessage());
-                            logger.warn("Using classic API for lyrics");
-
-                            JSONObject privateRaw = deezer.callGWAPI("deezer.pageTrack", "{\"sng_id\": \"" + download.trackId + "\"}");
-                            privateJson = privateRaw.getJSONObject("results").getJSONObject("DATA");
-                            if (privateRaw.getJSONObject("results").has("LYRICS")) {
-                                lyricsData = new LyricsClassic(privateRaw.getJSONObject("results").getJSONObject("LYRICS"));
-                            }
-                        }
-                    } catch (Exception e) {
-                        logger.error("Unable to fetch lyrics data! " + e, download);
-                        e.printStackTrace();
-                    }
                 } catch (Exception e) {
                     logger.error("Unable to fetch track and album metadata! " + e, download);
                     e.printStackTrace();
@@ -552,9 +534,32 @@ public class DownloadService extends Service {
                     e.printStackTrace();
                 }
 
-                //Lyrics
-                if (lyricsData != null) {
-                    if (settings.downloadLyrics) {
+                //Lyrics (fetch only when requested)
+                if (settings.downloadLyrics || settings.tags.lyrics) {
+                    try {
+                        lyricsData = deezer.getlyricsNew(download.trackId);
+
+                        if (!lyricsData.isLoaded()) {
+                            if (lyricsData.getErrorMessage() != null) {
+                                logger.error("Error getting lyrics from Pipe API: " + lyricsData.getErrorMessage(), download);
+                                logger.warn("Trying classic API for lyrics");
+                            }
+
+                            JSONObject privateRaw = deezer.callGWAPI("deezer.pageTrack", "{\"sng_id\": \"" + download.trackId + "\"}");
+                            privateJson = privateRaw.getJSONObject("results").getJSONObject("DATA");
+                            if (privateRaw.getJSONObject("results").has("LYRICS")) {
+                                lyricsData = new LyricsClassic(privateRaw.getJSONObject("results").getJSONObject("LYRICS"));
+                            }
+                        }
+                    } catch (Exception e) {
+                        logger.error("Unable to fetch lyrics data! " + e, download);
+                    }
+                }
+
+                if (settings.downloadLyrics) {
+                    if (lyricsData == null || !lyricsData.isSynced()){
+                       logger.warn("No synched lyrics for track, skipping lyrics file" , download);
+                    } else {
                         try {
                             String lrcData = Deezer.generateLRC(lyricsData, trackJson);
                             //Create file

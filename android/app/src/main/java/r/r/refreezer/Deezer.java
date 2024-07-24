@@ -623,8 +623,7 @@ public class Deezer {
                 }
             }
         }
-
-        if (counter == 0) throw new Exception("Empty Lyrics!");
+        
         return output.toString();
     }
 
