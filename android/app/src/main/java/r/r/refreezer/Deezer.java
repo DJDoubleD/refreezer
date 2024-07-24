@@ -27,11 +27,17 @@ import java.io.RandomAccessFile;
 import java.net.URL;
 import java.security.MessageDigest;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
 import javax.net.ssl.HttpsURLConnection;
+
+import r.r.refreezer.models.Lyrics;
+import r.r.refreezer.models.LyricsNew;
+import r.r.refreezer.models.SynchronizedLyric;
 
 public class Deezer {
 
@@ -74,7 +80,7 @@ public class Deezer {
     }
 
     //Make POST request
-    private String POST(String _url, String data, String cookies) {
+    private String POST(String _url, String data,  Map<String, String> additionalHeaders) {
         String result = null;
 
         try {
@@ -87,13 +93,19 @@ public class Deezer {
             connection.setRequestProperty("Accept-Language", contentLanguage + ",*");
             connection.setRequestProperty("Content-Type", "application/json");
             connection.setRequestProperty("Accept", "*/*");
-            if (cookies != null) {
-                connection.setRequestProperty("Cookie", cookies);
+
+            // Add additional headers if provided
+            if (additionalHeaders != null && !additionalHeaders.isEmpty()) {
+                for (Map.Entry<String, String> entry : additionalHeaders.entrySet()) {
+                    connection.setRequestProperty(entry.getKey(), entry.getValue());
+                }
             }
 
             //Write body
-            try (DataOutputStream wr = new DataOutputStream(connection.getOutputStream())) {
-                wr.writeBytes(data);
+            if (data != null) {
+                try (DataOutputStream wr = new DataOutputStream(connection.getOutputStream())) {
+                    wr.writeBytes(data);
+                }
             }
 
             //Get response
@@ -118,10 +130,14 @@ public class Deezer {
             callGWAPI("deezer.getUserData", "{}");
         }
 
+        // Construct cookie header
+        Map<String, String> cookies = new HashMap<>();
+        cookies.put("Cookie", "arl=" + arl + (sid == null ? "" : "; sid=" + sid));
+
         String data = POST(
                 "https://www.deezer.com/ajax/gw-light.php?method=" + method + "&input=3&api_version=1.0&api_token=" + token,
                 body,
-                "arl=" + arl + "; sid=" + sid
+                cookies
         );
 
         //Parse JSON
@@ -145,7 +161,6 @@ public class Deezer {
         return out;
     }
 
-
     //api.deezer.com/$method/$param
     public JSONObject callPublicAPI(String method, String param) throws Exception {
         URL url = new URL("https://api.deezer.com/" + method + "/" + param);
@@ -168,6 +183,91 @@ public class Deezer {
 
         //Parse JSON & return
         return new JSONObject(data.toString());
+    }
+
+    // Method to call the Pipe API
+    public JSONObject callPipeApi(Map<String, Object> params) throws Exception {
+        String jwtToken = "";
+        try {
+            jwtToken = getJsonWebToken();
+        } catch (Exception e) {
+            logger.error("Error getting JsonWebToken: " + e);
+            throw e;
+        }
+
+        // Headers
+        Map<String, String> headers = new HashMap<>();
+        headers.put("Cookie", "arl=" + arl + (sid == null ? "" : "; sid=" + sid));
+        headers.put("Authorization", "Bearer " + jwtToken);
+
+        // Convert params to JSON string
+        String paramsJsonString = null;
+        if (params != null && !params.isEmpty()) {
+            JSONObject paramsJsonObject = new JSONObject(params);
+            paramsJsonString = paramsJsonObject.toString();
+        }
+
+        String response = POST("https://pipe.deezer.com/api/", paramsJsonString, headers);
+        // Return response as JSONObject
+        return new JSONObject(response);
+    }
+
+    // Method to get JSON Web Token
+    public String getJsonWebToken() throws Exception{
+        String urlString = "https://auth.deezer.com/login/arl?jo=p&rto=c&i=c";
+        Map<String, String> cookies = new HashMap<>();
+        cookies.put("Cookie", "arl=" + arl + (sid == null ? "" : "; sid=" + sid));
+        String response = POST(urlString, "", cookies);
+
+        // Parse JSON and return JWT
+        JSONObject body = null;
+        body = new JSONObject(response);
+        return body.has("jwt") ? body.getString("jwt") : "";
+    }
+
+    public Lyrics getlyricsNew(String trackId) {
+        try {
+            // Create the GraphQL query string
+            String queryStringGraphQL =
+                    "query SynchronizedTrackLyrics($trackId: String!) {" +
+                            "  track(trackId: $trackId) {" +
+                            "    id" +
+                            "    isExplicit" +
+                            "    lyrics {" +
+                            "      id" +
+                            "      copyright" +
+                            "      text" +
+                            "      writers" +
+                            "      synchronizedLines {" +
+                            "        lrcTimestamp" +
+                            "        line" +
+                            "        milliseconds" +
+                            "        duration" +
+                            "      }" +
+                            "    }" +
+                            "  }" +
+                            "}";
+
+            // Create the request parameters
+            Map<String, Object> requestParams = new HashMap<>();
+            requestParams.put("operationName", "SynchronizedTrackLyrics");
+            Map<String, String> variables = new HashMap<>();
+            variables.put("trackId", trackId);
+            requestParams.put("variables", variables);
+            requestParams.put("query", queryStringGraphQL);
+
+            // Call the API
+            JSONObject data = callPipeApi(requestParams);
+
+            // Parse the response into a LyricsFull object
+            return new LyricsNew(data);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            Lyrics errorLyrics = new LyricsNew();
+            errorLyrics.setErrorMessage("An error occurred: " + e.getMessage());
+            return errorLyrics;
+        }
     }
 
     //Generate track download URL
@@ -230,13 +330,16 @@ public class Deezer {
             if (quality == 3) format = "MP3_320";
 
             try {
+                //arl cookie
+                Map<String, String> cookies = new HashMap<>();
+                cookies.put("Cookie", "arl=" + arl);
                 // Create track_url payload
                 String payload = "{\n" +
                         "\"license_token\": \"" + licenseToken + "\",\n" +
                         "\"media\": [{ \"type\": \"FULL\", \"formats\": [{ \"cipher\": \"BF_CBC_STRIPE\", \"format\": \"" + format + "\"}]}],\n" +
                         "\"track_tokens\": [\"" + trackToken + "\"]\n" +
                         "}";
-                String output = POST("https://media.deezer.com/v1/get_url", payload, "arl=" + arl);
+                String output = POST("https://media.deezer.com/v1/get_url", payload, cookies);
 
                 JSONObject result = new JSONObject(output);
 
@@ -333,7 +436,7 @@ public class Deezer {
     }
 
     //Tag track with data from API
-    public void tagTrack(String path, JSONObject publicTrack, JSONObject publicAlbum, String cover, JSONObject lyricsData, JSONObject privateJson, DownloadService.DownloadSettings settings) throws Exception {
+    public void tagTrack(String path, JSONObject publicTrack, JSONObject publicAlbum, String cover, Lyrics lyricsData, JSONObject privateJson, DownloadService.DownloadSettings settings) throws Exception {
         TagOptionSingleton.getInstance().setAndroid(true);
         //Load file
         AudioFile f = AudioFileIO.read(new File(path));
@@ -369,10 +472,9 @@ public class Deezer {
             if (settings.tags.bpm) tag.setField(FieldKey.BPM, Integer.toString((int)publicTrack.getDouble("bpm")));
 
         //Unsynced lyrics
-        if (lyricsData != null && settings.tags.lyrics) {
+        if (settings.tags.lyrics && lyricsData != null && lyricsData.getUnsyncedLyrics() != null && !lyricsData.getUnsyncedLyrics().isEmpty()) {
             try {
-                String lyrics = lyricsData.getString("LYRICS_TEXT");
-                tag.setField(FieldKey.LYRICS, lyrics);
+                tag.setField(FieldKey.LYRICS, lyricsData.getUnsyncedLyrics());
             } catch (Exception e) {
                 Log.w("WARN", "Error adding unsynced lyrics!");
             }
@@ -497,8 +599,8 @@ public class Deezer {
     }
 
     //Create JSON file, privateJsonData = `song.getLyrics`
-    public static String generateLRC(JSONObject privateJsonData, JSONObject publicTrack) throws Exception {
-        String output = "";
+    public static String generateLRC(Lyrics lyricsData, JSONObject publicTrack) throws Exception {
+        StringBuilder output = new StringBuilder();
 
         //Create metadata
         String title = publicTrack.getString("title");
@@ -508,21 +610,22 @@ public class Deezer {
             artists += ", " + publicTrack.getJSONArray("contributors").getJSONObject(i).getString("name");
         }
         //Write metadata
-        output += "[ar:" + artists.substring(2) + "]\r\n[al:" + album + "]\r\n[ti:" + title + "]\r\n";
+        output.append("[ar:").append(artists.substring(2)).append("]\r\n[al:").append(album).append("]\r\n[ti:").append(title).append("]\r\n");
 
         //Get lyrics
         int counter = 0;
-        JSONArray syncLyrics = privateJsonData.getJSONArray("LYRICS_SYNC_JSON");
-        for (int i=0; i<syncLyrics.length(); i++) {
-            JSONObject lyric = syncLyrics.getJSONObject(i);
-            if (lyric.has("lrc_timestamp") && lyric.has("line")) {
-                output += lyric.getString("lrc_timestamp") + lyric.getString("line") + "\r\n";
-                counter += 1;
+        if (lyricsData.getSyncedLyrics() != null){
+            for (int i=0; i<lyricsData.getSyncedLyrics().size(); i++) {
+                SynchronizedLyric lyric = lyricsData.getSyncedLyrics().get(i);
+                if (lyric.getLrcTimestamp() != null && lyric.getText() != null) {
+                    output.append(lyric.getLrcTimestamp()).append(lyric.getText()).append("\r\n");
+                    counter += 1;
+                }
             }
         }
 
         if (counter == 0) throw new Exception("Empty Lyrics!");
-        return output;
+        return output.toString();
     }
 
     static class QualityInfo {

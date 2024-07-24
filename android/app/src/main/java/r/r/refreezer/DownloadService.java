@@ -40,6 +40,9 @@ import java.util.ArrayList;
 
 import javax.net.ssl.HttpsURLConnection;
 
+import r.r.refreezer.models.Lyrics;
+import r.r.refreezer.models.LyricsClassic;
+
 public class DownloadService extends Service {
 
     //Message commands
@@ -280,7 +283,7 @@ public class DownloadService extends Service {
         JSONObject trackJson;
         JSONObject albumJson;
         JSONObject privateJson;
-        JSONObject lyricsData = null;
+        Lyrics lyricsData = null;
         boolean stopDownload = false;
 
         DownloadThread(Download download) {
@@ -305,16 +308,28 @@ public class DownloadService extends Service {
             //Don't fetch meta if user uploaded mp3
             if (!download.isUserUploaded()) {
                 try {
-                    JSONObject privateRaw = deezer.callGWAPI("deezer.pageTrack", "{\"sng_id\": \"" + download.trackId + "\"}");
-                    privateJson = privateRaw.getJSONObject("results").getJSONObject("DATA");
-                    if (privateRaw.getJSONObject("results").has("LYRICS")) {
-                        lyricsData = privateRaw.getJSONObject("results").getJSONObject("LYRICS");
-                    }
                     trackJson = deezer.callPublicAPI("track", download.trackId);
                     albumJson = deezer.callPublicAPI("album", Integer.toString(trackJson.getJSONObject("album").getInt("id")));
 
+                    try {
+                        lyricsData = deezer.getlyricsNew(download.trackId);
+
+                        if (lyricsData.getErrorMessage() != null || !lyricsData.isLoaded()) {
+                            logger.error("Unable the get lyrics from Pipe API: " + lyricsData.getErrorMessage());
+                            logger.warn("Using classic API for lyrics");
+
+                            JSONObject privateRaw = deezer.callGWAPI("deezer.pageTrack", "{\"sng_id\": \"" + download.trackId + "\"}");
+                            privateJson = privateRaw.getJSONObject("results").getJSONObject("DATA");
+                            if (privateRaw.getJSONObject("results").has("LYRICS")) {
+                                lyricsData = new LyricsClassic(privateRaw.getJSONObject("results").getJSONObject("LYRICS"));
+                            }
+                        }
+                    } catch (Exception e) {
+                        logger.error("Unable to fetch lyrics data! " + e, download);
+                        e.printStackTrace();
+                    }
                 } catch (Exception e) {
-                    logger.error("Unable to fetch track and album metadata! " + e.toString(), download);
+                    logger.error("Unable to fetch track and album metadata! " + e, download);
                     e.printStackTrace();
                     download.state = Download.DownloadState.ERROR;
                     exit();
