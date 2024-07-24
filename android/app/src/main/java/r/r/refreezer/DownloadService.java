@@ -447,7 +447,8 @@ public class DownloadService extends Service {
             if (qualityInfo.encrypted) {
                 try {
                     File decFile = new File(tmpFile.getPath() + ".DEC");
-                    DeezerDecryptor.decryptFile(download.streamTrackId, tmpFile.getPath(), decFile.getPath());
+                    DeezerDecryptor decryptor = new DeezerDecryptor(download.streamTrackId);
+                    decryptor.decryptFile(tmpFile.getPath(), decFile.getPath());
                     tmpFile.delete();
                     tmpFile = decFile;
                 } catch (Exception e) {
