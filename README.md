@@ -1,9 +1,14 @@
 ![ReFreezer](./assets/banner.png?raw=true)
 
+
 [![Latest Version](https://img.shields.io/github/v/release/DJDoubleD/ReFreezer?color=blue)](../../releases/latest)
 [![Release date](https://img.shields.io/github/release-date/DJDoubleD/ReFreezer)](../../releases/latest)
 [![Downloads Latest](https://img.shields.io/github/downloads/DJDoubleD/ReFreezer/latest/total?color=blue&label=downloads%20latest)](../../releases)
 [![Downloads Total](https://img.shields.io/github/downloads/DJDoubleD/ReFreezer/total?color=blue&label=downloads%20total)](../../releases)
+[![Flutter Version](https://shields.io/badge/Flutter-v3.22.3-darkgreen.svg)](https://docs.flutter.dev/tools/sdk)
+[![Dart Version](https://shields.io/badge/Dart-v3.4.4-darkgreen.svg)](https://dart.dev/get-dart)
+[![License](https://img.shields.io/github/license/DJDoubleD/ReFreezer?flat)](./LICENSE)
+
 [![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev/)
 [![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev/)
 [![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.java.com/)
