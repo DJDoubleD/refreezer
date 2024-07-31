@@ -441,5 +441,8 @@ const language_en_us = {
     'Open system settings': 'Open system settings',
     'Application Log': 'Application Log',
     'Are you sure you want to log out?': 'Are you sure you want to log out?',
+
+    // 0.7.13
+    'Download failed!': 'Download failed!',
   }
 };

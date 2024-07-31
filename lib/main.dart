@@ -27,7 +27,7 @@ import 'ui/home_screen.dart';
 import 'ui/library.dart';
 import 'ui/login_screen.dart';
 import 'ui/player_bar.dart';
-//import 'ui/updater.dart';
+import 'ui/updater.dart';
 import 'ui/search.dart';
 import 'utils/logging.dart';
 import 'utils/navigator_keys.dart';
@@ -243,11 +243,9 @@ class _MainScreenState extends State<MainScreen>
     _prepareQuickActions();
 
     //Check for updates on background
-    /* No automatic updates yet
-    Future.delayed(Duration(seconds: 5), () {
-      FreezerVersions.checkUpdate();
+    Future.delayed(const Duration(seconds: 5), () {
+      ReFreezerLatest.checkUpdate();
     });
-    */
 
     //Restore saved queue
     _loadSavedQueue();

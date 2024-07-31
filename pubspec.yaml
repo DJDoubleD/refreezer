@@ -65,6 +65,7 @@ dependencies:
   #flutter_file_dialog: ^3.0.1
   flutter_inappwebview: ^6.0.0
   flutter_local_notifications: ^17.0.0
+  flutter_markdown: ^0.7.3
   flutter_material_color_picker: ^1.2.0
   flutter_screenutil: ^5.9.0
   get_it: ^7.6.4
@@ -113,7 +114,7 @@ dependencies:
   rxdart: ^0.28.0
   scrobblenaut:
     path: ./scrobblenaut
-  share_plus: ^9.0.0
+  share_plus: ^10.0.0
   spotify: ^0.13.1
   sqflite: ^2.3.0
   url_launcher: ^6.2.2

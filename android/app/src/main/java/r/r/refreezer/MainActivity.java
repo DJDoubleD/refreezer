@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -15,6 +16,7 @@ import android.os.Message;
 import android.os.Messenger;
 import android.os.Parcelable;
 import android.os.RemoteException;
+import android.provider.Settings;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
@@ -217,6 +219,17 @@ public class MainActivity extends AudioServiceActivity {
                 result.success(null);
                 return;
             }
+            // Check if can request package install permission
+            if (call.method.equals("checkInstallPackagesPermission")) {
+                result.success(canRequestPackageInstalls());
+                return;
+            }
+            // Request package install permission
+            if (call.method.equals("requestInstallPackagesPermission")) {
+                requestInstallPackagesPermission();
+                result.success(true);
+                return;
+            }
 
             result.error("0", "Not implemented!", "Not implemented!");
         }));
@@ -234,6 +247,19 @@ public class MainActivity extends AudioServiceActivity {
                 eventSink = null;
             }
         }));
+    }
+
+    private boolean canRequestPackageInstalls() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            return getPackageManager().canRequestPackageInstalls();
+        }
+        return true;
+    }
+
+    private void requestInstallPackagesPermission() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            startActivity(new Intent(Settings.ACTION_MANAGE_UNKNOWN_APP_SOURCES, Uri.parse("package:" + getPackageName())));
+        }
     }
 
     //Start/Bind/Reconnect to download service
