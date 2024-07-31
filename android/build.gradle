@@ -25,7 +25,7 @@ subprojects {
                 android.namespace = packageName
             }
 
-            def javaVersion = JavaVersion.VERSION_1_8
+            def javaVersion = JavaVersion.VERSION_17
             android {
                 def androidApiVersion = 34
                 compileSdk androidApiVersion
