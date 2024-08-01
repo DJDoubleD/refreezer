@@ -44,7 +44,7 @@ android {
     }
 
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
 
     defaultConfig {
@@ -89,7 +89,7 @@ android {
 }
 
 dependencies {
-    implementation files('libs/extension-flac.aar') // Required for older Android version
+    implementation files('libs/extension-flac.aar') // Required for older Android versions (< android 10?)
     implementation("androidx.activity:activity-ktx:1.9.0")
     //implementation group: 'net.jthink', name: 'jaudiotagger', version: '3.0.1' // requires java 8 so no android 6
     implementation group: 'net.jthink', name: 'jaudiotagger', version: '2.2.5'
