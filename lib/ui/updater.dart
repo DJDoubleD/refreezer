@@ -3,7 +3,6 @@ import 'dart:io';
 
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -13,6 +12,7 @@ import 'package:open_filex/open_filex.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';
+import 'package:permission_handler/permission_handler.dart';
 
 import '../api/cache.dart';
 import '../api/download.dart';
@@ -29,7 +29,6 @@ class UpdaterScreen extends StatefulWidget {
 }
 
 class _UpdaterScreenState extends State<UpdaterScreen> {
-  static const MethodChannel _platform = MethodChannel('r.r.refreezer/native');
   bool _loading = true;
   bool _error = false;
   ReFreezerLatest? _latestRelease;
@@ -38,27 +37,22 @@ class _UpdaterScreenState extends State<UpdaterScreen> {
   double _progress = 0.0;
   bool _buttonEnabled = true;
 
-  static Future<bool> _checkInstallPackagesPermission() async {
-    try {
-      return await _platform.invokeMethod('checkInstallPackagesPermission');
-    } catch (e) {
-      Logger.root.severe('Failed to check install packages permission', e);
-      return false;
+  Future<bool> _hasInstallPackagesPermission() async {
+    if (await Permission.requestInstallPackages.isDenied) {
+      final status = await Permission.requestInstallPackages.request();
+      if (status.isGranted) {
+        return true;
+      } else {
+        return false;
+      }
     }
-  }
-
-  static Future<void> _requestInstallPackagesPermission() async {
-    try {
-      await _platform.invokeMethod('requestInstallPackagesPermission');
-    } catch (e) {
-      Logger.root.severe('Failed to request install packages permission', e);
-    }
+    return true;
   }
 
   Future _load() async {
-    // Load current version (convert DEBUG mode to SemVer)
+    // Load current version
     PackageInfo info = await PackageInfo.fromPlatform();
-    String versionString = info.version.replaceFirst(' DEBUG', '-debug');
+    String versionString = info.version;
 
     // Parse the version string
     setState(() {
@@ -91,8 +85,16 @@ class _UpdaterScreenState extends State<UpdaterScreen> {
   }
 
   Future _download() async {
-    if (!await _checkInstallPackagesPermission()) {
-      await _requestInstallPackagesPermission();
+    if (!await _hasInstallPackagesPermission()) {
+      Fluttertoast.showToast(
+          msg: 'Permission denied, download canceled!'.i18n,
+          toastLength: Toast.LENGTH_LONG,
+          gravity: ToastGravity.BOTTOM);
+      setState(() {
+        _progress = 0.0;
+        _buttonEnabled = true;
+      });
+      return;
     }
 
     try {
@@ -203,10 +205,6 @@ class _UpdaterScreenState extends State<UpdaterScreen> {
                   const FreezerDivider(),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16, 4, 16, 8),
-                    /*child: Text(
-                      _latestRelease?.changelog ?? '',
-                      style: const TextStyle(fontSize: 16.0),
-                    ),*/
                     child: Container(
                       constraints: const BoxConstraints(
                           maxHeight: 350 // Screen Title height, ...
@@ -354,9 +352,9 @@ class ReFreezerLatest {
 
       AndroidNotificationDetails androidNotificationDetails =
           AndroidNotificationDetails(
-        'freezerupdates',
-        'Freezer Updates'.i18n,
-        channelDescription: 'Freezer Updates'.i18n,
+        'refreezerupdates',
+        'ReFreezer Updates'.i18n,
+        channelDescription: 'ReFreezer Updates'.i18n,
         importance: Importance.high,
         priority: Priority.high,
       );

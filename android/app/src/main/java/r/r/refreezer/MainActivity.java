@@ -219,18 +219,7 @@ public class MainActivity extends AudioServiceActivity {
                 result.success(null);
                 return;
             }
-            // Check if can request package install permission
-            if (call.method.equals("checkInstallPackagesPermission")) {
-                result.success(canRequestPackageInstalls());
-                return;
-            }
-            // Request package install permission
-            if (call.method.equals("requestInstallPackagesPermission")) {
-                requestInstallPackagesPermission();
-                result.success(true);
-                return;
-            }
-
+            
             result.error("0", "Not implemented!", "Not implemented!");
         }));
 
@@ -247,19 +236,6 @@ public class MainActivity extends AudioServiceActivity {
                 eventSink = null;
             }
         }));
-    }
-
-    private boolean canRequestPackageInstalls() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            return getPackageManager().canRequestPackageInstalls();
-        }
-        return true;
-    }
-
-    private void requestInstallPackagesPermission() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            startActivity(new Intent(Settings.ACTION_MANAGE_UNKNOWN_APP_SOURCES, Uri.parse("package:" + getPackageName())));
-        }
     }
 
     //Start/Bind/Reconnect to download service

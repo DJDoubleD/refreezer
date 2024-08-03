@@ -444,5 +444,9 @@ const language_en_us = {
 
     // 0.7.13
     'Download failed!': 'Download failed!',
+
+    // 0.7.14
+    'Permission denied, download canceled!':
+        'Permission denied, download canceled!',
   }
 };
