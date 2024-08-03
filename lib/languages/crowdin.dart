@@ -256,7 +256,7 @@ const crowdin = {
     'New update available!': 'تحديث جديد متاح!',
     'Current version: ': 'الإصدار الحالي: ',
     'Unsupported platform!': 'منصة غير مدعومة!',
-    'Freezer Updates': 'تحديثات فريزر',
+    'ReFreezer Updates': 'تحديثات فريزر',
     'Update to latest version in the settings.':
         'تحديث لأحدث إصدار في الإعدادات.',
     'Release date': 'تاريخ الاصدار',
@@ -645,7 +645,7 @@ const crowdin = {
     'New update available!': '¡Hai un anovamientu disponible!',
     'Current version: ': 'Versión actual: ',
     'Unsupported platform!': '¡La plataforma nun ta sofitada!',
-    'Freezer Updates': 'Anovamientos de Freezer',
+    'ReFreezer Updates': 'Anovamientos de ReFreezer',
     'Update to latest version in the settings.':
         'Anueva a la última versión nos axustes.',
     'Release date': 'Data de llanzamientu',
@@ -1030,7 +1030,7 @@ const crowdin = {
     'New update available!': 'New update available!',
     'Current version: ': 'Current version: ',
     'Unsupported platform!': 'Unsupported platform!',
-    'Freezer Updates': 'Freezer Updates',
+    'ReFreezer Updates': 'ReFreezer Updates',
     'Update to latest version in the settings.':
         'Update to latest version in the settings.',
     'Release date': 'Release date',
@@ -1401,7 +1401,7 @@ const crowdin = {
     'New update available!': '检测到新版本',
     'Current version: ': '当前版本：',
     'Unsupported platform!': '不支持的平台',
-    'Freezer Updates': 'Freezer 更新',
+    'ReFreezer Updates': 'ReFreezer 更新',
     'Update to latest version in the settings.': '在设置中更新到最新版本',
     'Release date': '发布日期',
     'Shows': '播客',
@@ -1784,7 +1784,7 @@ const crowdin = {
     'New update available!': 'Dostupno je novo ažuriranje!',
     'Current version: ': 'Trenutna verzija: ',
     'Unsupported platform!': 'Nepodržana platforma!',
-    'Freezer Updates': 'Freezer ažuriranja',
+    'ReFreezer Updates': 'ReFreezer ažuriranja',
     'Update to latest version in the settings.':
         'Ažurirajte na posljednju verziju u postavkama.',
     'Release date': 'Datum izdavanja',
@@ -2173,7 +2173,7 @@ const crowdin = {
     'New update available!': 'New update available!',
     'Current version: ': 'Current version: ',
     'Unsupported platform!': 'Unsupported platform!',
-    'Freezer Updates': 'Freezer Updates',
+    'ReFreezer Updates': 'ReFreezer Updates',
     'Update to latest version in the settings.':
         'Update to latest version in the settings.',
     'Release date': 'Release date',
@@ -2559,7 +2559,7 @@ const crowdin = {
     'New update available!': 'Nieuwe update beschikbaar!',
     'Current version: ': 'Huidige versie: ',
     'Unsupported platform!': 'Niet-ondersteunde platform!',
-    'Freezer Updates': 'Freezer Updates',
+    'ReFreezer Updates': 'ReFreezer Updates',
     'Update to latest version in the settings.':
         'Werk het programma bij in de instellingen.',
     'Release date': 'Publicatiedatum',
@@ -2945,7 +2945,7 @@ const crowdin = {
     'New update available!': 'Nyew update avaiwabwe?!?! (Yayyyy uwu)',
     'Current version: ': 'Cuwwent version: ',
     'Unsupported platform!': 'Unsuppowted p-pwatfowm!? :<',
-    'Freezer Updates': 'Fweezew Updates',
+    'ReFreezer Updates': 'WeFweezew Updates',
     'Update to latest version in the settings.':
         'Update t-to watest vewsion in the settings.',
     'Release date': 'W-Wewease date',
@@ -3334,7 +3334,7 @@ const crowdin = {
     'New update available!': 'May bagong update na!',
     'Current version: ': 'Kasalukuyang bersyon: ',
     'Unsupported platform!': 'Hindi suportadong plataporma!',
-    'Freezer Updates': 'Mga update ng Freezer',
+    'ReFreezer Updates': 'Mga update ng ReFreezer',
     'Update to latest version in the settings.':
         'Mag-update sa pinakabagong bersyon sa settings.',
     'Release date': 'Petsa ng paglabas',
@@ -3725,7 +3725,7 @@ const crowdin = {
     'New update available!': 'Une nouvelle mise à jour est disponible !',
     'Current version: ': 'Version actuelle :',
     'Unsupported platform!': "Système d'exploitation non pris en charge !",
-    'Freezer Updates': 'Mises à jour de Freezer',
+    'ReFreezer Updates': 'Mises à jour de ReFreezer',
     'Update to latest version in the settings.':
         'Mettez à jour vers la dernière version dans les paramètres.',
     'Release date': 'Date de mise en ligne',
@@ -4113,7 +4113,7 @@ const crowdin = {
     'New update available!': 'Neues Update verfügbar!',
     'Current version: ': 'Aktuelle Version: ',
     'Unsupported platform!': 'Nicht unterstütztes Betriebssystem!',
-    'Freezer Updates': 'Freezer Updates',
+    'ReFreezer Updates': 'ReFreezer Updates',
     'Update to latest version in the settings.':
         'Auf die neueste Version in den Einstellungen aktualisieren.',
     'Release date': 'Veröffentlichungsdatum',
@@ -4507,7 +4507,7 @@ const crowdin = {
     'New update available!': 'Υπάρχει διαθέσιμη νέα ενημέρωση!',
     'Current version: ': 'Τρέχουσα έκδοση: ',
     'Unsupported platform!': 'Μη υποστηριζόμενη πλατφόρμα!',
-    'Freezer Updates': 'Ενημερώσεις του Freezer',
+    'ReFreezer Updates': 'Ενημερώσεις του ReFreezer',
     'Update to latest version in the settings.':
         'Ενημέρωση στην πιο πρόσφατη έκδοση από τις ρυθμίσεις.',
     'Release date': 'Ημερομηνία κυκλοφορίας',
@@ -4890,7 +4890,7 @@ const crowdin = {
     'New update available!': 'גרסה חדשה זמינה!',
     'Current version: ': 'גירסה נוכחית: ',
     'Unsupported platform!': 'פלטפורמה זו אינה נתמכת!',
-    'Freezer Updates': 'עדכוני Freezer',
+    'ReFreezer Updates': 'עדכוני ReFreezer',
     'Update to latest version in the settings.':
         'עדכנו לגרסה האחרונה דרך ההגדרות.',
     'Release date': 'תאריך שחרור',
@@ -5276,7 +5276,7 @@ const crowdin = {
     'New update available!': 'नई सूचना उपलब्ध है!',
     'Current version: ': 'वर्तमान संस्करण: ',
     'Unsupported platform!': 'असमर्थित मंच!',
-    'Freezer Updates': 'फ्रीजर अपडेट',
+    'ReFreezer Updates': 'फ्रीजर अपडेट',
     'Update to latest version in the settings.':
         'सेटिंग्स में नवीनतम संस्करण में अपडेट करें।',
     'Release date': 'रिलीज़ की तारीख',
@@ -5666,7 +5666,7 @@ const crowdin = {
     'New update available!': 'Új frissítés elérhető!',
     'Current version: ': 'Jelenlegi verzió: ',
     'Unsupported platform!': 'Nem támogatott eszköz!',
-    'Freezer Updates': 'Freezer frissítések',
+    'ReFreezer Updates': 'ReFreezer frissítések',
     'Update to latest version in the settings.':
         'Frissítés a legújabb verzióra a beállításokban.',
     'Release date': 'Kiadás dátuma',
@@ -6056,7 +6056,7 @@ const crowdin = {
     'New update available!': 'Pembaruan tersedia!',
     'Current version: ': 'Versi saat ini: ',
     'Unsupported platform!': 'Platform Tidak Didukung!',
-    'Freezer Updates': 'Pembaruan Freezer',
+    'ReFreezer Updates': 'Pembaruan ReFreezer',
     'Update to latest version in the settings.':
         'Perbarui ke versi terakhir di pengaturan.',
     'Release date': 'Tanggal rilis',
@@ -6445,7 +6445,7 @@ const crowdin = {
     'New update available!': 'Nuovo aggiornamento disponibile!',
     'Current version: ': 'Versione attuale: ',
     'Unsupported platform!': 'Piattaforma non supportata!',
-    'Freezer Updates': 'Aggiornamenti Freezer',
+    'ReFreezer Updates': 'Aggiornamenti ReFreezer',
     'Update to latest version in the settings.':
         "Aggiorna all'ultima versione nelle impostazioni.",
     'Release date': 'Data di rilascio',
@@ -6821,7 +6821,7 @@ const crowdin = {
     'New update available!': '사용가능한 업데이트가 있습니다.',
     'Current version: ': '현재 버전: ',
     'Unsupported platform!': '지원되지 않는 플랫폼',
-    'Freezer Updates': 'Freezer 업데이트',
+    'ReFreezer Updates': 'ReFreezer 업데이트',
     'Update to latest version in the settings.': '설정에서 최신버전으로 업데이트 하십시오.',
     'Release date': '출시일',
     'Shows': '팟캐스트',
@@ -7205,7 +7205,7 @@ const crowdin = {
     'New update available!': 'به روز رسانی جدید در دسترس است',
     'Current version: ': 'نسخه ی فعلی : ',
     'Unsupported platform!': 'پلتفرم پشتیبانی نشده',
-    'Freezer Updates': 'به روز رسانی های فریزر',
+    'ReFreezer Updates': 'به روز رسانی های فریزر',
     'Update to latest version in the settings.':
         'از تنظیمات به روز رسانی کنید.',
     'Release date': 'زمان عرضه',
@@ -7589,7 +7589,7 @@ const crowdin = {
     'New update available!': 'Dostępna jest nowa aktualizacja!',
     'Current version: ': 'Zainstalowana wersja: ',
     'Unsupported platform!': 'Nieobsługiwana platforma!',
-    'Freezer Updates': 'Aktualizacje Freezer',
+    'ReFreezer Updates': 'Aktualizacje ReFreezer',
     'Update to latest version in the settings.':
         'Zaktualizuj do najnowszej wersji w ustawieniach.',
     'Release date': 'Data wydania',
@@ -7975,7 +7975,7 @@ const crowdin = {
     'New update available!': 'Nova atualização disponível!',
     'Current version: ': 'Versão atual: ',
     'Unsupported platform!': 'Plataforma não suportada!',
-    'Freezer Updates': 'Atualizações do Freezer',
+    'ReFreezer Updates': 'Atualizações do ReFreezer',
     'Update to latest version in the settings.':
         'Atualize para a versão mais recente nas configurações.',
     'Release date': 'Data de lançamento',
@@ -8363,7 +8363,7 @@ const crowdin = {
     'New update available!': 'O nouă actualizare disponibilă!',
     'Current version: ': 'Versiunea curentă: ',
     'Unsupported platform!': 'Platformă neacceptată!',
-    'Freezer Updates': 'Actualizări Freezer',
+    'ReFreezer Updates': 'Actualizări ReFreezer',
     'Update to latest version in the settings.':
         'Actualizează la cea mai recentă versiune din setări.',
     'Release date': 'Data lansării',
@@ -8749,7 +8749,7 @@ const crowdin = {
     'New update available!': 'Доступно обновление!',
     'Current version: ': 'Текущая версия: ',
     'Unsupported platform!': 'Неподдерживаемая платформа!',
-    'Freezer Updates': 'Обновления Freezer',
+    'ReFreezer Updates': 'Обновления ReFreezer',
     'Update to latest version in the settings.':
         'Обновитесь до последней версии в настройках.',
     'Release date': 'Дата выпуска',
@@ -9134,7 +9134,7 @@ const crowdin = {
     'New update available!': 'Je dostupná aktualizácia!',
     'Current version: ': 'Aktuálna verzia: ',
     'Unsupported platform!': 'Nepodporovaná platforma!',
-    'Freezer Updates': 'Freezer aktualizácie',
+    'ReFreezer Updates': 'ReFreezer aktualizácie',
     'Update to latest version in the settings.':
         'Aktualizujte na najnovšiu verziu v nastaveniach.',
     'Release date': 'Dátum vydania',
@@ -9521,7 +9521,7 @@ const crowdin = {
     'New update available!': 'Na voljo je nova posodobitev!',
     'Current version: ': 'Trenutna različica: ',
     'Unsupported platform!': 'Nepodprta platforma!',
-    'Freezer Updates': 'Freezer posodobitve',
+    'ReFreezer Updates': 'ReFreezer posodobitve',
     'Update to latest version in the settings.':
         'Posodobite na najnovejšo verzijo v nastavitvah.',
     'Release date': 'Datum izdaje',
@@ -9917,7 +9917,7 @@ const crowdin = {
     'New update available!': '¡Nueva actualización disponible!',
     'Current version: ': 'Versión actual: ',
     'Unsupported platform!': '¡Plataforma no soportada!',
-    'Freezer Updates': 'Actualizaciones de Freezer',
+    'ReFreezer Updates': 'Actualizaciones de ReFreezer',
     'Update to latest version in the settings.':
         'Actualiza a la última versión en la configuración.',
     'Release date': 'Fecha de lanzamiento',
@@ -10307,7 +10307,7 @@ const crowdin = {
     'New update available!': 'Yeni güncelleme mevcut!',
     'Current version: ': 'Mevcut sürüm: ',
     'Unsupported platform!': 'Desteklenmeyen platform!',
-    'Freezer Updates': 'Freezer Güncellemeleri',
+    'ReFreezer Updates': 'ReFreezer Güncellemeleri',
     'Update to latest version in the settings.':
         'Ayarlarda en son sürüme kadar güncelleyebilirsiniz.',
     'Release date': 'Yayınlanma tarihi',
@@ -10698,7 +10698,7 @@ const crowdin = {
     'New update available!': 'Доступне оновлення!',
     'Current version: ': 'Поточна версія: ',
     'Unsupported platform!': 'Непідтримувана платформа!',
-    'Freezer Updates': 'Оновлення Freezer',
+    'ReFreezer Updates': 'Оновлення ReFreezer',
     'Update to latest version in the settings.':
         'Оновити до останньої версії в налаштуваннях.',
     'Release date': 'Дата релізу',
@@ -11081,7 +11081,7 @@ const crowdin = {
     'New update available!': 'New update available!',
     'Current version: ': 'Current version: ',
     'Unsupported platform!': 'Unsupported platform!',
-    'Freezer Updates': 'Freezer Updates',
+    'ReFreezer Updates': 'ReFreezer Updates',
     'Update to latest version in the settings.':
         'Update to latest version in the settings.',
     'Release date': 'Release date',
@@ -11467,7 +11467,7 @@ const crowdin = {
     'New update available!': 'Có bản cập nhật mới!',
     'Current version: ': 'Phiên bản hiện tại: ',
     'Unsupported platform!': 'Nền tảng không được hỗ trợ!',
-    'Freezer Updates': 'Cập nhật Freezer',
+    'ReFreezer Updates': 'Cập nhật ReFreezer',
     'Update to latest version in the settings.':
         'Cập nhật phiên bản mới nhất trong cài đặt.',
     'Release date': 'Ngày phát hành',
