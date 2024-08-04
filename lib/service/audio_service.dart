@@ -232,9 +232,18 @@ class AudioPlayerHandler extends BaseAudioHandler
     }
   }
 
+  final AndroidAuto _androidAuto = AndroidAuto(); // Create an instance of AndroidAuto
+
   @override
-  Future<void> playFromMediaId(String mediaId,
-      [Map<String, dynamic>? extras]) async {
+  Future<void> playFromMediaId(String mediaId, [Map<String, dynamic>? extras]) async {
+    // Check if the mediaId is for Android Auto
+    if (mediaId.startsWith(AndroidAuto.prefix)) {
+      // Forward the event to Android Auto
+      await _androidAuto.playItem(mediaId);
+      return;
+    }
+
+    // Handle other mediaIds by seeking to the appropriate item in the queue
     final index = queue.value.indexWhere((item) => item.id == mediaId);
     if (index != -1) {
       _player.seek(
