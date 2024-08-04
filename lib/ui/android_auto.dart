@@ -173,7 +173,7 @@ class AndroidAuto {
     }
 
     // Play flow
-    if (id == 'flow' || id == '${prefix}stlflow') {
+    if (id == '${prefix}flow' || id == '${prefix}stlflow') {
       await GetIt.I<AudioPlayerHandler>()
           .playFromSmartTrackList(SmartTrackList(id: 'flow', title: 'Flow'.i18n));
       return;
