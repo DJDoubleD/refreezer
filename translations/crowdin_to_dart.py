@@ -1,3 +1,4 @@
+import collections
 import zipfile
 import json
 
@@ -37,15 +38,17 @@ lang_crowdin = {
 
 def generate_dart():
     out = {}
-    with zipfile.ZipFile("translations.zip") as zip:
+    with zipfile.ZipFile("ReFreezer (translations).zip") as zip:
         for file in zip.namelist():
             if "refreezer.json" in file:
-                data = zip.open(file).read()
+                data = zip.open(file).read().decode("utf-8")
                 lang = file.split("/")[0]
-                out[lang_crowdin[lang]] = json.loads(data)
+                out[lang_crowdin[lang]] = json.loads(
+                    data, object_pairs_hook=collections.OrderedDict
+                )
 
-    with open("../lib/languages/crowdin.dart", "w") as f:
-        data = json.dumps(out, ensure_ascii=False).replace("$", "\\$")
+    with open("../lib/languages/crowdin_new.dart", "w", encoding="utf-8") as f:
+        data = json.dumps(out, ensure_ascii=False, indent=2).replace("$", "\\$")
         out = f"const crowdin = {data};"
         f.write(out)
 
