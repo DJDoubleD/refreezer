@@ -112,7 +112,7 @@ class _ReFreezerAppState extends State<ReFreezerApp> {
       supportedLocales: supportedLocales,
       home: PopScope(
         canPop: false, // Prevent full app exit
-        onPopInvoked: (bool didPop) async {
+        onPopInvokedWithResult: (bool didPop, Object? result) async {
           // When at least 1 layer inside a custom navigator screen,
           // let the back button move back down the custom navigator stack
           if (customNavigatorKey.currentState!.canPop()) {

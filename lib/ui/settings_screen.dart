@@ -1235,7 +1235,7 @@ class _GeneralSettingsState extends State<GeneralSettings> {
                               gravity: ToastGravity.BOTTOM,
                               toastLength: Toast.LENGTH_SHORT);
                         }
-                        Navigator.of(context).pop();
+                        if (context.mounted) Navigator.of(context).pop();
                       });
                       return AlertDialog(
                           title: Text('Logging in...'.i18n),
