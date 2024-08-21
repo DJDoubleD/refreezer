@@ -292,7 +292,7 @@ const crowdin = {
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         'هذا التطبيق غير مصنوع لدعم العديد من الخطوط، يمكن تخريب الواجهة. استخدمه على مسؤوليتك الخاصة!',
     'Enable equalizer': 'تمكين المعادل',
-    'Might enable some equalizer apps to work. Requires restart of Freezer':
+    'Might enable some equalizer apps to work. Requires restart of ReFreezer':
         'قد تفعل بعض تطبيقات المعادل للعمل. يتطلب إعادة تشغيل فريزر',
     'Visualizer': 'المؤثرات المرئية',
     'Show visualizers on lyrics page. WARNING: Requires microphone permission!':
@@ -681,8 +681,8 @@ const crowdin = {
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         "Esta aplicación nun ta fecha pa sofitar munches fontes, puen romper el diseñu. ¡Úsalo baxo'l to riesgu!",
     'Enable equalizer': "Activar l'ecualizador",
-    'Might enable some equalizer apps to work. Requires restart of Freezer':
-        "Podría activar dalguna aplicación ecualizadora. Rique'l reaniciu de Freezer",
+    'Might enable some equalizer apps to work. Requires restart of ReFreezer':
+        "Podría activar dalguna aplicación ecualizadora. Rique'l reaniciu de ReFreezer",
     'Visualizer': 'Visualizador',
     'Show visualizers on lyrics page. WARNING: Requires microphone permission!':
         "Amuesa los visualizadores na páxina de la lletra. ALVERTENCIA: ¡Rique'l permisu del micrófonu!",
@@ -1067,8 +1067,8 @@ const crowdin = {
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         'Това приложение не поддържа много шрифтове и в последствие могат да се нарушат оформленията на дадени елементи и да се причини препълване на данните. Внимавайте с употребата на тази настройка!',
     'Enable equalizer': 'Включване на еквалайзер',
-    'Might enable some equalizer apps to work. Requires restart of Freezer':
-        'Може да включи някои приложения за еквалайзер, за да сработи. Необходимо е да рестартирате Freezer',
+    'Might enable some equalizer apps to work. Requires restart of ReFreezer':
+        'Може да включи някои приложения за еквалайзер, за да сработи. Необходимо е да рестартирате ReFreezer',
     'Visualizer': 'Визуализатор',
     'Show visualizers on lyrics page. WARNING: Requires microphone permission!':
         'Покажи визуализатора на страницата с текстове на песните. ВНИМАНИЕ: Изисква разрешение за микрофон!',
@@ -1435,7 +1435,7 @@ const crowdin = {
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         '不兼容所有字体，可能会扰乱布局或溢出界面，请谨慎使用',
     'Enable equalizer': '启用均衡器',
-    'Might enable some equalizer apps to work. Requires restart of Freezer':
+    'Might enable some equalizer apps to work. Requires restart of ReFreezer':
         '可以调用某些均衡器软件，需要重启生效',
     'Visualizer': '音乐可视化',
     'Show visualizers on lyrics page. WARNING: Requires microphone permission!':
@@ -1822,8 +1822,8 @@ const crowdin = {
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         'Ova aplikacija nije napravljena da podržava mnogo fontova. Korištenjem različitih fontova može se prelomiti raspored i prijelom teksta. Koristite na vlastiti rizik!',
     'Enable equalizer': 'Omogući ekvilajzer',
-    'Might enable some equalizer apps to work. Requires restart of Freezer':
-        'Moglo bi omogućiti nekim ekvilajzer aplikacijama da ispravno rade. Zahtijeva restart Freezera',
+    'Might enable some equalizer apps to work. Requires restart of ReFreezer':
+        'Moglo bi omogućiti nekim ekvilajzer aplikacijama da ispravno rade. Zahtijeva restart ReFreezera',
     'Visualizer': 'Vizualizator',
     'Show visualizers on lyrics page. WARNING: Requires microphone permission!':
         'Pokaži vizualizacije na stranici s tekstovima pjesme. UPOZORENJE: Zahtijeva dopuštenje mikrofona!',
@@ -2209,8 +2209,8 @@ const crowdin = {
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!",
     'Enable equalizer': 'Enable equalizer',
-    'Might enable some equalizer apps to work. Requires restart of Freezer':
-        'Might enable some equalizer apps to work. Requires restart of Freezer',
+    'Might enable some equalizer apps to work. Requires restart of ReFreezer':
+        'Might enable some equalizer apps to work. Requires restart of ReFreezer',
     'Visualizer': 'Visualizer',
     'Show visualizers on lyrics page. WARNING: Requires microphone permission!':
         'Show visualizers on lyrics page. WARNING: Requires microphone permission!',
@@ -2596,8 +2596,8 @@ const crowdin = {
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         'Deze app is niet gemaakt voor het ondersteunen van veel lettertypes, het kan de lay-outs en overflow beïnvloeden. Gebruik op eigen risico!',
     'Enable equalizer': 'Equalizer inschakelen',
-    'Might enable some equalizer apps to work. Requires restart of Freezer':
-        'Kan wellicht sommige equalizer apps laten werken. Vereist het herstarten van Freezer',
+    'Might enable some equalizer apps to work. Requires restart of ReFreezer':
+        'Kan wellicht sommige equalizer apps laten werken. Vereist het herstarten van ReFreezer',
     'Visualizer': 'Visualizer',
     'Show visualizers on lyrics page. WARNING: Requires microphone permission!':
         'Toon visualizers op de songtekstpagina. WAARSCHUWING: Vereist toegang tot microfoon!',
@@ -2981,8 +2981,8 @@ const crowdin = {
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         "This app isn't made for suppowting many fonts, it can bweak wayouts and ovewflow. Use at youw own wisk!",
     'Enable equalizer': 'Enable equawizew',
-    'Might enable some equalizer apps to work. Requires restart of Freezer':
-        'Migwt enable some equawizew apps to wowk. Wequiwes westawt of Fweezer',
+    'Might enable some equalizer apps to work. Requires restart of ReFreezer':
+        'Migwt enable some equawizew apps to wowk. Wequiwes westawt of WeFweezer',
     'Visualizer': 'Visuawizew',
     'Show visualizers on lyrics page. WARNING: Requires microphone permission!':
         'Show visuawizews on wywics page. WAWNING: Wequiwes micwophone pewmission!',
@@ -3370,8 +3370,8 @@ const crowdin = {
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!",
     'Enable equalizer': 'Enable equalizer',
-    'Might enable some equalizer apps to work. Requires restart of Freezer':
-        'Might enable some equalizer apps to work. Requires restart of Freezer',
+    'Might enable some equalizer apps to work. Requires restart of ReFreezer':
+        'Might enable some equalizer apps to work. Requires restart of ReFreezer',
     'Visualizer': 'Visualizer',
     'Show visualizers on lyrics page. WARNING: Requires microphone permission!':
         'Show visualizers on lyrics page. WARNING: Requires microphone permission!',
@@ -3762,8 +3762,8 @@ const crowdin = {
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         "Cette application n'est pas conçue pour prendre en charge autant de polices, des problèmes de mise en page et de débordement peuvent survenir. Utilisez à vos risques et périls!",
     'Enable equalizer': "Activer l'égaliseur",
-    'Might enable some equalizer apps to work. Requires restart of Freezer':
-        "Peut permettre le support de certaines applications d'égalisation sonore. Nécessite un redémarrage de Freezer",
+    'Might enable some equalizer apps to work. Requires restart of ReFreezer':
+        "Peut permettre le support de certaines applications d'égalisation sonore. Nécessite un redémarrage de ReFreezer",
     'Visualizer': 'Visualisation',
     'Show visualizers on lyrics page. WARNING: Requires microphone permission!':
         "Afficher les visualisations sur la page des paroles. ATTENTION : Nécessite l'autorisation d'accès au microphone !",
@@ -4150,8 +4150,8 @@ const crowdin = {
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         'Diese App unterstützt nicht viele Schriftarten, sie kann Layouts beschädigen und Überläufe verursachen. Benutzung auf eigene Gefahr!',
     'Enable equalizer': 'Equalizer aktivieren',
-    'Might enable some equalizer apps to work. Requires restart of Freezer':
-        'Könnte einige Equalizer-Apps aktivieren, um zu funktionieren. Benötigt einen Neustart der Freezer-App',
+    'Might enable some equalizer apps to work. Requires restart of ReFreezer':
+        'Könnte einige Equalizer-Apps aktivieren, um zu funktionieren. Benötigt einen Neustart der ReFreezer-App',
     'Visualizer': 'Visualisierung',
     'Show visualizers on lyrics page. WARNING: Requires microphone permission!':
         'Zeige Visualisierungen auf der Songtext-Seite. WARNUNG: Benötigt Mikrofon-Berechtigung!',
@@ -4544,8 +4544,8 @@ const crowdin = {
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         'Αυτή η εφαρμογή δεν έχει φτιαχτεί για να υποστηρίζει πολλές γραμματοσειρές, μπορεί να προκαλέσει λάθος διατάξεις και υπερχείλιση. Χρησιμοποιήστε το με δική σας ευθύνη!',
     'Enable equalizer': 'Ενεργοποίηση ισοσταθμιστή',
-    'Might enable some equalizer apps to work. Requires restart of Freezer':
-        'Μπορεί να επιτρέψει σε κάποιες εφαρμογές ισοσταθμιστή να λειτουργήσουν. Απαιτεί επανεκκίνηση του Freezer',
+    'Might enable some equalizer apps to work. Requires restart of ReFreezer':
+        'Μπορεί να επιτρέψει σε κάποιες εφαρμογές ισοσταθμιστή να λειτουργήσουν. Απαιτεί επανεκκίνηση του ReFreezer',
     'Visualizer': 'Οπτικοποιητής',
     'Show visualizers on lyrics page. WARNING: Requires microphone permission!':
         'Εμφάνιση οπτικών εφέ στη σελίδα των στίχων. ΠΡΟΕΙΔΟΠΟΙΗΣΗ: Απαιτείται άδεια μικροφώνου!',
@@ -4926,8 +4926,8 @@ const crowdin = {
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         'האפליקציה לא בנויה לתמוך בגופנים רבים. השימוש באחריותך בלבד!',
     'Enable equalizer': 'הפעל אקולייזר',
-    'Might enable some equalizer apps to work. Requires restart of Freezer':
-        'עשוי לאפשר לכמה אפליקציות אקולייזר לעבוד. מצריך הפעלה מחדש של Freezer',
+    'Might enable some equalizer apps to work. Requires restart of ReFreezer':
+        'עשוי לאפשר לכמה אפליקציות אקולייזר לעבוד. מצריך הפעלה מחדש של ReFreezer',
     'Visualizer': 'הנפשה',
     'Show visualizers on lyrics page. WARNING: Requires microphone permission!':
         'הצגת הנפשות על מסך המילים. אזהרה: מצריך גישה למיקרופון!',
@@ -5312,7 +5312,7 @@ const crowdin = {
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         'यह ऐप कई फोंट का समर्थन करने के लिए नहीं बनाया गया है, यह लेआउट और अतिप्रवाह को तोड़ सकता है। अपने जोखिम पार इस्तेमाल करें!',
     'Enable equalizer': 'तुल्यकारक सक्षम करें',
-    'Might enable some equalizer apps to work. Requires restart of Freezer':
+    'Might enable some equalizer apps to work. Requires restart of ReFreezer':
         'काम करने के लिए कुछ इक्वलाइज़र ऐप्स को सक्षम कर सकते हैं। फ्रीजर के पुनरारंभ की आवश्यकता है',
     'Visualizer': 'विजुआलाइज़र',
     'Show visualizers on lyrics page. WARNING: Requires microphone permission!':
@@ -5703,7 +5703,7 @@ const crowdin = {
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         'Ez az app nem támogat sok betűtípust, így felboríthatja a kinézetet. Csak kizárólag saját felelősségre!',
     'Enable equalizer': 'Equalézer engedélyezése',
-    'Might enable some equalizer apps to work. Requires restart of Freezer':
+    'Might enable some equalizer apps to work. Requires restart of ReFreezer':
         'Külső equalézer appok támogatása. Újraindítás szükséges',
     'Visualizer': 'Vizualizáló',
     'Show visualizers on lyrics page. WARNING: Requires microphone permission!':
@@ -6093,8 +6093,8 @@ const crowdin = {
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         'Aplikasi ini tidak dibuat untuk mendukung banyak font, ini dapat merusak tata letak dan tampilan. Gunakan dengan resiko anda sendiri!',
     'Enable equalizer': 'Aktifkan equalizer',
-    'Might enable some equalizer apps to work. Requires restart of Freezer':
-        'Mungkin mengaktifkan beberapa aplikasi equalizer untuk bekerja. Membutuhkan restart Freezer',
+    'Might enable some equalizer apps to work. Requires restart of ReFreezer':
+        'Mungkin mengaktifkan beberapa aplikasi equalizer untuk bekerja. Membutuhkan restart ReFreezer',
     'Visualizer': 'Visualisasi',
     'Show visualizers on lyrics page. WARNING: Requires microphone permission!':
         'Tampilkan visualisasi di halaman lirik. PERINGATAN: Dibutuhkan ijin microphone!',
@@ -6482,8 +6482,8 @@ const crowdin = {
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         'Questa app non è progettata per supportare molti caratteri, potrebbero smarginare e corrompere il layout. Usarli a proprio rischio e pericolo!',
     'Enable equalizer': 'Abilita equalizzatore',
-    'Might enable some equalizer apps to work. Requires restart of Freezer':
-        'Potrebbe abilitare il funzionamento di alcune app di equalizzazione. Richiede il riavvio di Freezer',
+    'Might enable some equalizer apps to work. Requires restart of ReFreezer':
+        'Potrebbe abilitare il funzionamento di alcune app di equalizzazione. Richiede il riavvio di ReFreezer',
     'Visualizer': 'Visualizzatore',
     'Show visualizers on lyrics page. WARNING: Requires microphone permission!':
         "Mostra i visualizzatori nella pagina dei testi. ATTENZIONE: Richiede l'autorizzazione del microfono!",
@@ -6856,8 +6856,8 @@ const crowdin = {
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!",
     'Enable equalizer': 'Enable equalizer',
-    'Might enable some equalizer apps to work. Requires restart of Freezer':
-        'Might enable some equalizer apps to work. Requires restart of Freezer',
+    'Might enable some equalizer apps to work. Requires restart of ReFreezer':
+        'Might enable some equalizer apps to work. Requires restart of ReFreezer',
     'Visualizer': 'Visualizer',
     'Show visualizers on lyrics page. WARNING: Requires microphone permission!':
         'Show visualizers on lyrics page. WARNING: Requires microphone permission!',
@@ -7241,7 +7241,7 @@ const crowdin = {
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         'این برنامه برای پشتیبانی از فونت های زیاد ساخته نشده است، ممکن است باعث به هم ریختن چینش و صفحات شود. مسئولیت بر عهده خودتان است!',
     'Enable equalizer': 'روشن کردن اکولایزر',
-    'Might enable some equalizer apps to work. Requires restart of Freezer':
+    'Might enable some equalizer apps to work. Requires restart of ReFreezer':
         'باعث فعال شدن برخی از برنامه های اکولایزر میشود. نیازمند ریستارت کردن است',
     'Visualizer': 'جلوه های تصویری',
     'Show visualizers on lyrics page. WARNING: Requires microphone permission!':
@@ -7625,8 +7625,8 @@ const crowdin = {
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         'Ta aplikacja nie jest stworzona do obsługi wielu czcionek, może zniszczyć układ i spowodować przepełnienie. Używaj na własne ryzyko!',
     'Enable equalizer': 'Włącz korektor dźwięku',
-    'Might enable some equalizer apps to work. Requires restart of Freezer':
-        'Może sprawić, że niektóre aplikacje do korekty dźwięku zaczną działać. Wymaga ponownego uruchomienia Freezera',
+    'Might enable some equalizer apps to work. Requires restart of ReFreezer':
+        'Może sprawić, że niektóre aplikacje do korekty dźwięku zaczną działać. Wymaga ponownego uruchomienia ReFreezera',
     'Visualizer': 'Wizualizator',
     'Show visualizers on lyrics page. WARNING: Requires microphone permission!':
         'Pokaż wizualizatorów na stronie tekstowej. UWAGA: Wymaga uprawnienia mikrofonu!',
@@ -8011,8 +8011,8 @@ const crowdin = {
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         'Este app não é feito para suportar muitas fontes, ele pode quebrar layouts e transbordar. Use por sua conta e risco!',
     'Enable equalizer': 'Ativar equalizador',
-    'Might enable some equalizer apps to work. Requires restart of Freezer':
-        'Pode ativar alguns apps de equalização para funcionar. Requer reinicialização do Freezer',
+    'Might enable some equalizer apps to work. Requires restart of ReFreezer':
+        'Pode ativar alguns apps de equalização para funcionar. Requer reinicialização do ReFreezer',
     'Visualizer': 'Visualizador',
     'Show visualizers on lyrics page. WARNING: Requires microphone permission!':
         'Mostrar visualizador na página da letra. AVISO: Requer permissão de microfone!',
@@ -8400,7 +8400,7 @@ const crowdin = {
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         'Această aplicație nu a fost creată să suporte multe fonturi, s-ar putea să iasă din limitele meniului. Utilizați pe propriul risc!',
     'Enable equalizer': 'Activează egalizatorul',
-    'Might enable some equalizer apps to work. Requires restart of Freezer':
+    'Might enable some equalizer apps to work. Requires restart of ReFreezer':
         'Porniți niște aplicații de egalizare ca să funcționeze. Necesită repornirea aplicației',
     'Visualizer': 'Vizualizator',
     'Show visualizers on lyrics page. WARNING: Requires microphone permission!':
@@ -8785,7 +8785,7 @@ const crowdin = {
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         'Осторожно, использование внешних шрифотов может сломать разметку и вненший вид приложения!',
     'Enable equalizer': 'Поддержка сторонних эквалайзеров',
-    'Might enable some equalizer apps to work. Requires restart of Freezer':
+    'Might enable some equalizer apps to work. Requires restart of ReFreezer':
         'Может помочь, если используется несистемный эквалайзер. Требуетсся перезапуск',
     'Visualizer': 'Визуализация',
     'Show visualizers on lyrics page. WARNING: Requires microphone permission!':
@@ -9170,7 +9170,7 @@ const crowdin = {
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         'Táto aplikácia nie je určená na podporu viacerých typov písma, môžu poškodiť rozloženie a pretekať. Používajte na svoje vlastné riziko!',
     'Enable equalizer': 'Zapnúť ekvalizér',
-    'Might enable some equalizer apps to work. Requires restart of Freezer':
+    'Might enable some equalizer apps to work. Requires restart of ReFreezer':
         'Možnosť fungovania niektorých aplikácií ekvalizéra. Vyžaduje sa reštart aplikácie',
     'Visualizer': 'Vizualizér',
     'Show visualizers on lyrics page. WARNING: Requires microphone permission!':
@@ -9558,8 +9558,8 @@ const crowdin = {
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         'Ta aplikacija ni namenjena uporabi različnih pisav, saj lahko pokvarijo izgled in obliko besedila. Uporabljaj na lastno odgovornost!',
     'Enable equalizer': 'Omogoči izenačevalnik',
-    'Might enable some equalizer apps to work. Requires restart of Freezer':
-        'Morda omogoči podporo za nekatere izenačevalniške aplikacije. Zahteva ponovni zagon aplikacije Freezer',
+    'Might enable some equalizer apps to work. Requires restart of ReFreezer':
+        'Morda omogoči podporo za nekatere izenačevalniške aplikacije. Zahteva ponovni zagon aplikacije ReFreezer',
     'Visualizer': 'Vizualizator',
     'Show visualizers on lyrics page. WARNING: Requires microphone permission!':
         'Prikaži zvočni prikazovalnik na strani z besedilom. POZOR: Zahteva dovoljenje za mikrofon!',
@@ -9954,8 +9954,8 @@ const crowdin = {
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         'Esta aplicación no está hecha para soportar muchas fuentes, puede romper diseños y desbordarse. ¡Usar bajo tu propio riesgo!',
     'Enable equalizer': 'Activar ecualizador',
-    'Might enable some equalizer apps to work. Requires restart of Freezer':
-        'Podría habilitar algunas aplicaciones de ecualización para funcionar. Requiere reiniciar Freezer',
+    'Might enable some equalizer apps to work. Requires restart of ReFreezer':
+        'Podría habilitar algunas aplicaciones de ecualización para funcionar. Requiere reiniciar ReFreezer',
     'Visualizer': 'Visualizador',
     'Show visualizers on lyrics page. WARNING: Requires microphone permission!':
         'Mostrar visualizadores en la página de letras. ADVERTENCIA: ¡Requiere permiso del micrófono!',
@@ -10344,8 +10344,8 @@ const crowdin = {
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         'Bu uygulama birçok yazı tipini desteklemek için yapılmamıştır; düzenler bozulabilir ve taşabilir. Kullanım kendi sorumluluğunuzdadır!',
     'Enable equalizer': 'Ekolayzırı etkinleştir',
-    'Might enable some equalizer apps to work. Requires restart of Freezer':
-        "Bazı ekolayzır uygulamalarının çalışmasını sağlayabilir. Freezer'ın yeniden başlatılmasını gerektirir",
+    'Might enable some equalizer apps to work. Requires restart of ReFreezer':
+        "Bazı ekolayzır uygulamalarının çalışmasını sağlayabilir. ReFreezer'ın yeniden başlatılmasını gerektirir",
     'Visualizer': 'Görselleştirme',
     'Show visualizers on lyrics page. WARNING: Requires microphone permission!':
         'Görselleştiricileri şarkı sözleri sayfasında gösterin. UYARI: Mikrofon izni gerektirir!',
@@ -10734,8 +10734,8 @@ const crowdin = {
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         'Обережно, використання зовнішніх шрифтів може зламати розмітку і зовнішній вигляд програми!',
     'Enable equalizer': 'Увімкнути еквалайзер',
-    'Might enable some equalizer apps to work. Requires restart of Freezer':
-        'Може допомогти, якщо використовується не системний еквалайзер. потрібен перезапуск Freezer',
+    'Might enable some equalizer apps to work. Requires restart of ReFreezer':
+        'Може допомогти, якщо використовується не системний еквалайзер. потрібен перезапуск ReFreezer',
     'Visualizer': 'Візуалізація',
     'Show visualizers on lyrics page. WARNING: Requires microphone permission!':
         'Відображати візуалізацію на на екрані тексту. Потрібен дозвіл \"Доступ до мікрофона\"!',
@@ -11117,8 +11117,8 @@ const crowdin = {
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!",
     'Enable equalizer': 'Enable equalizer',
-    'Might enable some equalizer apps to work. Requires restart of Freezer':
-        'Might enable some equalizer apps to work. Requires restart of Freezer',
+    'Might enable some equalizer apps to work. Requires restart of ReFreezer':
+        'Might enable some equalizer apps to work. Requires restart of ReFreezer',
     'Visualizer': 'Visualizer',
     'Show visualizers on lyrics page. WARNING: Requires microphone permission!':
         'Show visualizers on lyrics page. WARNING: Requires microphone permission!',
@@ -11504,8 +11504,8 @@ const crowdin = {
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         'Ứng dụng này không hỗ trợ nhiều phông chữ, bố cục và ký tự có thể sẽ lỗi và bị tràn. Tùy bạn quyết định!',
     'Enable equalizer': 'Bật bộ chỉnh âm',
-    'Might enable some equalizer apps to work. Requires restart of Freezer':
-        'Có thể cho phép sử dụng ứng dụng chỉnh âm. Yêu cầu khởi động lại Freezer',
+    'Might enable some equalizer apps to work. Requires restart of ReFreezer':
+        'Có thể cho phép sử dụng ứng dụng chỉnh âm. Yêu cầu khởi động lại ReFreezer',
     'Visualizer': 'Trình trực quan',
     'Show visualizers on lyrics page. WARNING: Requires microphone permission!':
         'Hiển thị trình trực quan trên trang lời bài hát. CẢNH BÁO: Yêu cầu quyền sử dụng micrô!',
