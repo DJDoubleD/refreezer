@@ -2,7 +2,6 @@ import json
 import ast
 import os
 import shutil
-import zipfile
 
 
 def process_dart_file(input_file):
@@ -12,6 +11,7 @@ def process_dart_file(input_file):
     start = content.index("const crowdin = ")
     end = content.rindex("};")
     crowdin_json = content[start + len("const crowdin = ") : end + 1]
+    crowdin_json = crowdin_json.replace("\\$", "$")
 
     crowdin_dict = ast.literal_eval(crowdin_json)
 
