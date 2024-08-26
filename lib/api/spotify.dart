@@ -17,18 +17,24 @@ class SpotifyScrapper {
   static String? parseUrl(String url) {
     Uri uri = Uri.parse(url);
     if (uri.pathSegments.length > 3) return null; //Invalid URL
-    if (uri.pathSegments.length == 3) return 'spotify:${uri.pathSegments[1]}:${uri.pathSegments[2]}';
-    if (uri.pathSegments.length == 2) return 'spotify:${uri.pathSegments[0]}:${uri.pathSegments[1]}';
+    if (uri.pathSegments.length == 3) {
+      return 'spotify:${uri.pathSegments[1]}:${uri.pathSegments[2]}';
+    }
+    if (uri.pathSegments.length == 2) {
+      return 'spotify:${uri.pathSegments[0]}:${uri.pathSegments[1]}';
+    }
     return null;
   }
 
   //Get spotify embed url from uri
-  static String getEmbedUrl(String uri) => 'https://embed.spotify.com/?uri=$uri';
+  static String getEmbedUrl(String uri) =>
+      'https://embed.spotify.com/?uri=$uri';
 
   //https://link.tospotify.com/ or https://spotify.app.link/
   static Future resolveLinkUrl(String url) async {
     http.Response response = await http.get(Uri.parse(url));
-    Match? match = RegExp(r'window\.top\.location = validate\("(.+)"\);').firstMatch(response.body);
+    Match? match = RegExp(r'window\.top\.location = validate\("(.+)"\);')
+        .firstMatch(response.body);
     return match?.group(1);
   }
 
@@ -68,7 +74,8 @@ class SpotifyScrapper {
   static Future<String> convertTrack(String uri) async {
     Map data = await getEmbedData(getEmbedUrl(uri));
     SpotifyTrack track = SpotifyTrack.fromJson(data);
-    Map deezer = await deezerAPI.callPublicApi('track/isrc:' + track.isrc.toString());
+    Map deezer =
+        await deezerAPI.callPublicApi('track/isrc:' + track.isrc.toString());
     return deezer['id'].toString();
   }
 
@@ -76,7 +83,8 @@ class SpotifyScrapper {
   static Future<String> convertAlbum(String uri) async {
     Map data = await getEmbedData(getEmbedUrl(uri));
     SpotifyAlbum album = SpotifyAlbum.fromJson(data);
-    Map deezer = await deezerAPI.callPublicApi('album/upc:' + album.upc.toString());
+    Map deezer =
+        await deezerAPI.callPublicApi('album/upc:' + album.upc.toString());
     return deezer['id'].toString();
   }
 }
@@ -91,7 +99,8 @@ class SpotifyTrack {
   //JSON
   factory SpotifyTrack.fromJson(Map json) => SpotifyTrack(
       title: json['name'],
-      artists: json['artists'].map<String>((a) => a['name'].toString()).toList(),
+      artists:
+          json['artists'].map<String>((a) => a['name'].toString()).toList(),
       isrc: json['external_ids']['isrc']);
 
   //Convert track to importer track
@@ -113,7 +122,9 @@ class SpotifyPlaylist {
       name: json['name'],
       description: json['description'],
       image: (json['images'].length > 0) ? json['images'][0]['url'] : null,
-      tracks: json['tracks']['items'].map<SpotifyTrack>((j) => SpotifyTrack.fromJson(j['track'])).toList());
+      tracks: json['tracks']['items']
+          .map<SpotifyTrack>((j) => SpotifyTrack.fromJson(j['track']))
+          .toList());
 
   //Convert to importer tracks
   List<ImporterTrack> toImporter() {
@@ -127,7 +138,8 @@ class SpotifyAlbum {
   SpotifyAlbum({this.upc});
 
   //JSON
-  factory SpotifyAlbum.fromJson(Map json) => SpotifyAlbum(upc: json['external_ids']['upc']);
+  factory SpotifyAlbum.fromJson(Map json) =>
+      SpotifyAlbum(upc: json['external_ids']['upc']);
 }
 
 class SpotifyAPIWrapper {
@@ -141,7 +153,8 @@ class SpotifyAPIWrapper {
       print(settings.spotifyCredentials);
     }
     if (settings.spotifyClientSecret == null) return false;
-    final credentials = SpotifyApiCredentials(settings.spotifyClientId, settings.spotifyClientSecret,
+    final credentials = SpotifyApiCredentials(
+        settings.spotifyClientId, settings.spotifyClientSecret,
         accessToken: settings.spotifyCredentials?.accessToken,
         refreshToken: settings.spotifyCredentials?.refreshToken,
         scopes: settings.spotifyCredentials?.scopes,
@@ -154,7 +167,8 @@ class SpotifyAPIWrapper {
 
   Future authorize(String clientId, String clientSecret) async {
     //Spotify
-    SpotifyApiCredentials credentials = SpotifyApiCredentials(clientId, clientSecret);
+    SpotifyApiCredentials credentials =
+        SpotifyApiCredentials(clientId, clientSecret);
     spotify = SpotifyApi(credentials);
     //Create server
     _server = await HttpServer.bind(InternetAddress.loopbackIPv4, 42069);
@@ -162,15 +176,21 @@ class SpotifyAPIWrapper {
     //Get URL
     final grant = SpotifyApi.authorizationCodeGrant(credentials);
     const redirectUri = 'http://localhost:42069';
-    final scopes = ['user-read-private', 'playlist-read-private', 'playlist-read-collaborative', 'user-library-read'];
-    final authUri = grant.getAuthorizationUrl(Uri.parse(redirectUri), scopes: scopes);
+    final scopes = [
+      'user-read-private',
+      'playlist-read-private',
+      'playlist-read-collaborative',
+      'user-library-read'
+    ];
+    final authUri =
+        grant.getAuthorizationUrl(Uri.parse(redirectUri), scopes: scopes);
     launchUrl(authUri);
     //Wait for code
     await for (HttpRequest request in _server!) {
       //Exit window
       request.response.headers.set('Content-Type', 'text/html; charset=UTF-8');
       request.response.write(
-          '<body><h1>You can close this page and go back to Freezer.</h1></body><script>window.close();</script>');
+          '<body><h1>You can close this page and go back to ReFreezer.</h1></body><script>window.close();</script>');
       request.response.close();
       //Get token
       if (request.uri.queryParameters['code'] != null) {
