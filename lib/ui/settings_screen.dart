@@ -1774,77 +1774,100 @@ class _CreditsScreenState extends State<CreditsScreen> {
           const FreezerDivider(),
           const Padding(padding: EdgeInsets.all(8.0)),
           const FreezerDivider(),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
-            child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  //const Icon(Icons.favorite_border),
-                  Image.asset('assets/icon_legacy.png', width: 24, height: 24),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(8, 0, 8, 0),
-                    child: Text(
-                      'The original freezer development team'.i18n,
-                      textAlign: TextAlign.center,
-                      style: const TextStyle(
-                          fontSize: 16.0, fontWeight: FontWeight.w600),
+          ExpansionTile(
+            title: LayoutBuilder(
+              builder: (context, constraints) {
+                return Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Image.asset('assets/icon_legacy.png',
+                            width: 24, height: 24),
+                        Expanded(
+                          child: Padding(
+                            padding:
+                                const EdgeInsets.symmetric(horizontal: 8.0),
+                            child: Text(
+                              'The original freezer development team'.i18n,
+                              textAlign: TextAlign.center,
+                              style: const TextStyle(
+                                fontSize: 16.0,
+                                fontWeight: FontWeight.w600,
+                              ),
+                              softWrap: true,
+                              overflow: TextOverflow.visible,
+                            ),
+                          ),
+                        ),
+                        Image.asset('assets/icon_legacy.png',
+                            width: 24, height: 24),
+                      ],
                     ),
-                  ),
-                  //const Icon(Icons.favorite_border),
-                  Image.asset('assets/icon_legacy.png', width: 24, height: 24),
-                ]),
-          ),
-          const FreezerDivider(),
-          const ListTile(
-            title: Text('exttex'),
-            subtitle: Text('Developer'),
-          ),
-          const ListTile(
-            title: Text('Bas Curtiz'),
-            subtitle: Text('Icon, logo, banner, design suggestions, tester'),
-          ),
-          const ListTile(
-            title: Text('Tobs'),
-            subtitle: Text('Alpha testers'),
-          ),
-          const ListTile(
-            title: Text('Deemix'),
-            subtitle: Text('Better app <3'),
-          ),
-          const ListTile(
-            title: Text('Xandar Null'),
-            subtitle: Text('Tester, translations help'),
-          ),
-          ListTile(
-            title: const Text('Francesco'),
-            subtitle: const Text('Tester'),
-            onTap: () {
-              setState(() {
-                settings.primaryColor = const Color(0xff333333);
-              });
-              updateTheme();
-              settings.save();
-            },
-          ),
-          const ListTile(
-            title: Text('Annexhack'),
-            subtitle: Text('Android Auto help'),
-          ),
-          const FreezerDivider(),
-          ...List.generate(
-              translators.length,
-              (i) => ListTile(
-                    title: Text(translators[i][0]),
-                    subtitle: Text(translators[i][1]),
-                  )),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(0, 4, 0, 8),
-            child: Text(
-              'Huge thanks to all the contributors! <3'.i18n,
-              textAlign: TextAlign.center,
-              style: const TextStyle(fontSize: 16.0),
+                  ],
+                );
+              },
             ),
-          )
+            textColor: Theme.of(context).primaryColor,
+            iconColor: Theme.of(context).primaryColor,
+            tilePadding: const EdgeInsets.symmetric(horizontal: 16.0),
+            shape: const Border(),
+            children: [
+              const FreezerDivider(),
+              const ListTile(
+                title: Text('exttex'),
+                subtitle: Text('Developer'),
+              ),
+              const ListTile(
+                title: Text('Bas Curtiz'),
+                subtitle:
+                    Text('Icon, logo, banner, design suggestions, tester'),
+              ),
+              const ListTile(
+                title: Text('Tobs'),
+                subtitle: Text('Alpha testers'),
+              ),
+              const ListTile(
+                title: Text('Deemix'),
+                subtitle: Text('Better app <3'),
+              ),
+              const ListTile(
+                title: Text('Xandar Null'),
+                subtitle: Text('Tester, translations help'),
+              ),
+              ListTile(
+                title: const Text('Francesco'),
+                subtitle: const Text('Tester'),
+                onTap: () {
+                  setState(() {
+                    settings.primaryColor = const Color(0xff333333);
+                  });
+                  updateTheme();
+                  settings.save();
+                },
+              ),
+              const ListTile(
+                title: Text('Annexhack'),
+                subtitle: Text('Android Auto help'),
+              ),
+              const FreezerDivider(),
+              ...List.generate(
+                  translators.length,
+                  (i) => ListTile(
+                        title: Text(translators[i][0]),
+                        subtitle: Text(translators[i][1]),
+                      )),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(0, 4, 0, 8),
+                child: Text(
+                  'Huge thanks to all the contributors! <3'.i18n,
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(fontSize: 16.0),
+                ),
+              )
+            ],
+          ),
+          const FreezerDivider(),
         ],
       ),
     );
