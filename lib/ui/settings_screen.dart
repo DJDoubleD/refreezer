@@ -15,6 +15,7 @@ import 'package:fluttericon/font_awesome5_icons.dart';
 import 'package:fluttericon/web_symbols_icons.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get_it/get_it.dart';
+import 'package:i18n_extension/i18n_extension.dart';
 import 'package:logging/logging.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:path_provider/path_provider.dart';
@@ -109,30 +110,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           title: Text(l.name),
                           subtitle: Text('${l.locale}-${l.country}'),
                           onTap: () async {
+                            I18n.of(customNavigatorKey.currentContext!).locale =
+                                Locale(l.locale, l.country);
                             setState(() =>
                                 settings.language = '${l.locale}_${l.country}');
                             await settings.save();
-                            showDialog(
-                                context: mainNavigatorKey.currentContext!,
-                                builder: (context) {
-                                  return AlertDialog(
-                                    title: Text('Language'.i18n),
-                                    content: Text(
-                                        'Language changed, please restart ReFreezer to apply!'
-                                            .i18n),
-                                    actions: [
-                                      TextButton(
-                                        child: const Text('OK'),
-                                        onPressed: () {
-                                          // Close the AlertDialog
-                                          Navigator.of(context).pop();
-                                          // Close the SimpleDialog
-                                          Navigator.of(context).pop();
-                                        },
-                                      )
-                                    ],
-                                  );
-                                });
+                            // Close the SimpleDialog
+                            if (context.mounted) Navigator.of(context).pop();
                           },
                         );
                       })));
@@ -1264,7 +1248,7 @@ class _GeneralSettingsState extends State<GeneralSettings> {
           ListTile(
             title: Text('Enable equalizer'.i18n),
             subtitle: Text(
-                'Might enable some equalizer apps to work. Requires restart of Freezer'
+                'Might enable some equalizer apps to work. Requires restart of ReFreezer'
                     .i18n),
             leading: const Icon(Icons.equalizer),
             trailing: Switch(
