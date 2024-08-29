@@ -80,8 +80,7 @@ class _LyricsScreenState extends State<LyricsScreen> {
     }
 
     if (lyrics.errorMessage != null) {
-      Logger.root.warning(
-          'Error loading lyrics for track id ${widget.trackId}: ${lyrics.errorMessage}');
+      Logger.root.warning('Error loading lyrics for track id ${widget.trackId}: ${lyrics.errorMessage}');
     }
 
     setState(() {
@@ -98,10 +97,8 @@ class _LyricsScreenState extends State<LyricsScreen> {
       if (_loading) return;
 
       //Update current lyric index
-      setState(() => _currentIndex = lyrics!.syncedLyrics!.lastIndexWhere(
-          (lyric) =>
-              (lyric.offset ?? const Duration(seconds: 0)) <=
-              GetIt.I<AudioPlayerHandler>().playbackState.value.position));
+      setState(() => _currentIndex = lyrics!.syncedLyrics!.lastIndexWhere((lyric) =>
+          (lyric.offset ?? const Duration(seconds: 0)) <= GetIt.I<AudioPlayerHandler>().playbackState.value.position));
 
       //Scroll to current lyric
       if (_currentIndex <= 0) return;
@@ -109,10 +106,7 @@ class _LyricsScreenState extends State<LyricsScreen> {
       _prevIndex = _currentIndex;
       _controller.animateTo(
           //Lyric height, screen height, appbar height
-          (height * _currentIndex) -
-              (MediaQuery.of(context).size.height / 2) +
-              (height / 2) +
-              56,
+          (height * _currentIndex) - (MediaQuery.of(context).size.height / 2) + (height / 2) + 56,
           duration: const Duration(milliseconds: 250),
           curve: Curves.ease);
     });
@@ -148,9 +142,7 @@ class _LyricsScreenState extends State<LyricsScreen> {
                     stream: GetIt.I<AudioPlayerHandler>().visualizerStream,
                     builder: (BuildContext context, AsyncSnapshot snapshot) {
                       List<double> data = snapshot.data ?? [];
-                      double width =
-                          MediaQuery.of(context).size.width / data.length -
-                              0.25;
+                      double width = MediaQuery.of(context).size.width / data.length - 0.25;
                       return Row(
                         crossAxisAlignment: CrossAxisAlignment.end,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -168,8 +160,7 @@ class _LyricsScreenState extends State<LyricsScreen> {
 
             //Lyrics
             Padding(
-              padding: EdgeInsets.fromLTRB(
-                  0, 0, 0, settings.lyricsVisualizer ? 100 : 0),
+              padding: EdgeInsets.fromLTRB(0, 0, 0, settings.lyricsVisualizer ? 100 : 0),
               child: ListView(
                 controller: _controller,
                 children: [
@@ -187,36 +178,38 @@ class _LyricsScreenState extends State<LyricsScreen> {
                     ),
 
                   // Synced Lyrics
-                  if (lyrics != null &&
-                      lyrics!.syncedLyrics?.isNotEmpty == true)
+                  if (lyrics != null && lyrics!.syncedLyrics?.isNotEmpty == true)
                     ...List.generate(lyrics!.syncedLyrics!.length, (i) {
                       return Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 8.0),
                           child: Container(
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(8.0),
-                                color: (_currentIndex == i)
-                                    ? Colors.grey.withOpacity(0.25)
-                                    : Colors.transparent,
+                                color: (_currentIndex == i) ? Colors.grey.withOpacity(0.25) : Colors.transparent,
                               ),
                               height: height,
                               child: Center(
-                                child: Text(
-                                  lyrics!.syncedLyrics![i].text ?? '',
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
+                                child: GestureDetector(
+                                  onTap: () {
+                                    final offset = lyrics!.syncedLyrics![i].offset;
+                                    if (offset != null) {
+                                      GetIt.I<AudioPlayerHandler>().seek(offset);
+                                    }
+                                  },
+                                  child: Text(
+                                    lyrics!.syncedLyrics![i].text ?? '',
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
                                       fontSize: 26.0,
-                                      fontWeight: (_currentIndex == i)
-                                          ? FontWeight.bold
-                                          : FontWeight.normal),
+                                      fontWeight: (_currentIndex == i) ? FontWeight.bold : FontWeight.normal,
+                                    ),
+                                  ),
                                 ),
                               )));
                     }),
 
                   // Unsynced Lyrics
-                  if (lyrics != null &&
-                      (lyrics!.syncedLyrics?.isEmpty ?? true) &&
-                      lyrics!.unsyncedLyrics != null)
+                  if (lyrics != null && (lyrics!.syncedLyrics?.isEmpty ?? true) && lyrics!.unsyncedLyrics != null)
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 8.0),
                       child: Container(
