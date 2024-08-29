@@ -34,31 +34,6 @@ class _PlayerBarState extends State<PlayerBar> {
     var focusNode = FocusNode();
     return GestureDetector(
       key: UniqueKey(),
-      /* Old swipe detection, seems less efficient...
-      onHorizontalDragUpdate: (details) async {
-        if (_gestureRegistered) return;
-        const double sensitivity = 12.69;
-        //Right swipe
-        _gestureRegistered = true;
-        if (details.delta.dx > sensitivity) {
-          await GetIt.I<AudioPlayerHandlerImpl>().skipToPrevious();
-        }
-        //Left
-        if (details.delta.dx < -sensitivity) {
-          await GetIt.I<AudioPlayerHandlerImpl>().skipToNext();
-        }
-        _gestureRegistered = false;
-        return;
-      },
-      onVerticalDragUpdate: (DragUpdateDetails details) {
-        if (details.delta.dy < 8) {
-          Navigator.of(context).push(SlideBottomRoute(widget: PlayerScreen()));
-          SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-            systemNavigationBarColor:
-                settings.themeData.scaffoldBackgroundColor,
-          ));
-        }
-      },*/
       onHorizontalDragEnd: (DragEndDetails details) async {
         if ((details.primaryVelocity ?? 0) < -100) {
           // Swiped left
@@ -140,6 +115,7 @@ class _PlayerBarState extends State<PlayerBar> {
                   height: 3.0,
                   child: LinearProgressIndicator(
                     backgroundColor: Theme.of(context).primaryColor.withOpacity(0.1),
+                    color: Theme.of(context).primaryColor,
                     value: _progress,
                   ),
                 )
