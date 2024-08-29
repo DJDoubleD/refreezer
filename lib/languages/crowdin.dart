@@ -3,8 +3,7 @@ const crowdin = {
     'Home': 'القائمة الرئيسية',
     'Search': 'بحث',
     'Library': 'المكتبة',
-    "Offline mode, can't play flow or smart track lists.":
-        'وضع خارج الشبكة, لا تستطيع تشغيل اغاني من قوائم ديزر فلو',
+    "Offline mode, can't play flow or smart track lists.": 'وضع خارج الشبكة, لا تستطيع تشغيل اغاني من قوائم ديزر فلو',
     'Added to library': 'تمت الاضافة الى المكتبة',
     'Download': 'تنزيل',
     'Disk': 'القرص',
@@ -22,13 +21,11 @@ const crowdin = {
     'Post processing...': 'بعد المعالجة...',
     'Done': 'تم',
     'Delete': 'حذف',
-    'Are you sure you want to delete this download?':
-        'هل أنت متأكد أنك تريد حذف هذا التنزيل؟',
+    'Are you sure you want to delete this download?': 'هل أنت متأكد أنك تريد حذف هذا التنزيل؟',
     'Cancel': 'الغاء',
     'Downloads': 'التنزيلات',
     'Clear queue': 'مسح قائمة الانتظار',
-    "This won't delete currently downloading item":
-        'لن يؤدي هذا إلى حذف العنصر الذي يتم تنزيله حاليًا',
+    "This won't delete currently downloading item": 'لن يؤدي هذا إلى حذف العنصر الذي يتم تنزيله حاليًا',
     'Are you sure you want to delete all queued downloads?':
         'هل أنت متأكد أنك تريد حذف كافة التنزيلات في قائمة الانتظار؟',
     'Clear downloads history': 'مسح تاريخ التنزيلات',
@@ -38,15 +35,13 @@ const crowdin = {
         'يرجى التحقق من الاتصال الخاص بك والمحاولة مرة أخرى في وقت لاحق...',
     'Show more': 'اظهار المزيد',
     'Importer': 'المستورد',
-    'Currently supporting only Spotify, with 100 tracks limit':
-        'حاليا يدعم سبوتفاي فقط, بحد اقصى 100 اغنية',
+    'Currently supporting only Spotify, with 100 tracks limit': 'حاليا يدعم سبوتفاي فقط, بحد اقصى 100 اغنية',
     'Due to API limitations': 'بسبب قيود API',
     'Enter your playlist link below': 'أدخل رابط قائمة التشغيل أدناه',
     'Error loading URL!': 'خطأ في تنزيل الرابط!',
     'Convert': 'تحويل',
     'Download only': 'تنزيل فقط',
-    'Downloading is currently stopped, click here to resume.':
-        'التنزيل متوقف حاليًا ، انقر هنا للاستئناف.',
+    'Downloading is currently stopped, click here to resume.': 'التنزيل متوقف حاليًا ، انقر هنا للاستئناف.',
     'Tracks': 'اغاني',
     'Albums': 'البومات',
     'Artists': 'فنانون',
@@ -63,15 +58,13 @@ const crowdin = {
     'Favorites': 'المفضلات',
     'All offline tracks': 'كل الاغاني بدون اتصال',
     'Create new playlist': 'انشاء قائمة تشغيل جديدة',
-    'Cannot create playlists in offline mode':
-        'لا يمكن إنشاء قوائم التشغيل في وضع عدم الاتصال',
+    'Cannot create playlists in offline mode': 'لا يمكن إنشاء قوائم التشغيل في وضع عدم الاتصال',
     'Error': 'خطأ',
     'Error logging in! Please check your token and internet connection and try again.':
         'خطأ في تسجيل الدخول! يرجى التحقق من الرمز المميز والاتصال بالإنترنت وحاول مرة أخرى.',
     'Dismiss': 'رفض',
     'Welcome to': 'مرحبا بك في',
-    'Please login using your Deezer account.':
-        'يرجى تسجيل الدخول باستخدام حساب ديزر الخاص بك.',
+    'Please login using your Deezer account.': 'يرجى تسجيل الدخول باستخدام حساب ديزر الخاص بك.',
     'Login using browser': 'تسجيل الدخول باستخدام المتصفح',
     'Login using token': 'تسجيل الدخول باستخدام الرمز المميز',
     'Enter ARL': 'أدخل الرمز المميز (arl)',
@@ -80,8 +73,7 @@ const crowdin = {
     "If you don't have account, you can register on deezer.com for free.":
         'إذا لم يكن لديك حساب ، يمكنك التسجيل على deezer.com مجانًا.',
     'Open in browser': 'افتح في المتصفح',
-    "By using this app, you don't agree with the Deezer ToS":
-        'باستخدام هذا التطبيق ، أنت لا توافق على شروط خدمة ديزر',
+    "By using this app, you don't agree with the Deezer ToS": 'باستخدام هذا التطبيق ، أنت لا توافق على شروط خدمة ديزر',
     'Play next': 'شغل التالي',
     'Add to queue': 'إضافة إلى قائمة الانتظار',
     'Add track to favorites': 'اضافة الاغنية الى المفضلة',
@@ -138,8 +130,7 @@ const crowdin = {
     'Wifi streaming': 'البث عبر الوايفاي',
     'External downloads': 'التنزيلات الخارجية',
     'Content language': 'لغة المحتوى',
-    'Not app language, used in headers. Now':
-        'ليست لغة التطبيق المستخدمة في العناوين. الآن',
+    'Not app language, used in headers. Now': 'ليست لغة التطبيق المستخدمة في العناوين. الآن',
     'Select language': 'اختار اللغة',
     'Content country': 'بلد المحتوى',
     'Country used in headers. Now': 'البلد المستخدم في العناوين. الآن',
@@ -148,8 +139,7 @@ const crowdin = {
         'أرسال سجلات الاستماع  إلى ديزر ، قم بتمكينها لميزات مثل فلو لتعمل بشكل صحيح (ينصح تفعيلها)',
     'Offline mode': 'وضع عدم الاتصال',
     'Will be overwritten on start.': 'سيتم الكتابة فوقها في البداية.',
-    'Error logging in, check your internet connections.':
-        'خطأ في تسجيل الدخول ، تحقق من اتصالات الإنترنت الخاص بك.',
+    'Error logging in, check your internet connections.': 'خطأ في تسجيل الدخول ، تحقق من اتصالات الإنترنت الخاص بك.',
     'Logging in...': 'جار تسجيل الدخول...',
     'Download path': 'مسار التنزيل',
     'Downloads naming': 'تسمية التنزيلات',
@@ -162,8 +152,7 @@ const crowdin = {
     'Separate albums by discs': 'افصل الالبومات عبر رقم الاقراص',
     'Overwrite already downloaded files': 'الكتابة فوق الملفات التي تم تنزيلها',
     'Copy ARL': 'نسخ الرمز المميز (ARL)',
-    'Copy userToken/ARL Cookie for use in other apps.':
-        'انسخ ملف الرابط  الرمز المميز لاستخدامه في تطبيقات أخرى.',
+    'Copy userToken/ARL Cookie for use in other apps.': 'انسخ ملف الرابط  الرمز المميز لاستخدامه في تطبيقات أخرى.',
     'Copied': 'تم النسخ',
     'Log out': 'تسجيل خروج',
     'Due to plugin incompatibility, login using browser is unavailable without restart.':
@@ -175,14 +164,12 @@ const crowdin = {
     'Go up': 'اذهب للأعلى',
     'Permission denied': 'طلب الاذن مرفوض',
     'Language': 'اللغة',
-    'Language changed, please restart ReFreezer to apply!':
-        'تم تغيير اللغة، الرجاء إعادة تشغيل فريزر لتطبيق!',
+    'Language changed, please restart ReFreezer to apply!': 'تم تغيير اللغة، الرجاء إعادة تشغيل فريزر لتطبيق!',
     'Importing...': 'جار الاستيراد...',
     'Radio': 'راديو',
     'Flow': 'فلو',
     'Track is not available on Deezer!': 'الأغنية غير متوفرة على ديزر!',
-    'Failed to download track! Please restart.':
-        'فشل تنزيل الأغنية! الرجاء إعادة التشغيل.',
+    'Failed to download track! Please restart.': 'فشل تنزيل الأغنية! الرجاء إعادة التشغيل.',
     'Storage permission denied!': 'رفض إذن التخزين!',
     'Failed': 'فشل',
     'Queued': 'في قائمة الانتظار',
@@ -197,8 +184,7 @@ const crowdin = {
     'Search or paste URL': 'ابحث أو الصق رابط',
     'History': 'تاريخ السماع',
     'Download threads': 'عدد التنزيلات في نفس الوقت',
-    'Lyrics unavailable, empty or failed to load!':
-        'الكلمات غير متوفرة، فارغة أو فشل تنزيلها!',
+    'Lyrics unavailable, empty or failed to load!': 'الكلمات غير متوفرة، فارغة أو فشل تنزيلها!',
     'About': 'حول البرنامج',
     'Telegram Channel': 'قناة التلكرام',
     'To get latest releases': 'لتنزيل اخر اصدارات البرنامج',
@@ -226,8 +212,7 @@ const crowdin = {
     'Using too many concurrent downloads on older/weaker devices might cause crashes!':
         'استخدام الكثير من التنزيلات في نفس الوقت على الأجهزة القديمة / الضعيفة قد يسبب مشاكل!',
     'Create .nomedia files': 'إنشاء ملف .nomedia',
-    'To prevent gallery being filled with album art':
-        'لمنع ملء المعرض بصور الألبوم',
+    'To prevent gallery being filled with album art': 'لمنع ملء المعرض بصور الألبوم',
     'Sleep timer': 'مؤقت النوم',
     'Minutes:': 'دقائق:',
     'Hours:': 'ساعات:',
@@ -256,8 +241,7 @@ const crowdin = {
     'Current version: ': 'الإصدار الحالي: ',
     'Unsupported platform!': 'منصة غير مدعومة!',
     'ReFreezer Updates': 'تحديثات فريزر',
-    'Update to latest version in the settings.':
-        'تحديث لأحدث إصدار في الإعدادات.',
+    'Update to latest version in the settings.': 'تحديث لأحدث إصدار في الإعدادات.',
     'Release date': 'تاريخ الاصدار',
     'Shows': 'العروض',
     'Charts': 'الجداول',
@@ -268,8 +252,7 @@ const crowdin = {
     'Date added': 'تاريخ الإضافة',
     'Discord': 'دسكورد',
     'Official Discord server': 'سيرفر ديسكورد الرسمي',
-    'Restart of app is required to properly log out!':
-        'إعادة تشغيل التطبيق مطلوب لتسجيل الخروج بشكل صحيح!',
+    'Restart of app is required to properly log out!': 'إعادة تشغيل التطبيق مطلوب لتسجيل الخروج بشكل صحيح!',
     'Artist separator': 'فاصل الفنانين',
     'Singleton naming': 'تسمية المفرد',
     'Keep the screen on': 'إبق الشاشة مفعلة',
@@ -279,8 +262,7 @@ const crowdin = {
     'Episodes': 'الحلقات',
     'Show all episodes': 'إظهار جميع الحلقات',
     'Album cover resolution': 'دقة غلاف الألبوم',
-    "WARNING: Resolutions above 1200 aren't officially supported":
-        'تحذير: القرارات التي تتجاوز 1200 غير مدعومة رسمياً',
+    "WARNING: Resolutions above 1200 aren't officially supported": 'تحذير: القرارات التي تتجاوز 1200 غير مدعومة رسمياً',
     'Album removed from library!': 'تم إزالة الألبوم من المكتبة!',
     'Remove offline': 'إزالة دون اتصال',
     'Playlist removed from library!': 'تم إزالة قائمة التشغيل من المكتبة!',
@@ -350,8 +332,7 @@ const crowdin = {
     'Login using email': 'تسجيل الدخول باستخدام البريد الإلكتروني',
     'Track removed from offline!': 'تم إزالة الاغنية من وضع عدم الاتصال!',
     'Removed album from offline!': 'تم إزالة الألبوم من وضع عدم الاتصال!',
-    'Playlist removed from offline!':
-        'تم إزالة قائمة التشغيل من وضع عدم الاتصال!',
+    'Playlist removed from offline!': 'تم إزالة قائمة التشغيل من وضع عدم الاتصال!',
     'Repeat': 'تكرار',
     'Repeat one': 'كرر مرة واحدة',
     'Repeat off': 'التكرار مُعطّل',
@@ -401,32 +382,26 @@ const crowdin = {
     'Post processing...': 'Posprocesando…',
     'Done': 'Fecho',
     'Delete': 'Desaniciar',
-    'Are you sure you want to delete this download?':
-        '¿De xuru que quies desaniciar esta descarga?',
+    'Are you sure you want to delete this download?': '¿De xuru que quies desaniciar esta descarga?',
     'Cancel': 'Encaboxar',
     'Downloads': 'Descargues',
     'Clear queue': 'Llimpiar la cola',
-    "This won't delete currently downloading item":
-        "Esto nun va desaniciar l'elementu en descarga",
-    'Are you sure you want to delete all queued downloads?':
-        '¿De xuru que quies desaniciar toles descargues en cola?',
+    "This won't delete currently downloading item": "Esto nun va desaniciar l'elementu en descarga",
+    'Are you sure you want to delete all queued downloads?': '¿De xuru que quies desaniciar toles descargues en cola?',
     'Clear downloads history': "Llimpiar l'historial de descargues",
     'WARNING: This will only clear non-offline (external downloads)':
         'ALVERTENCIA: Esto namás va llimpiar les descargues esternes',
-    'Please check your connection and try again later...':
-        'Comprueba la conexón y volvi tentalo dempués…',
+    'Please check your connection and try again later...': 'Comprueba la conexón y volvi tentalo dempués…',
     'Show more': 'Amosar más',
     'Importer': 'Importador',
     'Currently supporting only Spotify, with 100 tracks limit':
         'Anguaño namás se sofita Spotify con una llende de 100 pistes',
     'Due to API limitations': "Pola mor de torgues de l'API",
-    'Enter your playlist link below':
-        "Introduz embaxo l'enllaz de la to llista",
+    'Enter your playlist link below': "Introduz embaxo l'enllaz de la to llista",
     'Error loading URL!': '¡Hebo un fallu al cargar la URL!',
     'Convert': 'Convertir',
     'Download only': 'Baxar namás',
-    'Downloading is currently stopped, click here to resume.':
-        'La descarga ta parada, calca equí pa siguir con ella.',
+    'Downloading is currently stopped, click here to resume.': 'La descarga ta parada, calca equí pa siguir con ella.',
     'Tracks': 'Pistes',
     'Albums': 'Álbumes',
     'Artists': 'Artistes',
@@ -443,15 +418,13 @@ const crowdin = {
     'Favorites': 'Favoritos',
     'All offline tracks': 'Toles pistes nel mou ensin conexón',
     'Create new playlist': 'Crear una llista',
-    'Cannot create playlists in offline mode':
-        'Nun pues crear llistes nel mou ensin conexón',
+    'Cannot create playlists in offline mode': 'Nun pues crear llistes nel mou ensin conexón',
     'Error': 'Fallu',
     'Error logging in! Please check your token and internet connection and try again.':
         "¡Hebo un fallu p'aniciar sesión! Comprueba'l pase y la conexón a internet y volvi tentalo, por favor.",
     'Dismiss': 'Escartar',
     'Welcome to': 'Afáyate en',
-    'Please login using your Deezer account.':
-        'Anicia sesión con una cuenta de Deezer, por favor.',
+    'Please login using your Deezer account.': 'Anicia sesión con una cuenta de Deezer, por favor.',
     'Login using browser': 'Aniciar sesión con un restolador',
     'Login using token': 'Aniciar sesión con un pase',
     'Enter ARL': "Introducción d'una ARL",
@@ -517,8 +490,7 @@ const crowdin = {
     'Wifi streaming': 'Tresmisión pela Wi-Fi',
     'External downloads': 'Descargues esternes',
     'Content language': 'Llingua del conteníu',
-    'Not app language, used in headers. Now':
-        "Nun ye la llingua de l'aplicación, úsase nes testeres. Agora",
+    'Not app language, used in headers. Now': "Nun ye la llingua de l'aplicación, úsase nes testeres. Agora",
     'Select language': "Esbilla d'una llingua",
     'Content country': 'País del conteníu',
     'Country used in headers. Now': 'El país usáu nes testeres. Agora',
@@ -541,8 +513,7 @@ const crowdin = {
     'Separate albums by discs': 'Separtar los álbumes polos discos',
     'Overwrite already downloaded files': 'Sobrescribir los ficheros yá baxaos',
     'Copy ARL': "Copiar l'ARL",
-    'Copy userToken/ARL Cookie for use in other apps.':
-        "Copia la cookie userToken/ARL pa usala n'otres aplicaciones.",
+    'Copy userToken/ARL Cookie for use in other apps.': "Copia la cookie userToken/ARL pa usala n'otres aplicaciones.",
     'Copied': 'Copióse',
     'Log out': 'Zarrar sesión',
     'Due to plugin incompatibility, login using browser is unavailable without restart.':
@@ -557,10 +528,8 @@ const crowdin = {
     'Language changed, please restart ReFreezer to apply!':
         "La llingua camudó, reanicia ReFreezer p'aplicar los cambeos.",
     'Importing...': 'Importando…',
-    'Track is not available on Deezer!':
-        '¡La pista nun ta disponible en Deezer!',
-    'Failed to download track! Please restart.':
-        '¡Hebo un fallu al baxar la pista! Reanicia, por favor.',
+    'Track is not available on Deezer!': '¡La pista nun ta disponible en Deezer!',
+    'Failed to download track! Please restart.': '¡Hebo un fallu al baxar la pista! Reanicia, por favor.',
     'Storage permission denied!': "¡Negóse'l permisu al almacenamientu!",
     'Failed': 'Falló',
     'Queued': 'Na cola',
@@ -574,15 +543,13 @@ const crowdin = {
     'Search or paste URL': 'Busca o apiega una URL',
     'History': 'Historial',
     'Download threads': 'Descargues simultánees',
-    'Lyrics unavailable, empty or failed to load!':
-        '¡Nun hai lletra, nun ta disponible o falló la so carga!',
+    'Lyrics unavailable, empty or failed to load!': '¡Nun hai lletra, nun ta disponible o falló la so carga!',
     'About': 'Tocante a',
     'Telegram Channel': 'Canal de Telegram',
     'To get latest releases': 'Pa consiguir los últimos anovamientos',
     'Official chat': 'Charra oficial',
     'Telegram Group': 'Grupu de Telegram',
-    'Huge thanks to all the contributors! <3':
-        '¡Munches gracies a toles persones que collaboraron! <3',
+    'Huge thanks to all the contributors! <3': '¡Munches gracies a toles persones que collaboraron! <3',
     'Edit playlist': 'Editar la llista',
     'Update': 'Anovar',
     'Playlist updated!': '¡Anovóse la llista!',
@@ -590,8 +557,7 @@ const crowdin = {
     'Save cover file for every track': 'Guardar la portada de cada pista',
     'Download Log': 'Rexistru de descargues',
     'Repository': 'Depósitu',
-    'Source code, report issues there.':
-        "Consigui'l códigu fonte ya informa de problemes ehí.",
+    'Source code, report issues there.': "Consigui'l códigu fonte ya informa de problemes ehí.",
     'Use system theme': "Usar l'estilu del sistema",
     'Light': 'Claridá',
     'Popularity': 'Popularidá',
@@ -605,8 +571,7 @@ const crowdin = {
     'Using too many concurrent downloads on older/weaker devices might cause crashes!':
         "¡L'usu de munches descargues simultánees en preseos vieyos/poco potentes pue causar casques!",
     'Create .nomedia files': 'Crear ficheros .nomedia',
-    'To prevent gallery being filled with album art':
-        "Pa evitar que la galería s'enllene de portaes d'álbumes",
+    'To prevent gallery being filled with album art': "Pa evitar que la galería s'enllene de portaes d'álbumes",
     'Sleep timer': 'Temporizador',
     'Minutes:': 'Minutos:',
     'Hours:': 'Hores:',
@@ -616,13 +581,11 @@ const crowdin = {
     'Shuffle': 'Al debalu',
     'Library shuffle': 'Biblioteca al debalu',
     'Ignore interruptions': 'Inorar les interrupciones',
-    'Requires app restart to apply!':
-        "¡Rique'l reaniciu de l'aplicación p'aplicar los cambeos!",
+    'Requires app restart to apply!': "¡Rique'l reaniciu de l'aplicación p'aplicar los cambeos!",
     'Ask before downloading': 'Entruga enantes de baxar',
     'Search history': 'Historial de busques',
     'Clear search history': "Llimpiar l'historial de busques",
-    'Login to enable scrobbling.':
-        "Anicia sesión p'activar la sincronización de pistes.",
+    'Login to enable scrobbling.': "Anicia sesión p'activar la sincronización de pistes.",
     'Login to LastFM': 'Aniciu de sesión en LastFM',
     'Username': "Nome d'usuariu",
     'Password': 'Contraseña',
@@ -637,8 +600,7 @@ const crowdin = {
     'Current version: ': 'Versión actual: ',
     'Unsupported platform!': '¡La plataforma nun ta sofitada!',
     'ReFreezer Updates': 'Anovamientos de ReFreezer',
-    'Update to latest version in the settings.':
-        'Anueva a la última versión nos axustes.',
+    'Update to latest version in the settings.': 'Anueva a la última versión nos axustes.',
     'Release date': 'Data de llanzamientu',
     'Shows': 'Programes',
     'Browse': 'Restolar',
@@ -647,8 +609,7 @@ const crowdin = {
     'Share show': 'Compartir el programa',
     'Date added': "Data d'amiestu",
     'Official Discord server': 'Sirvidor de Discord oficial',
-    'Restart of app is required to properly log out!':
-        "¡Ríquese reaniciar l'aplicación aniciar sesión afayadizamente!",
+    'Restart of app is required to properly log out!': "¡Ríquese reaniciar l'aplicación aniciar sesión afayadizamente!",
     'Artist separator': "Separtador d'artistes",
     'Singleton naming': 'Nome pa pistes úniques',
     'Keep the screen on': 'Caltener la pantalla encesa',
@@ -691,8 +652,7 @@ const crowdin = {
         'Deezer nun ta disponible nel to país y ReFreezer pue nun funcionar afayadizamente. Usa una VPN',
     'Deezer is unavailable': 'Deezer nun ta disponible',
     'Email': 'Corréu electrónicu',
-    'Missing email or password!':
-        "¡Falta'l corréu electrónicu o la contraseña!",
+    'Missing email or password!': "¡Falta'l corréu electrónicu o la contraseña!",
     'Error logging in using email, please check your credentials.\nError:':
         "Hebo un fallu al aniciar sesión col corréu electrónicu, comprueba los datos d'accesu.\nFallu:",
     'Error logging in!': '¡Hebo un fallu al aniciar sesión!',
@@ -711,15 +671,13 @@ const crowdin = {
     'Please wait...': 'Espera…',
     'Track removed from offline!': '¡La pista quitóse del mou ensin conexón!',
     'Removed album from offline!': "¡L'álbum quitóse del mou ensin conexón!",
-    'Playlist removed from offline!':
-        '¡La llista quitóse del mou ensin conexón!'
+    'Playlist removed from offline!': '¡La llista quitóse del mou ensin conexón!'
   },
   'bul_bg': {
     'Home': 'Начало',
     'Search': 'Търсене',
     'Library': 'Библиотека',
-    "Offline mode, can't play flow or smart track lists.":
-        'В офлайн режим сте. Нямате достъп до безкраен микс.',
+    "Offline mode, can't play flow or smart track lists.": 'В офлайн режим сте. Нямате достъп до безкраен микс.',
     'Added to library': 'Добавено към библиотеката',
     'Download': 'Изтегляне',
     'Disk': 'Диск',
@@ -737,20 +695,17 @@ const crowdin = {
     'Post processing...': 'Обработка...',
     'Done': 'Готово',
     'Delete': 'Изтриване',
-    'Are you sure you want to delete this download?':
-        'Сигурни ли сте, че искате да изтриете тази изтеглен песен?',
+    'Are you sure you want to delete this download?': 'Сигурни ли сте, че искате да изтриете тази изтеглен песен?',
     'Cancel': 'Отмяна',
     'Downloads': 'Изтегляния',
     'Clear queue': 'Изчисти опашката',
-    "This won't delete currently downloading item":
-        'Това няма да изтрие теглещата се песен',
+    "This won't delete currently downloading item": 'Това няма да изтрие теглещата се песен',
     'Are you sure you want to delete all queued downloads?':
         'Сигурни ли сте, че искате да изтриете всички изтегляния в опашката?',
     'Clear downloads history': 'Изчистване на историята на изтеглянията',
     'WARNING: This will only clear non-offline (external downloads)':
         'ВНИМАНИЕ: Това единствено ще изчисти външните изтегляния',
-    'Please check your connection and try again later...':
-        'Моля, проверете връзката си и опитайте отново по-късно...',
+    'Please check your connection and try again later...': 'Моля, проверете връзката си и опитайте отново по-късно...',
     'Show more': 'Покажи повече',
     'Importer': 'Импортиране',
     'Currently supporting only Spotify, with 100 tracks limit':
@@ -783,8 +738,7 @@ const crowdin = {
     'Remove offline': 'Премахване от офлайн слушане',
     'Playlist removed from library!': 'Плейлистът е премахнат от библиотеката!',
     'Blur player background': 'Размиване на фона на плейъра',
-    'Might have impact on performance':
-        'Може да окаже влияние върху производителността',
+    'Might have impact on performance': 'Може да окаже влияние върху производителността',
     'Font': 'Шрифт',
     'Select font': 'Избор на шрифт',
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
@@ -846,8 +800,7 @@ const crowdin = {
     'Login using email': 'Влез с е-поща',
     'Track removed from offline!': 'Песента е премахната от офлайн слушане!',
     'Removed album from offline!': 'Албумът е премахнат от офлайн слушане!',
-    'Playlist removed from offline!':
-        'Плейлистът е премахнат от офлайн слушане!',
+    'Playlist removed from offline!': 'Плейлистът е премахнат от офлайн слушане!',
     'Repeat': 'Повторение',
     'Repeat one': 'Повторение на текущ запис',
     'Repeat off': 'Изключване на повторение',
@@ -895,24 +848,19 @@ const crowdin = {
     'Post processing...': 'Finální zpracování...',
     'Done': 'Hotovo',
     'Delete': 'Odstranit',
-    'Are you sure you want to delete this download?':
-        'Jste si jistý že chcete smazat stažené?',
+    'Are you sure you want to delete this download?': 'Jste si jistý že chcete smazat stažené?',
     'Cancel': 'Zrušit',
     'Downloads': 'Stažené',
     'Clear queue': 'Vymazat frontu',
-    "This won't delete currently downloading item":
-        'Tímto nebude odstraněna aktuálně stahovaná položka',
-    'Are you sure you want to delete all queued downloads?':
-        'Opravdu chcete smazat frontu stažených?',
+    "This won't delete currently downloading item": 'Tímto nebude odstraněna aktuálně stahovaná položka',
+    'Are you sure you want to delete all queued downloads?': 'Opravdu chcete smazat frontu stažených?',
     'Clear downloads history': 'Vymazat historii stahování',
     'WARNING: This will only clear non-offline (external downloads)':
         'VAROVÁNÍ: Vyčistí se pouze ne-offline (externě stažené)',
-    'Please check your connection and try again later...':
-        'Prosím zkontrolujte své připojení a zkuste to znovu',
+    'Please check your connection and try again later...': 'Prosím zkontrolujte své připojení a zkuste to znovu',
     'Show more': 'Zobrazit více',
     'Importer': 'Importované',
-    'Currently supporting only Spotify, with 100 tracks limit':
-        'Zatím podpora pouze Spotify s limitem 100 skladeb',
+    'Currently supporting only Spotify, with 100 tracks limit': 'Zatím podpora pouze Spotify s limitem 100 skladeb',
     'Due to API limitations': 'Kvůli omezením API',
     'Enter your playlist link below': 'Zadejte odkaz na playlist níže',
     'Error loading URL!': 'Chyba při načítání URL!',
@@ -936,15 +884,13 @@ const crowdin = {
     'Favorites': 'Oblíbené',
     'All offline tracks': 'Všechny offline skladby',
     'Create new playlist': 'Vytvořit nový playlist',
-    'Cannot create playlists in offline mode':
-        'Nelze vytvořit playlisty v offline režimu',
+    'Cannot create playlists in offline mode': 'Nelze vytvořit playlisty v offline režimu',
     'Error': 'Chyba',
     'Error logging in! Please check your token and internet connection and try again.':
         'Chyba při přihlášení! Zkontrolujte prosím svůj token a připojení k internetu a zkuste to znovu.',
     'Dismiss': 'Zamítnout',
     'Welcome to': 'Vítejte v',
-    'Please login using your Deezer account.':
-        'Přihlaste se prosím pomocí vašeho Deezer účtu.',
+    'Please login using your Deezer account.': 'Přihlaste se prosím pomocí vašeho Deezer účtu.',
     'Login using browser': 'Přihlásit se pomocí prohlížeče',
     'Login using token': 'Přihlásit se pomocí tokenu',
     'Enter ARL': 'Zadejte ARL',
@@ -1015,19 +961,16 @@ const crowdin = {
         'Odesílat záznamy o poslouchání do Deezeru, povolte aby funkce, jako je Flow fungovaly správně',
     'Offline mode': 'Offline režim',
     'Will be overwritten on start.': 'Při spuštění bude přepsáno.',
-    'Error logging in, check your internet connections.':
-        'Chyba při přihlášení, zkontrolujte připojení k internetu.',
+    'Error logging in, check your internet connections.': 'Chyba při přihlášení, zkontrolujte připojení k internetu.',
     'Logging in...': 'Přihlašování...',
     'Download path': 'Cesta ke stažení',
-    'Huge thanks to all the contributors! <3':
-        'Velký dík všem přispěvatelům! <3',
+    'Huge thanks to all the contributors! <3': 'Velký dík všem přispěvatelům! <3',
     'Edit playlist': 'Upravit playlist',
     'Update': 'Aktualizovat',
     'Playlist updated!': 'Playlist aktualizován!',
     'Download Log': 'Stáhnout log',
     'Repository': 'Repozitář',
-    'Source code, report issues there.':
-        'Zdrojový kód, tam nahlašujte problémy.',
+    'Source code, report issues there.': 'Zdrojový kód, tam nahlašujte problémy.',
     'Use system theme': 'Použít motiv systému',
     'Light': 'Světlý',
     'Popularity': 'Popularita',
@@ -1054,17 +997,14 @@ const crowdin = {
     'Post processing...': 'Nachbearbeitung...',
     'Done': 'Fertig',
     'Delete': 'Löschen',
-    'Are you sure you want to delete this download?':
-        'Bist du sicher, dass du diesen Download löschen willst?',
+    'Are you sure you want to delete this download?': 'Bist du sicher, dass du diesen Download löschen willst?',
     'Cancel': 'Abbrechen',
     'Clear queue': 'Warteschleife leeren',
-    "This won't delete currently downloading item":
-        'Dies löscht das derzeit heruntergeladene Element nicht',
+    "This won't delete currently downloading item": 'Dies löscht das derzeit heruntergeladene Element nicht',
     'Are you sure you want to delete all queued downloads?':
         'Bist du sicher, dass du alle Downloads aus der Warteschleife entfernen möchtest?',
     'Clear downloads history': 'Download-Verlauf löschen',
-    'WARNING: This will only clear non-offline (external downloads)':
-        'ACHTUNG: (Externe Downloads) werden entfernt',
+    'WARNING: This will only clear non-offline (external downloads)': 'ACHTUNG: (Externe Downloads) werden entfernt',
     'Please check your connection and try again later...':
         'Bitte überprüfe deine Verbindung und versuche es später noch einmal...',
     'Show more': 'Mehr anzeigen',
@@ -1093,15 +1033,13 @@ const crowdin = {
     'Favorites': 'Favoriten',
     'All offline tracks': 'Alle Offline-Titel',
     'Create new playlist': 'Neue Playlist erstellen',
-    'Cannot create playlists in offline mode':
-        'Playlists können im Offline-Modus nicht erstellt werden',
+    'Cannot create playlists in offline mode': 'Playlists können im Offline-Modus nicht erstellt werden',
     'Error': 'Fehler',
     'Error logging in! Please check your token and internet connection and try again.':
         'Fehler beim Einloggen! Bitte überprüfe dein Token und deine Internetverbindung und versuche es erneut.',
     'Dismiss': 'Verwerfen',
     'Welcome to': 'Willkommen bei',
-    'Please login using your Deezer account.':
-        'Bitte melde dich mit deinem Deezer-Konto an.',
+    'Please login using your Deezer account.': 'Bitte melde dich mit deinem Deezer-Konto an.',
     'Login using browser': 'Anmeldung über Browser',
     'Login using token': 'Anmeldung per Token',
     'Enter ARL': 'ARL eingeben',
@@ -1175,8 +1113,7 @@ const crowdin = {
         'Gehörte Titel-Protokolle an Deezer senden, damit Flow richtig funktioniert',
     'Offline mode': 'Offline-Modus',
     'Will be overwritten on start.': 'Wird beim Start überschrieben.',
-    'Error logging in, check your internet connections.':
-        'Fehler beim Anmelden, überprüfe deine Internetverbindung.',
+    'Error logging in, check your internet connections.': 'Fehler beim Anmelden, überprüfe deine Internetverbindung.',
     'Logging in...': 'Anmelden...',
     'Download path': 'Download-Pfad',
     'Downloads naming': 'Benennung der Downloads',
@@ -1187,8 +1124,7 @@ const crowdin = {
     'Create folders for artist': 'Ordner für Künstler erstellen',
     'Create folders for albums': 'Ordner für Alben erstellen',
     'Separate albums by discs': 'Alben nach Discs trennen',
-    'Overwrite already downloaded files':
-        'Bereits heruntergeladene Dateien überschreiben',
+    'Overwrite already downloaded files': 'Bereits heruntergeladene Dateien überschreiben',
     'Copy ARL': 'ARL kopieren',
     'Copy userToken/ARL Cookie for use in other apps.':
         'UserToken / ARL-Cookie zur Verwendung in anderen Anwendungen kopieren.',
@@ -1203,13 +1139,10 @@ const crowdin = {
     'Go up': 'Nach oben',
     'Permission denied': 'Zugriff verweigert',
     'Language': 'Sprache',
-    'Language changed, please restart ReFreezer to apply!':
-        'Sprache geändert, bitte ReFreezer neu starten!',
+    'Language changed, please restart ReFreezer to apply!': 'Sprache geändert, bitte ReFreezer neu starten!',
     'Importing...': 'Importiere...',
-    'Track is not available on Deezer!':
-        'Titel ist bei Deezer nicht verfügbar!',
-    'Failed to download track! Please restart.':
-        'Download des Tracks fehlgeschlagen! Bitte neustarten.',
+    'Track is not available on Deezer!': 'Titel ist bei Deezer nicht verfügbar!',
+    'Failed to download track! Please restart.': 'Download des Tracks fehlgeschlagen! Bitte neustarten.',
     'Storage permission denied!': 'Speicherzugriff verweigert!',
     'Failed': 'Fehlgeschlagen',
     'Queued': 'In der Warteschleife',
@@ -1223,15 +1156,13 @@ const crowdin = {
     'Search or paste URL': 'Suchen oder URL einfügen',
     'History': 'Verlauf',
     'Download threads': 'Gleichzeitige Downloads',
-    'Lyrics unavailable, empty or failed to load!':
-        'Lyrics nicht verfügbar, leer oder laden fehlgeschlagen!',
+    'Lyrics unavailable, empty or failed to load!': 'Lyrics nicht verfügbar, leer oder laden fehlgeschlagen!',
     'About': 'Über',
     'Telegram Channel': 'Telegram-Kanal',
     'To get latest releases': 'Um die neuesten Versionen zu erhalten',
     'Official chat': 'Offizieller Chat',
     'Telegram Group': 'Telegram-Gruppe',
-    'Huge thanks to all the contributors! <3':
-        'Großer Dank an alle Mitwirkenden! <3',
+    'Huge thanks to all the contributors! <3': 'Großer Dank an alle Mitwirkenden! <3',
     'Edit playlist': 'Playlist bearbeiten',
     'Playlist updated!': 'Playlist aktualisiert!',
     'Downloads added!': 'Downloads hinzugefügt!',
@@ -1252,8 +1183,7 @@ const crowdin = {
     'Using too many concurrent downloads on older/weaker devices might cause crashes!':
         'Zu viele gleichzeitige Downloads auf älteren oder schwächeren Geräten können zu Abstürzen führen!',
     'Create .nomedia files': '.nomedia Dateien erstellen',
-    'To prevent gallery being filled with album art':
-        'Um zu verhindern, dass die Galerie mit Albumcovern gefüllt wird',
+    'To prevent gallery being filled with album art': 'Um zu verhindern, dass die Galerie mit Albumcovern gefüllt wird',
     'Sleep timer': 'Schlummerfunktion',
     'Minutes:': 'Minuten:',
     'Hours:': 'Stunden:',
@@ -1279,8 +1209,7 @@ const crowdin = {
     'New update available!': 'Neues Update verfügbar!',
     'Current version: ': 'Aktuelle Version: ',
     'Unsupported platform!': 'Nicht unterstütztes Betriebssystem!',
-    'Update to latest version in the settings.':
-        'Auf die neueste Version in den Einstellungen aktualisieren.',
+    'Update to latest version in the settings.': 'Auf die neueste Version in den Einstellungen aktualisieren.',
     'Release date': 'Veröffentlichungsdatum',
     'Browse': 'Durchsuchen',
     'Quick access': 'Schnellzugriff',
@@ -1288,8 +1217,7 @@ const crowdin = {
     'Share show': 'Show teilen',
     'Date added': 'Datum hinzugefügt',
     'Official Discord server': 'Offizieller Discord-Server',
-    'Restart of app is required to properly log out!':
-        'Neustart der App ist erforderlich, um sich richtig abzumelden!',
+    'Restart of app is required to properly log out!': 'Neustart der App ist erforderlich, um sich richtig abzumelden!',
     'Artist separator': 'Künstler-Trennzeichen',
     'Singleton naming': 'Singleton-Namen',
     'Keep the screen on': 'Bildschirm eingeschaltet lassen',
@@ -1305,8 +1233,7 @@ const crowdin = {
     'Remove offline': 'Offline entfernen',
     'Playlist removed from library!': 'Playlist aus der Mediathek entfernt!',
     'Blur player background': 'Unscharfer Player-Hintergrund',
-    'Might have impact on performance':
-        'Könnte Einfluss auf die Performance haben',
+    'Might have impact on performance': 'Könnte Einfluss auf die Performance haben',
     'Font': 'Schriftart',
     'Select font': 'Schriftart auswählen',
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
@@ -1408,27 +1335,23 @@ const crowdin = {
     'Post processing...': 'Μετεπεξεργασία...',
     'Done': 'Ολοκληρώθηκε',
     'Delete': 'Διαγραφή',
-    'Are you sure you want to delete this download?':
-        'Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτήν τη λήψη;',
+    'Are you sure you want to delete this download?': 'Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτήν τη λήψη;',
     'Cancel': 'Άκυρο',
     'Downloads': 'Λήψεις',
     'Clear queue': 'Εκκαθάριση ουράς',
-    "This won't delete currently downloading item":
-        'Αυτό δεν θα διαγράψει το τρέχον αντικείμενο λήψης',
+    "This won't delete currently downloading item": 'Αυτό δεν θα διαγράψει το τρέχον αντικείμενο λήψης',
     'Are you sure you want to delete all queued downloads?':
         'Είστε βέβαιοι ότι θέλετε να διαγράψετε όλες τις λήψεις στην ουρά;',
     'Clear downloads history': 'Διαγραφή ιστορικού λήψεων',
     'WARNING: This will only clear non-offline (external downloads)':
         'ΠΡΟΕΙΔΟΠΟΙΗΣΗ: Αυτό θα καθαρίσει μόνο τις εκτός σύνδεσης (εξωτερικές) λήψεις',
-    'Please check your connection and try again later...':
-        'Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά αργότερα...',
+    'Please check your connection and try again later...': 'Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά αργότερα...',
     'Show more': 'Δείτε περισσότερα',
     'Importer': 'Εισαγωγέας',
     'Currently supporting only Spotify, with 100 tracks limit':
         'Αυτήν τη στιγμή υποστηρίζεται μόνο το Spotify, με όριο 100 κομματιών',
     'Due to API limitations': 'Λόγω περιορισμών API',
-    'Enter your playlist link below':
-        'Εισαγάγετε τον σύνδεσμο λίστας αναπαραγωγής παρακάτω',
+    'Enter your playlist link below': 'Εισαγάγετε τον σύνδεσμο λίστας αναπαραγωγής παρακάτω',
     'Error loading URL!': 'Σφάλμα φόρτωσης διεύθυνσης URL!',
     'Convert': 'Μετατροπή',
     'Download only': 'Μόνο λήψη',
@@ -1439,8 +1362,7 @@ const crowdin = {
     'Artists': 'Καλλιτέχνες',
     'Playlists': 'Λίστες αναπαραγωγής',
     'Import': 'Εισαγωγή',
-    'Import playlists from Spotify':
-        'Εισαγωγή λιστών αναπαραγωγής από το Spotify',
+    'Import playlists from Spotify': 'Εισαγωγή λιστών αναπαραγωγής από το Spotify',
     'Statistics': 'Στατιστικά',
     'Offline tracks': 'Κομμάτια εκτός σύνδεσης',
     'Offline albums': 'Άλμπουμ εκτός σύνδεσης',
@@ -1458,8 +1380,7 @@ const crowdin = {
         'Σφάλμα σύνδεσης! Ελέγξτε το token και τη σύνδεσή σας στο δίκτυο και δοκιμάστε ξανά.',
     'Dismiss': 'Απόρριψη',
     'Welcome to': 'Καλωσήρθατε στο',
-    'Please login using your Deezer account.':
-        'Συνδεθείτε χρησιμοποιώντας τον λογαριασμό σας στο Deezer.',
+    'Please login using your Deezer account.': 'Συνδεθείτε χρησιμοποιώντας τον λογαριασμό σας στο Deezer.',
     'Login using browser': 'Σύνδεση χρησιμοποιώντας το πρόγραμμα περιήγησης',
     'Login using token': 'Σύνδεση χρησιμοποιώντας token',
     'Enter ARL': 'Εισαγωγή ARL',
@@ -1485,8 +1406,7 @@ const crowdin = {
     'Remove album': 'Κατάργηση άλμπουμ',
     'Album removed': 'Το άλμπουμ καταργήθηκε',
     'Remove from favorites': 'Κατάργηση από τα αγαπημένα',
-    'Artist removed from library':
-        'Ο καλλιτέχνης καταργήθηκε από τη βιβλιοθήκη',
+    'Artist removed from library': 'Ο καλλιτέχνης καταργήθηκε από τη βιβλιοθήκη',
     'Add to favorites': 'Προσθήκη στα αγαπημένα',
     'Remove from library': 'Κατάργηση από τη βιβλιοθήκη',
     'Add playlist to library': 'Προσθήκη λίστας αναπαραγωγής στη βιβλιοθήκη',
@@ -1519,26 +1439,22 @@ const crowdin = {
     'Deezer (Dark)': 'Deezer (Σκούρο)',
     'Primary color': 'Πρωτεύον χρώμα',
     'Selected color': 'Επιλεγμένο χρώμα',
-    'Use album art primary color':
-        'Χρησιμοποιήστε το πρωτεύον χρώμα του εξώφυλλου του άλμπουμ',
+    'Use album art primary color': 'Χρησιμοποιήστε το πρωτεύον χρώμα του εξώφυλλου του άλμπουμ',
     'Warning: might be buggy': 'Προειδοποίηση: μπορεί να μη λειτουργεί σωστά',
     'Mobile streaming': 'Ροή μέσω δεδομένων κινητού δικτύου',
     'Wifi streaming': 'Ροή μέσω WIFI',
     'External downloads': 'Εξωτερικές λήψεις',
     'Content language': 'Γλώσσα περιεχομένου',
-    'Not app language, used in headers. Now':
-        'Όχι γλώσσα εφαρμογής, χρησιμοποιείται στις κεφαλίδες. Τρέχουσα',
+    'Not app language, used in headers. Now': 'Όχι γλώσσα εφαρμογής, χρησιμοποιείται στις κεφαλίδες. Τρέχουσα',
     'Select language': 'Επιλογή γλώσσας',
     'Content country': 'Χώρα περιεχομένου',
-    'Country used in headers. Now':
-        'Χώρα που χρησιμοποιείται στις κεφαλίδες. Τρέχουσα',
+    'Country used in headers. Now': 'Χώρα που χρησιμοποιείται στις κεφαλίδες. Τρέχουσα',
     'Log tracks': 'Αρχεία καταγραφής',
     'Send track listen logs to Deezer, enable it for features like Flow to work properly':
         'Αποστολή αρχείων καταγραφής ακρόασης στο Deezer, ενεργοποιήστε το για ορθή λειτουργία υπηρεσιών όπως το Flow',
     'Offline mode': 'Λειτουργία εκτός σύνδεσης',
     'Will be overwritten on start.': 'Θα αντικατασταθεί κατά την εκκίνηση.',
-    'Error logging in, check your internet connections.':
-        'Σφάλμα σύνδεσης, ελέγξτε την σύνδεσή σας στο Δίκτυο.',
+    'Error logging in, check your internet connections.': 'Σφάλμα σύνδεσης, ελέγξτε την σύνδεσή σας στο Δίκτυο.',
     'Logging in...': 'Σύνδεση...',
     'Download path': 'Διαδρομή λήψεων',
     'Downloads naming': 'Ονομασία λήψεων',
@@ -1551,8 +1467,7 @@ const crowdin = {
     'Separate albums by discs': 'Διαχωρισμός άλμπουμ σε δίσκους',
     'Overwrite already downloaded files': 'Αντικατάσταση ήδη ληφθέντων αρχείων',
     'Copy ARL': 'Αντιγραφή ARL',
-    'Copy userToken/ARL Cookie for use in other apps.':
-        'Αντιγραφή userToken/ARL Cookie για χρήση σε άλλες εφαρμογές.',
+    'Copy userToken/ARL Cookie for use in other apps.': 'Αντιγραφή userToken/ARL Cookie για χρήση σε άλλες εφαρμογές.',
     'Copied': 'Αντιγράφηκε',
     'Log out': 'Αποσύνδεση',
     'Due to plugin incompatibility, login using browser is unavailable without restart.':
@@ -1568,10 +1483,8 @@ const crowdin = {
         'Η γλώσσα άλλαξε, κάντε επανεκκίνηση του ReFreezer για εφαρμογή!',
     'Importing...': 'Εισαγωγή...',
     'Radio': 'Ραδιόφωνο',
-    'Track is not available on Deezer!':
-        'Το κομμάτι δεν είναι διαθέσιμο στο Deezer!',
-    'Failed to download track! Please restart.':
-        'Αποτυχία λήψης κομματιού! Κάντε επανεκκίνηση. ',
+    'Track is not available on Deezer!': 'Το κομμάτι δεν είναι διαθέσιμο στο Deezer!',
+    'Failed to download track! Please restart.': 'Αποτυχία λήψης κομματιού! Κάντε επανεκκίνηση. ',
     'Storage permission denied!': 'Η άδεια χώρου αποθήκευσης απορρίφθηκε!',
     'Failed': 'Απέτυχαν',
     'Queued': 'Σε ουρά',
@@ -1586,15 +1499,13 @@ const crowdin = {
     'Search or paste URL': 'Αναζήτηση ή επικόλληση διεύθυνσης URL',
     'History': 'Ιστορικό',
     'Download threads': 'Ταυτόχρονες λήψεις',
-    'Lyrics unavailable, empty or failed to load!':
-        'Οι στίχοι δεν είναι διαθέσιμοι, είναι άδειοι ή δεν φορτώθηκαν!',
+    'Lyrics unavailable, empty or failed to load!': 'Οι στίχοι δεν είναι διαθέσιμοι, είναι άδειοι ή δεν φορτώθηκαν!',
     'About': 'Σχετικά',
     'Telegram Channel': 'Κανάλι Telegram ',
     'To get latest releases': 'Για να λάβετε τις τελευταίες κυκλοφορίες',
     'Official chat': 'Επίσημη συνομιλία',
     'Telegram Group': 'Ομάδα Telegram',
-    'Huge thanks to all the contributors! <3':
-        'Πολλά ευχαριστώ σε όλους τους συνεισφέροντες! <3',
+    'Huge thanks to all the contributors! <3': 'Πολλά ευχαριστώ σε όλους τους συνεισφέροντες! <3',
     'Edit playlist': 'Επεξεργασία λίστας αναπαραγωγής',
     'Update': 'Ενημέρωση',
     'Playlist updated!': 'Η λίστα αναπαραγωγής ενημερώθηκε!',
@@ -1602,8 +1513,7 @@ const crowdin = {
     'Save cover file for every track': 'Αποθήκευση εξώφυλλου για κάθε κομμάτι',
     'Download Log': 'Αρχείο καταγραφής λήψεων',
     'Repository': 'Αποθετήριο',
-    'Source code, report issues there.':
-        'Πηγαίος κώδικας, αναφέρετε ζητήματα εκεί.',
+    'Source code, report issues there.': 'Πηγαίος κώδικας, αναφέρετε ζητήματα εκεί.',
     'Use system theme': 'Χρησιμοποίηση θέματος συστήματος',
     'Light': 'Φωτεινο',
     'Popularity': 'Δημοτικότητα',
@@ -1617,8 +1527,7 @@ const crowdin = {
     'Using too many concurrent downloads on older/weaker devices might cause crashes!':
         'Η χρήση πολλών ταυτόχρονων λήψεων σε παλαιότερες/ασθενέστερες συσκευές ενδέχεται να προκαλέσει σφάλματα!',
     'Create .nomedia files': 'Δημιουργία αρχείων .nomedia',
-    'To prevent gallery being filled with album art':
-        'Για την αποφυγή εμφάνισης εξώφυλλων άλμπουμ στις εικόνες',
+    'To prevent gallery being filled with album art': 'Για την αποφυγή εμφάνισης εξώφυλλων άλμπουμ στις εικόνες',
     'Sleep timer': 'Χρονοδιακόπτης ύπνου',
     'Minutes:': 'Λεπτά:',
     'Hours:': 'Ώρες:',
@@ -1628,13 +1537,11 @@ const crowdin = {
     'Shuffle': 'Ανάμιξη',
     'Library shuffle': 'Ανάμιξη βιβλιοθήκης',
     'Ignore interruptions': 'Αγνόηση παρεμβάσεων',
-    'Requires app restart to apply!':
-        'Απαιτείται επανεκκίνηση για την εφαρμογή!',
+    'Requires app restart to apply!': 'Απαιτείται επανεκκίνηση για την εφαρμογή!',
     'Ask before downloading': 'Ερώτηση πριν από τη λήψη',
     'Search history': 'Ιστορικό αναζήτησης',
     'Clear search history': 'Εκκαθάριση ιστορικού αναζήτησης',
-    'Login to enable scrobbling.':
-        'Συνδεθείτε για ενεργοποίηση του scrobbling.',
+    'Login to enable scrobbling.': 'Συνδεθείτε για ενεργοποίηση του scrobbling.',
     'Login to LastFM': 'Σύνδεση σε LastFM',
     'Username': 'Όνομα χρήστη',
     'Password': 'Κωδικός',
@@ -1644,14 +1551,12 @@ const crowdin = {
     'Lyrics': 'Στίχοι',
     'Player gradient background': 'Βαθμιαία κλίση χρώματος φόντου αναπαραγωγής',
     'Updates': 'Ενημερώσεις',
-    'You are running latest version!':
-        'Χρησιμοποιείτε την πιο πρόσφατη έκδοση!',
+    'You are running latest version!': 'Χρησιμοποιείτε την πιο πρόσφατη έκδοση!',
     'New update available!': 'Υπάρχει διαθέσιμη νέα ενημέρωση!',
     'Current version: ': 'Τρέχουσα έκδοση: ',
     'Unsupported platform!': 'Μη υποστηριζόμενη πλατφόρμα!',
     'ReFreezer Updates': 'Ενημερώσεις του ReFreezer',
-    'Update to latest version in the settings.':
-        'Ενημέρωση στην πιο πρόσφατη έκδοση από τις ρυθμίσεις.',
+    'Update to latest version in the settings.': 'Ενημέρωση στην πιο πρόσφατη έκδοση από τις ρυθμίσεις.',
     'Release date': 'Ημερομηνία κυκλοφορίας',
     'Shows': 'Show',
     'Charts': 'Ακούγονται πολύ',
@@ -1661,8 +1566,7 @@ const crowdin = {
     'Share show': 'Κοινοποίηση show',
     'Date added': 'Ημερομηνία προσθήκης',
     'Official Discord server': 'Επίσημος server Discord',
-    'Restart of app is required to properly log out!':
-        'Απαιτείται επανεκκίνηση της εφαρμογής για σωστή αποσύνδεση!',
+    'Restart of app is required to properly log out!': 'Απαιτείται επανεκκίνηση της εφαρμογής για σωστή αποσύνδεση!',
     'Artist separator': 'Διαχωριστής καλλιτέχνη',
     'Singleton naming': 'Ονομασία αυτόνομων κομματιών',
     'Keep the screen on': 'Η οθόνη να παραμένει ενεργή',
@@ -1676,8 +1580,7 @@ const crowdin = {
         'ΠΡΟΕΙΔΟΠΟΙΗΣΗ: Δεν υποστηρίζονται επίσημα αναλύσεις άνω των 1200',
     'Album removed from library!': 'Το άλμπουμ καταργήθηκε από τη βιβλιοθήκη!',
     'Remove offline': 'Αφαίρεση εκτός σύνδεσης',
-    'Playlist removed from library!':
-        'Η λίστα αναπαραγωγής καταργήθηκε από τη βιβλιοθήκη!',
+    'Playlist removed from library!': 'Η λίστα αναπαραγωγής καταργήθηκε από τη βιβλιοθήκη!',
     'Blur player background': 'Σκούρο υποβάθρου αναπαραγωγέα',
     'Might have impact on performance': 'Μπορεί να έχει αντίκτυπο στην απόδοση',
     'Font': 'Γραμματοσειρά',
@@ -1790,27 +1693,23 @@ const crowdin = {
     'Post processing...': 'Post procesando...',
     'Done': 'Hecho',
     'Delete': 'Eliminar',
-    'Are you sure you want to delete this download?':
-        '¿Estás seguro de que quieres borrar esta descarga?',
+    'Are you sure you want to delete this download?': '¿Estás seguro de que quieres borrar esta descarga?',
     'Cancel': 'Cancelar',
     'Downloads': 'Descargas',
     'Clear queue': 'Limpiar la cola',
-    "This won't delete currently downloading item":
-        'Esto no eliminará el elemento que se está descargando actualmente',
+    "This won't delete currently downloading item": 'Esto no eliminará el elemento que se está descargando actualmente',
     'Are you sure you want to delete all queued downloads?':
         '¿Estás seguro que quieres eliminar todas las descargas en cola?',
     'Clear downloads history': 'Eliminar el historial de descargas',
     'WARNING: This will only clear non-offline (external downloads)':
         'ADVERTENCIA: Esto sólo borrará las descargas que no están en modo sin conexión (descargas externas).',
-    'Please check your connection and try again later...':
-        'Por favor compruebe su conexión e intente más tarde...',
+    'Please check your connection and try again later...': 'Por favor compruebe su conexión e intente más tarde...',
     'Show more': 'Mostrar más',
     'Importer': 'Importador',
     'Currently supporting only Spotify, with 100 tracks limit':
         'Actualmente sólo se admite Spotify con un límite de 100 canciones',
     'Due to API limitations': 'Debido a limitaciones de la API',
-    'Enter your playlist link below':
-        'Ingrese el enlace de su lista de reproducción a continuación',
+    'Enter your playlist link below': 'Ingrese el enlace de su lista de reproducción a continuación',
     'Error loading URL!': '¡Error al cargar la URL!',
     'Convert': 'Convertir',
     'Download only': 'Solo descargar',
@@ -1821,8 +1720,7 @@ const crowdin = {
     'Artists': 'Artistas',
     'Playlists': 'Listas de reproducción',
     'Import': 'Importar',
-    'Import playlists from Spotify':
-        'Importar listas de reproducción de Spotify',
+    'Import playlists from Spotify': 'Importar listas de reproducción de Spotify',
     'Statistics': 'Estadísticas',
     'Offline tracks': 'Canciones sin conexión',
     'Offline albums': 'Álbumes sin conexión',
@@ -1833,14 +1731,12 @@ const crowdin = {
     'Favorites': 'Favoritos',
     'All offline tracks': 'Todas las canciones sin conexión',
     'Create new playlist': 'Crear nueva lista de reproducción',
-    'Cannot create playlists in offline mode':
-        'No se pueden crear listas de reproducción en el modo sin conexión',
+    'Cannot create playlists in offline mode': 'No se pueden crear listas de reproducción en el modo sin conexión',
     'Error logging in! Please check your token and internet connection and try again.':
         '¡Error al iniciar la sesión! Por favor, compruebe su token y su conexión a Internet e inténtelo de nuevo.',
     'Dismiss': 'Descartar',
     'Welcome to': 'Bienvenido a',
-    'Please login using your Deezer account.':
-        'Por favor, inicie sesión con su cuenta de Deezer.',
+    'Please login using your Deezer account.': 'Por favor, inicie sesión con su cuenta de Deezer.',
     'Login using browser': 'Ingresar usando el navegador',
     'Login using token': 'Ingresar usando token',
     'Enter ARL': 'Ingrese ARL',
@@ -1870,8 +1766,7 @@ const crowdin = {
     'Add to favorites': 'Agregar a favoritos',
     'Remove from library': 'Eliminar de la biblioteca',
     'Add playlist to library': 'Agregar lista de reproducción a la biblioteca',
-    'Added playlist to library':
-        'Lista de reproducción agregada a la biblioteca',
+    'Added playlist to library': 'Lista de reproducción agregada a la biblioteca',
     'Make playlist offline': 'Hacer lista de reproducción sin conexión',
     'Download playlist': 'Descargar lista de reproducción',
     'Create playlist': 'Crear lista de reproducción',
@@ -1899,15 +1794,13 @@ const crowdin = {
     'Deezer (Dark)': 'Deezer (Oscuro)',
     'Primary color': 'Color primario',
     'Selected color': 'Color seleccionado',
-    'Use album art primary color':
-        'Usar el color primario de la carátula del álbum',
+    'Use album art primary color': 'Usar el color primario de la carátula del álbum',
     'Warning: might be buggy': 'Advertencia: podría tener errores',
     'Mobile streaming': 'Transmisión móvil',
     'Wifi streaming': 'Transmisión WiFi',
     'External downloads': 'Descargas externas',
     'Content language': 'Lenguaje del contenido',
-    'Not app language, used in headers. Now':
-        'No es un lenguaje de la aplicación, se usa en los encabezados. Ahora',
+    'Not app language, used in headers. Now': 'No es un lenguaje de la aplicación, se usa en los encabezados. Ahora',
     'Select language': 'Seleccione el idioma',
     'Content country': 'País del contenido',
     'Country used in headers. Now': 'País utilizado en los encabezados. Ahora',
@@ -1916,21 +1809,18 @@ const crowdin = {
         'Envía los registros de escucha de las canciones a Deezer, habilítalo para que funciones como Flow funcionen correctamente',
     'Offline mode': 'Modo sin conexión',
     'Will be overwritten on start.': 'Se sobrescribirá al inicio.',
-    'Error logging in, check your internet connections.':
-        'Error al iniciar sesión, verifique su conexión a internet.',
+    'Error logging in, check your internet connections.': 'Error al iniciar sesión, verifique su conexión a internet.',
     'Logging in...': 'Ingresando...',
     'Download path': 'Ruta de las descargas',
     'Downloads naming': 'Nombramiento de las descargas',
-    'Downloaded tracks filename':
-        'Nombre de archivo de las canciones descargadas',
+    'Downloaded tracks filename': 'Nombre de archivo de las canciones descargadas',
     'Valid variables are': 'Las variables válidas son',
     'Reset': 'Reiniciar',
     'Clear': 'Limpiar',
     'Create folders for artist': 'Crear carpetas por artista',
     'Create folders for albums': 'Crear carpetas por álbumes',
     'Separate albums by discs': 'Separar los álbumes por discos',
-    'Overwrite already downloaded files':
-        'Sobrescribir los archivos ya descargados',
+    'Overwrite already downloaded files': 'Sobrescribir los archivos ya descargados',
     'Copy ARL': 'Copiar ARL',
     'Copy userToken/ARL Cookie for use in other apps.':
         'Copia el Token de usuario/Cookie ARL para su uso en otras aplicaciones.',
@@ -1948,10 +1838,8 @@ const crowdin = {
     'Language changed, please restart ReFreezer to apply!':
         '¡El idioma se cambió, por favor reinicie ReFreezer para aplicarlo!',
     'Importing...': 'Importando...',
-    'Track is not available on Deezer!':
-        '¡La canción no está disponible en Deezer!',
-    'Failed to download track! Please restart.':
-        '¡Error al descargar la canción! Por favor, reintente.',
+    'Track is not available on Deezer!': '¡La canción no está disponible en Deezer!',
+    'Failed to download track! Please restart.': '¡Error al descargar la canción! Por favor, reintente.',
     'Storage permission denied!': 'Permiso de almacenamiento denegado!',
     'Failed': 'Fallido',
     'Queued': 'Puesto en cola',
@@ -1965,25 +1853,21 @@ const crowdin = {
     'Search or paste URL': 'Buscar o pegar URL',
     'History': 'Historial',
     'Download threads': 'Descargas simultáneas',
-    'Lyrics unavailable, empty or failed to load!':
-        'Letras no disponibles, vacías o no se pudieron cargar!',
+    'Lyrics unavailable, empty or failed to load!': 'Letras no disponibles, vacías o no se pudieron cargar!',
     'About': 'Acerca de',
     'Telegram Channel': 'Canal de Telegram',
     'To get latest releases': 'Para obtener los últimos lanzamientos',
     'Official chat': 'Chat oficial',
     'Telegram Group': 'Grupo de Telegram',
-    'Huge thanks to all the contributors! <3':
-        '¡Muchas gracias a todos los colaboradores! <3',
+    'Huge thanks to all the contributors! <3': '¡Muchas gracias a todos los colaboradores! <3',
     'Edit playlist': 'Editar lista de reproducción',
     'Update': 'Actualizar',
     'Playlist updated!': 'Lista de reproducción actualizada!',
     'Downloads added!': 'Descargas agregadas!',
-    'Save cover file for every track':
-        'Guardar archivo de portada para cada canción',
+    'Save cover file for every track': 'Guardar archivo de portada para cada canción',
     'Download Log': 'Registro de Descarga',
     'Repository': 'Repositorio',
-    'Source code, report issues there.':
-        'Código fuente, reporten problemas allí.',
+    'Source code, report issues there.': 'Código fuente, reporten problemas allí.',
     'Use system theme': 'Usar tema del sistema',
     'Light': 'Claro',
     'Popularity': 'Popularidad',
@@ -1997,8 +1881,7 @@ const crowdin = {
     'Using too many concurrent downloads on older/weaker devices might cause crashes!':
         '¡Usar demasiadas descargas simultáneas en dispositivos antiguos podría causar fallos!',
     'Create .nomedia files': 'Crear archivos .nomedia',
-    'To prevent gallery being filled with album art':
-        'Para prevenir que la galería se llene con arte del album',
+    'To prevent gallery being filled with album art': 'Para prevenir que la galería se llene con arte del album',
     'Sleep timer': 'Temporizador de apagado',
     'Minutes:': 'Minutos:',
     'Hours:': 'Horas:',
@@ -2027,8 +1910,7 @@ const crowdin = {
     'Current version: ': 'Versión actual: ',
     'Unsupported platform!': '¡Plataforma no soportada!',
     'ReFreezer Updates': 'Actualizaciones de ReFreezer',
-    'Update to latest version in the settings.':
-        'Actualiza a la última versión en la configuración.',
+    'Update to latest version in the settings.': 'Actualiza a la última versión en la configuración.',
     'Release date': 'Fecha de lanzamiento',
     'Charts': 'Tablas',
     'Browse': 'Buscar',
@@ -2037,8 +1919,7 @@ const crowdin = {
     'Share show': 'Compartir show',
     'Date added': 'Fecha de adición',
     'Official Discord server': 'Servidor oficial de Discord',
-    'Restart of app is required to properly log out!':
-        '¡Reiniciar es necesario para cerrar la sesión correctamente!',
+    'Restart of app is required to properly log out!': '¡Reiniciar es necesario para cerrar la sesión correctamente!',
     'Artist separator': 'Separador de artista',
     'Singleton naming': 'Nombre del singleton',
     'Keep the screen on': 'Mantener la pantalla encendida',
@@ -2052,8 +1933,7 @@ const crowdin = {
         'ATENCIÓN: Resoluciones superiores a 1200 no están soportadas oficialmente',
     'Album removed from library!': '¡Álbum eliminado de la biblioteca!',
     'Remove offline': 'Eliminar sin conexión',
-    'Playlist removed from library!':
-        '¡Lista de reproducción eliminada de la biblioteca!',
+    'Playlist removed from library!': '¡Lista de reproducción eliminada de la biblioteca!',
     'Blur player background': 'Desenfocar el fondo del reproductor',
     'Might have impact on performance': 'Puede tener impacto en el rendimiento',
     'Font': 'Fuente',
@@ -2116,8 +1996,7 @@ const crowdin = {
     'Login using email': 'Iniciar sesión con email',
     'Track removed from offline!': '¡Canción eliminada sin conexión!',
     'Removed album from offline!': '¡Álbum eliminado sin conexión!',
-    'Playlist removed from offline!':
-        '¡Lista de reproducción eliminada sin conexión!',
+    'Playlist removed from offline!': '¡Lista de reproducción eliminada sin conexión!',
     'Repeat': 'Repetir',
     'Repeat one': 'Repetir una vez',
     'Repeat off': 'No repetir',
@@ -2167,20 +2046,17 @@ const crowdin = {
     'Post processing...': 'پردازش نهایی',
     'Done': 'تکمیل شده',
     'Delete': 'حذف',
-    'Are you sure you want to delete this download?':
-        'مطمئن هستید که می‌خواهید این بارگیری حذف شود؟',
+    'Are you sure you want to delete this download?': 'مطمئن هستید که می‌خواهید این بارگیری حذف شود؟',
     'Cancel': 'بیخیال',
     'Downloads': 'بارگیری ها',
     'Clear queue': 'تخلیه صف انتظار',
-    "This won't delete currently downloading item":
-        'این کار بارگیری در حال انجام را حذف نمیکند',
+    "This won't delete currently downloading item": 'این کار بارگیری در حال انجام را حذف نمیکند',
     'Are you sure you want to delete all queued downloads?':
         'مطمئن هستید که می خواهید تمام بارگیری های در صف انتظار را حذف کنید؟',
     'Clear downloads history': 'پاک کردن تاریخچه بارگیری',
     'WARNING: This will only clear non-offline (external downloads)':
         'اخطار: این فقط فایل های دانلود شده در خارج از برنامه را حذف خواهد کرد',
-    'Please check your connection and try again later...':
-        'از وصل بودن به اینترنت مطمئن باشید و دوباره امتحان کنید',
+    'Please check your connection and try again later...': 'از وصل بودن به اینترنت مطمئن باشید و دوباره امتحان کنید',
     'Show more': 'بیشتر نشان بده',
     'Importer': 'وارد کننده',
     'Currently supporting only Spotify, with 100 tracks limit':
@@ -2208,15 +2084,13 @@ const crowdin = {
     'Favorites': 'مورد پسند ها',
     'All offline tracks': 'همه ی قطعه های آفلاین',
     'Create new playlist': 'ایجاد لیست پخش جدید',
-    'Cannot create playlists in offline mode':
-        'در حالت آفلاین نمی‌توان لیست پخش ایجاد کرد',
+    'Cannot create playlists in offline mode': 'در حالت آفلاین نمی‌توان لیست پخش ایجاد کرد',
     'Error': 'خطا',
     'Error logging in! Please check your token and internet connection and try again.':
         'خطا در ورود! لطفاً توکن و اتصال اینترنت خود را بررسی کنید و دوباره امتحان کنید',
     'Dismiss': 'بستن',
     'Welcome to': 'خوش آمدید',
-    'Please login using your Deezer account.':
-        'لطفاً با حساب کاربری دیزر خود وارد شوید',
+    'Please login using your Deezer account.': 'لطفاً با حساب کاربری دیزر خود وارد شوید',
     'Login using browser': 'وارد شدن توسط مرورگر',
     'Login using token': 'وارد شدن توسط توکن',
     'Enter ARL': 'ARL وارد کردن',
@@ -2283,8 +2157,7 @@ const crowdin = {
     'Wifi streaming': 'استفاده از وای فای',
     'External downloads': 'بارگیری های خارجی',
     'Content language': 'زبان محتوی',
-    'Not app language, used in headers. Now':
-        'زبان مورد استفاده در سرساز، نه برنامه‌. فعلی ',
+    'Not app language, used in headers. Now': 'زبان مورد استفاده در سرساز، نه برنامه‌. فعلی ',
     'Select language': 'زبان مورد نظر',
     'Content country': 'کشور محتوی',
     'Country used in headers. Now': 'کشور مورد استفاده در سرساز. فعلی ',
@@ -2293,8 +2166,7 @@ const crowdin = {
         'ارسال گوش داده های ثبت شده به دیزر امکاناتی مثل جریان پخش را فراهم می‌سازد ',
     'Offline mode': 'حالت آفلاین',
     'Will be overwritten on start.': 'هنگام شروع بر روی قبلی ذخیره خواهد شد',
-    'Error logging in, check your internet connections.':
-        'خطا در وارد شدن، اتصال اینترنت خود را بررسی کنید',
+    'Error logging in, check your internet connections.': 'خطا در وارد شدن، اتصال اینترنت خود را بررسی کنید',
     'Logging in...': 'در حال وارد شدن',
     'Download path': 'مسیر بارگیری',
     'Downloads naming': 'نام گذاری بارگیری ها',
@@ -2305,11 +2177,9 @@ const crowdin = {
     'Create folders for artist': 'برای صاحب آثار پوشه بساز',
     'Create folders for albums': 'برای آلبوم ها پوشه بساز',
     'Separate albums by discs': 'آلبوم ها را با تعداد نوار جداسازی کن',
-    'Overwrite already downloaded files':
-        'بر روی فایل های از قبل بارگیری شده ذخیره کن',
+    'Overwrite already downloaded files': 'بر روی فایل های از قبل بارگیری شده ذخیره کن',
     'Copy ARL': 'کپی ARL',
-    'Copy userToken/ARL Cookie for use in other apps.':
-        'کپی کردن توکن یا کوکی حساب برای استفاده در برنامه ای دیگر',
+    'Copy userToken/ARL Cookie for use in other apps.': 'کپی کردن توکن یا کوکی حساب برای استفاده در برنامه ای دیگر',
     'Copied': 'کپی شد',
     'Log out': 'خروج از حساب کاربری',
     'Due to plugin incompatibility, login using browser is unavailable without restart.':
@@ -2321,14 +2191,12 @@ const crowdin = {
     'Go up': 'رفتن به بالا',
     'Permission denied': 'اجازه داده نشد',
     'Language': 'زبان',
-    'Language changed, please restart ReFreezer to apply!':
-        'زبان عوض شد، لطفاً فریزر را ریستارت کنید',
+    'Language changed, please restart ReFreezer to apply!': 'زبان عوض شد، لطفاً فریزر را ریستارت کنید',
     'Importing...': 'وارد کردن...',
     'Radio': 'رادیو',
     'Flow': 'جریان',
     'Track is not available on Deezer!': 'قطعه در دیزر موجود نمی‌باشد!',
-    'Failed to download track! Please restart.':
-        'ناموفق در بارگیری قطعه! لطفاً دوباره تلاش کنید',
+    'Failed to download track! Please restart.': 'ناموفق در بارگیری قطعه! لطفاً دوباره تلاش کنید',
     'Storage permission denied!': 'مجوز ذخیره ساز داده نشد',
     'Failed': 'نا موفق',
     'Queued': 'در صف انتظار',
@@ -2343,15 +2211,13 @@ const crowdin = {
     'Search or paste URL': 'جستجو یا نشاندن لینک',
     'History': 'تاریخچه',
     'Download threads': 'رشته های بارگیری',
-    'Lyrics unavailable, empty or failed to load!':
-        'اشعار وجود ندارد، خالی یا ناموفق در بارگذاری',
+    'Lyrics unavailable, empty or failed to load!': 'اشعار وجود ندارد، خالی یا ناموفق در بارگذاری',
     'About': 'درباره',
     'Telegram Channel': 'کانال تلگرام',
     'To get latest releases': 'برای دریافت آخرین نسخه ها',
     'Official chat': 'گروه رسمی',
     'Telegram Group': 'گروه تلگرامی',
-    'Huge thanks to all the contributors! <3':
-        'با تشکر فراوان از همه مشارکت کننده ها',
+    'Huge thanks to all the contributors! <3': 'با تشکر فراوان از همه مشارکت کننده ها',
     'Edit playlist': 'ویرایش لیست پخش',
     'Update': 'به روز رسانی',
     'Playlist updated!': 'لیست پخش به روز رسانی شد!',
@@ -2373,8 +2239,7 @@ const crowdin = {
     'Using too many concurrent downloads on older/weaker devices might cause crashes!':
         'بارگیری همزمان بیش از حد باعث مشکل یا کرش کردن دستگاه های قدیمی یا ضعیف میشود!',
     'Create .nomedia files': 'ایجاد فایل های .nomedia',
-    'To prevent gallery being filled with album art':
-        'برای جلوگیری از پر شدن گالری از تصاویر کاور',
+    'To prevent gallery being filled with album art': 'برای جلوگیری از پر شدن گالری از تصاویر کاور',
     'Sleep timer': 'زمان سنج خواب',
     'Minutes:': 'دقیقه:',
     'Hours:': 'ساعت:',
@@ -2384,8 +2249,7 @@ const crowdin = {
     'Shuffle': 'پخش تصادفی',
     'Library shuffle': 'پخش تصادفی مجموعه',
     'Ignore interruptions': 'نادیده گرفتن مزاحمت ها',
-    'Requires app restart to apply!':
-        'برای اعمال تغییرات اجرای دوباره برنامه نیاز است!',
+    'Requires app restart to apply!': 'برای اعمال تغییرات اجرای دوباره برنامه نیاز است!',
     'Ask before downloading': 'پرسش قبل از بارگیری',
     'Search history': 'تاریخچه جستجو',
     'Clear search history': 'پاک کردن تاریخچه جستجو',
@@ -2405,8 +2269,7 @@ const crowdin = {
     'Current version: ': 'نسخه ی فعلی : ',
     'Unsupported platform!': 'پلتفرم پشتیبانی نشده',
     'ReFreezer Updates': 'به روز رسانی های فریزر',
-    'Update to latest version in the settings.':
-        'از تنظیمات به روز رسانی کنید.',
+    'Update to latest version in the settings.': 'از تنظیمات به روز رسانی کنید.',
     'Release date': 'زمان عرضه',
     'Shows': 'اجرا ها',
     'Charts': 'رده بندی ها',
@@ -2417,8 +2280,7 @@ const crowdin = {
     'Date added': 'زمان اضافه شده',
     'Discord': 'دیسکورد',
     'Official Discord server': 'سرور رسمی دیسکورد',
-    'Restart of app is required to properly log out!':
-        'برای خارج شدن کامل از حساب ریستارت برنامه لازم است',
+    'Restart of app is required to properly log out!': 'برای خارج شدن کامل از حساب ریستارت برنامه لازم است',
     'Artist separator': 'جدا کننده صاحب اثر',
     'Singleton naming': 'اسم گذاری تکی',
     'Keep the screen on': 'صفحه نمایش را روشن نگه دار',
@@ -2523,15 +2385,12 @@ const crowdin = {
     'Post processing...': 'Tinatapos na ang proseso...',
     'Done': 'Tapos',
     'Delete': 'Burahin',
-    'Are you sure you want to delete this download?':
-        'Sigurado ka bang buburahin mo ang iyong dinownload?',
+    'Are you sure you want to delete this download?': 'Sigurado ka bang buburahin mo ang iyong dinownload?',
     'Cancel': 'I-cancel',
     'Downloads': 'Mga Download',
     'Clear queue': 'I-clear ang queue',
-    "This won't delete currently downloading item":
-        'Hindi nito buburahin ang dina-download mo ngayon',
-    'Are you sure you want to delete all queued downloads?':
-        'Sigurado ka bang buburahin lahat ang mga dina-download?',
+    "This won't delete currently downloading item": 'Hindi nito buburahin ang dina-download mo ngayon',
+    'Are you sure you want to delete all queued downloads?': 'Sigurado ka bang buburahin lahat ang mga dina-download?',
     'Clear downloads history': 'I-clear ang history ng mga download',
     'WARNING: This will only clear non-offline (external downloads)':
         'BABALA: Buburahin lang nito ang hindi pang-offline (mga eksternal na download)',
@@ -2542,20 +2401,17 @@ const crowdin = {
     'Currently supporting only Spotify, with 100 tracks limit':
         'Suportado lang ang Spotify sa ngayon, na may limit sa 100 mga track',
     'Due to API limitations': 'Dahil sa limitasyon ng API',
-    'Enter your playlist link below':
-        'Ilagay ang link ng iyong playlist sa ibaba',
+    'Enter your playlist link below': 'Ilagay ang link ng iyong playlist sa ibaba',
     'Error loading URL!': 'Nagkaroon ng problema sa pagload URL!',
     'Convert': 'I-convert',
     'Download only': 'I-download lang',
-    'Downloading is currently stopped, click here to resume.':
-        'Huminto ang download mo, mag-click dito para ituloy',
+    'Downloading is currently stopped, click here to resume.': 'Huminto ang download mo, mag-click dito para ituloy',
     'Tracks': 'Mga Track',
     'Albums': 'Mga Album',
     'Artists': 'Mga Artist',
     'Playlists': 'Mga Playlist',
     'Import': 'I-import',
-    'Import playlists from Spotify':
-        'I-import ang mga playlist galing sa Spotify',
+    'Import playlists from Spotify': 'I-import ang mga playlist galing sa Spotify',
     'Statistics': 'Mga istatistika',
     'Offline tracks': 'Mga offline na track',
     'Offline albums': 'Mga offline na album',
@@ -2566,15 +2422,13 @@ const crowdin = {
     'Favorites': 'Mga paborito',
     'All offline tracks': 'Lahat ng track na pang-offline',
     'Create new playlist': 'Gumawa ng bagong playlist',
-    'Cannot create playlists in offline mode':
-        'Hindi makagagawa ng playlist habang naka-offline mode',
+    'Cannot create playlists in offline mode': 'Hindi makagagawa ng playlist habang naka-offline mode',
     'Error': 'Kamalian',
     'Error logging in! Please check your token and internet connection and try again.':
         'Hindi maka-login! I-check ang iyong token at koneksiyon at ulitin mo.',
     'Dismiss': 'I-dismiss',
     'Welcome to': 'Welcome sa',
-    'Please login using your Deezer account.':
-        'Paki-login ang iyong Deezer account',
+    'Please login using your Deezer account.': 'Paki-login ang iyong Deezer account',
     'Login using browser': 'Mag-login gamit ng browser',
     'Login using token': 'Mag-login gamit ng token',
     'Enter ARL': 'Pakilagay ang ARL',
@@ -2639,8 +2493,7 @@ const crowdin = {
     'Wifi streaming': 'Pag-stream sa Wifi',
     'External downloads': 'Eksternal na download',
     'Content language': 'Wika ng nilalaman',
-    'Not app language, used in headers. Now':
-        'gagamitin lang ang wika sa header, hindi sa app. Ngayon',
+    'Not app language, used in headers. Now': 'gagamitin lang ang wika sa header, hindi sa app. Ngayon',
     'Select language': 'Piliin ang wika',
     'Content country': 'Bansa ng nilalaman',
     'Country used in headers. Now': 'Gagamitin ang bansa sa mga header. Ngayon',
@@ -2649,8 +2502,7 @@ const crowdin = {
         'Ipadala ang log ng mga napakinggang track sa Deezer, I-enable mo para gumana nang maayos sa mga feature kagaya ng Flow',
     'Offline mode': 'Naka Offline mode',
     'Will be overwritten on start.': 'Papatungan sa simula pa lang.',
-    'Error logging in, check your internet connections.':
-        'Hindi maka-login, Pakicheck ang iyong internet connection.',
+    'Error logging in, check your internet connections.': 'Hindi maka-login, Pakicheck ang iyong internet connection.',
     'Logging in...': 'Nagla-login...',
     'Download path': 'Paglalagyan ng download',
     'Downloads naming': 'Pagpapangalan sa mga download',
@@ -2681,8 +2533,7 @@ const crowdin = {
     'Importing...': 'Ini-import...',
     'Radio': 'Radyo',
     'Track is not available on Deezer!': 'Ang kanta ay wala sa Deezer!',
-    'Failed to download track! Please restart.':
-        'Hindi na-download ang kanta! Paki-ulit.',
+    'Failed to download track! Please restart.': 'Hindi na-download ang kanta! Paki-ulit.',
     'Storage permission denied!': 'Tinaggihan ang paghihintulot sa Storage',
     'Failed': 'Nabigo',
     'Queued': 'Naka-queue',
@@ -2695,25 +2546,21 @@ const crowdin = {
     'Search or paste URL': 'Ilagay ang url',
     'History': 'Kasaysayan',
     'Download threads': 'Magkakasabay na downloads',
-    'Lyrics unavailable, empty or failed to load!':
-        'Liriko ay hindi mahanap, blanko o hindi nag load!',
+    'Lyrics unavailable, empty or failed to load!': 'Liriko ay hindi mahanap, blanko o hindi nag load!',
     'About': 'Tungkol sa app',
     'Telegram Channel': 'Channel ng Telegram',
     'To get latest releases': 'Para makuha ang pinakabagong releases',
     'Official chat': 'Opisyal na chat',
     'Telegram Group': 'Grupo sa Telegram',
-    'Huge thanks to all the contributors! <3':
-        'Maraming salamat sa mga tumulong! <3',
+    'Huge thanks to all the contributors! <3': 'Maraming salamat sa mga tumulong! <3',
     'Edit playlist': 'I-edit ang playlist',
     'Update': 'I-update',
     'Playlist updated!': 'Playlist ay binago!',
     'Downloads added!': 'Dinagdag ang downloads!',
-    'Save cover file for every track':
-        "Ilagay ang civer track sa iba't-ibang track",
+    'Save cover file for every track': "Ilagay ang civer track sa iba't-ibang track",
     'Download Log': 'Ang download log',
     'Repository': 'Repositoryo',
-    'Source code, report issues there.':
-        'Ang source code, i-report and isyu doon.',
+    'Source code, report issues there.': 'Ang source code, i-report and isyu doon.',
     'Use system theme': 'Gamitin ang tema ng sistema',
     'Light': 'Liwanag',
     'Popularity': 'Kasikatan',
@@ -2727,8 +2574,7 @@ const crowdin = {
     'Using too many concurrent downloads on older/weaker devices might cause crashes!':
         'Ang paggamit ng masyadong madaming concurrent downloads sa mahina/lumang devices ay maaaring magdulot ng crashes!',
     'Create .nomedia files': 'Gumawa ng .nomedia files',
-    'To prevent gallery being filled with album art':
-        'Upang maiwasan na mapuno ang gallery ng mga album art',
+    'To prevent gallery being filled with album art': 'Upang maiwasan na mapuno ang gallery ng mga album art',
     'Sleep timer': 'Orasan ng pagtigil',
     'Minutes:': 'Minuto:',
     'Hours:': 'Oras:',
@@ -2738,8 +2584,7 @@ const crowdin = {
     'Shuffle': 'Paghaluin',
     'Library shuffle': 'Paghaluin ang library',
     'Ignore interruptions': 'Huwag pansinin ang pagkaabala',
-    'Requires app restart to apply!':
-        'Kailangang i-restart ang app upang gumana!',
+    'Requires app restart to apply!': 'Kailangang i-restart ang app upang gumana!',
     'Ask before downloading': 'Itanong muna bago i-download',
     'Search history': 'Saliksikin ang Kasaysayan',
     'Clear search history': 'Burahin ang search history',
@@ -2751,18 +2596,15 @@ const crowdin = {
     'Logged out!': 'Nag logout!',
     'Lyrics': 'Mga liriko',
     'Updates': 'Mga update',
-    'You are running latest version!':
-        'Ang iyong gamit ay ang pinakabagong bersyon!',
+    'You are running latest version!': 'Ang iyong gamit ay ang pinakabagong bersyon!',
     'New update available!': 'May bagong update na!',
     'Current version: ': 'Kasalukuyang bersyon: ',
     'Unsupported platform!': 'Hindi suportadong plataporma!',
     'ReFreezer Updates': 'Mga update ng ReFreezer',
-    'Update to latest version in the settings.':
-        'Mag-update sa pinakabagong bersyon sa settings.',
+    'Update to latest version in the settings.': 'Mag-update sa pinakabagong bersyon sa settings.',
     'Release date': 'Petsa ng paglabas',
     'Browse': 'Mag-browse',
-    'Restart of app is required to properly log out!':
-        'i-restart ang app, para maka-log out ng maayos!',
+    'Restart of app is required to properly log out!': 'i-restart ang app, para maka-log out ng maayos!',
     'Singleton naming': 'Singleton naming',
     'Keep the screen on': 'Panatilihing nakabukas ang screen',
     'Wakelock enabled!': 'Naka-enable ang wakelock!',
@@ -2796,13 +2638,11 @@ const crowdin = {
     'Post processing...': 'Post-traitement...',
     'Done': 'Effectué',
     'Delete': 'Supprimer',
-    'Are you sure you want to delete this download?':
-        'Êtes-vous certain de vouloir supprimer ce téléchargement ?',
+    'Are you sure you want to delete this download?': 'Êtes-vous certain de vouloir supprimer ce téléchargement ?',
     'Cancel': 'Annuler',
     'Downloads': 'Téléchargements',
     'Clear queue': "Effacer file d'attente",
-    "This won't delete currently downloading item":
-        "Ceci ne supprimera pas l'élément en cours de téléchargement",
+    "This won't delete currently downloading item": "Ceci ne supprimera pas l'élément en cours de téléchargement",
     'Are you sure you want to delete all queued downloads?':
         "Êtes-vous sûr de vouloir supprimer tous les téléchargements en file d'attente ?",
     'Clear downloads history': "Effacer l'historique des téléchargements",
@@ -2814,8 +2654,7 @@ const crowdin = {
     'Currently supporting only Spotify, with 100 tracks limit':
         "Ne fonctionne qu'avec Spotify pour le moment, avec une limite de 100 titres",
     'Due to API limitations': "En raison des limitations de l'API",
-    'Enter your playlist link below':
-        'Coller le lien de votre playlist ci-dessous',
+    'Enter your playlist link below': 'Coller le lien de votre playlist ci-dessous',
     'Error loading URL!': "Erreur de chargement de l'URL!",
     'Convert': 'Convertir',
     'Download only': 'Téléchargement uniquement',
@@ -2835,15 +2674,13 @@ const crowdin = {
     'Favorites': 'Favoris',
     'All offline tracks': 'Toutes les titres hors connexion',
     'Create new playlist': 'Créer une nouvelle playlist',
-    'Cannot create playlists in offline mode':
-        'Création de playlists impossible en mode hors connexion',
+    'Cannot create playlists in offline mode': 'Création de playlists impossible en mode hors connexion',
     'Error': 'Erreur',
     'Error logging in! Please check your token and internet connection and try again.':
         'Erreur de connexion ! Veuillez vérifier votre token et votre connexion internet et réessayer.',
     'Dismiss': 'Ignorer',
     'Welcome to': 'Bienvenue sur',
-    'Please login using your Deezer account.':
-        'Veuillez vous connecter en utilisant votre compte Deezer.',
+    'Please login using your Deezer account.': 'Veuillez vous connecter en utilisant votre compte Deezer.',
     'Login using browser': 'Connexion via navigateur',
     'Login using token': 'Connexion via token',
     'Enter ARL': 'Saisir ARL',
@@ -2901,8 +2738,7 @@ const crowdin = {
     'Deezer (Dark)': 'Deezer (Sombre)',
     'Primary color': 'Couleur principale',
     'Selected color': 'Couleur sélectionnée',
-    'Use album art primary color':
-        'Utiliser la couleur dominante de la pochette en tant que couleur principale',
+    'Use album art primary color': 'Utiliser la couleur dominante de la pochette en tant que couleur principale',
     'Warning: might be buggy': 'Attention : peut être buggé',
     'Mobile streaming': 'Streaming via réseau mobile',
     'Wifi streaming': 'Streaming via Wifi',
@@ -2912,15 +2748,13 @@ const crowdin = {
         "Pas la langue de l'appli, utilisée dans les en-têtes de catégories. Actuellement",
     'Select language': 'Selectionner la langue',
     'Content country': 'Pays contenu',
-    'Country used in headers. Now':
-        'Pays utilisé pour les bannières. Actuellement',
+    'Country used in headers. Now': 'Pays utilisé pour les bannières. Actuellement',
     'Log tracks': "Journal d'écoute",
     'Send track listen logs to Deezer, enable it for features like Flow to work properly':
         "Envoie les journaux d'écoute à Deezer, activez-le pour que les fonctionnalités comme Flow fonctionnent correctement",
     'Offline mode': 'Mode hors connexion',
     'Will be overwritten on start.': 'Sera écrasé au démarrage.',
-    'Error logging in, check your internet connections.':
-        'Erreur de connexion, vérifiez votre connexion internet',
+    'Error logging in, check your internet connections.': 'Erreur de connexion, vérifiez votre connexion internet',
     'Logging in...': 'Connexion...',
     'Download path': 'Emplacement des téléchargements',
     'Downloads naming': 'Désignation des téléchargement',
@@ -2931,8 +2765,7 @@ const crowdin = {
     'Create folders for artist': 'Générer des dossiers par artiste',
     'Create folders for albums': 'Générer des dossiers par album',
     'Separate albums by discs': 'Séparer les albums par disques',
-    'Overwrite already downloaded files':
-        'Écraser les fichiers déjà téléchargés',
+    'Overwrite already downloaded files': 'Écraser les fichiers déjà téléchargés',
     'Copy ARL': 'Copier ARL',
     'Copy userToken/ARL Cookie for use in other apps.':
         "Copier le Cookie userToken/ARL pour l'utiliser dans d'autres applications.",
@@ -2950,10 +2783,8 @@ const crowdin = {
     'Language changed, please restart ReFreezer to apply!':
         'Langue modifiée, veuillez redémarrer ReFreezer pour que les changements prennent effet!',
     'Importing...': 'Importation...',
-    'Track is not available on Deezer!':
-        "Le titre n'est pas disponible sur Deezer!",
-    'Failed to download track! Please restart.':
-        'Échec du téléchargement du titre ! Veuillez réessayer.',
+    'Track is not available on Deezer!': "Le titre n'est pas disponible sur Deezer!",
+    'Failed to download track! Please restart.': 'Échec du téléchargement du titre ! Veuillez réessayer.',
     'Storage permission denied!': "Autorisation d'accès au stockage refusée!",
     'Failed': 'Échec',
     'Queued': "Ajouté à la file d'attente",
@@ -2967,25 +2798,21 @@ const crowdin = {
     'Search or paste URL': 'Rechercher ou coller un lien',
     'History': 'Historique',
     'Download threads': 'Téléchargements simultanés',
-    'Lyrics unavailable, empty or failed to load!':
-        'Paroles indisponibles, vides ou erreur de chargement !',
+    'Lyrics unavailable, empty or failed to load!': 'Paroles indisponibles, vides ou erreur de chargement !',
     'About': 'À propos',
     'Telegram Channel': 'Canal Telegram',
     'To get latest releases': "Pour obtenir les dernières versions de l'app",
     'Official chat': 'Chat officiel',
     'Telegram Group': 'Groupe Telegram',
-    'Huge thanks to all the contributors! <3':
-        'Un grand merci à tous les contributeurs ! <3',
+    'Huge thanks to all the contributors! <3': 'Un grand merci à tous les contributeurs ! <3',
     'Edit playlist': 'Modifier la playlist',
     'Update': 'Mettre à jour',
     'Playlist updated!': 'Playlist mise à jour !',
     'Downloads added!': 'Téléchargements ajoutés !',
-    'Save cover file for every track':
-        'Sauvegarder la pochette pour chaque titre',
+    'Save cover file for every track': 'Sauvegarder la pochette pour chaque titre',
     'Download Log': 'Journal des téléchargements',
     'Repository': 'Dépôt',
-    'Source code, report issues there.':
-        'Code source, signaler les problèmes ici.',
+    'Source code, report issues there.': 'Code source, signaler les problèmes ici.',
     'Use system theme': 'Utiliser le thème du système',
     'Light': 'Clair',
     'Popularity': 'Popularité',
@@ -3010,8 +2837,7 @@ const crowdin = {
     'Shuffle': 'Aléatoire',
     'Library shuffle': 'Lecture aléatoire de la bibliothèque',
     'Ignore interruptions': 'Ignorer les interruptions',
-    'Requires app restart to apply!':
-        'Redémarrage requis pour appliquer les changements !',
+    'Requires app restart to apply!': 'Redémarrage requis pour appliquer les changements !',
     'Ask before downloading': 'Demander une confirmation avant de télécharger',
     'Search history': 'Historique de recherche',
     'Clear search history': "Effacer l'historique de recherche",
@@ -3030,8 +2856,7 @@ const crowdin = {
     'Current version: ': 'Version actuelle :',
     'Unsupported platform!': "Système d'exploitation non pris en charge !",
     'ReFreezer Updates': 'Mises à jour de ReFreezer',
-    'Update to latest version in the settings.':
-        'Mettez à jour vers la dernière version dans les paramètres.',
+    'Update to latest version in the settings.': 'Mettez à jour vers la dernière version dans les paramètres.',
     'Release date': 'Date de mise en ligne',
     'Charts': 'Classements',
     'Browse': 'Parcourir',
@@ -3057,8 +2882,7 @@ const crowdin = {
     'Remove offline': 'Supprimer hors-ligne',
     'Playlist removed from library!': 'Playlist supprimée de la bibliothèque !',
     'Blur player background': "Flouter l'arrière-plan du lecteur",
-    'Might have impact on performance':
-        'Peut avoir un impact sur les performances',
+    'Might have impact on performance': 'Peut avoir un impact sur les performances',
     'Font': 'Police',
     'Select font': 'Sélectionner la police',
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
@@ -3113,12 +2937,9 @@ const crowdin = {
     'Invalid/Unsupported URL': 'URL invalide/non supportée',
     'Please wait...': 'Veuillez patienter...',
     'Login using email': 'Connexion par Email',
-    'Track removed from offline!':
-        'Le titre a été retiré du mode hors connexion !',
-    'Removed album from offline!':
-        "L'album a été retiré du mode hors connexion !",
-    'Playlist removed from offline!':
-        'La playlist a été retirée du mode hors connexion !',
+    'Track removed from offline!': 'Le titre a été retiré du mode hors connexion !',
+    'Removed album from offline!': "L'album a été retiré du mode hors connexion !",
+    'Playlist removed from offline!': 'La playlist a été retirée du mode hors connexion !',
     'Repeat': 'Répéter',
     'Repeat one': 'Répéter une fois',
     'Repeat off': 'Répétition désactivée',
@@ -3141,8 +2962,7 @@ const crowdin = {
     'Sort': 'Tri',
     'Your ARL might be expired, try logging out and logging back in using new ARL or browser.':
         'Votre ARL a peut-être expiré, essayez de vous déconnecter et de vous reconnecter en utilisant un nouvel ARL ou un autre navigateur.',
-    'The original freezer development team':
-        "L'équipe de développement originale de freezer",
+    'The original freezer development team': "L'équipe de développement originale de freezer",
     'Donate': 'Faire un don',
     'You should rather support your favorite artists, instead of this app!':
         'Vous devriez plutôt soutenir vos artistes favoris, au lieu de cette application !',
@@ -3152,18 +2972,15 @@ const crowdin = {
         "L'autorisation de stockage est nécessaire pour télécharger du contenu.\nVeuillez ouvrir les paramètres et accorder la permission de stockage à ReFeezer.",
     'Open system settings': 'Ouvrir les paramètres système',
     'Application Log': "Log de l'Application",
-    'Are you sure you want to log out?':
-        'Êtes-vous sûr de vouloir vous déconnecter ?',
-    'Download failed!': 'Le téléchargement a échoué !',
-    'Permission denied, download canceled!':
-        'Permission refusée, téléchargement annulé !'
+    'Are you sure you want to log out?': 'Êtes-vous sûr de vouloir vous déconnecter ?',
+    'Download failed!': 'Le téléchargement a échoué !',
+    'Permission denied, download canceled!': 'Permission refusée, téléchargement annulé !'
   },
   'he_il': {
     'Home': 'מסך הבית',
     'Search': 'חיפוש',
     'Library': 'הספרייה',
-    "Offline mode, can't play flow or smart track lists.":
-        'מצב לא מקוון, לא ניתן לנגן flow או רשימות שירים חכמות.',
+    "Offline mode, can't play flow or smart track lists.": 'מצב לא מקוון, לא ניתן לנגן flow או רשימות שירים חכמות.',
     'Added to library': 'הוסף לספרייה',
     'Download': 'הורדה',
     'Disk': 'דיסק',
@@ -3181,31 +2998,25 @@ const crowdin = {
     'Post processing...': 'לאחר עיבוד...',
     'Done': 'בוצע',
     'Delete': 'מחק',
-    'Are you sure you want to delete this download?':
-        'האם אתה בטוח שאתה רוצה למחוק את ההורדה הזאת?',
+    'Are you sure you want to delete this download?': 'האם אתה בטוח שאתה רוצה למחוק את ההורדה הזאת?',
     'Cancel': 'בטל',
     'Downloads': 'הורדות',
     'Clear queue': 'נקה תור',
-    "This won't delete currently downloading item":
-        'פעולה זו לא תמחק את הפריט שיורד עכשיו',
-    'Are you sure you want to delete all queued downloads?':
-        'האם אתה בטוח שאתה רוצה למחוק את כל ההורדות שבתור?',
+    "This won't delete currently downloading item": 'פעולה זו לא תמחק את הפריט שיורד עכשיו',
+    'Are you sure you want to delete all queued downloads?': 'האם אתה בטוח שאתה רוצה למחוק את כל ההורדות שבתור?',
     'Clear downloads history': 'נקה היסטוריית הורדות',
     'WARNING: This will only clear non-offline (external downloads)':
         'אזהרה: פעולה זו תמחק רק את הקבצים שאינם מקוונים (הורדות חיצוניות)',
-    'Please check your connection and try again later...':
-        'בבקשה בדוק את חיבור הרשת שלך ונסה שוב מאוחר יותר...',
+    'Please check your connection and try again later...': 'בבקשה בדוק את חיבור הרשת שלך ונסה שוב מאוחר יותר...',
     'Show more': 'הצג עוד',
     'Importer': 'ייבא רשימות השמעה',
-    'Currently supporting only Spotify, with 100 tracks limit':
-        'כרגע תומך רק ב-Spotify, עם הגבלה של 100 שירים',
+    'Currently supporting only Spotify, with 100 tracks limit': 'כרגע תומך רק ב-Spotify, עם הגבלה של 100 שירים',
     'Due to API limitations': 'בגלל מגבלות ה-API',
     'Enter your playlist link below': 'הכנס את קישור רשימת ההשמעה למטה',
     'Error loading URL!': 'שגיאה בטעינת הקישור!',
     'Convert': 'המר',
     'Download only': 'הורדה בלבד',
-    'Downloading is currently stopped, click here to resume.':
-        'ההורדה כרגע מושהית, לחץ כאן כדי להמשיך.',
+    'Downloading is currently stopped, click here to resume.': 'ההורדה כרגע מושהית, לחץ כאן כדי להמשיך.',
     'Tracks': 'רצועות',
     'Albums': 'אלבומים',
     'Artists': 'אמנים',
@@ -3222,15 +3033,13 @@ const crowdin = {
     'Favorites': 'מועדפים',
     'All offline tracks': 'כל השירים הלא מקוונים',
     'Create new playlist': 'צור רשימת השמעה חדשה',
-    'Cannot create playlists in offline mode':
-        'לא ניתן ליצור רשימת השמעה במצב אופליין',
+    'Cannot create playlists in offline mode': 'לא ניתן ליצור רשימת השמעה במצב אופליין',
     'Error': 'שגיאה',
     'Error logging in! Please check your token and internet connection and try again.':
         'שגיאה בהתחברות! בדוק בבקשה את הטוקן שלך או את חיבור האינטרנט שלך ונסה שוב.',
     'Dismiss': 'התעלם',
     'Welcome to': 'ברוך הבא ל',
-    'Please login using your Deezer account.':
-        'בבקשה התחבר/י עם חשבון הדיזר שלך.',
+    'Please login using your Deezer account.': 'בבקשה התחבר/י עם חשבון הדיזר שלך.',
     'Login using browser': 'התחבר/י דרך הדפדפן',
     'Login using token': 'התחבר/י על ידי טוקן',
     'Enter ARL': 'הכנס/י טוקן',
@@ -3297,8 +3106,7 @@ const crowdin = {
     'Wifi streaming': 'הזרמת רשת אלחוטית',
     'External downloads': 'הורדות חיצוניות',
     'Content language': 'שפת תוכן',
-    'Not app language, used in headers. Now':
-        'לא שפת היישום, שימוש בכותרות. עכשיו',
+    'Not app language, used in headers. Now': 'לא שפת היישום, שימוש בכותרות. עכשיו',
     'Select language': 'בחר שפה',
     'Content country': 'מדינת תוכן',
     'Country used in headers. Now': 'מדינה שמוצגת בכותרות. עכשיו',
@@ -3307,8 +3115,7 @@ const crowdin = {
         'שלח לוגים של השמעה לדיזר, הפעל מצב זה כדי שתכונות כמו flow יעבדו טוב',
     'Offline mode': 'מצב אופליין',
     'Will be overwritten on start.': 'יוחלף בהפעלה.',
-    'Error logging in, check your internet connections.':
-        'שגיאה בהתחברות, בדוק את חיבור הרשת שלך.',
+    'Error logging in, check your internet connections.': 'שגיאה בהתחברות, בדוק את חיבור הרשת שלך.',
     'Logging in...': 'מתחבר...',
     'Download path': 'נתיב הורדה',
     'Downloads naming': 'שינוי שם בהורדה',
@@ -3321,8 +3128,7 @@ const crowdin = {
     'Separate albums by discs': 'חלק אלבומים לפי דיסקים',
     'Overwrite already downloaded files': 'החלף קבצים שכבר הורדו',
     'Copy ARL': 'העתק טוקן',
-    'Copy userToken/ARL Cookie for use in other apps.':
-        'העתק את הטוקן לשימוש בישומים אחרים.',
+    'Copy userToken/ARL Cookie for use in other apps.': 'העתק את הטוקן לשימוש בישומים אחרים.',
     'Copied': 'הועתק',
     'Log out': 'התנתק',
     'Due to plugin incompatibility, login using browser is unavailable without restart.':
@@ -3334,8 +3140,7 @@ const crowdin = {
     'Go up': 'עלה למעלה',
     'Permission denied': 'הרשאה נדחתה',
     'Language': 'שפה',
-    'Language changed, please restart ReFreezer to apply!':
-        'שפה שונתה, בבקשה הפעל מחדש את ReFreezer כדי להחיל!',
+    'Language changed, please restart ReFreezer to apply!': 'שפה שונתה, בבקשה הפעל מחדש את ReFreezer כדי להחיל!',
     'Importing...': 'מייבא...',
     'Radio': 'רדיו',
     'Track is not available on Deezer!': 'שיר לא קיים בדיזר!',
@@ -3354,8 +3159,7 @@ const crowdin = {
     'Search or paste URL': 'חפש או הזן קישור',
     'History': 'היסטוריה',
     'Download threads': 'הורדות בפעולה',
-    'Lyrics unavailable, empty or failed to load!':
-        'מילים לשיר אינן זמינות, ריקות או שכשלו להיטען!',
+    'Lyrics unavailable, empty or failed to load!': 'מילים לשיר אינן זמינות, ריקות או שכשלו להיטען!',
     'About': 'אודות',
     'Telegram Channel': 'ערוץ טלגרם',
     'To get latest releases': 'לקבלת הגרסאות החדשות ביותר',
@@ -3383,8 +3187,7 @@ const crowdin = {
     'Using too many concurrent downloads on older/weaker devices might cause crashes!':
         'יותר מדי הורדות במקביל עלולות לגרום לקריסות במכשירים ישנים או חלשים יותר!',
     'Create .nomedia files': 'יצירת קובץ .nomedia',
-    'To prevent gallery being filled with album art':
-        'כדי להמנע מהגלריה להתמלא בעטיפות אלבומים',
+    'To prevent gallery being filled with album art': 'כדי להמנע מהגלריה להתמלא בעטיפות אלבומים',
     'Sleep timer': 'טיימר שינה',
     'Minutes:': 'דקות:',
     'Hours:': 'שעות:',
@@ -3394,8 +3197,7 @@ const crowdin = {
     'Shuffle': 'אקראי',
     'Library shuffle': 'השמע ספרייה באקראי',
     'Ignore interruptions': 'התעלם מהפרעות',
-    'Requires app restart to apply!':
-        'על מנת להחיל את השינויים יש להפעיל מחדש את האפליקציה!',
+    'Requires app restart to apply!': 'על מנת להחיל את השינויים יש להפעיל מחדש את האפליקציה!',
     'Ask before downloading': 'שאל לפני ההורדה',
     'Search history': 'היסטוריית חיפוש',
     'Clear search history': 'נקה את היסטוריית החיפוש',
@@ -3414,8 +3216,7 @@ const crowdin = {
     'Current version: ': 'גירסה נוכחית: ',
     'Unsupported platform!': 'פלטפורמה זו אינה נתמכת!',
     'ReFreezer Updates': 'עדכוני ReFreezer',
-    'Update to latest version in the settings.':
-        'עדכנו לגרסה האחרונה דרך ההגדרות.',
+    'Update to latest version in the settings.': 'עדכנו לגרסה האחרונה דרך ההגדרות.',
     'Release date': 'תאריך שחרור',
     'Charts': 'מצעדים',
     'Browse': 'עיון',
@@ -3424,8 +3225,7 @@ const crowdin = {
     'Share show': 'שתף פודקאסט',
     'Date added': 'תאריך הוספה',
     'Official Discord server': 'שרת ה-Discord הרשמי',
-    'Restart of app is required to properly log out!':
-        'על מנת לצאת יש להפעיל את האפליקציה מחדש!',
+    'Restart of app is required to properly log out!': 'על מנת לצאת יש להפעיל את האפליקציה מחדש!',
     'Artist separator': 'תו הפרדה בין אמנים',
     'Singleton naming': 'הפרדה לרצועות לפי שם',
     'Keep the screen on': 'השאר את המסך דולק',
@@ -3435,8 +3235,7 @@ const crowdin = {
     'Episodes': 'פרקים',
     'Show all episodes': 'הצג את כל הפרקים',
     'Album cover resolution': 'רזולוציה של עטיפת אלבום',
-    "WARNING: Resolutions above 1200 aren't officially supported":
-        'אזהרה: רזולוציה מעל 1200 אינה נתמכת באופן רשמי',
+    "WARNING: Resolutions above 1200 aren't officially supported": 'אזהרה: רזולוציה מעל 1200 אינה נתמכת באופן רשמי',
     'Album removed from library!': 'האלבום הוסר מהספרייה!',
     'Remove offline': 'מחק קבצים לא מקוונים',
     'Playlist removed from library!': 'רשימת ההשמעה הוסרה מהספרייה!',
@@ -3478,8 +3277,7 @@ const crowdin = {
     'Enable high refresh rates': 'הפעל ריענון מסך בקצב גבוה',
     'Display mode': 'מצב תצוגה',
     'Spotify v1': 'גרסה 1 של Spotify',
-    'Import Spotify playlists up to 100 tracks without any login.':
-        'ייבוא עד 100 רשימות השמעה של Spotify מבלי להתחבר.',
+    'Import Spotify playlists up to 100 tracks without any login.': 'ייבוא עד 100 רשימות השמעה של Spotify מבלי להתחבר.',
     'Download imported tracks': 'הורדת רשימות ההשמעה שיובאו',
     'Start import': 'התחל יבוא',
     'Spotify v2': 'גרסה 2 של Spotify',
@@ -3535,8 +3333,7 @@ const crowdin = {
     'Home': 'होम',
     'Search': 'खोज',
     'Library': 'लाइब्रेरी',
-    "Offline mode, can't play flow or smart track lists.":
-        'ऑफ़लाइन मोड, फ्लो या स्मार्ट ट्रैक सूची नहीं चला सकता',
+    "Offline mode, can't play flow or smart track lists.": 'ऑफ़लाइन मोड, फ्लो या स्मार्ट ट्रैक सूची नहीं चला सकता',
     'Added to library': 'लाइब्रेरी में जोड़ा गया',
     'Download': 'डाउन्लोड',
     'Disk': 'डिस्क',
@@ -3554,20 +3351,16 @@ const crowdin = {
     'Post processing...': 'प्रोसेसिंग के बाद...',
     'Done': 'हो गया',
     'Delete': 'हटाएं',
-    'Are you sure you want to delete this download?':
-        'क्या आप वाकई इस डाउनलोड को हटाना चाहते हैं?',
+    'Are you sure you want to delete this download?': 'क्या आप वाकई इस डाउनलोड को हटाना चाहते हैं?',
     'Cancel': 'रद्द करना',
     'Downloads': 'डाउनलोड',
     'Clear queue': 'कतार साफ़ करें',
-    "This won't delete currently downloading item":
-        'यह वर्तमान में डाउनलोड हो रहे आइटम को नहीं हटाएगा',
-    'Are you sure you want to delete all queued downloads?':
-        'क्या आप वाकई सभी कतारबद्ध डाउनलोड हटाना चाहते हैं?',
+    "This won't delete currently downloading item": 'यह वर्तमान में डाउनलोड हो रहे आइटम को नहीं हटाएगा',
+    'Are you sure you want to delete all queued downloads?': 'क्या आप वाकई सभी कतारबद्ध डाउनलोड हटाना चाहते हैं?',
     'Clear downloads history': 'डाउनलोड इतिहास साफ़ करें',
     'WARNING: This will only clear non-offline (external downloads)':
         'चेतावनी: यह केवल गैर-ऑफ़लाइन (बाहरी डाउनलोड) को साफ़ करेगा',
-    'Please check your connection and try again later...':
-        'कृपया अपना कनेक्शन जांचें और बाद में पुन: प्रयास करें...',
+    'Please check your connection and try again later...': 'कृपया अपना कनेक्शन जांचें और बाद में पुन: प्रयास करें...',
     'Show more': 'और दिखाएँ',
     'Importer': 'आयातक',
     'Currently supporting only Spotify, with 100 tracks limit':
@@ -3595,15 +3388,13 @@ const crowdin = {
     'Favorites': 'पसंदीदा',
     'All offline tracks': 'सभी ऑफ़लाइन ट्रैक',
     'Create new playlist': 'नई प्लेलिस्ट बनाएं',
-    'Cannot create playlists in offline mode':
-        'ऑफ़लाइन मोड में प्लेलिस्ट नहीं बना सकते',
+    'Cannot create playlists in offline mode': 'ऑफ़लाइन मोड में प्लेलिस्ट नहीं बना सकते',
     'Error': 'त्रुटि',
     'Error logging in! Please check your token and internet connection and try again.':
         'लॉग इन करने में त्रुटि! कृपया अपना टोकन और इंटरनेट कनेक्शन जांचें और पुनः प्रयास करें।',
     'Dismiss': 'खारिज',
     'Welcome to': 'में आपका स्वागत है',
-    'Please login using your Deezer account.':
-        'कृपया अपने डीज़र खाते का उपयोग करके लॉगिन करें।',
+    'Please login using your Deezer account.': 'कृपया अपने डीज़र खाते का उपयोग करके लॉगिन करें।',
     'Login using browser': 'ब्राउज़र का उपयोग करके लॉगिन करें',
     'Login using token': 'टोकन का उपयोग करके लॉगिन करें',
     'Enter ARL': 'एआरएल दर्ज करें',
@@ -3612,8 +3403,7 @@ const crowdin = {
     "If you don't have account, you can register on deezer.com for free.":
         'यदि आपके पास खाता नहीं है, तो आप deezer.com पर निःशुल्क पंजीकरण कर सकते हैं।',
     'Open in browser': 'ब्राउज़र में खोलें',
-    "By using this app, you don't agree with the Deezer ToS":
-        'इस ऐप का उपयोग करके, आप Deezer ToS से सहमत नहीं हैं',
+    "By using this app, you don't agree with the Deezer ToS": 'इस ऐप का उपयोग करके, आप Deezer ToS से सहमत नहीं हैं',
     'Play next': 'अगला चलाएं',
     'Add to queue': 'क़तार में जोड़ें',
     'Add track to favorites': 'पसंदीदा में ट्रैक जोड़ें',
@@ -3669,8 +3459,7 @@ const crowdin = {
     'Wifi streaming': 'वाईफ़ाई स्ट्रीमिंग',
     'External downloads': 'बाहरी डाउनलोड',
     'Content language': 'सामग्री भाषा',
-    'Not app language, used in headers. Now':
-        'ऐप भाषा नहीं, हेडर में इस्तेमाल किया जाता है। अब क',
+    'Not app language, used in headers. Now': 'ऐप भाषा नहीं, हेडर में इस्तेमाल किया जाता है। अब क',
     'Select language': 'भाषा चुनें',
     'Content country': 'सामग्री देश',
     'Country used in headers. Now': 'हेडर में इस्तेमाल किया गया देश। अब क',
@@ -3679,8 +3468,7 @@ const crowdin = {
         'डीज़र को ट्रैक सुनने के लॉग भेजें, फ़्लो जैसी सुविधाओं के लिए इसे ठीक से काम करने के लिए सक्षम करें',
     'Offline mode': 'ऑफ़लाइन मोड',
     'Will be overwritten on start.': 'प्रारंभ में अधिलेखित कर दिया जाएगा।',
-    'Error logging in, check your internet connections.':
-        'लॉग इन करने में त्रुटि, अपने इंटरनेट कनेक्शन की जांच करें।',
+    'Error logging in, check your internet connections.': 'लॉग इन करने में त्रुटि, अपने इंटरनेट कनेक्शन की जांच करें।',
     'Logging in...': 'लॉगिन कर रहे हैं…',
     'Download path': 'डाउनलोड पथ',
     'Downloads naming': 'डाउनलोड नामकरण',
@@ -3691,8 +3479,7 @@ const crowdin = {
     'Create folders for artist': 'कलाकार के लिए फ़ोल्डर बनाएं',
     'Create folders for albums': 'एलबम के लिए फोल्डर बनाएं',
     'Separate albums by discs': 'डिस्क द्वारा अलग एल्बम',
-    'Overwrite already downloaded files':
-        'पहले से डाउनलोड की गई फ़ाइलों को अधिलेखित करें',
+    'Overwrite already downloaded files': 'पहले से डाउनलोड की गई फ़ाइलों को अधिलेखित करें',
     'Copy ARL': 'एआरएल कॉपी करें',
     'Copy userToken/ARL Cookie for use in other apps.':
         'अन्य ऐप्स में उपयोग के लिए उपयोगकर्ता टोकन/एआरएल कुकी की प्रतिलिपि बनाएँ।',
@@ -3713,8 +3500,7 @@ const crowdin = {
     'Radio': 'रेडियो',
     'Flow': 'बहे',
     'Track is not available on Deezer!': 'डीजर पर ट्रैक उपलब्ध नहीं है!',
-    'Failed to download track! Please restart.':
-        'ट्रैक डाउनलोड करने में विफल! कृपया पुनः प्रारंभ करें।',
+    'Failed to download track! Please restart.': 'ट्रैक डाउनलोड करने में विफल! कृपया पुनः प्रारंभ करें।',
     'Storage permission denied!': 'भंडारण की अनुमति अस्वीकृत!',
     'Failed': 'असफल',
     'Queued': 'कतारबद्ध',
@@ -3729,15 +3515,13 @@ const crowdin = {
     'Search or paste URL': 'URL खोजें या पेस्ट करें',
     'History': 'इतिहास',
     'Download threads': 'समवर्ती डाउनलोड',
-    'Lyrics unavailable, empty or failed to load!':
-        'गीत अनुपलब्ध, खाली या लोड होने में विफल!',
+    'Lyrics unavailable, empty or failed to load!': 'गीत अनुपलब्ध, खाली या लोड होने में विफल!',
     'About': 'बारे में',
     'Telegram Channel': 'टेलीग्राम चैनल',
     'To get latest releases': 'नवीनतम रिलीज़ प्राप्त करने के लिए',
     'Official chat': 'आधिकारिक चैट',
     'Telegram Group': 'टेलीग्राम समूह',
-    'Huge thanks to all the contributors! <3':
-        'सभी योगदानकर्ताओं का बहुत-बहुत धन्यवाद! <3',
+    'Huge thanks to all the contributors! <3': 'सभी योगदानकर्ताओं का बहुत-बहुत धन्यवाद! <3',
     'Edit playlist': 'प्लेलिस्ट संपादित करें',
     'Update': 'अपडेट',
     'Playlist updated!': 'प्लेलिस्ट अपडेट की गई!',
@@ -3745,8 +3529,7 @@ const crowdin = {
     'Save cover file for every track': 'प्रत्येक ट्रैक के लिए कवर फ़ाइल सहेजें',
     'Download Log': 'लॉग डाउनलोड करें',
     'Repository': 'रिपॉजिटरी',
-    'Source code, report issues there.':
-        'स्रोत कोड, वहां मुद्दों की रिपोर्ट करें।',
+    'Source code, report issues there.': 'स्रोत कोड, वहां मुद्दों की रिपोर्ट करें।',
     'Use system theme': 'सिस्टम थीम का उपयोग करें',
     'Light': 'हल्का',
     'Popularity': 'लोकप्रियता',
@@ -3760,8 +3543,7 @@ const crowdin = {
     'Using too many concurrent downloads on older/weaker devices might cause crashes!':
         'पुराने/कमजोर उपकरणों पर बहुत अधिक समवर्ती डाउनलोड का उपयोग करने से क्रैश हो सकता है!',
     'Create .nomedia files': '.nomedia फ़ाइलें बनाएं',
-    'To prevent gallery being filled with album art':
-        'गैलरी को एल्बम कला से भरने से रोकने के लिए',
+    'To prevent gallery being filled with album art': 'गैलरी को एल्बम कला से भरने से रोकने के लिए',
     'Sleep timer': 'सोने का टाइमर',
     'Minutes:': 'मिनट:',
     'Hours:': 'घंटे:',
@@ -3771,8 +3553,7 @@ const crowdin = {
     'Shuffle': 'मिश्रण',
     'Library shuffle': 'पुस्तकालय फेरबदल',
     'Ignore interruptions': 'रुकावटों पर ध्यान न दें',
-    'Requires app restart to apply!':
-        'आवेदन करने के लिए ऐप रीस्टार्ट की आवश्यकता है!',
+    'Requires app restart to apply!': 'आवेदन करने के लिए ऐप रीस्टार्ट की आवश्यकता है!',
     'Ask before downloading': 'डाउनलोड करने से पहले पूछें',
     'Search history': 'खोज इतिहास',
     'Clear search history': 'खोज इतिहास साफ़ करें',
@@ -3792,8 +3573,7 @@ const crowdin = {
     'Current version: ': 'वर्तमान संस्करण: ',
     'Unsupported platform!': 'असमर्थित मंच!',
     'ReFreezer Updates': 'फ्रीजर अपडेट',
-    'Update to latest version in the settings.':
-        'सेटिंग्स में नवीनतम संस्करण में अपडेट करें।',
+    'Update to latest version in the settings.': 'सेटिंग्स में नवीनतम संस्करण में अपडेट करें।',
     'Release date': 'रिलीज़ की तारीख',
     'Shows': 'प्रदर्शन',
     'Charts': 'चार्ट',
@@ -3804,8 +3584,7 @@ const crowdin = {
     'Date added': 'तारीख संकलित हुई',
     'Discord': 'डिस्कोर्ड',
     'Official Discord server': 'आधिकारिक डिस्कोड सर्वर',
-    'Restart of app is required to properly log out!':
-        'ठीक से लॉग आउट करने के लिए ऐप को पुनरारंभ करना आवश्यक है!',
+    'Restart of app is required to properly log out!': 'ठीक से लॉग आउट करने के लिए ऐप को पुनरारंभ करना आवश्यक है!',
     'Artist separator': 'कलाकार विभाजक',
     'Singleton naming': 'सिंगलटन नामकरण',
     'Keep the screen on': 'स्क्रीन चालू रखें',
@@ -3914,27 +3693,23 @@ const crowdin = {
     'Post processing...': 'Naknadna obrada...',
     'Done': 'Gotovo',
     'Delete': 'Izbriši',
-    'Are you sure you want to delete this download?':
-        'Jeste li sigurni da želite izbrisati ovo skidanje?',
+    'Are you sure you want to delete this download?': 'Jeste li sigurni da želite izbrisati ovo skidanje?',
     'Cancel': 'Poništi',
     'Downloads': 'Preuzimanja',
     'Clear queue': 'Očisti red',
-    "This won't delete currently downloading item":
-        'Ovo neće izbrisati stavku koja se trenutno preuzima',
+    "This won't delete currently downloading item": 'Ovo neće izbrisati stavku koja se trenutno preuzima',
     'Are you sure you want to delete all queued downloads?':
         'Jeste li sigurni da želite izbrisati sva preuzimanja u redu čekanja?',
     'Clear downloads history': 'Očisti povijest skidanja',
     'WARNING: This will only clear non-offline (external downloads)':
         'UPOZORENJE: Ovo će ukloniti samo izvanmrežna (vanjska) preuzimanja',
-    'Please check your connection and try again later...':
-        'Provjerite svoju internet vezu i pokušajte ponovo...',
+    'Please check your connection and try again later...': 'Provjerite svoju internet vezu i pokušajte ponovo...',
     'Show more': 'Pokaži više',
     'Importer': 'Uvoznik',
     'Currently supporting only Spotify, with 100 tracks limit':
         'Trenutno podržava samo Spotify, sa limitom od 100 pjesama',
     'Due to API limitations': 'Zbog ograničenja API-a',
-    'Enter your playlist link below':
-        'Unesite vezu vašeg popisa za reprodukciju ispod',
+    'Enter your playlist link below': 'Unesite vezu vašeg popisa za reprodukciju ispod',
     'Error loading URL!': 'Pogreška pri učitavanju URL-a!',
     'Convert': 'Pretvori',
     'Download only': 'Samo skidanja',
@@ -3956,15 +3731,13 @@ const crowdin = {
     'Favorites': 'Favoriti',
     'All offline tracks': 'Sve izvanmrežne pjesme',
     'Create new playlist': 'Kreirajte novi popis za reprodukciju',
-    'Cannot create playlists in offline mode':
-        'Nije moguće napraviti popis za reprodukciju u izvanmrežnom načinu',
+    'Cannot create playlists in offline mode': 'Nije moguće napraviti popis za reprodukciju u izvanmrežnom načinu',
     'Error': 'Pogreška',
     'Error logging in! Please check your token and internet connection and try again.':
         'Pogreška pri prijavljivanju! Molimo vas da provjerite token i internet konekciju i da pokušate ponovno.',
     'Dismiss': 'Odbaci',
     'Welcome to': 'Dobrodošli u',
-    'Please login using your Deezer account.':
-        'Molimo vas da se prijavite pomoću vašeg Deezer računa.',
+    'Please login using your Deezer account.': 'Molimo vas da se prijavite pomoću vašeg Deezer računa.',
     'Login using browser': 'Prijava pomoću preglednika',
     'Login using token': 'Prijava pomoću tokena',
     'Enter ARL': 'Unesite ARL',
@@ -4029,8 +3802,7 @@ const crowdin = {
     'Wifi streaming': 'Streamanje preko wifi-a',
     'External downloads': 'Vanjska skidanja',
     'Content language': 'Jezik sadržaja',
-    'Not app language, used in headers. Now':
-        'Nije jezik aplikacije, korišteno u zaglavljima. Sada',
+    'Not app language, used in headers. Now': 'Nije jezik aplikacije, korišteno u zaglavljima. Sada',
     'Select language': 'Izaberi jezik',
     'Content country': 'Zemlja sadržaja',
     'Country used in headers. Now': 'Zemlja korištena u zaglavljima. Sada',
@@ -4070,8 +3842,7 @@ const crowdin = {
         'Jezik je promijenjen, molimo vas da ponovno pokrenete ReFreezer kako bi se promjene primijenile!',
     'Importing...': 'Uvoz...',
     'Track is not available on Deezer!': 'Pjesma nije dostupna na Deezeru!',
-    'Failed to download track! Please restart.':
-        'Preuzimanje pjesme nije uspjelo! Molimo vas da ponovno pokrenete.',
+    'Failed to download track! Please restart.': 'Preuzimanje pjesme nije uspjelo! Molimo vas da ponovno pokrenete.',
     'Storage permission denied!': 'Odbijeno dopuštenje za pohranu!',
     'Failed': 'Neuspješno',
     'Queued': 'U redu čekanja',
@@ -4085,15 +3856,13 @@ const crowdin = {
     'Search or paste URL': 'Pretraži ili zalijepi URL',
     'History': 'Povijest',
     'Download threads': 'Istovremena preuzimanja',
-    'Lyrics unavailable, empty or failed to load!':
-        'Tekstovi riječi nedostupni, prazni ili se nisu uspješno učitali!',
+    'Lyrics unavailable, empty or failed to load!': 'Tekstovi riječi nedostupni, prazni ili se nisu uspješno učitali!',
     'About': 'O aplikaciji',
     'Telegram Channel': 'Telegram kanal',
     'To get latest releases': 'Da biste dobili zadnja izdanja',
     'Official chat': 'Službeni chat',
     'Telegram Group': 'Telegram grupa',
-    'Huge thanks to all the contributors! <3':
-        'Veliko hvala svim suradnicima! <3',
+    'Huge thanks to all the contributors! <3': 'Veliko hvala svim suradnicima! <3',
     'Edit playlist': 'Uredi popis za reprodukciju',
     'Update': 'Ažuriraj',
     'Playlist updated!': 'Popis za reprodukciju je ažuriran!',
@@ -4115,8 +3884,7 @@ const crowdin = {
     'Using too many concurrent downloads on older/weaker devices might cause crashes!':
         'Korištenje previše istovremenih preuzimanja na starijim/slabijim uređajima može prouzrokovati rušenja aplikacije!',
     'Create .nomedia files': 'Kreiraj .nomedia dateoteke',
-    'To prevent gallery being filled with album art':
-        'Da biste spriječili popunjavanje galerije sa omotima albuma',
+    'To prevent gallery being filled with album art': 'Da biste spriječili popunjavanje galerije sa omotima albuma',
     'Sleep timer': 'Tajmer za spavanje',
     'Minutes:': 'Minuta:',
     'Hours:': 'Sati:',
@@ -4126,8 +3894,7 @@ const crowdin = {
     'Shuffle': 'Nasumično',
     'Library shuffle': 'Izmiješaj biblioteku',
     'Ignore interruptions': 'Ignoriraj prekide',
-    'Requires app restart to apply!':
-        'Zahtjeva ponovno pokretanje da bi se primijenilo!',
+    'Requires app restart to apply!': 'Zahtjeva ponovno pokretanje da bi se primijenilo!',
     'Ask before downloading': 'Pitaj prije preuzimanja',
     'Search history': 'Povijest pretraživanja',
     'Clear search history': 'Očisti povijest pretraživanja',
@@ -4146,8 +3913,7 @@ const crowdin = {
     'Current version: ': 'Trenutna verzija: ',
     'Unsupported platform!': 'Nepodržana platforma!',
     'ReFreezer Updates': 'ReFreezer ažuriranja',
-    'Update to latest version in the settings.':
-        'Ažurirajte na posljednju verziju u postavkama.',
+    'Update to latest version in the settings.': 'Ažurirajte na posljednju verziju u postavkama.',
     'Release date': 'Datum izdavanja',
     'Shows': 'Emisije',
     'Charts': 'Ljestvice',
@@ -4172,11 +3938,9 @@ const crowdin = {
         'UPOZORENJE: Rezolucije iznad 1200 nisu službeno podržane',
     'Album removed from library!': 'Album je uklonjen iz biblioteke!',
     'Remove offline': 'Izbriši izvanmrežno',
-    'Playlist removed from library!':
-        'Popis za reprodukciju je izbrisan iz biblioteke!',
+    'Playlist removed from library!': 'Popis za reprodukciju je izbrisan iz biblioteke!',
     'Blur player background': 'Zamuti pozadinu svirača',
-    'Might have impact on performance':
-        'Moglo bi imati utjecaja na performanse',
+    'Might have impact on performance': 'Moglo bi imati utjecaja na performanse',
     'Select font': 'Odaberi font',
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         'Ova aplikacija nije napravljena da podržava mnogo fontova. Korištenjem različitih fontova može se prelomiti raspored i prijelom teksta. Koristite na vlastiti rizik!',
@@ -4231,12 +3995,9 @@ const crowdin = {
     'Invalid/Unsupported URL': 'Nevažeći/nepodržani URL',
     'Please wait...': 'Molimo pričekajte...',
     'Login using email': 'Prijava putem email',
-    'Track removed from offline!':
-        'Pjesma je uklonjena iz izvanmrežnog načina rada!',
-    'Removed album from offline!':
-        'Album je uklonjen iz izvanmrežnog načina rada!',
-    'Playlist removed from offline!':
-        'Popis za reprodukciju je uklonjen iz izvanmrežnog načina rada!',
+    'Track removed from offline!': 'Pjesma je uklonjena iz izvanmrežnog načina rada!',
+    'Removed album from offline!': 'Album je uklonjen iz izvanmrežnog načina rada!',
+    'Playlist removed from offline!': 'Popis za reprodukciju je uklonjen iz izvanmrežnog načina rada!',
     'Repeat': 'Ponovi',
     'Repeat one': 'Ponovi jednom',
     'Repeat off': 'Ponavljanje isključeno',
@@ -4285,13 +4046,11 @@ const crowdin = {
     'Post processing...': 'Utófeldolgozás...',
     'Done': 'Kész',
     'Delete': 'Törlés',
-    'Are you sure you want to delete this download?':
-        'Biztos benne, hogy törölni szeretné ezt a letöltést?',
+    'Are you sure you want to delete this download?': 'Biztos benne, hogy törölni szeretné ezt a letöltést?',
     'Cancel': 'Mégse',
     'Downloads': 'Letöltések',
     'Clear queue': 'Várólista ürítése',
-    "This won't delete currently downloading item":
-        'Ezzel nem fog törlődni az aktuálisan letöltődő elem',
+    "This won't delete currently downloading item": 'Ezzel nem fog törlődni az aktuálisan letöltődő elem',
     'Are you sure you want to delete all queued downloads?':
         'Biztos, hogy törölni szeretné az összes várakozó letöltést?',
     'Clear downloads history': 'Letöltési előzmények törlése',
@@ -4304,8 +4063,7 @@ const crowdin = {
     'Currently supporting only Spotify, with 100 tracks limit':
         'Jelenleg csak a Spotify támogatott, 100 dalig korlátozva',
     'Due to API limitations': 'API korlátozások miatt',
-    'Enter your playlist link below':
-        'Vigye be a lejátszási lista linkjét alul',
+    'Enter your playlist link below': 'Vigye be a lejátszási lista linkjét alul',
     'Error loading URL!': 'Hiba az URL betöltése közben!',
     'Convert': 'Átalakítás',
     'Download only': 'Kizárólag csak letöltés',
@@ -4316,8 +4074,7 @@ const crowdin = {
     'Artists': 'Előadók',
     'Playlists': 'Lejátszási listák',
     'Import': 'Importálás',
-    'Import playlists from Spotify':
-        'Importálja a lejátszási listákat Spotify-ról',
+    'Import playlists from Spotify': 'Importálja a lejátszási listákat Spotify-ról',
     'Statistics': 'Statisztikák',
     'Offline tracks': 'Offline dalok',
     'Offline albums': 'Offline albumok',
@@ -4328,15 +4085,13 @@ const crowdin = {
     'Favorites': 'Kedvencek',
     'All offline tracks': 'Összes offline dal',
     'Create new playlist': 'Új lejátszási lista létrehozása',
-    'Cannot create playlists in offline mode':
-        'Offline módban nem lehet lejátszási listát létrehozni',
+    'Cannot create playlists in offline mode': 'Offline módban nem lehet lejátszási listát létrehozni',
     'Error': 'Hiba',
     'Error logging in! Please check your token and internet connection and try again.':
         'Sikertelen bejelentkezés! Ellenőrizze az ARL tokent és az internetkapcsolatot, majd próbálja újra.',
     'Dismiss': 'Elvet',
     'Welcome to': 'Üdvözöljük',
-    'Please login using your Deezer account.':
-        'Kérjük, jelentkezzen be a Deezer fiókjával.',
+    'Please login using your Deezer account.': 'Kérjük, jelentkezzen be a Deezer fiókjával.',
     'Login using browser': 'Bejelentkezés böngészővel',
     'Login using token': 'Bejelentkezés ARL token-nel',
     'Enter ARL': 'ARL bevitele',
@@ -4400,19 +4155,16 @@ const crowdin = {
     'Mobile streaming': 'Mobil streaming',
     'External downloads': 'Külső letöltések',
     'Content language': 'Tartalom nyelve',
-    'Not app language, used in headers. Now':
-        'Nem az alkalmazás nyelve, fejléceknél használt. Jelenleg',
+    'Not app language, used in headers. Now': 'Nem az alkalmazás nyelve, fejléceknél használt. Jelenleg',
     'Select language': 'Válasszon nyelvet',
     'Content country': 'Tartalom országa',
-    'Country used in headers. Now':
-        'Ország a fejléceknél van használva. Jelenleg',
+    'Country used in headers. Now': 'Ország a fejléceknél van használva. Jelenleg',
     'Log tracks': 'Dalok naplózása',
     'Send track listen logs to Deezer, enable it for features like Flow to work properly':
         'Elküldi a zenehallgatási naplókat a Deezer-nek, engedélyezze ezt, hogy megfelelően működjenek az olyan szolgáltatások, mint a Flow',
     'Offline mode': 'Offline mód',
     'Will be overwritten on start.': 'Induláskor felül lesz írva.',
-    'Error logging in, check your internet connections.':
-        'Hiba a bejelentkezéskor, ellenőrizd az internetkapcsolatot.',
+    'Error logging in, check your internet connections.': 'Hiba a bejelentkezéskor, ellenőrizd az internetkapcsolatot.',
     'Logging in...': 'Bejelentkezés...',
     'Download path': 'Letöltési útvonal',
     'Downloads naming': 'Letöltések címezése',
@@ -4425,8 +4177,7 @@ const crowdin = {
     'Separate albums by discs': 'Albumok elválasztása lemez számozás szerint',
     'Overwrite already downloaded files': 'Letöltött fájlok felülírása',
     'Copy ARL': 'ARL másolása',
-    'Copy userToken/ARL Cookie for use in other apps.':
-        'userToken/ARL kimásolása más alkalmazás használatához.',
+    'Copy userToken/ARL Cookie for use in other apps.': 'userToken/ARL kimásolása más alkalmazás használatához.',
     'Copied': 'Másolva',
     'Log out': 'Kijelentkezés',
     'Due to plugin incompatibility, login using browser is unavailable without restart.':
@@ -4443,8 +4194,7 @@ const crowdin = {
     'Importing...': 'Importálás...',
     'Radio': 'Rádió',
     'Track is not available on Deezer!': 'Dal nem elérhető a Deezeren!',
-    'Failed to download track! Please restart.':
-        'Hiba a dal letöltése közben! Kérem indítsa újra.',
+    'Failed to download track! Please restart.': 'Hiba a dal letöltése közben! Kérem indítsa újra.',
     'Storage permission denied!': 'Tárhely-hozzáférés megtagadva!',
     'Failed': 'Sikertelen',
     'Queued': 'Sorba állítva',
@@ -4458,25 +4208,21 @@ const crowdin = {
     'Search or paste URL': 'Keressen, vagy illesszen be egy URL-t',
     'History': 'Előzmények',
     'Download threads': 'Egyidejű letöltések',
-    'Lyrics unavailable, empty or failed to load!':
-        'Dalszöveg nem elérhető. Nincs, vagy sikertelen volt a betöltés!',
+    'Lyrics unavailable, empty or failed to load!': 'Dalszöveg nem elérhető. Nincs, vagy sikertelen volt a betöltés!',
     'About': 'Névjegy',
     'Telegram Channel': 'Telegram csatorna',
     'To get latest releases': 'Szerezze meg a legújabb kiadásokat',
     'Official chat': 'Hivatalos chat',
     'Telegram Group': 'Telegram csoport',
-    'Huge thanks to all the contributors! <3':
-        'Hatalmas köszönet minden egyes közreműködőnek! <3',
+    'Huge thanks to all the contributors! <3': 'Hatalmas köszönet minden egyes közreműködőnek! <3',
     'Edit playlist': 'Lejátszási lista szerkesztése',
     'Update': 'Frissítés',
     'Playlist updated!': 'Lejátszási lista frissítve!',
     'Downloads added!': 'Letöltések hozzáadva!',
-    'Save cover file for every track':
-        'Minden egyes dalnak mentse le az albumborító képét',
+    'Save cover file for every track': 'Minden egyes dalnak mentse le az albumborító képét',
     'Download Log': 'Letöltési napló',
     'Repository': 'Gyűjtemény',
-    'Source code, report issues there.':
-        'Forráskód, jelezze vissza a hibákat itt.',
+    'Source code, report issues there.': 'Forráskód, jelezze vissza a hibákat itt.',
     'Use system theme': 'Rendszertéma használata',
     'Light': 'Világos',
     'Popularity': 'Népszerűség',
@@ -4501,8 +4247,7 @@ const crowdin = {
     'Shuffle': 'Keverés',
     'Library shuffle': 'Könyvtár keverés',
     'Ignore interruptions': 'Megszakítás figyelmen kívül hagyása',
-    'Requires app restart to apply!':
-        'Szükséges az alkalmazás újraindítása a beállítások érvénybe lépéséhez!',
+    'Requires app restart to apply!': 'Szükséges az alkalmazás újraindítása a beállítások érvénybe lépéséhez!',
     'Ask before downloading': 'Kérdezzen rá a letöltés előtt',
     'Search history': 'Keresési előzmények',
     'Clear search history': 'Keresési előzmények törlése',
@@ -4521,8 +4266,7 @@ const crowdin = {
     'Current version: ': 'Jelenlegi verzió: ',
     'Unsupported platform!': 'Nem támogatott eszköz!',
     'ReFreezer Updates': 'ReFreezer frissítések',
-    'Update to latest version in the settings.':
-        'Frissítés a legújabb verzióra a beállításokban.',
+    'Update to latest version in the settings.': 'Frissítés a legújabb verzióra a beállításokban.',
     'Release date': 'Kiadás dátuma',
     'Shows': 'Műsorok',
     'Browse': 'Böngészés',
@@ -4531,8 +4275,7 @@ const crowdin = {
     'Share show': 'Műsor megosztása',
     'Date added': 'Hozzáadva',
     'Official Discord server': 'Hivatalos Discord szerver',
-    'Restart of app is required to properly log out!':
-        'Alkalmazást újra kell indítani, hogy a kilépés megtörténjen!',
+    'Restart of app is required to properly log out!': 'Alkalmazást újra kell indítani, hogy a kilépés megtörténjen!',
     'Artist separator': 'Előadó elválasztó',
     'Singleton naming': 'Különálló dalonkénti névformátum',
     'Keep the screen on': 'Kijelző bekapcsolva tartása',
@@ -4546,8 +4289,7 @@ const crowdin = {
         'Figyelem: Bármilyen felbontás 1200 felett nem támogatott',
     'Album removed from library!': 'Album eltávolítva a könyvtárból!',
     'Remove offline': 'Offline eltávolítása',
-    'Playlist removed from library!':
-        'Lejátszó lista eltávolítva a könyvtárból!',
+    'Playlist removed from library!': 'Lejátszó lista eltávolítva a könyvtárból!',
     'Blur player background': 'Lejátszó háttér elmosása',
     'Might have impact on performance': 'Teljesítmény csökkenést okozhat',
     'Font': 'Betűtípus',
@@ -4608,12 +4350,9 @@ const crowdin = {
     'Invalid/Unsupported URL': 'Helytelen / nem támogatott link',
     'Please wait...': 'Kérjük, várjon...',
     'Login using email': 'Belépés email-lel',
-    'Track removed from offline!':
-        'Szám nem elérhető kapcsolat nélküli üzemmódban!',
-    'Removed album from offline!':
-        'Album nem elérhető kapcsolat nélküli üzemmódban!',
-    'Playlist removed from offline!':
-        'Lejátszási lista eltávolítva a kapcsolat nélküli üzemmódból!'
+    'Track removed from offline!': 'Szám nem elérhető kapcsolat nélküli üzemmódban!',
+    'Removed album from offline!': 'Album nem elérhető kapcsolat nélküli üzemmódban!',
+    'Playlist removed from offline!': 'Lejátszási lista eltávolítva a kapcsolat nélküli üzemmódból!'
   },
   'id_id': {
     'Home': 'Beranda',
@@ -4636,13 +4375,11 @@ const crowdin = {
     'Post processing...': 'Sedang diproses...',
     'Done': 'Selesai',
     'Delete': 'Hapus',
-    'Are you sure you want to delete this download?':
-        'Apakah kamu yakin ingin menghapus unduhan ini?',
+    'Are you sure you want to delete this download?': 'Apakah kamu yakin ingin menghapus unduhan ini?',
     'Cancel': 'Batalkan',
     'Downloads': 'Unduhan',
     'Clear queue': 'Bersihkan daftar antrean',
-    "This won't delete currently downloading item":
-        'Ini tidak akan menghapus item yang sedang diunduh',
+    "This won't delete currently downloading item": 'Ini tidak akan menghapus item yang sedang diunduh',
     'Are you sure you want to delete all queued downloads?':
         'Apakah kamu yakin ingin menghapus semua antrean yang terunduh?',
     'Clear downloads history': 'Bersihkan riwayat unduhan',
@@ -4655,8 +4392,7 @@ const crowdin = {
     'Currently supporting only Spotify, with 100 tracks limit':
         'Saat ini hanya mendukung Spotify, dengan batas 100 lagu',
     'Due to API limitations': 'Karena keterbatasan API',
-    'Enter your playlist link below':
-        'Masukkan link playlist Anda di bawah ini',
+    'Enter your playlist link below': 'Masukkan link playlist Anda di bawah ini',
     'Error loading URL!': 'Gagal memuat URL!',
     'Convert': 'Konversikan',
     'Download only': 'Hanya mengunduh',
@@ -4678,15 +4414,13 @@ const crowdin = {
     'Favorites': 'Favorit',
     'All offline tracks': 'Semua lagu offline',
     'Create new playlist': 'Buat daftar putar baru',
-    'Cannot create playlists in offline mode':
-        'Tidak dapat membuat daftar putar di mode offline',
+    'Cannot create playlists in offline mode': 'Tidak dapat membuat daftar putar di mode offline',
     'Error': 'Terjadi kesalahan',
     'Error logging in! Please check your token and internet connection and try again.':
         'Kesalahan saat masuk! Periksa token dan koneksi internet Anda, lalu coba lagi.',
     'Dismiss': 'Tutup',
     'Welcome to': 'Selamat datang di',
-    'Please login using your Deezer account.':
-        'Silakan masuk menggunakan akun Deezer Anda.',
+    'Please login using your Deezer account.': 'Silakan masuk menggunakan akun Deezer Anda.',
     'Login using browser': 'Masuk menggunakan browser',
     'Login using token': 'Masuk menggunakan token',
     'Enter ARL': 'Masukkan ARL',
@@ -4751,8 +4485,7 @@ const crowdin = {
     'Wifi streaming': 'Pemutaran Wi-Fi',
     'External downloads': 'Unduhan eksternal',
     'Content language': 'Bahasa konten',
-    'Not app language, used in headers. Now':
-        'Bukan bahasa aplikasi, digunakan di header. Digunakan',
+    'Not app language, used in headers. Now': 'Bukan bahasa aplikasi, digunakan di header. Digunakan',
     'Select language': 'Pilih bahasa',
     'Content country': 'Wilayah konten',
     'Country used in headers. Now': 'Negara digunakan di header. Digunakan',
@@ -4760,10 +4493,8 @@ const crowdin = {
     'Send track listen logs to Deezer, enable it for features like Flow to work properly':
         'Kirim catatan mendengarkan lagu ke Deezer, aktifkan agar fitur seperti Flow berfungsi dengan benar',
     'Offline mode': 'Mode offline',
-    'Will be overwritten on start.':
-        'Akan diterapkan saat aplikasi dimulai ulang.',
-    'Error logging in, check your internet connections.':
-        'Kesalahan saat masuk, periksa koneksi internet Anda.',
+    'Will be overwritten on start.': 'Akan diterapkan saat aplikasi dimulai ulang.',
+    'Error logging in, check your internet connections.': 'Kesalahan saat masuk, periksa koneksi internet Anda.',
     'Logging in...': 'Masuk...',
     'Download path': 'Lokasi unduhan',
     'Downloads naming': 'Penamaan unduhan',
@@ -4776,8 +4507,7 @@ const crowdin = {
     'Separate albums by discs': 'Pisahkan album dengan disk',
     'Overwrite already downloaded files': 'Timpa file yang sudah diunduh',
     'Copy ARL': 'Salin ARL',
-    'Copy userToken/ARL Cookie for use in other apps.':
-        'Salin Token/ARL Cookie untuk digunakan di apps lain.',
+    'Copy userToken/ARL Cookie for use in other apps.': 'Salin Token/ARL Cookie untuk digunakan di apps lain.',
     'Copied': 'Tersalin',
     'Log out': 'Keluar',
     'Due to plugin incompatibility, login using browser is unavailable without restart.':
@@ -4789,13 +4519,11 @@ const crowdin = {
     'Go up': 'Ke Atas',
     'Permission denied': 'Akses dilarang',
     'Language': 'Bahasa',
-    'Language changed, please restart ReFreezer to apply!':
-        'Bahasa diganti, Mulai ulang aplikasi untuk menerapkannya!',
+    'Language changed, please restart ReFreezer to apply!': 'Bahasa diganti, Mulai ulang aplikasi untuk menerapkannya!',
     'Importing...': 'Mengimpor...',
     'Flow': 'Alur',
     'Track is not available on Deezer!': 'Lagu tidak tersedia di Deezer!',
-    'Failed to download track! Please restart.':
-        'Gagal untuk mengunduh lagu! Ulangi kembali.',
+    'Failed to download track! Please restart.': 'Gagal untuk mengunduh lagu! Ulangi kembali.',
     'Storage permission denied!': 'Izin penyimpanan ditolak!',
     'Failed': 'Gagal',
     'Queued': 'Dalam antrean',
@@ -4810,15 +4538,13 @@ const crowdin = {
     'Search or paste URL': 'Cari atau masukkan URL',
     'History': 'Riwayat',
     'Download threads': 'Unduh bersamaan',
-    'Lyrics unavailable, empty or failed to load!':
-        'Lirik tidak tersedia, kosong atau gagal untuk memuat!',
+    'Lyrics unavailable, empty or failed to load!': 'Lirik tidak tersedia, kosong atau gagal untuk memuat!',
     'About': 'Tentang',
     'Telegram Channel': 'Channel Telegram',
     'To get latest releases': 'Untuk mendapatkan rilisan terbaru',
     'Official chat': 'Obrolan resmi',
     'Telegram Group': 'Grub Telegram',
-    'Huge thanks to all the contributors! <3':
-        'Terima kasih banyak untuk semua kontributor! <3',
+    'Huge thanks to all the contributors! <3': 'Terima kasih banyak untuk semua kontributor! <3',
     'Edit playlist': 'Edit daftar putar',
     'Update': 'Perbarui',
     'Playlist updated!': 'Daftar putar diperbarui!',
@@ -4826,8 +4552,7 @@ const crowdin = {
     'Save cover file for every track': 'Simpan cover foto dari setiap lagu',
     'Download Log': 'Catatan unduhan',
     'Repository': 'Repositori',
-    'Source code, report issues there.':
-        'Kode sumber, laporkan masalah disini.',
+    'Source code, report issues there.': 'Kode sumber, laporkan masalah disini.',
     'Use system theme': 'Gunakan tema sistem',
     'Light': 'Cerah',
     'Popularity': 'Popularitas',
@@ -4841,8 +4566,7 @@ const crowdin = {
     'Using too many concurrent downloads on older/weaker devices might cause crashes!':
         'Menggunakan terlalu banyak unduhan bersamaan pada perangkat lama/berspesifikasi rendah dapat menyebabkan kerusakan file!',
     'Create .nomedia files': 'Buat file .nomedia',
-    'To prevent gallery being filled with album art':
-        'Untuk mencegah galeri diisi dengan cover album',
+    'To prevent gallery being filled with album art': 'Untuk mencegah galeri diisi dengan cover album',
     'Sleep timer': 'Pengatur waktu tidur',
     'Minutes:': 'Menit:',
     'Hours:': 'Jam:',
@@ -4871,8 +4595,7 @@ const crowdin = {
     'Current version: ': 'Versi saat ini: ',
     'Unsupported platform!': 'Platform Tidak Didukung!',
     'ReFreezer Updates': 'Pembaruan ReFreezer',
-    'Update to latest version in the settings.':
-        'Perbarui ke versi terakhir di pengaturan.',
+    'Update to latest version in the settings.': 'Perbarui ke versi terakhir di pengaturan.',
     'Release date': 'Tanggal rilis',
     'Shows': 'Tampilkan',
     'Charts': 'Tangga lagu',
@@ -4882,8 +4605,7 @@ const crowdin = {
     'Share show': 'Bagikan acara',
     'Date added': 'Tanggal ditambahkan',
     'Official Discord server': 'Server Resmi Discord',
-    'Restart of app is required to properly log out!':
-        'Perlu memulai ulang aplikasi untuk keluar secara benar!',
+    'Restart of app is required to properly log out!': 'Perlu memulai ulang aplikasi untuk keluar secara benar!',
     'Artist separator': 'Pemisah artis',
     'Singleton naming': 'Penamaan tunggal',
     'Keep the screen on': 'Biarkan layar tetap menyala',
@@ -4899,8 +4621,7 @@ const crowdin = {
     'Remove offline': 'Hapus berkas offline',
     'Playlist removed from library!': 'Daftar Putar dihapus dari koleksi!',
     'Blur player background': 'Latar belakang pemutar buram',
-    'Might have impact on performance':
-        'Mungkin berdampak pada performa perangkat anda',
+    'Might have impact on performance': 'Mungkin berdampak pada performa perangkat anda',
     'Select font': 'Pilih font',
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         'Aplikasi ini tidak dibuat untuk mendukung banyak font, ini dapat merusak tata letak dan tampilan. Gunakan dengan resiko anda sendiri!',
@@ -4972,15 +4693,12 @@ const crowdin = {
     'Post processing...': 'Elaborazione...',
     'Done': 'Completato',
     'Delete': 'Cancellare',
-    'Are you sure you want to delete this download?':
-        'Sei sicuro di voler cancellare questo download?',
+    'Are you sure you want to delete this download?': 'Sei sicuro di voler cancellare questo download?',
     'Cancel': 'Annulla',
     'Downloads': 'Download',
     'Clear queue': 'Pulisci la coda',
-    "This won't delete currently downloading item":
-        'Questa azione non cancellerà i download correnti',
-    'Are you sure you want to delete all queued downloads?':
-        'Sei sicuro di voler cancellare tutti i download in coda?',
+    "This won't delete currently downloading item": 'Questa azione non cancellerà i download correnti',
+    'Are you sure you want to delete all queued downloads?': 'Sei sicuro di voler cancellare tutti i download in coda?',
     'Clear downloads history': 'Pulisci la cronologia dei download',
     'WARNING: This will only clear non-offline (external downloads)':
         'ATTENZIONE: Questa azione eliminerà solo i file che non sono offline (download esterni)',
@@ -4991,8 +4709,7 @@ const crowdin = {
     'Currently supporting only Spotify, with 100 tracks limit':
         'Attualmente supporta solo Spotify, con un limite di 100 brani',
     'Due to API limitations': 'A causa delle limitazioni delle API',
-    'Enter your playlist link below':
-        'Inserisci il link della tua playlist qui sotto',
+    'Enter your playlist link below': 'Inserisci il link della tua playlist qui sotto',
     'Error loading URL!': 'Errore caricamento URL!',
     'Convert': 'Converti',
     'Download only': 'Solo Download',
@@ -5014,15 +4731,13 @@ const crowdin = {
     'Favorites': 'Preferiti',
     'All offline tracks': 'Tutte i brani offline',
     'Create new playlist': 'Crea una nuova playlist',
-    'Cannot create playlists in offline mode':
-        'Impossibile creare playlist in modalità offline',
+    'Cannot create playlists in offline mode': 'Impossibile creare playlist in modalità offline',
     'Error': 'Errore',
     'Error logging in! Please check your token and internet connection and try again.':
         "Errore durante l'accesso! Controlla il token, la tua connessione ad internet e riprova.",
     'Dismiss': 'Chiudi',
     'Welcome to': 'Benvenuto su',
-    'Please login using your Deezer account.':
-        'Per favore, esegui il login utilizzando il tuo account Deezer.',
+    'Please login using your Deezer account.': 'Per favore, esegui il login utilizzando il tuo account Deezer.',
     'Login using browser': 'Login utilizzando il browser',
     'Login using token': 'Login utilizzando il token',
     'Enter ARL': "Inserisci l'ARL",
@@ -5081,15 +4796,13 @@ const crowdin = {
     'Deezer (Dark)': 'Deezer (Scuro)',
     'Primary color': 'Colore Principale',
     'Selected color': 'Colore Selezionato',
-    'Use album art primary color':
-        "Usa il colore principale della copertina dell'album",
+    'Use album art primary color': "Usa il colore principale della copertina dell'album",
     'Warning: might be buggy': 'Attenzione: potrebbe causare problemi',
     'Mobile streaming': 'Streaming con dati',
     'Wifi streaming': 'Streaming con WiFi',
     'External downloads': 'Download esterni',
     'Content language': 'Lingua dei contenuti',
-    'Not app language, used in headers. Now':
-        "Non la lingua dell'app, utilizzata negli header. Adesso",
+    'Not app language, used in headers. Now': "Non la lingua dell'app, utilizzata negli header. Adesso",
     'Select language': 'Seleziona la lingua',
     'Content country': 'Contenuto dal Paese',
     'Country used in headers. Now': 'Paese contenuto negli header. Ora',
@@ -5112,8 +4825,7 @@ const crowdin = {
     'Separate albums by discs': 'Separa gli album per disco',
     'Overwrite already downloaded files': 'Sovrascrivi i file già scaricati',
     'Copy ARL': 'Copia ARL',
-    'Copy userToken/ARL Cookie for use in other apps.':
-        'Copia userToken / ARL Cookie da utilizzare in altre app.',
+    'Copy userToken/ARL Cookie for use in other apps.': 'Copia userToken / ARL Cookie da utilizzare in altre app.',
     'Copied': 'Copiato',
     'Log out': 'Disconnettiti',
     'Due to plugin incompatibility, login using browser is unavailable without restart.':
@@ -5128,10 +4840,8 @@ const crowdin = {
     'Language changed, please restart ReFreezer to apply!':
         'Lingua cambiata, riavvia ReFreezer per applicare la modifica!',
     'Importing...': 'Importando...',
-    'Track is not available on Deezer!':
-        'La traccia non è disponibile su Deezer!',
-    'Failed to download track! Please restart.':
-        'Impossibile scaricare la traccia! Riavvia.',
+    'Track is not available on Deezer!': 'La traccia non è disponibile su Deezer!',
+    'Failed to download track! Please restart.': 'Impossibile scaricare la traccia! Riavvia.',
     'Storage permission denied!': 'Autorizzazione di archiviazione negata!',
     'Failed': 'Fallito',
     'Queued': 'In coda',
@@ -5145,25 +4855,21 @@ const crowdin = {
     'Search or paste URL': "Cerca o incolla l'URL",
     'History': 'Storia',
     'Download threads': 'Download simultanei',
-    'Lyrics unavailable, empty or failed to load!':
-        'Testi non disponibili, vuoti o caricamento non riuscito!',
+    'Lyrics unavailable, empty or failed to load!': 'Testi non disponibili, vuoti o caricamento non riuscito!',
     'About': 'Info',
     'Telegram Channel': 'Canale Telegram',
     'To get latest releases': 'Per ottenere le ultime versioni',
     'Official chat': 'Chat ufficiale',
     'Telegram Group': 'Gruppo Telegram',
-    'Huge thanks to all the contributors! <3':
-        'Un enorme grazie a tutti i collaboratori! <3',
+    'Huge thanks to all the contributors! <3': 'Un enorme grazie a tutti i collaboratori! <3',
     'Edit playlist': 'Modifica playlist',
     'Update': 'Aggiorna',
     'Playlist updated!': 'Playlist aggiornata!',
     'Downloads added!': 'Download aggiunti!',
-    'Save cover file for every track':
-        "Salva la copertina dell'album per ogni traccia",
+    'Save cover file for every track': "Salva la copertina dell'album per ogni traccia",
     'Download Log': 'Log dei Download',
     'Repository': 'Archivio',
-    'Source code, report issues there.':
-        'Codice sorgente, segnala i problemi lì.',
+    'Source code, report issues there.': 'Codice sorgente, segnala i problemi lì.',
     'Use system theme': 'Utilizza il tema di sistema',
     'Light': 'Chiaro',
     'Popularity': 'Popolarità',
@@ -5206,8 +4912,7 @@ const crowdin = {
     'Current version: ': 'Versione attuale: ',
     'Unsupported platform!': 'Piattaforma non supportata!',
     'ReFreezer Updates': 'Aggiornamenti ReFreezer',
-    'Update to latest version in the settings.':
-        "Aggiorna all'ultima versione nelle impostazioni.",
+    'Update to latest version in the settings.': "Aggiorna all'ultima versione nelle impostazioni.",
     'Release date': 'Data di rilascio',
     'Charts': 'Classifiche',
     'Browse': 'Sfoglia',
@@ -5233,8 +4938,7 @@ const crowdin = {
     'Remove offline': 'Rimuovi offline',
     'Playlist removed from library!': 'Playlist rimossa dalla libreria!',
     'Blur player background': 'Sfoca lo sfondo del riproduttore',
-    'Might have impact on performance':
-        'Potrebbe avere un impatto sulle prestazioni',
+    'Might have impact on performance': 'Potrebbe avere un impatto sulle prestazioni',
     'Font': 'Carattere',
     'Select font': 'Seleziona carattere',
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
@@ -5320,8 +5024,7 @@ const crowdin = {
     'Home': '홈',
     'Search': '검색',
     'Library': '라이브러리',
-    "Offline mode, can't play flow or smart track lists.":
-        '오프라인 모드. Flow 또는 스마트 트랙 목록을 재생할 수 없습니다.',
+    "Offline mode, can't play flow or smart track lists.": '오프라인 모드. Flow 또는 스마트 트랙 목록을 재생할 수 없습니다.',
     'Added to library': '라이브러리에 추가됨',
     'Download': '다운로드',
     'Disk': '디스크',
@@ -5344,24 +5047,19 @@ const crowdin = {
     'Downloads': '다운로드한 내용',
     'Clear queue': '목록 지우기',
     "This won't delete currently downloading item": '현재 다운로드중인 항목은 삭제되지 않습니다.',
-    'Are you sure you want to delete all queued downloads?':
-        '대기중인 모든 다운로드를 삭제 하시겠습니까?',
+    'Are you sure you want to delete all queued downloads?': '대기중인 모든 다운로드를 삭제 하시겠습니까?',
     'Clear downloads history': '다운로드 기록 지우기',
-    'WARNING: This will only clear non-offline (external downloads)':
-        '경고 : 오프라인이 아닌 내용만 삭제됩니다 (외부 다운로드).',
-    'Please check your connection and try again later...':
-        '인터넷 연결을 확인하고 나중에 다시 시도하십시오 ...',
+    'WARNING: This will only clear non-offline (external downloads)': '경고 : 오프라인이 아닌 내용만 삭제됩니다 (외부 다운로드).',
+    'Please check your connection and try again later...': '인터넷 연결을 확인하고 나중에 다시 시도하십시오 ...',
     'Show more': '자세히보기',
     'Importer': '수입자',
-    'Currently supporting only Spotify, with 100 tracks limit':
-        '현재 Spotify만 지원하며 트랙 제한은 100곡입니다.',
+    'Currently supporting only Spotify, with 100 tracks limit': '현재 Spotify만 지원하며 트랙 제한은 100곡입니다.',
     'Due to API limitations': 'API 제한으로 인해 제한됩니다',
     'Enter your playlist link below': '아래에 플레이리스트 링크를 입력하십시오',
     'Error loading URL!': 'URL 불러 오기 오류!',
     'Convert': '변환',
     'Download only': '다운로드 전용',
-    'Downloading is currently stopped, click here to resume.':
-        '다운로드는 현재 중지되었습니다. 다시 시작하려면 여기를 클릭하십시오.',
+    'Downloading is currently stopped, click here to resume.': '다운로드는 현재 중지되었습니다. 다시 시작하려면 여기를 클릭하십시오.',
     'Tracks': '트랙',
     'Albums': '앨범',
     'Artists': '가수',
@@ -5390,11 +5088,9 @@ const crowdin = {
     'Enter ARL': 'ARL 입력',
     'Token (ARL)': '토큰 (ARL)',
     'Save': '저장',
-    "If you don't have account, you can register on deezer.com for free.":
-        '계정이 없으시면 deezer.com에서 무료로 등록하실 수 있습니다.',
+    "If you don't have account, you can register on deezer.com for free.": '계정이 없으시면 deezer.com에서 무료로 등록하실 수 있습니다.',
     'Open in browser': '브라우저에서 열기',
-    "By using this app, you don't agree with the Deezer ToS":
-        '이 앱을 사용하면 Deezer ToS에 동의하지 않습니다.',
+    "By using this app, you don't agree with the Deezer ToS": '이 앱을 사용하면 Deezer ToS에 동의하지 않습니다.',
     'Play next': '다음 곡 재생',
     'Add to queue': '대기열에 추가',
     'Add track to favorites': '즐겨 찾기에 트랙 추가',
@@ -5459,8 +5155,7 @@ const crowdin = {
         'Deezer에 트랙로그를 전송. Flow와 같은 기능이 제대로 작동하려면 이 기능을 활성화하십시오.',
     'Offline mode': '오프라인 모드',
     'Will be overwritten on start.': '시작할 때 덮어 씁니다.',
-    'Error logging in, check your internet connections.':
-        '로그인 오류, 인터넷 연결을 확인하십시오.',
+    'Error logging in, check your internet connections.': '로그인 오류, 인터넷 연결을 확인하십시오.',
     'Logging in...': '…\$에로그인 중',
     'Download path': '다운로드 경로',
     'Downloads naming': '다운로드 네이밍',
@@ -5473,8 +5168,7 @@ const crowdin = {
     'Separate albums by discs': '디스크별로 앨범 분리',
     'Overwrite already downloaded files': '이미 다운로드 한 파일을 덮어 쓰기',
     'Copy ARL': 'ARL 복사',
-    'Copy userToken/ARL Cookie for use in other apps.':
-        '다른 앱에서 사용하기 위해 사용자 토큰 / ARL 쿠키를 복사하기.',
+    'Copy userToken/ARL Cookie for use in other apps.': '다른 앱에서 사용하기 위해 사용자 토큰 / ARL 쿠키를 복사하기.',
     'Copied': '복사 됨',
     'Log out': '로그 아웃',
     'Due to plugin incompatibility, login using browser is unavailable without restart.':
@@ -5486,8 +5180,7 @@ const crowdin = {
     'Go up': '위로 이동',
     'Permission denied': '권한이 거부되었습니다.',
     'Language': '언어',
-    'Language changed, please restart ReFreezer to apply!':
-        '언어가 변경되었습니다. 적용하려면 Freezer를 다시 시작하세요!',
+    'Language changed, please restart ReFreezer to apply!': '언어가 변경되었습니다. 적용하려면 Freezer를 다시 시작하세요!',
     'Importing...': '…\$가져 오는 중',
     'Radio': '라디오',
     'Flow': '플로우',
@@ -5507,8 +5200,7 @@ const crowdin = {
     'Search or paste URL': '검색 또는 URL 입력',
     'History': '최근 기록',
     'Download threads': '현재 다운로드 목록',
-    'Lyrics unavailable, empty or failed to load!':
-        '가사 없거나, 미지원 혹은 로딩에 실패하였습니다!',
+    'Lyrics unavailable, empty or failed to load!': '가사 없거나, 미지원 혹은 로딩에 실패하였습니다!',
     'About': '정보',
     'Telegram Channel': '텔레그램 채널',
     'To get latest releases': '최신 버전 받기',
@@ -5575,8 +5267,7 @@ const crowdin = {
     'Share show': '팟캐스트 공유',
     'Date added': '추가된 날짜',
     'Official Discord server': '공식 Discord 서버',
-    'Restart of app is required to properly log out!':
-        '제대로 로그아웃하기 위해 앱 재시작이 필요합니다!',
+    'Restart of app is required to properly log out!': '제대로 로그아웃하기 위해 앱 재시작이 필요합니다!',
     'Artist separator': '아티스트 구분 방법',
     'Singleton naming': '단일 다운로드 네이밍',
     'Keep the screen on': '화면 켜진 상태 유지',
@@ -5586,8 +5277,7 @@ const crowdin = {
     'Episodes': '에피소드',
     'Show all episodes': '모든 에피소드 표시',
     'Album cover resolution': '앨범 커버 화질',
-    "WARNING: Resolutions above 1200 aren't officially supported":
-        '경고: 1200 이상의 화질은 공식적으로 지원되지 않습니다',
+    "WARNING: Resolutions above 1200 aren't officially supported": '경고: 1200 이상의 화질은 공식적으로 지원되지 않습니다',
     'Album removed from library!': '앨범이 라이브러리에서 삭제되었습니다!',
     'Remove offline': '오프라인 트랙 제거',
     'Playlist removed from library!': '라이브러리에서 재생목록이 삭제되었습니다!'
@@ -5611,12 +5301,10 @@ const crowdin = {
     'Post processing...': 'Bezig met verwerken...',
     'Done': 'Gereed',
     'Delete': 'Verwijder',
-    'Are you sure you want to delete this download?':
-        'Weet je zeker dat je deze download wilt verwijderen?',
+    'Are you sure you want to delete this download?': 'Weet je zeker dat je deze download wilt verwijderen?',
     'Cancel': 'Annuleer',
     'Clear queue': 'Wachtrij wissen',
-    "This won't delete currently downloading item":
-        'Dit zal het momenteel aan het downloaden item niet verwijderen',
+    "This won't delete currently downloading item": 'Dit zal het momenteel aan het downloaden item niet verwijderen',
     'Are you sure you want to delete all queued downloads?':
         'Weet je zeker dat je alle geplande downloads wilt verwijderen?',
     'Clear downloads history': 'Downloadgeschiedenis wissen',
@@ -5649,8 +5337,7 @@ const crowdin = {
     'Favorites': 'Favorieten',
     'All offline tracks': 'Alle offline nummers',
     'Create new playlist': 'Nieuwe afspeellijst aanmaken',
-    'Cannot create playlists in offline mode':
-        'Het maken van afspeellijsten in offlinemodus is niet mogelijk',
+    'Cannot create playlists in offline mode': 'Het maken van afspeellijsten in offlinemodus is niet mogelijk',
     'Error': 'Fout',
     'Error logging in! Please check your token and internet connection and try again.':
         'Fout bij het aanmelden! Controleer uw token en internetverbinding en probeer het opnieuw.',
@@ -5715,15 +5402,13 @@ const crowdin = {
     'Deezer (Dark)': 'Deezer (Donker)',
     'Primary color': 'Primaire kleur',
     'Selected color': 'Geselecteerde kleur',
-    'Use album art primary color':
-        'Primaire kleur van albumillustratie gebruiken',
+    'Use album art primary color': 'Primaire kleur van albumillustratie gebruiken',
     'Warning: might be buggy': 'Waarschuwing: kan bugs tegenkomen',
     'Mobile streaming': 'Mobiel streamen',
     'Wifi streaming': 'WiFi streamen',
     'External downloads': 'Externe downloads',
     'Content language': 'Taal van inhoud',
-    'Not app language, used in headers. Now':
-        'Niet de app taal, gebruikt in de headers. Nu',
+    'Not app language, used in headers. Now': 'Niet de app taal, gebruikt in de headers. Nu',
     'Select language': 'Taal selecteren',
     'Content country': 'Land van inhoud',
     'Country used in headers. Now': 'Land gebruikt in headers. Nu',
@@ -5732,8 +5417,7 @@ const crowdin = {
         'Stuur logs van geluisterde nummers naar Deezer, schakel het in voor functies zoals Flow om het correct te laten werken',
     'Offline mode': 'Offlinemodus',
     'Will be overwritten on start.': 'Wordt bij het opstarten overschreven.',
-    'Error logging in, check your internet connections.':
-        'Fout bij het aanmelden, controlleer je internetverbinding.',
+    'Error logging in, check your internet connections.': 'Fout bij het aanmelden, controlleer je internetverbinding.',
     'Logging in...': 'Bezig met aanmelden...',
     'Download path': 'Downloadmap',
     'Downloads naming': 'Downloads naamgeving',
@@ -5744,11 +5428,9 @@ const crowdin = {
     'Create folders for artist': 'Mappen voor artiest aanmaken',
     'Create folders for albums': 'Mappen voor artiest aanmaken',
     'Separate albums by discs': 'Albums per disk scheiden',
-    'Overwrite already downloaded files':
-        'Overschrijf reeds gedownloade bestanden',
+    'Overwrite already downloaded files': 'Overschrijf reeds gedownloade bestanden',
     'Copy ARL': 'Kopieer ARL',
-    'Copy userToken/ARL Cookie for use in other apps.':
-        'Kopieer userToken/ARL Cookie voor gebruik in andere apps.',
+    'Copy userToken/ARL Cookie for use in other apps.': 'Kopieer userToken/ARL Cookie voor gebruik in andere apps.',
     'Copied': 'Gekopieerd',
     'Log out': 'Afmelden',
     'Due to plugin incompatibility, login using browser is unavailable without restart.':
@@ -5760,13 +5442,10 @@ const crowdin = {
     'Go up': 'Omhoog gaan',
     'Permission denied': 'Toegang geweigerd',
     'Language': 'Taal',
-    'Language changed, please restart ReFreezer to apply!':
-        'Taal veranderd, herstart ReFreezer om het toe te passen!',
+    'Language changed, please restart ReFreezer to apply!': 'Taal veranderd, herstart ReFreezer om het toe te passen!',
     'Importing...': 'Bezig met importeren...',
-    'Track is not available on Deezer!':
-        'Nummer is niet beschikbaar op Deezer!',
-    'Failed to download track! Please restart.':
-        'Nummer downloaden mislukt! Herstart opnieuw.',
+    'Track is not available on Deezer!': 'Nummer is niet beschikbaar op Deezer!',
+    'Failed to download track! Please restart.': 'Nummer downloaden mislukt! Herstart opnieuw.',
     'Storage permission denied!': 'Opslag toestemming geweigerd!',
     'Failed': 'Mislukt',
     'Queued': 'In wachtrij',
@@ -5780,15 +5459,13 @@ const crowdin = {
     'Search or paste URL': 'Zoek of voer een URL in',
     'History': 'Geschiedenis',
     'Download threads': 'Gelijktijdige downloads',
-    'Lyrics unavailable, empty or failed to load!':
-        'Songteksten niet beschikbaar, leeg of mislukt om te laden!',
+    'Lyrics unavailable, empty or failed to load!': 'Songteksten niet beschikbaar, leeg of mislukt om te laden!',
     'About': 'Over',
     'Telegram Channel': 'Telegram kanaal',
     'To get latest releases': 'Voor de nieuwste versies',
     'Official chat': 'Officiële chat',
     'Telegram Group': 'Telegram groep',
-    'Huge thanks to all the contributors! <3':
-        'Hartelijk dank aan alle bijdragers! <3',
+    'Huge thanks to all the contributors! <3': 'Hartelijk dank aan alle bijdragers! <3',
     'Edit playlist': 'Afspeellijst bewerken',
     'Update': 'Bijwerken',
     'Playlist updated!': 'Afspeellijst bijgewerkt!',
@@ -5820,8 +5497,7 @@ const crowdin = {
     'Smart track list': 'Slimme nummerlijst',
     'Library shuffle': 'Library shufflen',
     'Ignore interruptions': 'Onderbrekingen negeren',
-    'Requires app restart to apply!':
-        'Vereist herstart van de app om toe te passen!',
+    'Requires app restart to apply!': 'Vereist herstart van de app om toe te passen!',
     'Ask before downloading': 'Vragen voordat downloaden wordt gestart',
     'Search history': 'Zoekgeschiedenis',
     'Clear search history': 'Zoekgeschiedenis wissen',
@@ -5838,8 +5514,7 @@ const crowdin = {
     'New update available!': 'Nieuwe update beschikbaar!',
     'Current version: ': 'Huidige versie: ',
     'Unsupported platform!': 'Niet-ondersteunde platform!',
-    'Update to latest version in the settings.':
-        'Werk het programma bij in de instellingen.',
+    'Update to latest version in the settings.': 'Werk het programma bij in de instellingen.',
     'Release date': 'Publicatiedatum',
     'Charts': 'Hitlijsten',
     'Browse': 'Bladeren',
@@ -5848,8 +5523,7 @@ const crowdin = {
     'Share show': 'Show delen',
     'Date added': 'Datum toegevoegd',
     'Official Discord server': 'Officiële Discord server',
-    'Restart of app is required to properly log out!':
-        'Herstart app is vereist om correct uit te loggen!',
+    'Restart of app is required to properly log out!': 'Herstart app is vereist om correct uit te loggen!',
     'Artist separator': 'Artiest scheidingsteken',
     'Singleton naming': 'Alleenstaande nummers naamgeving',
     'Keep the screen on': 'Scherm aanhouden',
@@ -5863,8 +5537,7 @@ const crowdin = {
         'WAARSCHUWING: Resoluties boven 1200 worden niet officieel ondersteund',
     'Album removed from library!': 'Album verwijderd uit de bibliotheek!',
     'Remove offline': 'Offline verwijderen',
-    'Playlist removed from library!':
-        'Afspeellijst uit de bibliotheek verwijderd!',
+    'Playlist removed from library!': 'Afspeellijst uit de bibliotheek verwijderd!',
     'Blur player background': 'Vervaag spelerachtergrond',
     'Might have impact on performance': 'Kan invloed hebben op de prestaties',
     'Font': 'Lettertype',
@@ -5938,21 +5611,18 @@ const crowdin = {
     'Featured': 'Uitgelicht',
     'Your ARL might be expired, try logging out and logging back in using new ARL or browser.':
         'Uw ARL kan verlopen zijn, probeer uit te loggen en log opnieuw in met nieuwe ARL of via de browser.',
-    'The original freezer development team':
-        'Het oorspronkelijke ontwikkelteam van freezer',
+    'The original freezer development team': 'Het oorspronkelijke ontwikkelteam van freezer',
     'Donate': 'Doneer',
     'You should rather support your favorite artists, instead of this app!':
         'U ondersteunt beter uw favoriete artiesten in de plaats van deze app!',
-    'No really, go support your favorite artists instead ;)':
-        'Nee echt, ga uw favoriete artiesten ondersteunen ;)',
+    'No really, go support your favorite artists instead ;)': 'Nee echt, ga uw favoriete artiesten ondersteunen ;)',
     'Storage permission is required to download content.\nPlease open settings and grant storage permission to ReFreezer.':
         'Opslag machtiging is vereist om inhoud te downloaden.\nOpen a.u.b. instellingen en geef ReFreezer opslag machtiging.',
     'Open system settings': 'Open systeeminstellingen',
     'Application Log': 'Applicatie Logboek',
     'Are you sure you want to log out?': 'Weet u zeker dat u wilt uitloggen?',
     'Download failed!': 'Download mislukt!',
-    'Permission denied, download canceled!':
-        'Toestemming geweigerd, download geannuleerd!'
+    'Permission denied, download canceled!': 'Toestemming geweigerd, download geannuleerd!'
   },
   'pl_pl': {
     'Home': 'Strona główna',
@@ -5976,15 +5646,12 @@ const crowdin = {
     'Post processing...': 'Przetwarzanie końcowe...',
     'Done': 'Gotowe',
     'Delete': 'Usuń',
-    'Are you sure you want to delete this download?':
-        'Czy na pewno chcesz usunąć to pobranie?',
+    'Are you sure you want to delete this download?': 'Czy na pewno chcesz usunąć to pobranie?',
     'Cancel': 'Anuluj',
     'Downloads': 'Pobrane',
     'Clear queue': 'Wyczyść kolejkę',
-    "This won't delete currently downloading item":
-        'To nie usunie aktualnie pobieranego elementu',
-    'Are you sure you want to delete all queued downloads?':
-        'Czy na pewno chcesz usunąć wszystkie pobrania w kolejce?',
+    "This won't delete currently downloading item": 'To nie usunie aktualnie pobieranego elementu',
+    'Are you sure you want to delete all queued downloads?': 'Czy na pewno chcesz usunąć wszystkie pobrania w kolejce?',
     'Clear downloads history': 'Wyczyść historię pobieranych plików',
     'WARNING: This will only clear non-offline (external downloads)':
         'OSTRZEŻENIE: To wyczyści tylko nie-offline (zewnętrzne pobierania)',
@@ -6016,15 +5683,13 @@ const crowdin = {
     'Favorites': 'Ulubione',
     'All offline tracks': 'Wszystkie utwory offline',
     'Create new playlist': 'Utwórz nową playlistę',
-    'Cannot create playlists in offline mode':
-        'Nie można utworzyć playlist w trybie offline',
+    'Cannot create playlists in offline mode': 'Nie można utworzyć playlist w trybie offline',
     'Error': 'Błąd',
     'Error logging in! Please check your token and internet connection and try again.':
         'Błąd podczas logowania! Sprawdź swój token i połączenie internetowe i spróbuj ponownie.',
     'Dismiss': 'Zamknij',
     'Welcome to': 'Witamy w',
-    'Please login using your Deezer account.':
-        'Zaloguj się za pomocą konta Deezer.',
+    'Please login using your Deezer account.': 'Zaloguj się za pomocą konta Deezer.',
     'Login using browser': 'Zaloguj się za pomocą przeglądarki',
     'Login using token': 'Logowanie przy użyciu tokenu',
     'Enter ARL': 'Wprowadź ARL',
@@ -6032,8 +5697,7 @@ const crowdin = {
     "If you don't have account, you can register on deezer.com for free.":
         'Jeśli nie masz konta, możesz zarejestrować się na deezer.com za darmo.',
     'Open in browser': 'Otwórz w przeglądarce',
-    "By using this app, you don't agree with the Deezer ToS":
-        'Używając tej aplikacji, nie zgadzasz się z ToS Deezer',
+    "By using this app, you don't agree with the Deezer ToS": 'Używając tej aplikacji, nie zgadzasz się z ToS Deezer',
     'Play next': 'Odtwarzaj następne',
     'Add to queue': 'Dodaj do kolejki',
     'Add track to favorites': 'Dodaj do ulubionych',
@@ -6089,8 +5753,7 @@ const crowdin = {
     'Wifi streaming': 'Strumieniowanie (WiFi)',
     'External downloads': 'Pobrane z zewnątrz',
     'Content language': 'Język treści',
-    'Not app language, used in headers. Now':
-        'To nie jest język aplikacji, używany w nagłówkach. Teraz',
+    'Not app language, used in headers. Now': 'To nie jest język aplikacji, używany w nagłówkach. Teraz',
     'Select language': 'Wybierz język',
     'Content country': 'Kraj zawartości',
     'Country used in headers. Now': 'Kraj używany w nagłówkach. Teraz',
@@ -6099,8 +5762,7 @@ const crowdin = {
         'Wyślij dzienniki słuchania ścieżek do Deezer, włącz aby funkcje takie jak Flow działały poprawnie',
     'Offline mode': 'Tryb offline',
     'Will be overwritten on start.': 'Zostanie nadpisany przy starcie.',
-    'Error logging in, check your internet connections.':
-        'Błąd logowania, sprawdź swoje połączenia internetowe.',
+    'Error logging in, check your internet connections.': 'Błąd logowania, sprawdź swoje połączenia internetowe.',
     'Logging in...': 'Logowanie...',
     'Download path': 'Ścieżka pobierania',
     'Downloads naming': 'Nazewnictwo pobieranych',
@@ -6112,8 +5774,7 @@ const crowdin = {
     'Separate albums by discs': 'Oddziel albumy po dyskach',
     'Overwrite already downloaded files': 'Nadpisz już pobrane pliki',
     'Copy ARL': 'Kopiuj ARL',
-    'Copy userToken/ARL Cookie for use in other apps.':
-        'Skopiuj userToken/ARL Cookie do użycia w innych aplikacjach.',
+    'Copy userToken/ARL Cookie for use in other apps.': 'Skopiuj userToken/ARL Cookie do użycia w innych aplikacjach.',
     'Copied': 'Skopiowane',
     'Log out': 'Wyloguj się',
     'Due to plugin incompatibility, login using browser is unavailable without restart.':
@@ -6129,8 +5790,7 @@ const crowdin = {
         'Zmieniono język, uruchom ponownie ReFreezer aby zastosować!',
     'Importing...': 'Importowanie...',
     'Track is not available on Deezer!': 'Ścieżka nie jest dostępna w Deezer!',
-    'Failed to download track! Please restart.':
-        'Nie udało się pobrać utworu! Proszę uruchomić ponownie.',
+    'Failed to download track! Please restart.': 'Nie udało się pobrać utworu! Proszę uruchomić ponownie.',
     'Storage permission denied!': 'Odmowa dostępu do pamięci!',
     'Failed': 'Niepowodzenie',
     'Queued': 'W kolejce',
@@ -6144,15 +5804,13 @@ const crowdin = {
     'Search or paste URL': 'Szukaj lub wklej URL',
     'History': 'Historia',
     'Download threads': 'Aktualne pobierania',
-    'Lyrics unavailable, empty or failed to load!':
-        'Tekst jest niedostępny, pusty lub nie można go załadować!',
+    'Lyrics unavailable, empty or failed to load!': 'Tekst jest niedostępny, pusty lub nie można go załadować!',
     'About': 'O aplikacji',
     'Telegram Channel': 'Kanał Telegram',
     'To get latest releases': 'Aby uzyskać najnowsze wersje',
     'Official chat': 'Oficjalny czat',
     'Telegram Group': 'Grupa na Telegramie',
-    'Huge thanks to all the contributors! <3':
-        'Ogromne podziękowania dla wszystkich współtwórców! <3',
+    'Huge thanks to all the contributors! <3': 'Ogromne podziękowania dla wszystkich współtwórców! <3',
     'Edit playlist': 'Edytuj playlistę',
     'Update': 'Aktualizuj',
     'Playlist updated!': 'Playlista zaktualizowana!',
@@ -6174,8 +5832,7 @@ const crowdin = {
     'Using too many concurrent downloads on older/weaker devices might cause crashes!':
         'Używanie zbyt wielu równoczesnych pobrań na starszych/słabszych urządzeniach może spowodować awarię!',
     'Create .nomedia files': 'Utwórz pliki .nomedia',
-    'To prevent gallery being filled with album art':
-        'Aby zapobiec wypełnieniu galerii okładką albumu',
+    'To prevent gallery being filled with album art': 'Aby zapobiec wypełnieniu galerii okładką albumu',
     'Sleep timer': 'Wyłącznik czasowy',
     'Minutes:': 'Minuty:',
     'Hours:': 'Godziny:',
@@ -6185,8 +5842,7 @@ const crowdin = {
     'Shuffle': 'Losowo',
     'Library shuffle': 'Odtwarzaj losowo bibliotekę',
     'Ignore interruptions': 'Ignoruj przerywanie odtwarzania',
-    'Requires app restart to apply!':
-        'Wymaga ponownego uruchomienia aplikacji!',
+    'Requires app restart to apply!': 'Wymaga ponownego uruchomienia aplikacji!',
     'Ask before downloading': 'Zapytaj przed pobraniem',
     'Search history': 'Historia wyszukiwania',
     'Clear search history': 'Wyczyść historię wyszukiwania',
@@ -6205,8 +5861,7 @@ const crowdin = {
     'Current version: ': 'Zainstalowana wersja: ',
     'Unsupported platform!': 'Nieobsługiwana platforma!',
     'ReFreezer Updates': 'Aktualizacje ReFreezer',
-    'Update to latest version in the settings.':
-        'Zaktualizuj do najnowszej wersji w ustawieniach.',
+    'Update to latest version in the settings.': 'Zaktualizuj do najnowszej wersji w ustawieniach.',
     'Release date': 'Data wydania',
     'Shows': 'Podcasty',
     'Charts': 'Na czasie',
@@ -6291,8 +5946,7 @@ const crowdin = {
     'Login using email': 'Zaloguj przy użyciu adresu email',
     'Track removed from offline!': 'Utwór usunięty z biblioteki offline!',
     'Removed album from offline!': 'Album usunięty z biblioteki offline!',
-    'Playlist removed from offline!':
-        'Playlista usunięta z biblioteki offline!',
+    'Playlist removed from offline!': 'Playlista usunięta z biblioteki offline!',
     'Repeat': 'Powtarzaj',
     'Repeat one': 'Powtarzaj bieżący',
     'Repeat off': 'Nie powtarzaj',
@@ -6323,12 +5977,14 @@ const crowdin = {
     'Home': 'Início',
     'Search': 'Busca',
     'Library': 'Biblioteca',
-    "Offline mode, can't play flow or smart track lists.":
-        'Modo offline, não reproduz Flow ou playlists inteligentes.',
+    "Offline mode, can't play flow or smart track lists.": 'Modo offline, não reproduz Flow ou playlists inteligentes.',
     'Added to library': 'Adicionado à biblioteca',
+    'Download': 'Download',
     'Disk': 'Disco',
+    'Offline': 'Offline',
     'Top Tracks': 'Top faixas',
     'Show more tracks': 'Mostrar mais faixas',
+    'Top': 'Top',
     'Top Albums': 'Álbuns Mais Ouvidos',
     'Show all albums': 'Mostrar todos os álbuns',
     'Discography': 'Discografia',
@@ -6339,12 +5995,11 @@ const crowdin = {
     'Post processing...': 'Pós-processamento...',
     'Done': 'Feito',
     'Delete': 'Deletar',
-    'Are you sure you want to delete this download?':
-        'Tem certeza de que quer excluir este download?',
+    'Are you sure you want to delete this download?': 'Tem certeza de que quer excluir este download?',
     'Cancel': 'Cancelar',
+    'Downloads': 'Downloads',
     'Clear queue': 'Limpar fila',
-    "This won't delete currently downloading item":
-        'Isso não irá excluir o item de download atual',
+    "This won't delete currently downloading item": 'Isso não irá excluir o item de download atual',
     'Are you sure you want to delete all queued downloads?':
         'Tem certeza de que quer excluir todos os downloads enfileirados?',
     'Clear downloads history': 'Limpar histórico de downloads',
@@ -6366,6 +6021,7 @@ const crowdin = {
     'Tracks': 'Faixas',
     'Albums': 'Álbuns',
     'Artists': 'Artistas',
+    'Playlists': 'Playlists',
     'Import': 'Importar',
     'Import playlists from Spotify': 'Importar playlists do Spotify',
     'Statistics': 'Estatísticas',
@@ -6378,18 +6034,17 @@ const crowdin = {
     'Favorites': 'Favoritos',
     'All offline tracks': 'Todas as faixas offline',
     'Create new playlist': 'Criar nova playlist',
-    'Cannot create playlists in offline mode':
-        'Não é possível criar playlists no modo offline',
+    'Cannot create playlists in offline mode': 'Não é possível criar playlists no modo offline',
     'Error': 'Erro',
     'Error logging in! Please check your token and internet connection and try again.':
         'Erro de login! Por favor, verifique seu token e conexão com a internet e tente novamente.',
     'Dismiss': 'Dispensar',
     'Welcome to': 'Bem-vindo ao',
-    'Please login using your Deezer account.':
-        'Faça login usando sua conta do Deezer.',
+    'Please login using your Deezer account.': 'Faça login usando sua conta do Deezer.',
     'Login using browser': 'Login usando o navegador',
     'Login using token': 'Login usando o token',
     'Enter ARL': 'Introduzir ARL',
+    'Token (ARL)': 'Token (ARL)',
     'Save': 'Salvar',
     "If you don't have account, you can register on deezer.com for free.":
         'Se você não tem conta, você pode se registrar no deezer.com de graça.',
@@ -6437,6 +6092,7 @@ const crowdin = {
     'General': 'Geral',
     'Appearance': 'Aparência',
     'Quality': 'Qualidade',
+    'Deezer': 'Deezer',
     'Theme': 'Tema',
     'Currently': 'Atualmente',
     'Select theme': 'Selecionar tema',
@@ -6451,8 +6107,7 @@ const crowdin = {
     'Wifi streaming': 'Transmissão via WiFi',
     'External downloads': 'Downloads externos',
     'Content language': 'Linguagem do conteúdo',
-    'Not app language, used in headers. Now':
-        'Não é o idioma do aplicativo, usado nos cabeçalhos. Atualmente',
+    'Not app language, used in headers. Now': 'Não é o idioma do aplicativo, usado nos cabeçalhos. Atualmente',
     'Select language': 'Selecionar o idioma',
     'Content country': 'País do conteúdo',
     'Country used in headers. Now': 'País usado em cabeçalhos. Atualmente',
@@ -6461,8 +6116,7 @@ const crowdin = {
         'Envie registro de faixas ouvidas para o Deezer, habilite-o para que recursos como o Flow funcionem corretamente',
     'Offline mode': 'Modo offline',
     'Will be overwritten on start.': 'Será substituído no início.',
-    'Error logging in, check your internet connections.':
-        'Erro ao fazer login, verifique suas conexões de internet.',
+    'Error logging in, check your internet connections.': 'Erro ao fazer login, verifique suas conexões de internet.',
     'Logging in...': 'Fazendo login...',
     'Download path': 'Caminho de download',
     'Downloads naming': 'Nomenclatura de downloads',
@@ -6488,13 +6142,12 @@ const crowdin = {
     'Go up': 'Ir para cima',
     'Permission denied': 'Permissão negada',
     'Language': 'Linguagem',
-    'Language changed, please restart ReFreezer to apply!':
-        'Idioma alterado, reinicie o ReFreezer para aplicar!',
+    'Language changed, please restart ReFreezer to apply!': 'Idioma alterado, reinicie o ReFreezer para aplicar!',
     'Importing...': 'Importando...',
     'Radio': 'Rádio',
+    'Flow': 'Flow',
     'Track is not available on Deezer!': 'Faixa não está disponível no Deezer!',
-    'Failed to download track! Please restart.':
-        'Falha ao baixar a faixa! Reinicie.',
+    'Failed to download track! Please restart.': 'Falha ao baixar a faixa! Reinicie.',
     'Storage permission denied!': 'Permissão de armazenamento negada!',
     'Failed': 'Falha',
     'Queued': 'Na fila',
@@ -6504,25 +6157,23 @@ const crowdin = {
     'Download Settings': 'Download',
     'Create folder for playlist': 'Criar pastas para playlists',
     'Download .LRC lyrics': 'Baixar letras \".lrc\"',
+    'Proxy': 'Proxy',
     'Not set': 'Não configurado',
     'Search or paste URL': 'Buscar ou colar URL',
     'History': 'Histórico',
     'Download threads': 'Downloads simultâneos',
-    'Lyrics unavailable, empty or failed to load!':
-        'Letra indisponível, vazia ou falhou ao carregar!',
+    'Lyrics unavailable, empty or failed to load!': 'Letra indisponível, vazia ou falhou ao carregar!',
     'About': 'Sobre',
     'Telegram Channel': 'Canal do Telegram',
     'To get latest releases': 'Para obter as versões mais recentes',
     'Official chat': 'Bate-papo oficial',
     'Telegram Group': 'Grupo do Telegram',
-    'Huge thanks to all the contributors! <3':
-        'Muito obrigado a todos os contribuidores! ❤️',
+    'Huge thanks to all the contributors! <3': 'Muito obrigado a todos os contribuidores! ❤️',
     'Edit playlist': 'Editar playlist',
     'Update': 'Atualizar',
     'Playlist updated!': 'Playlist atualizada!',
     'Downloads added!': 'Downloads adicionados!',
-    'Save cover file for every track':
-        'Salvar arquivo de capa para todas as faixas',
+    'Save cover file for every track': 'Salvar arquivo de capa para todas as faixas',
     'Download Log': 'Log de download',
     'Repository': 'Repositório',
     'Source code, report issues there.': 'Código-fonte, relate problemas lá.',
@@ -6539,8 +6190,7 @@ const crowdin = {
     'Using too many concurrent downloads on older/weaker devices might cause crashes!':
         'Usar muitos downloads simultâneos em dispositivos mais antigos ou mais fracos pode causar travamentos!',
     'Create .nomedia files': 'Criar arquivos \".nomedia\"',
-    'To prevent gallery being filled with album art':
-        'Para evitar que a galeria fique cheia de arte do álbum',
+    'To prevent gallery being filled with album art': 'Para evitar que a galeria fique cheia de arte do álbum',
     'Sleep timer': 'Temporizador de sono',
     'Minutes:': 'Minutos:',
     'Hours:': 'Horas:',
@@ -6550,11 +6200,11 @@ const crowdin = {
     'Shuffle': 'Aleatório',
     'Library shuffle': 'Biblioteca aleatória',
     'Ignore interruptions': 'Ignorar interrupções',
-    'Requires app restart to apply!':
-        'Requer reinicialização do aplicativo para aplicar!',
+    'Requires app restart to apply!': 'Requer reinicialização do aplicativo para aplicar!',
     'Ask before downloading': 'Pergunte antes de baixar',
     'Search history': 'Histórico de busca',
     'Clear search history': 'Limpar histórico de busca',
+    'LastFM': 'LastFM',
     'Login to enable scrobbling.': 'Faça login para ativar o scrobbling.',
     'Login to LastFM': 'Login no LastFM',
     'Username': 'Nome do usuário',
@@ -6570,15 +6220,16 @@ const crowdin = {
     'Current version: ': 'Versão atual: ',
     'Unsupported platform!': 'Plataforma não suportada!',
     'ReFreezer Updates': 'Atualizações do ReFreezer',
-    'Update to latest version in the settings.':
-        'Atualize para a versão mais recente nas configurações.',
+    'Update to latest version in the settings.': 'Atualize para a versão mais recente nas configurações.',
     'Release date': 'Data de lançamento',
+    'Shows': 'Shows',
     'Charts': 'Listas',
     'Browse': 'Navegar',
     'Quick access': 'Acesso rápido',
     'Play mix': 'Reproduzir mix',
     'Share show': 'Compartilhar show',
     'Date added': 'Data de adição',
+    'Discord': 'Discord',
     'Official Discord server': 'Servidor oficial do Discord',
     'Restart of app is required to properly log out!':
         'É necessário reiniciar o aplicativo para desconectar corretamente!',
@@ -6608,13 +6259,17 @@ const crowdin = {
     'Visualizer': 'Visualizador',
     'Show visualizers on lyrics page. WARNING: Requires microphone permission!':
         'Mostrar visualizador na página da letra. AVISO: Requer permissão de microfone!',
+    'Tags': 'Tags',
     'Album': 'Álbum',
     'Track number': 'Número da faixa',
     'Disc number': 'Número do disco',
     'Album artist': 'Artista do álbum',
     'Date/Year': 'Data/Ano',
     'Label': 'Gravadora',
+    'ISRC': 'ISRC',
+    'UPC': 'UPC',
     'Track total': 'Total de faixa',
+    'BPM': 'BPM',
     'Unsynchronized lyrics': 'Letra não sincronizada',
     'Genre': 'Gênero',
     'Contributors': 'Colaboradores',
@@ -6632,10 +6287,12 @@ const crowdin = {
     'Change display mode': 'Mudar modo de exibição',
     'Enable high refresh rates': 'Habilitar altas taxas de atualização',
     'Display mode': 'Modo de exibição',
+    'Spotify v1': 'Spotify v1',
     'Import Spotify playlists up to 100 tracks without any login.':
         'Importe listas de reprodução do Spotify de até 100 faixas sem login.',
     'Download imported tracks': 'Baixar faixas importadas',
     'Start import': 'Iniciar importação',
+    'Spotify v2': 'Spotify v2',
     'Import any Spotify playlist, import from own Spotify library. Requires free account.':
         'Importe qualquer playlist do Spotify, importe da própria biblioteca do Spotify. Requer uma conta gratuita.',
     'Spotify Importer v2': 'Importador do Spotify v2',
@@ -6647,9 +6304,12 @@ const crowdin = {
     '2. In the app you just created go to settings, and set the Redirect URL to: ':
         '2. No aplicativo que você acabou de criar vá para configurações e defina a URL de redirecionamento para: ',
     'Copy the Redirect URL': 'Copiar URL',
+    'Client ID': 'Client ID',
+    'Client Secret': 'Client Secret',
     'Authorize': 'Autorizar',
     'Logged in as: ': 'Conectado como: ',
     'Import playlists by URL': 'Importar playlists pelo URL',
+    'URL': 'URL',
     'Options': 'Opções',
     'Invalid/Unsupported URL': 'URL inválido/não suportado',
     'Please wait...': 'Por favor, aguarde...',
@@ -6675,19 +6335,31 @@ const crowdin = {
     'Pause': 'Pausar',
     'Remove': 'Remover',
     'Seekbar': 'Barra de Busca',
+    'Singles': 'Singles',
     'Featured': 'Destaques',
     'Fans': 'Fãs',
     'Duration': 'Duração',
     'Sort': 'Ordenar',
     'Your ARL might be expired, try logging out and logging back in using new ARL or browser.':
-        'Sua ARL pode estar expirada, tente descontar e fazer login novamente usando uma nova ARL ou via navegador.'
+        'Sua ARL pode estar expirada, tente descontar e fazer login novamente usando uma nova ARL ou via navegador.',
+    'The original freezer development team': 'A equipe de desenvolvimento original do Freezer',
+    'Donate': 'Faça uma doação',
+    'You should rather support your favorite artists, instead of this app!':
+        'Você deveria apoiar seus artistas favoritos, em vez deste aplicativo!',
+    'No really, go support your favorite artists instead ;)': 'É sério, vá apoiar seus artistas favoritos ;)',
+    'Storage permission is required to download content.\nPlease open settings and grant storage permission to ReFreezer.':
+        'É necessário acesso ao armazenamento para fazer downloads.\nPor favor, abra as configurações e conceda a permissão de armazenamento para o ReFreezer.',
+    'Open system settings': 'Abrir configurações do sistema',
+    'Application Log': 'Registros do Aplicativo',
+    'Are you sure you want to log out?': 'Tem certeza de que deseja sair?',
+    'Download failed!': 'Falha no download!',
+    'Permission denied, download canceled!': 'Permissão negada, download cancelado!'
   },
   'ro_ro': {
     'Home': 'Pagina de pornire',
     'Search': 'Căutare',
     'Library': 'Librărie',
-    "Offline mode, can't play flow or smart track lists.":
-        'Mod offline, nu pot reda flow-uri sau liste smart track.',
+    "Offline mode, can't play flow or smart track lists.": 'Mod offline, nu pot reda flow-uri sau liste smart track.',
     'Added to library': 'Adăugat la librărie',
     'Download': 'Descărcați',
     'Disk': 'Disc',
@@ -6702,13 +6374,11 @@ const crowdin = {
     'Post processing...': 'Post procesare...',
     'Done': 'Gata',
     'Delete': 'Ștergeți',
-    'Are you sure you want to delete this download?':
-        'Ești sigur că vrei să ștergi această descărcare?',
+    'Are you sure you want to delete this download?': 'Ești sigur că vrei să ștergi această descărcare?',
     'Cancel': 'Anulează',
     'Downloads': 'Descărcări',
     'Clear queue': 'Ștergeți coada',
-    "This won't delete currently downloading item":
-        'Aceasta nu va șterge elementul care se descarcă acum',
+    "This won't delete currently downloading item": 'Aceasta nu va șterge elementul care se descarcă acum',
     'Are you sure you want to delete all queued downloads?':
         'Ești sigur că vrei să ștergi toate descărcările aflate în coadă?',
     'Clear downloads history': 'Șterge istoricul descărcărilor',
@@ -6721,8 +6391,7 @@ const crowdin = {
     'Currently supporting only Spotify, with 100 tracks limit':
         'În prezent acceptă doar Spotify, cu limita de 100 de piese',
     'Due to API limitations': 'Din cauza limitărilor API',
-    'Enter your playlist link below':
-        'Introduceți linkul playlistului de mai jos',
+    'Enter your playlist link below': 'Introduceți linkul playlistului de mai jos',
     'Error loading URL!': 'Eroare la încărcarea URL-ului!',
     'Convert': 'Convertiți',
     'Download only': 'Doar descărcare',
@@ -6744,15 +6413,13 @@ const crowdin = {
     'Favorites': 'Favorite',
     'All offline tracks': 'Toate piesele offline',
     'Create new playlist': 'Crează un nou playlist',
-    'Cannot create playlists in offline mode':
-        'Nu se pot crea playlist-uri în modul offline',
+    'Cannot create playlists in offline mode': 'Nu se pot crea playlist-uri în modul offline',
     'Error': 'Eroare',
     'Error logging in! Please check your token and internet connection and try again.':
         'Eroare la conectare! Verificați token-ul și conexiunea la internet și încercați din nou.',
     'Dismiss': 'Renunță',
     'Welcome to': 'Bun venit la',
-    'Please login using your Deezer account.':
-        'Te rugăm să te conectezi utilizând contul tau Deezer.',
+    'Please login using your Deezer account.': 'Te rugăm să te conectezi utilizând contul tau Deezer.',
     'Login using browser': 'Autentificare utilizând browserul',
     'Login using token': 'Autentificare folosind token-ul',
     'Enter ARL': 'Introduceți ARL-ul',
@@ -6816,19 +6483,16 @@ const crowdin = {
     'Wifi streaming': 'Streaming Wi-Fi',
     'External downloads': 'Descărcări externe',
     'Content language': 'Limbajul conținutului',
-    'Not app language, used in headers. Now':
-        'Nu este limba aplicației, folosit în header (titlu). Acum',
+    'Not app language, used in headers. Now': 'Nu este limba aplicației, folosit în header (titlu). Acum',
     'Select language': 'Alege o limbă',
     'Content country': 'Conținutul tării',
-    'Country used in headers. Now':
-        'Țara este utilizată în header-i (titluri). Acum',
+    'Country used in headers. Now': 'Țara este utilizată în header-i (titluri). Acum',
     'Log tracks': 'Log-ul pieselor',
     'Send track listen logs to Deezer, enable it for features like Flow to work properly':
         'Trimiteți log-urile de ascultare a pieselor către Deezer, activați-l pentru funcții precum Flow să funcționeze corect',
     'Offline mode': 'Mod offline',
     'Will be overwritten on start.': 'Va fi suprascris la început.',
-    'Error logging in, check your internet connections.':
-        'Eroare la conectare, verificați conexiunile la internet.',
+    'Error logging in, check your internet connections.': 'Eroare la conectare, verificați conexiunile la internet.',
     'Logging in...': 'Conectare...',
     'Download path': 'Calea descărcărilor',
     'Downloads naming': 'Denumirea descărcărilor',
@@ -6839,8 +6503,7 @@ const crowdin = {
     'Create folders for artist': 'Creați foldere pentru artiști',
     'Create folders for albums': 'Creați foldere pentru albume',
     'Separate albums by discs': 'Separează albumele după discuri',
-    'Overwrite already downloaded files':
-        'Suprascrieți fișierele deja descărcate',
+    'Overwrite already downloaded files': 'Suprascrieți fișierele deja descărcate',
     'Copy ARL': 'Copiază ARL-ul',
     'Copy userToken/ARL Cookie for use in other apps.':
         'Copiază userToken-ul/ARL-ul Cookie utilizarea în alte aplicații.',
@@ -6860,8 +6523,7 @@ const crowdin = {
     'Importing...': 'Importând...',
     'Flow': 'Fluxuri',
     'Track is not available on Deezer!': 'Piesa nu este disponibilă pe Deezer!',
-    'Failed to download track! Please restart.':
-        'Descărcarea piesei nu a reușit! Restart-ați.',
+    'Failed to download track! Please restart.': 'Descărcarea piesei nu a reușit! Restart-ați.',
     'Storage permission denied!': 'Permisia de stocare a fost refuzată!',
     'Failed': 'Eșuat',
     'Queued': 'În coadă',
@@ -6875,15 +6537,13 @@ const crowdin = {
     'Search or paste URL': 'Caută sau pune un URL',
     'History': 'Istorie',
     'Download threads': 'Descărcări simultane',
-    'Lyrics unavailable, empty or failed to load!':
-        'Versurile nu sunt disponibile, goale sau au eșuat încărcarea!',
+    'Lyrics unavailable, empty or failed to load!': 'Versurile nu sunt disponibile, goale sau au eșuat încărcarea!',
     'About': 'Despre',
     'Telegram Channel': 'Canalul Telegram',
     'To get latest releases': 'Pentru a obține cele mai recente versiuni',
     'Official chat': 'Chat-ul oficial',
     'Telegram Group': 'Grupul Telegram',
-    'Huge thanks to all the contributors! <3':
-        'Mulțumesc frumos tuturor colaboratorilor! <3',
+    'Huge thanks to all the contributors! <3': 'Mulțumesc frumos tuturor colaboratorilor! <3',
     'Edit playlist': 'Editați playlist-ul',
     'Update': 'Actualizează',
     'Playlist updated!': 'Playlist actualizat!',
@@ -6891,8 +6551,7 @@ const crowdin = {
     'Save cover file for every track': 'Salvează cover-ul pentru fiecare piesă',
     'Download Log': 'Log-ul descărcării',
     'Repository': 'Depozit',
-    'Source code, report issues there.':
-        'Codul sursă (Source code), raportați problemele acolo.',
+    'Source code, report issues there.': 'Codul sursă (Source code), raportați problemele acolo.',
     'Use system theme': 'Folosește tema de sistem',
     'Light': 'Luminaosă',
     'Popularity': 'Popularitate',
@@ -6906,8 +6565,7 @@ const crowdin = {
     'Using too many concurrent downloads on older/weaker devices might cause crashes!':
         'Utilizarea de prea multe descărcări simultane pe dispozitive mai vechi/mai slabe ar putea provoca blocarea!',
     'Create .nomedia files': 'Crează fișiere .nomedia',
-    'To prevent gallery being filled with album art':
-        'Pentru a preveni umplerea galeriei cu coperți de album',
+    'To prevent gallery being filled with album art': 'Pentru a preveni umplerea galeriei cu coperți de album',
     'Sleep timer': 'Temporizator',
     'Minutes:': 'Minute:',
     'Hours:': 'Ore:',
@@ -6917,8 +6575,7 @@ const crowdin = {
     'Shuffle': 'Mixează',
     'Library shuffle': 'Amestecare librărie',
     'Ignore interruptions': 'Ignoră întreruperile',
-    'Requires app restart to apply!':
-        'Trebuie să reporniți aplicația pentru a aplica!',
+    'Requires app restart to apply!': 'Trebuie să reporniți aplicația pentru a aplica!',
     'Ask before downloading': 'Întreabă înainte de descărcare',
     'Search history': 'Istoric căutare',
     'Clear search history': 'Ștergere istoric căutare',
@@ -6937,8 +6594,7 @@ const crowdin = {
     'Current version: ': 'Versiunea curentă: ',
     'Unsupported platform!': 'Platformă neacceptată!',
     'ReFreezer Updates': 'Actualizări ReFreezer',
-    'Update to latest version in the settings.':
-        'Actualizează la cea mai recentă versiune din setări.',
+    'Update to latest version in the settings.': 'Actualizează la cea mai recentă versiune din setări.',
     'Release date': 'Data lansării',
     'Shows': 'Emisiuni',
     'Charts': 'Topuri',
@@ -6965,8 +6621,7 @@ const crowdin = {
     'Remove offline': 'Elimină regim offline',
     'Playlist removed from library!': 'Playlist eliminat din bibliotecă!',
     'Blur player background': 'Încețoșează fundalul player-ului',
-    'Might have impact on performance':
-        'Ar putea să afecteze performanța aplicației',
+    'Might have impact on performance': 'Ar putea să afecteze performanța aplicației',
     'Font': 'Fontul',
     'Select font': 'Selectează fontul',
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
@@ -7026,8 +6681,7 @@ const crowdin = {
     'Invalid/Unsupported URL': 'URL Invalid/Neacceptat',
     'Please wait...': 'Așteptați vă rog...',
     'Login using email': 'Autentificare prin email',
-    'Track removed from offline!':
-        'Piesa a fost eliminată din librăria offline!',
+    'Track removed from offline!': 'Piesa a fost eliminată din librăria offline!',
     'Removed album from offline!': 'Album eliminat din librăria offline!',
     'Playlist removed from offline!': 'Playlist eliminat din librăria offline!'
   },
@@ -7054,20 +6708,16 @@ const crowdin = {
     'Post processing...': 'Делаем магию...',
     'Done': 'Готово',
     'Delete': 'Удалить',
-    'Are you sure you want to delete this download?':
-        'Вы действительно хотите удалить эту загрузку?',
+    'Are you sure you want to delete this download?': 'Вы действительно хотите удалить эту загрузку?',
     'Cancel': 'Отмена',
     'Downloads': 'Загрузки',
     'Clear queue': 'Очистить очередь',
-    "This won't delete currently downloading item":
-        'Это не удалит загружаемый сейчас трек',
+    "This won't delete currently downloading item": 'Это не удалит загружаемый сейчас трек',
     'Are you sure you want to delete all queued downloads?':
         'Вы действительно хотите удалить все запланированные загрузки?',
     'Clear downloads history': 'Очистить историю загрузок',
-    'WARNING: This will only clear non-offline (external downloads)':
-        'Внимание! Это удалит только загрузки (не кеш)',
-    'Please check your connection and try again later...':
-        'Проверьте соединение с Интернетом...',
+    'WARNING: This will only clear non-offline (external downloads)': 'Внимание! Это удалит только загрузки (не кеш)',
+    'Please check your connection and try again later...': 'Проверьте соединение с Интернетом...',
     'Show more': 'Показать больше',
     'Importer': 'Импорт плейлистов',
     'Currently supporting only Spotify, with 100 tracks limit':
@@ -7077,8 +6727,7 @@ const crowdin = {
     'Error loading URL!': 'Ошибка загрузки!',
     'Convert': 'Импортировать',
     'Download only': 'Скачать',
-    'Downloading is currently stopped, click here to resume.':
-        'Загрузка приостановлена, нажмите, чтобы продолжить.',
+    'Downloading is currently stopped, click here to resume.': 'Загрузка приостановлена, нажмите, чтобы продолжить.',
     'Tracks': 'Треки',
     'Albums': 'Альбомы',
     'Artists': 'Артисты',
@@ -7095,15 +6744,13 @@ const crowdin = {
     'Favorites': 'Избранное',
     'All offline tracks': 'Все треки в кеше',
     'Create new playlist': 'Новый плейлист',
-    'Cannot create playlists in offline mode':
-        'Нельзя создавать плейлисты в автономном режиме',
+    'Cannot create playlists in offline mode': 'Нельзя создавать плейлисты в автономном режиме',
     'Error': 'Ошибка',
     'Error logging in! Please check your token and internet connection and try again.':
         'Ошибка авторизации! Проверьте корректность токена и соединение с интернетом, после повторите попытку.',
     'Dismiss': 'Отмена',
     'Welcome to': 'Добро пожаловать в',
-    'Please login using your Deezer account.':
-        'Войдите, используя свой аккаунт Deezer.',
+    'Please login using your Deezer account.': 'Войдите, используя свой аккаунт Deezer.',
     'Login using browser': 'Войти через браузер',
     'Login using token': 'Войти с помощью токена',
     'Enter ARL': 'Введите ARL',
@@ -7177,10 +6824,8 @@ const crowdin = {
     'Send track listen logs to Deezer, enable it for features like Flow to work properly':
         'Отправлять статистику прослушивания. Необходимо для правильной работы рекомендаций',
     'Offline mode': 'Автономный режим',
-    'Will be overwritten on start.':
-        'Будет перезаписано при запуске приложения.',
-    'Error logging in, check your internet connections.':
-        'Ошибка входа, проверьте соединение с интернетом.',
+    'Will be overwritten on start.': 'Будет перезаписано при запуске приложения.',
+    'Error logging in, check your internet connections.': 'Ошибка входа, проверьте соединение с интернетом.',
     'Logging in...': 'Вход...',
     'Download path': 'Папка загрузок',
     'Downloads naming': 'Шаблон для названия',
@@ -7211,8 +6856,7 @@ const crowdin = {
     'Importing...': 'Импортирование...',
     'Radio': 'Радио',
     'Track is not available on Deezer!': 'Трек недоступен в Deezer!',
-    'Failed to download track! Please restart.':
-        'Не удалось загрузить трек! Пожалуйста, перезапустите.',
+    'Failed to download track! Please restart.': 'Не удалось загрузить трек! Пожалуйста, перезапустите.',
     'Storage permission denied!': 'Доступ к хранилищу запрещен!',
     'Failed': 'Ошибка',
     'Queued': 'Добавлено в очередь',
@@ -7233,14 +6877,12 @@ const crowdin = {
     'To get latest releases': 'Здесь можно скачать официальные обновления',
     'Official chat': 'Официальный чат',
     'Telegram Group': 'Группа в Telegram',
-    'Huge thanks to all the contributors! <3':
-        'Большое спасибо всем участникам <3',
+    'Huge thanks to all the contributors! <3': 'Большое спасибо всем участникам <3',
     'Edit playlist': 'Изменить плейлист',
     'Update': 'Обновить',
     'Playlist updated!': 'Плейлист обновлен!',
     'Downloads added!': 'Добавлено в загрузки!',
-    'Save cover file for every track':
-        'Обложки для каждого трека отдельным файлом',
+    'Save cover file for every track': 'Обложки для каждого трека отдельным файлом',
     'Download Log': 'Лог загрузок (технические данные)',
     'Repository': 'Репозиторий',
     'Source code, report issues there.': 'Исходный код, вопросы, предложения.',
@@ -7257,8 +6899,7 @@ const crowdin = {
     'Using too many concurrent downloads on older/weaker devices might cause crashes!':
         'Слишком много параллельных загрузок на слабых устройствах могут привести к сбоям!',
     'Create .nomedia files': 'Создавать файлы .nomedia',
-    'To prevent gallery being filled with album art':
-        'Чтобы обложки не отображались в галерее',
+    'To prevent gallery being filled with album art': 'Чтобы обложки не отображались в галерее',
     'Sleep timer': 'Таймер сна',
     'Minutes:': 'Минут(ы):',
     'Hours:': 'Час(ы):',
@@ -7268,8 +6909,7 @@ const crowdin = {
     'Shuffle': 'Перемешать',
     'Library shuffle': 'Мои треки вперемешку',
     'Ignore interruptions': 'Не вставать на паузу',
-    'Requires app restart to apply!':
-        'Продолжать воспроизведение при получении звонков/уведомлений',
+    'Requires app restart to apply!': 'Продолжать воспроизведение при получении звонков/уведомлений',
     'Ask before downloading': 'Спрашивать перед загрузкой',
     'Search history': 'История поиска',
     'Clear search history': 'Очистить историю поиска',
@@ -7288,8 +6928,7 @@ const crowdin = {
     'Current version: ': 'Текущая версия: ',
     'Unsupported platform!': 'Неподдерживаемая платформа!',
     'ReFreezer Updates': 'Обновления ReFreezer',
-    'Update to latest version in the settings.':
-        'Обновитесь до последней версии в настройках.',
+    'Update to latest version in the settings.': 'Обновитесь до последней версии в настройках.',
     'Release date': 'Дата выпуска',
     'Shows': 'Подкасты',
     'Charts': 'Хит-парады',
@@ -7299,8 +6938,7 @@ const crowdin = {
     'Share show': 'Поделиться подкастом',
     'Date added': 'Дата добавления',
     'Official Discord server': 'Официальный Discord сервер',
-    'Restart of app is required to properly log out!':
-        'Необходим перезапуск приложения для корректного выхода!',
+    'Restart of app is required to properly log out!': 'Необходим перезапуск приложения для корректного выхода!',
     'Artist separator': 'Разделитель нескольких исполнителей',
     'Singleton naming': 'Шаблон для названия синглов',
     'Keep the screen on': 'Не выключать экран',
@@ -7363,13 +7001,11 @@ const crowdin = {
     'Post processing...': 'Prebieha spracovanie...',
     'Done': 'Hotovo',
     'Delete': 'Odstrániť',
-    'Are you sure you want to delete this download?':
-        'Ste si istý, že chcete odstrániť tieto stiahnuté?',
+    'Are you sure you want to delete this download?': 'Ste si istý, že chcete odstrániť tieto stiahnuté?',
     'Cancel': 'Zrušiť',
     'Downloads': 'Stiahnuté',
     'Clear queue': 'Vyčistiť poradie',
-    "This won't delete currently downloading item":
-        'Týmto sa neodstráni aktuálne sťahovaná položka',
+    "This won't delete currently downloading item": 'Týmto sa neodstráni aktuálne sťahovaná položka',
     'Are you sure you want to delete all queued downloads?':
         'Ste si istý, ťe chcete odstrániť všetky sťahovania v poradí?',
     'Clear downloads history': 'Vyčistiť históriu sťahovania',
@@ -7382,13 +7018,11 @@ const crowdin = {
     'Currently supporting only Spotify, with 100 tracks limit':
         'Momentálne podporované iba Spotify s limitom 100 skladieb',
     'Due to API limitations': 'Kvôli obmedzeniam API',
-    'Enter your playlist link below':
-        'Nižšie zadajte odkaz na svoj zoznam skladieb',
+    'Enter your playlist link below': 'Nižšie zadajte odkaz na svoj zoznam skladieb',
     'Error loading URL!': 'Chyba načítania URL!',
     'Convert': 'Konvertovať',
     'Download only': 'Iba na stiahnutie',
-    'Downloading is currently stopped, click here to resume.':
-        'Sťahovanie je zastavené, kliknite sem pre obnovenie.',
+    'Downloading is currently stopped, click here to resume.': 'Sťahovanie je zastavené, kliknite sem pre obnovenie.',
     'Tracks': 'Skladby',
     'Albums': 'Albumy',
     'Artists': 'Umelci',
@@ -7405,15 +7039,13 @@ const crowdin = {
     'Favorites': 'Obľúbené',
     'All offline tracks': 'Všetky offline skladby',
     'Create new playlist': 'Vytvoriť nový playlist',
-    'Cannot create playlists in offline mode':
-        'Nemožem vytvoriť playlist v offline móde',
+    'Cannot create playlists in offline mode': 'Nemožem vytvoriť playlist v offline móde',
     'Error': 'Chyba',
     'Error logging in! Please check your token and internet connection and try again.':
         'Chyba prihlásenia!Skontrolujte váš token, internetové pripojenie a skúste znova.',
     'Dismiss': 'Zavrieť',
     'Welcome to': 'Vitajte v',
-    'Please login using your Deezer account.':
-        'Prosím prihláste sa s použitím Deezer účtu.',
+    'Please login using your Deezer account.': 'Prosím prihláste sa s použitím Deezer účtu.',
     'Login using browser': 'Prihlásenie cez prehliadač',
     'Login using token': 'Prihlásenie cez token',
     'Enter ARL': 'Zadajte ARL',
@@ -7421,8 +7053,7 @@ const crowdin = {
     "If you don't have account, you can register on deezer.com for free.":
         'Ak nemáte účet, možete sa zaregistrovať na deezer.com zadarmo.',
     'Open in browser': 'Otvoriť v prehliadači',
-    "By using this app, you don't agree with the Deezer ToS":
-        'Použitím tejto aplikácie nesúhlasíte s Deezer ToS',
+    "By using this app, you don't agree with the Deezer ToS": 'Použitím tejto aplikácie nesúhlasíte s Deezer ToS',
     'Play next': 'Hrať dalej',
     'Add to queue': 'Pridať do poradia',
     'Add track to favorites': 'Pridať skladbu do obľúbených',
@@ -7478,8 +7109,7 @@ const crowdin = {
     'Wifi streaming': 'Wifi pripojenie',
     'External downloads': 'Pri sťahovaní',
     'Content language': 'Jazyk obsahu',
-    'Not app language, used in headers. Now':
-        'Toto nie je jazyk aplikácie, používa sa v hlavičkách. Teraz',
+    'Not app language, used in headers. Now': 'Toto nie je jazyk aplikácie, používa sa v hlavičkách. Teraz',
     'Select language': 'Vybrať jazyk',
     'Content country': 'Krajina obsahu',
     'Country used in headers. Now': 'Krajina použitá v hlavičkách. Teraz',
@@ -7515,13 +7145,11 @@ const crowdin = {
     'Go up': 'Ísť hore',
     'Permission denied': 'Prístup zamietnutý',
     'Language': 'Jazyk',
-    'Language changed, please restart ReFreezer to apply!':
-        'Jazyk zmenený, pre použitie prosím reštartujte Freezer!',
+    'Language changed, please restart ReFreezer to apply!': 'Jazyk zmenený, pre použitie prosím reštartujte Freezer!',
     'Importing...': 'Importujem...',
     'Radio': 'Rádio',
     'Track is not available on Deezer!': 'Skladba nie je dostupná v Deezri!',
-    'Failed to download track! Please restart.':
-        'Sťahovanie skladieb zlyhalo! Prosím reštartujte Freezer.',
+    'Failed to download track! Please restart.': 'Sťahovanie skladieb zlyhalo! Prosím reštartujte Freezer.',
     'Storage permission denied!': 'Prístup k úložisku zamietnutý!',
     'Failed': 'Zlyhanie',
     'Queued': 'Poradie',
@@ -7535,21 +7163,18 @@ const crowdin = {
     'Search or paste URL': 'Hľadať alebo vložiť URL',
     'History': 'História',
     'Download threads': 'Súbežné sťahovanie',
-    'Lyrics unavailable, empty or failed to load!':
-        'Texty nedostupné, prázdne alebo chyba pri načítaní!',
+    'Lyrics unavailable, empty or failed to load!': 'Texty nedostupné, prázdne alebo chyba pri načítaní!',
     'About': 'O aplikácii',
     'Telegram Channel': 'Telegram kanál',
     'To get latest releases': 'Ak chcete získať najnovšie vydania',
     'Official chat': 'Oficiálny chat',
     'Telegram Group': 'Telegram skupina',
-    'Huge thanks to all the contributors! <3':
-        'Obrovská vďaka všetkým prispievateľom! <3',
+    'Huge thanks to all the contributors! <3': 'Obrovská vďaka všetkým prispievateľom! <3',
     'Edit playlist': 'Upraviť playlist',
     'Update': 'Aktualizácia',
     'Playlist updated!': 'Playlist aktualizovaný!',
     'Downloads added!': 'Pridané sťahovania!',
-    'Save cover file for every track':
-        'Uložiť obrázok albumu pre každú skladbu',
+    'Save cover file for every track': 'Uložiť obrázok albumu pre každú skladbu',
     'Download Log': 'Protokol sťahovania',
     'Repository': 'Repozitár',
     'Source code, report issues there.': 'Zdrojový kód, tam nahláste problémy.',
@@ -7566,8 +7191,7 @@ const crowdin = {
     'Using too many concurrent downloads on older/weaker devices might cause crashes!':
         'Použitie príliš veľkého počtu súbežných stiahnutí na starších / slabších zariadeniach môže spôsobiť zlyhanie!',
     'Create .nomedia files': 'Vytvoriť súbory .nomedia',
-    'To prevent gallery being filled with album art':
-        'Zabráni sa tomu, aby sa galéria naplnila obrázkami albumov',
+    'To prevent gallery being filled with album art': 'Zabráni sa tomu, aby sa galéria naplnila obrázkami albumov',
     'Sleep timer': 'Časovač vypnutia',
     'Minutes:': 'Minúty:',
     'Hours:': 'Hodiny:',
@@ -7596,8 +7220,7 @@ const crowdin = {
     'Current version: ': 'Aktuálna verzia: ',
     'Unsupported platform!': 'Nepodporovaná platforma!',
     'ReFreezer Updates': 'ReFreezer aktualizácie',
-    'Update to latest version in the settings.':
-        'Aktualizujte na najnovšiu verziu v nastaveniach.',
+    'Update to latest version in the settings.': 'Aktualizujte na najnovšiu verziu v nastaveniach.',
     'Release date': 'Dátum vydania',
     'Shows': 'Podcasty',
     'Charts': 'Rebríčky',
@@ -7607,8 +7230,7 @@ const crowdin = {
     'Share show': 'Zdieľať podcast',
     'Date added': 'Dátum pridania',
     'Official Discord server': 'Oficiálny Discord server',
-    'Restart of app is required to properly log out!':
-        'Na správne odhlásenie je potrebné reštartovať aplikáciu!',
+    'Restart of app is required to properly log out!': 'Na správne odhlásenie je potrebné reštartovať aplikáciu!',
     'Artist separator': 'Oddelenie umelca',
     'Singleton naming': 'Jedinečné pomenovanie',
     'Keep the screen on': 'Nechať obrazovku zapnutú',
@@ -7730,27 +7352,21 @@ const crowdin = {
     'Post processing...': 'Obdelujem...',
     'Done': 'Opravljeno',
     'Delete': 'Izbriši',
-    'Are you sure you want to delete this download?':
-        'Ali res želite izbrisati ta prenos?',
+    'Are you sure you want to delete this download?': 'Ali res želite izbrisati ta prenos?',
     'Cancel': 'Prekini',
     'Downloads': 'Prenosi',
     'Clear queue': 'Počisti čakalno vrsto',
-    "This won't delete currently downloading item":
-        'To vam ne bo pobrisalo elementov ki so trenutno v prenosu',
-    'Are you sure you want to delete all queued downloads?':
-        'Res želite izbrisati vse vaše prenose v čakalni vrsti?',
+    "This won't delete currently downloading item": 'To vam ne bo pobrisalo elementov ki so trenutno v prenosu',
+    'Are you sure you want to delete all queued downloads?': 'Res želite izbrisati vse vaše prenose v čakalni vrsti?',
     'Clear downloads history': 'Počisti zgodovino prenosov',
-    'WARNING: This will only clear non-offline (external downloads)':
-        'OPOZORILO: To bo izbrisalo samo zunanje prenose',
-    'Please check your connection and try again later...':
-        'Preverite svojo povezavo in poskusite ponovno ...',
+    'WARNING: This will only clear non-offline (external downloads)': 'OPOZORILO: To bo izbrisalo samo zunanje prenose',
+    'Please check your connection and try again later...': 'Preverite svojo povezavo in poskusite ponovno ...',
     'Show more': 'Prikaži več',
     'Importer': 'Orodje za uvoz',
     'Currently supporting only Spotify, with 100 tracks limit':
         'Trenutno je podprt samo Spotify, z največ 100 skladbami',
     'Due to API limitations': 'Zaradi omejitev v API',
-    'Enter your playlist link below':
-        'Vpiši link do svojega seznama predvajanja',
+    'Enter your playlist link below': 'Vpiši link do svojega seznama predvajanja',
     'Error loading URL!': 'Napaka pri nalaganju URL-ja!',
     'Convert': 'Pretvori',
     'Download only': 'Samo prejeto',
@@ -7772,15 +7388,13 @@ const crowdin = {
     'Favorites': 'Priljubljene',
     'All offline tracks': 'Vsi posnetki brez povezave',
     'Create new playlist': 'Nov seznam predvajanja',
-    'Cannot create playlists in offline mode':
-        'V načinu brez povezave ni mogoče ustvariti seznamov predvajanja',
+    'Cannot create playlists in offline mode': 'V načinu brez povezave ni mogoče ustvariti seznamov predvajanja',
     'Error': 'Napaka',
     'Error logging in! Please check your token and internet connection and try again.':
         'Napaka pri prijavi! Prosimo preverite svoj žeton in internetno povezavo in poskusite ponovno.',
     'Dismiss': 'Opusti',
     'Welcome to': 'Dobrodošli v',
-    'Please login using your Deezer account.':
-        'Prosimo prijavite se s svojim Deezer računom.',
+    'Please login using your Deezer account.': 'Prosimo prijavite se s svojim Deezer računom.',
     'Login using browser': 'Prijava preko brskalnika',
     'Login using token': 'Prijava z žetonom',
     'Enter ARL': 'Vnesi ARL',
@@ -7846,19 +7460,16 @@ const crowdin = {
     'Wifi streaming': 'Pretakanje preko Wifi',
     'External downloads': 'Zunanji prenosi',
     'Content language': 'Jezik vsebine',
-    'Not app language, used in headers. Now':
-        'Ni jezik programa, uporabljeno v glavah. Sedaj',
+    'Not app language, used in headers. Now': 'Ni jezik programa, uporabljeno v glavah. Sedaj',
     'Select language': 'Izberite jezik',
     'Content country': 'Država vsebine',
-    'Country used in headers. Now':
-        'Država uporabljena v glavah zahtevkov. Sedaj',
+    'Country used in headers. Now': 'Država uporabljena v glavah zahtevkov. Sedaj',
     'Log tracks': 'Beleži skladbe',
     'Send track listen logs to Deezer, enable it for features like Flow to work properly':
         'Pošiljanje zgodovine Deezer-ju, omogoča funkcije, kot so tok, da delujejo pravilno',
     'Offline mode': 'Način brez povezave',
     'Will be overwritten on start.': 'Bo povoženo na začetku.',
-    'Error logging in, check your internet connections.':
-        'Napaka pri prijavi, preverite svojo povezavo.',
+    'Error logging in, check your internet connections.': 'Napaka pri prijavi, preverite svojo povezavo.',
     'Logging in...': 'Prijavljanje...',
     'Download path': 'Pot za prenos',
     'Downloads naming': 'Ime prenosa',
@@ -7889,8 +7500,7 @@ const crowdin = {
     'Importing...': 'Uvažanje...',
     'Flow': 'Tok',
     'Track is not available on Deezer!': 'Posnetek ni na voljo pri Deezer-ju!',
-    'Failed to download track! Please restart.':
-        'Prenos gonilnika je spodletel! Prosimo izvedite ponovni zagon.',
+    'Failed to download track! Please restart.': 'Prenos gonilnika je spodletel! Prosimo izvedite ponovni zagon.',
     'Storage permission denied!': 'Dovoljenje za shrambo zavrnjeno!',
     'Failed': 'Spodletelo',
     'Queued': 'V čakalni vrsti',
@@ -7905,15 +7515,13 @@ const crowdin = {
     'Search or paste URL': 'Iščite ali prilepite URL',
     'History': 'Zgodovina',
     'Download threads': 'Sočasni prenosi',
-    'Lyrics unavailable, empty or failed to load!':
-        'Besedilo ni na voljo, prazno ali neuspešno naloženo!',
+    'Lyrics unavailable, empty or failed to load!': 'Besedilo ni na voljo, prazno ali neuspešno naloženo!',
     'About': 'O programu',
     'Telegram Channel': 'Telegram kanal',
     'To get latest releases': 'Da pridobite najnovejšo različico',
     'Official chat': 'Uradni klepet',
     'Telegram Group': 'Telegram skupina',
-    'Huge thanks to all the contributors! <3':
-        'Velika zahvala vsem sodelavcem! <3',
+    'Huge thanks to all the contributors! <3': 'Velika zahvala vsem sodelavcem! <3',
     'Edit playlist': 'Uredi seznam predvajanja',
     'Update': 'Posodobi',
     'Playlist updated!': 'Seznam predvajanja posodobljen!',
@@ -7921,8 +7529,7 @@ const crowdin = {
     'Save cover file for every track': 'Shrani sliko albuma za vsak posnetek',
     'Download Log': 'Zapisnik prenosov',
     'Repository': 'Repozitorij',
-    'Source code, report issues there.':
-        'Izvorna koda, tukaj prijavite napake.',
+    'Source code, report issues there.': 'Izvorna koda, tukaj prijavite napake.',
     'Use system theme': 'Uporabi temo sistema',
     'Light': 'Svetla',
     'Popularity': 'Priljubljenost',
@@ -7936,8 +7543,7 @@ const crowdin = {
     'Using too many concurrent downloads on older/weaker devices might cause crashes!':
         'Preveč sočasnih prenosov lahko povzroča težave na starejših/manj zmogljivih napravah!',
     'Create .nomedia files': 'Ustvari datoteke .nomedia',
-    'To prevent gallery being filled with album art':
-        'Za preprečitev polnjenje galerije s slikami albumov',
+    'To prevent gallery being filled with album art': 'Za preprečitev polnjenje galerije s slikami albumov',
     'Sleep timer': 'Časovnik spanja',
     'Minutes:': 'Minut:',
     'Hours:': 'Ur:',
@@ -7947,8 +7553,7 @@ const crowdin = {
     'Shuffle': 'Naključno',
     'Library shuffle': 'Naključno predvajanje knjižnice',
     'Ignore interruptions': 'Ignoriraj prekinitve',
-    'Requires app restart to apply!':
-        'Uveljavitev zahteva ponovni zagon aplikacije!',
+    'Requires app restart to apply!': 'Uveljavitev zahteva ponovni zagon aplikacije!',
     'Ask before downloading': 'Vprašaj pred prenosom',
     'Search history': 'Zgodovina iskanja',
     'Clear search history': 'Počisti zgodovino iskanja',
@@ -7967,8 +7572,7 @@ const crowdin = {
     'Current version: ': 'Trenutna različica: ',
     'Unsupported platform!': 'Nepodprta platforma!',
     'ReFreezer Updates': 'ReFreezer posodobitve',
-    'Update to latest version in the settings.':
-        'Posodobite na najnovejšo verzijo v nastavitvah.',
+    'Update to latest version in the settings.': 'Posodobite na najnovejšo verzijo v nastavitvah.',
     'Release date': 'Datum izdaje',
     'Shows': 'Oddaje',
     'Charts': 'Lestvice',
@@ -7978,8 +7582,7 @@ const crowdin = {
     'Share show': 'Deli oddajo',
     'Date added': 'Dodano dne',
     'Official Discord server': 'Uraden Discord strežnik',
-    'Restart of app is required to properly log out!':
-        'Ponovni zagon aplikacije je potreben za odjavo!',
+    'Restart of app is required to properly log out!': 'Ponovni zagon aplikacije je potreben za odjavo!',
     'Artist separator': 'Ločilo izvajalcev',
     'Singleton naming': 'Imenovanje \"singletona\"',
     'Keep the screen on': 'Ohrani vklopljen zaslon',
@@ -7989,12 +7592,10 @@ const crowdin = {
     'Episodes': 'Epizode',
     'Show all episodes': 'Pokaži vse epizode',
     'Album cover resolution': 'Resolucija slike albuma',
-    "WARNING: Resolutions above 1200 aren't officially supported":
-        'OPOZORILO: Resolucije nad 1200 niso uradno podprte',
+    "WARNING: Resolutions above 1200 aren't officially supported": 'OPOZORILO: Resolucije nad 1200 niso uradno podprte',
     'Album removed from library!': 'Album odstranjen iz knjižnice!',
     'Remove offline': 'Odstrani brezpovezavni',
-    'Playlist removed from library!':
-        'Seznam predvajanja izbrisan iz knjižnice!',
+    'Playlist removed from library!': 'Seznam predvajanja izbrisan iz knjižnice!',
     'Blur player background': 'Zamegli ozadje predvajalnika',
     'Might have impact on performance': 'Lahko vpliva na odzivnost',
     'Font': 'Pisava',
@@ -8055,12 +7656,9 @@ const crowdin = {
     'Invalid/Unsupported URL': 'Neveljaven/Nepodprt URL',
     'Please wait...': 'Prosim počakaj...',
     'Login using email': 'Prijava z elektronskim naslovom',
-    'Track removed from offline!':
-        'Skladba odstranjena iz knjižnice brez povezave!',
-    'Removed album from offline!':
-        'Album odstranjen iz knjižnice brez povezave!',
-    'Playlist removed from offline!':
-        'Seznam predvajanja odstranjen iz knjižnice brez povezave!',
+    'Track removed from offline!': 'Skladba odstranjena iz knjižnice brez povezave!',
+    'Removed album from offline!': 'Album odstranjen iz knjižnice brez povezave!',
+    'Playlist removed from offline!': 'Seznam predvajanja odstranjen iz knjižnice brez povezave!',
     'Repeat': 'Ponovi',
     'Repeat one': 'Ponovi enkrat',
     'Repeat off': 'Ponavljanje izklopljeno',
@@ -8109,13 +7707,11 @@ const crowdin = {
     'Post processing...': 'İşleniyor...',
     'Done': 'Bitti',
     'Delete': 'Sil',
-    'Are you sure you want to delete this download?':
-        'Bu indirmeyi silmek istediğinizden emin misiniz?',
+    'Are you sure you want to delete this download?': 'Bu indirmeyi silmek istediğinizden emin misiniz?',
     'Cancel': 'İptal',
     'Downloads': 'İndirilenler',
     'Clear queue': 'Sırayı temizle',
-    "This won't delete currently downloading item":
-        'Şu anda indirilen parçayı silmez',
+    "This won't delete currently downloading item": 'Şu anda indirilen parçayı silmez',
     'Are you sure you want to delete all queued downloads?':
         'Sıradaki tüm indirmeleri silmek istediğinizden emin misiniz?',
     'Clear downloads history': 'İndirme geçmişini temizle',
@@ -8128,20 +7724,17 @@ const crowdin = {
     'Currently supporting only Spotify, with 100 tracks limit':
         "Şu anda 100 parça sınırıyla yalnızca Spotify'ı destekliyor",
     'Due to API limitations': 'API sınırlamaları nedeniyle',
-    'Enter your playlist link below':
-        'Oynatma listesi bağlantınızı aşağıya giriniz',
+    'Enter your playlist link below': 'Oynatma listesi bağlantınızı aşağıya giriniz',
     'Error loading URL!': 'URL yüklenirken hata oluştu!',
     'Convert': 'Dönüştür',
     'Download only': 'Sadece indir',
-    'Downloading is currently stopped, click here to resume.':
-        'İndirme durduruldu, devam etmek için tıklayın.',
+    'Downloading is currently stopped, click here to resume.': 'İndirme durduruldu, devam etmek için tıklayın.',
     'Tracks': 'Parçalar',
     'Albums': 'Albümler',
     'Artists': 'Sanatçılar',
     'Playlists': 'Çalma listeleri',
     'Import': 'İçe Aktar',
-    'Import playlists from Spotify':
-        "Spotify'dan çalma listelerini içe aktarın",
+    'Import playlists from Spotify': "Spotify'dan çalma listelerini içe aktarın",
     'Statistics': 'İstatistikler',
     'Offline tracks': 'Çevrimdışı parçalar',
     'Offline albums': 'Çevrimdışı albümler',
@@ -8152,15 +7745,13 @@ const crowdin = {
     'Favorites': 'Favoriler',
     'All offline tracks': 'Tüm çevrimdışı parçalar',
     'Create new playlist': 'Yeni çalma listesi oluştur',
-    'Cannot create playlists in offline mode':
-        'Çevrimdışı modda oynatma listeleri oluşturulamaz',
+    'Cannot create playlists in offline mode': 'Çevrimdışı modda oynatma listeleri oluşturulamaz',
     'Error': 'Hata',
     'Error logging in! Please check your token and internet connection and try again.':
         'Oturum açılamadı! Lütfen tokeninizi ve internet bağlantınızı kontrol edin ve tekrar deneyin.',
     'Dismiss': 'Kapat',
     'Welcome to': 'Hoşgeldiniz',
-    'Please login using your Deezer account.':
-        'Lütfen Deezer hesabınızı kullanarak giriş yapın.',
+    'Please login using your Deezer account.': 'Lütfen Deezer hesabınızı kullanarak giriş yapın.',
     'Login using browser': 'Tarayıcı kullanarak giriş yapın',
     'Login using token': 'Token kullanarak giriş yap',
     'Enter ARL': 'ARL girin',
@@ -8224,8 +7815,7 @@ const crowdin = {
     'Wifi streaming': 'Wi-Fi',
     'External downloads': 'Harici indirmeler',
     'Content language': 'İçerik dili',
-    'Not app language, used in headers. Now':
-        'Uygulama dili değil, başlıklarda kullanılacak. Şuan',
+    'Not app language, used in headers. Now': 'Uygulama dili değil, başlıklarda kullanılacak. Şuan',
     'Select language': 'Dil seçin',
     'Content country': 'İçerik ülkesi',
     'Country used in headers. Now': 'Başlıklarda kullanılan ülke. Şuan',
@@ -8234,8 +7824,7 @@ const crowdin = {
         "Parça dinleme günlüklerini Deezer'a gönderin, Flow gibi özelliklerin düzgün çalışması için etkinleştirin",
     'Offline mode': 'Çevrimdışı modu',
     'Will be overwritten on start.': 'Başlangıçta üzerine yazılacak.',
-    'Error logging in, check your internet connections.':
-        'Giriş hatası, internet bağlantılarınızı kontrol edin.',
+    'Error logging in, check your internet connections.': 'Giriş hatası, internet bağlantılarınızı kontrol edin.',
     'Logging in...': 'Giriş yapılıyor...',
     'Download path': 'İndirme konumu',
     'Downloads naming': 'İndirilenleri adlandır',
@@ -8261,14 +7850,12 @@ const crowdin = {
     'Go up': 'Yukarı git',
     'Permission denied': 'İzin reddedildi',
     'Language': 'Dil',
-    'Language changed, please restart ReFreezer to apply!':
-        'Dil değişti,değişiklik için Freezeri yeniden başlatın!',
+    'Language changed, please restart ReFreezer to apply!': 'Dil değişti,değişiklik için Freezeri yeniden başlatın!',
     'Importing...': 'İçe aktarılıyor...',
     'Radio': 'Radyo',
     'Flow': 'Akış',
     'Track is not available on Deezer!': "Parça Deezer'da mevcut değil!",
-    'Failed to download track! Please restart.':
-        'Parça indirilemedi! Lütfen yeniden başlat.',
+    'Failed to download track! Please restart.': 'Parça indirilemedi! Lütfen yeniden başlat.',
     'Storage permission denied!': 'Depolama izni reddedildi!',
     'Failed': 'Başarısız',
     'Queued': 'Sıraya alındı',
@@ -8282,21 +7869,18 @@ const crowdin = {
     'Search or paste URL': 'Arayın veya URL yapıştırın',
     'History': 'Geçmiş',
     'Download threads': 'Eşzamanlı indirmeler',
-    'Lyrics unavailable, empty or failed to load!':
-        'Sözler mevcut değil, boş veya yüklenemedi!',
+    'Lyrics unavailable, empty or failed to load!': 'Sözler mevcut değil, boş veya yüklenemedi!',
     'About': 'Hakkında',
     'Telegram Channel': 'Telegram Kanalı',
     'To get latest releases': 'En son sürümleri indirmek için',
     'Official chat': 'Resmi sohbet',
     'Telegram Group': 'Telegram Grubu',
-    'Huge thanks to all the contributors! <3':
-        'Katkıda bulunanlara çok teşekkür ederiz! <3',
+    'Huge thanks to all the contributors! <3': 'Katkıda bulunanlara çok teşekkür ederiz! <3',
     'Edit playlist': 'Çalma listesini düzenleyin',
     'Update': 'Güncelle',
     'Playlist updated!': 'Çalma listesi güncellendi!',
     'Downloads added!': 'İndirmeler eklendi!',
-    'Save cover file for every track':
-        'Her parça için kapak dosyasını kaydedin',
+    'Save cover file for every track': 'Her parça için kapak dosyasını kaydedin',
     'Download Log': 'İndirme Kayıtları',
     'Repository': 'Repo',
     'Source code, report issues there.': 'Kaynak kodu, sorunları bildirin',
@@ -8313,8 +7897,7 @@ const crowdin = {
     'Using too many concurrent downloads on older/weaker devices might cause crashes!':
         'Çok eski veya güçsüz cihazlarda çok fazla eşzamanlı indirme kullanmak çökmelere neden olabilir!',
     'Create .nomedia files': '.Nomedia dosyaları oluşturun',
-    'To prevent gallery being filled with album art':
-        'Galerinin albüm kapağıyla dolmasını önlemek için',
+    'To prevent gallery being filled with album art': 'Galerinin albüm kapağıyla dolmasını önlemek için',
     'Sleep timer': 'Uyku zamanlayıcısı',
     'Minutes:': 'Dakika:',
     'Hours:': 'Saat:',
@@ -8324,13 +7907,11 @@ const crowdin = {
     'Shuffle': 'Karışık çal',
     'Library shuffle': 'Kütüphane Karışık',
     'Ignore interruptions': 'Kesmeleri görmezden gel',
-    'Requires app restart to apply!':
-        '* Uygulanması için yeniden başlatmak gerekir!',
+    'Requires app restart to apply!': '* Uygulanması için yeniden başlatmak gerekir!',
     'Ask before downloading': 'İndirmeden önce sor',
     'Search history': 'Arama geçmişi',
     'Clear search history': 'Arama geçmişini temizle',
-    'Login to enable scrobbling.':
-        "Scrobbling'i etkinleştirmek için giriş yap.",
+    'Login to enable scrobbling.': "Scrobbling'i etkinleştirmek için giriş yap.",
     'Login to LastFM': 'LastFM ile giriş yap',
     'Username': 'Kullanıcı adı',
     'Password': 'Şifre',
@@ -8345,8 +7926,7 @@ const crowdin = {
     'Current version: ': 'Mevcut sürüm: ',
     'Unsupported platform!': 'Desteklenmeyen platform!',
     'ReFreezer Updates': 'ReFreezer Güncellemeleri',
-    'Update to latest version in the settings.':
-        'Ayarlarda en son sürüme kadar güncelleyebilirsiniz.',
+    'Update to latest version in the settings.': 'Ayarlarda en son sürüme kadar güncelleyebilirsiniz.',
     'Release date': 'Yayınlanma tarihi',
     'Shows': 'Podcast’ler',
     'Charts': 'Popüler müzik listeleri',
@@ -8371,8 +7951,7 @@ const crowdin = {
         "UYARI: 1200'ün üzerindeki çözünürlükler resmi olarak desteklenmiyor",
     'Album removed from library!': 'Albüm kütüphaneden kaldırıldı!',
     'Remove offline': 'Çevrimdışı kaldır',
-    'Playlist removed from library!':
-        'Oynatma listesi kütüphaneden kaldırıldı!',
+    'Playlist removed from library!': 'Oynatma listesi kütüphaneden kaldırıldı!',
     'Blur player background': 'Bulanık oynatıcı arkaplanı',
     'Might have impact on performance': 'Performans üzerinde etkisi olabilir',
     'Font': 'Yazı tipi',
@@ -8433,12 +8012,9 @@ const crowdin = {
     'Invalid/Unsupported URL': 'Geçersiz/Desteklenmeyen URL',
     'Please wait...': 'Lütfen bekleyin...',
     'Login using email': 'E-posta ile giriş yap',
-    'Track removed from offline!':
-        'Parça çevrim dışı kitaplığından kaldırıldı!',
-    'Removed album from offline!':
-        'Albüm çevrim dışı kitaplığından kaldırıldı!',
-    'Playlist removed from offline!':
-        'Çalma listesi çevrim dışı kitaplığından kaldırıldı!',
+    'Track removed from offline!': 'Parça çevrim dışı kitaplığından kaldırıldı!',
+    'Removed album from offline!': 'Albüm çevrim dışı kitaplığından kaldırıldı!',
+    'Playlist removed from offline!': 'Çalma listesi çevrim dışı kitaplığından kaldırıldı!',
     'Repeat': 'Tekrarla',
     'Repeat one': 'Bir kez tekrarla',
     'Repeat off': 'Tekrarlama kapalı',
@@ -8484,20 +8060,15 @@ const crowdin = {
     'Post processing...': 'Пост-обробка...',
     'Done': 'Виконано',
     'Delete': 'Видалити',
-    'Are you sure you want to delete this download?':
-        'Ви дійсно бажаєте видалити це завантаження?',
+    'Are you sure you want to delete this download?': 'Ви дійсно бажаєте видалити це завантаження?',
     'Cancel': 'Скасувати',
     'Downloads': 'Завантаження',
     'Clear queue': 'Очистити чергу',
-    "This won't delete currently downloading item":
-        'Це не призведе до видалення поточного завантажуваного елементу',
-    'Are you sure you want to delete all queued downloads?':
-        'Ви дійсно бажаєте видалити всі завантаження у черзі?',
+    "This won't delete currently downloading item": 'Це не призведе до видалення поточного завантажуваного елементу',
+    'Are you sure you want to delete all queued downloads?': 'Ви дійсно бажаєте видалити всі завантаження у черзі?',
     'Clear downloads history': 'Очистити історію завантажень',
-    'WARNING: This will only clear non-offline (external downloads)':
-        'Увага! Це видалить тільки завантаження (не кеш)',
-    'Please check your connection and try again later...':
-        "Будь ласка, перевірте ваше з'єднання і повторіть спробу...",
+    'WARNING: This will only clear non-offline (external downloads)': 'Увага! Це видалить тільки завантаження (не кеш)',
+    'Please check your connection and try again later...': "Будь ласка, перевірте ваше з'єднання і повторіть спробу...",
     'Show more': 'Показати більше',
     'Importer': 'Імпортувати',
     'Currently supporting only Spotify, with 100 tracks limit':
@@ -8525,15 +8096,13 @@ const crowdin = {
     'Favorites': 'Обране',
     'All offline tracks': 'Усі офлайн треки',
     'Create new playlist': 'Створити новий плейлист',
-    'Cannot create playlists in offline mode':
-        'Не вдалося створити плейлисти в офлайн-режимі',
+    'Cannot create playlists in offline mode': 'Не вдалося створити плейлисти в офлайн-режимі',
     'Error': 'Помилка',
     'Error logging in! Please check your token and internet connection and try again.':
         'Помилка входу! Будь ласка, перевірте ваш токен та підключення до Інтернету і повторіть спробу.',
     'Dismiss': 'Відхилити',
     'Welcome to': 'Ласкаво просимо до',
-    'Please login using your Deezer account.':
-        'Будь ласка, увійдіть, використовуючи свій обліковий запис Deezer.',
+    'Please login using your Deezer account.': 'Будь ласка, увійдіть, використовуючи свій обліковий запис Deezer.',
     'Login using browser': 'Вхід через браузер',
     'Login using token': 'Вхід з використанням токена',
     'Enter ARL': 'Введіть ARL',
@@ -8593,26 +8162,22 @@ const crowdin = {
     'Deezer (Dark)': 'Deezer (темна)',
     'Primary color': 'Основний колір',
     'Selected color': 'Вибраний колір',
-    'Use album art primary color':
-        'Використовувати основний колір обкладинки альбому',
+    'Use album art primary color': 'Використовувати основний колір обкладинки альбому',
     'Warning: might be buggy': 'Увага: може виникнути помилка',
     'Mobile streaming': 'Мобільний потік',
     'Wifi streaming': 'Wifi потік',
     'External downloads': 'Зовнішні завантаження',
     'Content language': 'Мова контенту',
-    'Not app language, used in headers. Now':
-        'Мова, що використовується в заголовках. Зараз',
+    'Not app language, used in headers. Now': 'Мова, що використовується в заголовках. Зараз',
     'Select language': 'Вибрати мову',
     'Content country': 'Країна контенту',
-    'Country used in headers. Now':
-        'Країна, яка використовується в заголовках. Зараз',
+    'Country used in headers. Now': 'Країна, яка використовується в заголовках. Зараз',
     'Log tracks': 'Журнал треків',
     'Send track listen logs to Deezer, enable it for features like Flow to work properly':
         'Надсилати журнали прослуховування треку в Deezer, увімкніть для коректної роботи таких функцій, як Flow',
     'Offline mode': 'Офлайн-режим',
     'Will be overwritten on start.': 'Буде перезаписано під час запуску.',
-    'Error logging in, check your internet connections.':
-        'Помилка входу, перевірте підключення до Інтернету.',
+    'Error logging in, check your internet connections.': 'Помилка входу, перевірте підключення до Інтернету.',
     'Logging in...': 'Вхід у систему...',
     'Download path': 'Шлях завантаження',
     'Downloads naming': 'Завантаження',
@@ -8643,8 +8208,7 @@ const crowdin = {
     'Importing...': 'Імпорт...',
     'Radio': 'Радіо',
     'Track is not available on Deezer!': 'Трек не доступний в Deezer!',
-    'Failed to download track! Please restart.':
-        'Не вдалося завантажити трек! Будь ласка, перезапустіть.',
+    'Failed to download track! Please restart.': 'Не вдалося завантажити трек! Будь ласка, перезапустіть.',
     'Storage permission denied!': 'Немає дозволу на доступ до сховища!',
     'Failed': 'Помилка',
     'Queued': 'У черзі',
@@ -8659,25 +8223,21 @@ const crowdin = {
     'Search or paste URL': 'Введіть адресу або пошуковий запит',
     'History': 'Історія',
     'Download threads': 'Одночасних завантажень',
-    'Lyrics unavailable, empty or failed to load!':
-        'Текст недоступний, відсутній або завантаження не вдалося!',
+    'Lyrics unavailable, empty or failed to load!': 'Текст недоступний, відсутній або завантаження не вдалося!',
     'About': 'Про додаток',
     'Telegram Channel': 'Telegram канал',
     'To get latest releases': 'Для отримання останніх релізів',
     'Official chat': 'Офіційний чат',
     'Telegram Group': 'Група в Telegram',
-    'Huge thanks to all the contributors! <3':
-        'Величезна подяка всім учасникам! <3',
+    'Huge thanks to all the contributors! <3': 'Величезна подяка всім учасникам! <3',
     'Edit playlist': 'Редагувати плейлист',
     'Update': 'Оновити',
     'Playlist updated!': 'Плейлист оновлено!',
     'Downloads added!': 'Завантаження додано!',
-    'Save cover file for every track':
-        'Зберегти файл обкладинки для кожного треку',
+    'Save cover file for every track': 'Зберегти файл обкладинки для кожного треку',
     'Download Log': 'Журнал завантажень',
     'Repository': 'Репозиторій',
-    'Source code, report issues there.':
-        'Вихідний код, повідомте про проблеми.',
+    'Source code, report issues there.': 'Вихідний код, повідомте про проблеми.',
     'Use system theme': 'Використовувати системну тему',
     'Light': 'Світла',
     'Popularity': 'Популярне',
@@ -8691,8 +8251,7 @@ const crowdin = {
     'Using too many concurrent downloads on older/weaker devices might cause crashes!':
         'Занадто велика кількість одночасних завантажень на старих/слабких пристроях може спричинити збій!',
     'Create .nomedia files': 'Створити файли .nomedia',
-    'To prevent gallery being filled with album art':
-        'Щоб запобігти заповненню галереї обкладинками альбомів',
+    'To prevent gallery being filled with album art': 'Щоб запобігти заповненню галереї обкладинками альбомів',
     'Sleep timer': 'Таймер сну',
     'Minutes:': 'Хвилини:',
     'Hours:': 'Години:',
@@ -8721,8 +8280,7 @@ const crowdin = {
     'Current version: ': 'Поточна версія: ',
     'Unsupported platform!': 'Непідтримувана платформа!',
     'ReFreezer Updates': 'Оновлення ReFreezer',
-    'Update to latest version in the settings.':
-        'Оновити до останньої версії в налаштуваннях.',
+    'Update to latest version in the settings.': 'Оновити до останньої версії в налаштуваннях.',
     'Release date': 'Дата релізу',
     'Shows': 'Подкасти',
     'Charts': 'Чарти',
@@ -8732,8 +8290,7 @@ const crowdin = {
     'Share show': 'Поділитись подкастом',
     'Date added': 'Дата додавання',
     'Official Discord server': 'Офіційний сервер Discord',
-    'Restart of app is required to properly log out!':
-        'Для коректного виходу потрібен перезапуск!',
+    'Restart of app is required to properly log out!': 'Для коректного виходу потрібен перезапуск!',
     'Artist separator': 'Роздільник виконавця',
     'Singleton naming': 'Унікальна назва',
     'Keep the screen on': 'Не вимикати екран',
@@ -8841,8 +8398,7 @@ const crowdin = {
     'Home': 'ہوم',
     'Search': 'تلاش کریں',
     'Library': 'لائبریری',
-    "Offline mode, can't play flow or smart track lists.":
-        'آفلائن موڈ ، فلو اور گانوں کی لسٹ نہیں چل سکتی۔',
+    "Offline mode, can't play flow or smart track lists.": 'آفلائن موڈ ، فلو اور گانوں کی لسٹ نہیں چل سکتی۔',
     'Added to library': 'لائبریری میں شامل کر دیا گیا',
     'Download': 'ڈاؤن لوڈ',
     'Disk': 'ڈسک',
@@ -8857,8 +8413,7 @@ const crowdin = {
   'uwu_uwu': {
     'Search': 'Seawch',
     'Library': 'Wibwawy',
-    "Offline mode, can't play flow or smart track lists.":
-        "Offwine mode, can't pway fwow ow smawt twack wists.",
+    "Offline mode, can't play flow or smart track lists.": "Offwine mode, can't pway fwow ow smawt twack wists.",
     'Added to library': 'Added to wibwawy',
     'Download': 'Downwoad',
     'Offline': 'Offwine',
@@ -8873,20 +8428,17 @@ const crowdin = {
     'Artist': 'Awtist',
     'Post processing...': 'Pwost pwocessing...',
     'Delete': 'Dewete',
-    'Are you sure you want to delete this download?':
-        'Awe u suwe u wanna dewete dis downwoad?',
+    'Are you sure you want to delete this download?': 'Awe u suwe u wanna dewete dis downwoad?',
     'Cancel': 'Cancew',
     'Downloads': 'Downwoads',
     'Clear queue': 'Cweaw queue',
-    "This won't delete currently downloading item":
-        "Dis won't dewete cuwwentwy downwoading item",
+    "This won't delete currently downloading item": "Dis won't dewete cuwwentwy downwoading item",
     'Are you sure you want to delete all queued downloads?':
         'Awe you suwe you want t-to dewete aww q-queued downwoads!?',
     'Clear downloads history': 'Cweaw downwoads histowy',
     'WARNING: This will only clear non-offline (external downloads)':
         'Warning: dis wiww onwy cweaw non-offwine (extewnaw downwoads)',
-    'Please check your connection and try again later...':
-        'Pwease check youw connection and twy again watew...',
+    'Please check your connection and try again later...': 'Pwease check youw connection and twy again watew...',
     'Show more': 'Show mowe',
     'Importer': 'Impowtew',
     'Currently supporting only Spotify, with 100 tracks limit':
@@ -8913,14 +8465,12 @@ const crowdin = {
     'Favorites': 'Favowites',
     'All offline tracks': 'Aww offwine twacks',
     'Create new playlist': 'Cweate nyew pwaywist',
-    'Cannot create playlists in offline mode':
-        'Cannot cweate pwaywists in offwine mode',
+    'Cannot create playlists in offline mode': 'Cannot cweate pwaywists in offwine mode',
     'Error': 'Ewwow',
     'Error logging in! Please check your token and internet connection and try again.':
-        'Ewwow wogging in! Pwease check youw token and intewnet connection and twy again.',
+        "H-hi thewe >.< I-I'm weally sowwy to distuwb you, but I-I'm having twouble wogging in x3\nC-could you pwease check youw token and intewnet connection and twy again?\nuwu thank you so much >///<",
     'Welcome to': 'Wewcome to',
-    'Please login using your Deezer account.':
-        'Pwease wogin using youw Deezew account.',
+    'Please login using your Deezer account.': 'Pwease wogin using youw Deezew account.',
     'Login using browser': 'Login using bwowsew',
     'Login using token': 'Wogin using token',
     'Enter ARL': 'Entew ARL (retard)',
@@ -8929,8 +8479,7 @@ const crowdin = {
     "If you don't have account, you can register on deezer.com for free.":
         'If u dun have account, u can wegistew on deezer.com fow fwee.',
     'Open in browser': 'Open in bwowsew',
-    "By using this app, you don't agree with the Deezer ToS":
-        'By using dis app, u dun agwee with da Deezew ToS',
+    "By using this app, you don't agree with the Deezer ToS": 'By using dis app, u dun agwee with da Deezew ToS',
     'Play next': 'Pway nyext',
     'Add to queue': 'Add t-to queue',
     'Add track to favorites': 'Add twack to favowites',
@@ -8987,8 +8536,7 @@ const crowdin = {
     'Wifi streaming': 'Wifi stweaming',
     'External downloads': 'Extewnyaw downwoads',
     'Content language': 'Content wanguage',
-    'Not app language, used in headers. Now':
-        'Nyot app wanguage, used in headews. Nyow',
+    'Not app language, used in headers. Now': 'Nyot app wanguage, used in headews. Nyow',
     'Select language': 'Sewect wanguage',
     'Content country': 'Content countwy',
     'Country used in headers. Now': 'Countwy used in headews. Nyow',
@@ -8998,7 +8546,7 @@ const crowdin = {
     'Offline mode': 'Offwinye mode',
     'Will be overwritten on start.': 'Wiww be uvwwwitten on stawt.',
     'Error logging in, check your internet connections.':
-        'Ewwow wogging in, check youw intewnyet connyections.',
+        "Henwo, pwease don't be mad at me, but i'm having twouble wogging in.\nCould you pwease check youw intewnet connection fow me?\nI weawwy need to be connected to youuu >.<",
     'Logging in...': 'Wogging in... uwu',
     'Download path': 'Downwoad path',
     'Downloads naming': 'Downwoads nyaming',
@@ -9027,10 +8575,8 @@ const crowdin = {
     'Importing...': 'I-I-Impowting...',
     'Radio': 'Wadio',
     'Flow': 'Fwow',
-    'Track is not available on Deezer!':
-        'twack is nyot avaiwabwe on D-Deezew!!11',
-    'Failed to download track! Please restart.':
-        'Faiwed t-to downwoad twack?!?1 Pwease westawt.',
+    'Track is not available on Deezer!': 'twack is nyot avaiwabwe on D-Deezew!!11',
+    'Failed to download track! Please restart.': 'Faiwed t-to downwoad twack?!?1 Pwease westawt.',
     'Storage permission denied!': 'Stowage pewmission d-d-denyied!!11',
     'Failed': 'Faiwed',
     'Queued': 'Quewed',
@@ -9045,15 +8591,13 @@ const crowdin = {
     'Search or paste URL': 'Seawch ow (・`ω´・) paste URL',
     'History': 'Histowy',
     'Download threads': 'Concuwwent downwoads',
-    'Lyrics unavailable, empty or failed to load!':
-        'Wywics unyavaiwabwe, empty ow (・`ω´・) faiwed t-to woad!!',
+    'Lyrics unavailable, empty or failed to load!': 'Wywics unyavaiwabwe, empty ow (・`ω´・) faiwed t-to woad!!',
     'About': 'About owo',
     'Telegram Channel': 'Tewegwam ÚwÚ Channyew',
     'To get latest releases': 'To get latest reweases',
     'Official chat': 'Officiaw chat',
     'Telegram Group': 'Tewegwam ÚwÚ Gwoup',
-    'Huge thanks to all the contributors! <3':
-        'Huge t-t-thanks t-to aww the contwibutows!!11 <3',
+    'Huge thanks to all the contributors! <3': 'Huge t-t-thanks t-to aww the contwibutows!!11 <3',
     'Edit playlist': 'Edit pwaywist',
     'Playlist updated!': 'pwaywist updated!!11',
     'Downloads added!': 'Downwoads added!',
@@ -9073,8 +8617,7 @@ const crowdin = {
     'Using too many concurrent downloads on older/weaker devices might cause crashes!':
         'Using too many concuwwent downwoads on oldew/weakew devices m-might cause cwashes?!?1 :3',
     'Create .nomedia files': 'Cweate .nyomedia fiwes',
-    'To prevent gallery being filled with album art':
-        'To pwevent gawwewy b-being fiwwed with awbum awt',
+    'To prevent gallery being filled with album art': 'To pwevent gawwewy b-being fiwwed with awbum awt',
     'Sleep timer': 'Sweep timew',
     'Hours:': 'Houws:',
     'Cancel current timer': 'Cancew cuwwent timew',
@@ -9083,8 +8626,7 @@ const crowdin = {
     'Shuffle': 'Shuffwe >w<',
     'Library shuffle': 'Wibwawy shuffwe',
     'Ignore interruptions': 'Ignyowe intewwuptions',
-    'Requires app restart to apply!':
-        'Wequiwes app westawt t-to appwy?!?! ;;w;;',
+    'Requires app restart to apply!': 'Wequiwes app westawt t-to appwy?!?! ;;w;;',
     'Ask before downloading': 'Ask befowe downwoading',
     'Search history': 'Seawch histowy',
     'Clear search history': 'Cleaw seawch histowy',
@@ -9103,8 +8645,7 @@ const crowdin = {
     'Current version: ': 'Cuwwent version: ',
     'Unsupported platform!': 'Unsuppowted p-pwatfowm!? :<',
     'ReFreezer Updates': 'WeFweezew Updates',
-    'Update to latest version in the settings.':
-        'Update t-to watest vewsion in the settings.',
+    'Update to latest version in the settings.': 'Update t-to watest vewsion in the settings.',
     'Release date': 'W-Wewease date',
     'Charts': 'Chawts',
     'Browse': 'Bwowse',
@@ -9112,8 +8653,7 @@ const crowdin = {
     'Share show': 'Shawe show',
     'Discord': 'discowd (join to talk to me owo)',
     'Official Discord server': "Officiaw Discowd servew (i'm waiting :>)",
-    'Restart of app is required to properly log out!':
-        'Westawt of a-app is w-wequiwed to p-pwopewwy wog out!',
+    'Restart of app is required to properly log out!': 'Westawt of a-app is w-wequiwed to p-pwopewwy wog out!',
     'Artist separator': 'Awtist sepawatow',
     'Singleton naming': 'Singweton n-naming',
     'Keep the screen on': 'Keep the scween o-on',
@@ -9159,8 +8699,8 @@ const crowdin = {
     'Email': 'Emaiw',
     'Missing email or password!': 'Missing emaiw ow passwowd!',
     'Error logging in using email, please check your credentials.\nError:':
-        'Ewwow wogging in using emaiw, pwease check youw cwedentiaws.\nEwwow:',
-    'Error logging in!': 'Ewwow wogging in!',
+        "H-hi thewe, sowwy fow the twouble >.<\nI twied wogging in using youw email but it didn't wowk. \nCan you pwease check youw cwedentials? I weawwy want to get in x3.\nEwwow:",
+    'Error logging in!': "H-hewwo! I-i'm having twouble logging in >.< Pwease hewp me! x3",
     'Change display mode': 'Change dispway mode',
     'Enable high refresh rates': 'Enabwe high wefwesh wates',
     'Display mode': 'Dispway mode',
@@ -9188,8 +8728,7 @@ const crowdin = {
     'Sort': 'Sowt',
     'Your ARL might be expired, try logging out and logging back in using new ARL or browser.':
         'Youw AWW might be expiwed, twy wogging out awnd wogging bawck in using new AWW ow bwowsew.',
-    'The original freezer development team':
-        'The owiginaw fweezew devewopment team',
+    'The original freezer development team': 'The owiginaw fweezew devewopment team',
     'You should rather support your favorite artists, instead of this app!':
         'Uwu shouwd wathew suppowt youw favowite awtists, instead of thiws app!',
     'No really, go support your favorite artists instead ;)':
@@ -9199,8 +8738,7 @@ const crowdin = {
     'Application Log': 'Appwication wog',
     'Are you sure you want to log out?': 'Awe uwu suwe uwu wawnt tuwu wog out?',
     'Download failed!': 'Downwoad faiwed! :(',
-    'Permission denied, download canceled!':
-        'Pewmission denied, downwoad cancewed!'
+    'Permission denied, download canceled!': 'Pewmission denied, downwoad cancewed!'
   },
   'vi_vi': {
     'Home': 'Trang chủ',
@@ -9225,15 +8763,12 @@ const crowdin = {
     'Post processing...': 'Hậu xử lý...',
     'Done': 'Hoàn tất',
     'Delete': 'Xóa',
-    'Are you sure you want to delete this download?':
-        'Bạn có chắc muốn xóa bản tải xuống này?',
+    'Are you sure you want to delete this download?': 'Bạn có chắc muốn xóa bản tải xuống này?',
     'Cancel': 'Hủy',
     'Downloads': 'Danh sách tải',
     'Clear queue': 'Xóa hàng chờ',
-    "This won't delete currently downloading item":
-        'Không thể xóa mục đang tải',
-    'Are you sure you want to delete all queued downloads?':
-        'Bạn có chắc muốn xóa toàn bộ hàng chờ?',
+    "This won't delete currently downloading item": 'Không thể xóa mục đang tải',
+    'Are you sure you want to delete all queued downloads?': 'Bạn có chắc muốn xóa toàn bộ hàng chờ?',
     'Clear downloads history': 'Xóa lịch sử tải xuống',
     'WARNING: This will only clear non-offline (external downloads)':
         'CẢNH BÁO: Chỉ có nội dung không ngoại tuyến mới bị xóa (tải xuống bên ngoài)',
@@ -9244,13 +8779,11 @@ const crowdin = {
     'Currently supporting only Spotify, with 100 tracks limit':
         'Hiện chỉ đang hỗ trợ nhập danh sách phát từ Spotify, tối đa 100 bài hát',
     'Due to API limitations': 'Do các hạn chế từ API',
-    'Enter your playlist link below':
-        'Nhập liên kết tới danh sách phát của bạn',
+    'Enter your playlist link below': 'Nhập liên kết tới danh sách phát của bạn',
     'Error loading URL!': 'Xử lí liên kết gặp lỗi!',
     'Convert': 'Chuyển đổi',
     'Download only': 'Chỉ tải xuống',
-    'Downloading is currently stopped, click here to resume.':
-        'Đang tạm ngưng tải xuống, nhấn vào đây để tiếp tục.',
+    'Downloading is currently stopped, click here to resume.': 'Đang tạm ngưng tải xuống, nhấn vào đây để tiếp tục.',
     'Tracks': 'Bài hát',
     'Albums': 'Album',
     'Artists': 'Nghệ sĩ',
@@ -9267,15 +8800,13 @@ const crowdin = {
     'Favorites': 'Ưa thích',
     'All offline tracks': 'Tất cả bài hát ngoại tuyến',
     'Create new playlist': 'Tạo danh sách phát mới',
-    'Cannot create playlists in offline mode':
-        'Không thể tạo danh sách phát mới khi đang ngoại tuyến',
+    'Cannot create playlists in offline mode': 'Không thể tạo danh sách phát mới khi đang ngoại tuyến',
     'Error': 'Lỗi',
     'Error logging in! Please check your token and internet connection and try again.':
         'Đăng nhập lỗi! Xin kiểm tra lại token đăng nhập và đường truyền mạng và thử lại.',
     'Dismiss': 'Đóng',
     'Welcome to': 'Chào mừng đến với',
-    'Please login using your Deezer account.':
-        'Xin vui lòng đăng nhập bằng tài khoản Deezer của bạn.',
+    'Please login using your Deezer account.': 'Xin vui lòng đăng nhập bằng tài khoản Deezer của bạn.',
     'Login using browser': 'Đăng nhập bằng trình duyệt',
     'Login using token': 'Đăng nhập bằng mã token',
     'Enter ARL': 'Nhập mã token (ARL)',
@@ -9341,8 +8872,7 @@ const crowdin = {
     'Wifi streaming': 'Thông qua mạng wifi',
     'External downloads': 'Tải xuống để lưu trữ',
     'Content language': 'Ngôn ngữ nội dung',
-    'Not app language, used in headers. Now':
-        'Ngôn ngữ được sử dụng trong tiêu đề, không phải của ứng dụng. Hiện tại',
+    'Not app language, used in headers. Now': 'Ngôn ngữ được sử dụng trong tiêu đề, không phải của ứng dụng. Hiện tại',
     'Select language': 'Chọn ngôn ngữ',
     'Content country': 'Quốc gia của nội dung',
     'Country used in headers. Now': 'Quốc gia hiện tại',
@@ -9351,8 +8881,7 @@ const crowdin = {
         'Gửi các ghi chép này tới Deezer, nên kích hoạt để tính năng phát nhạc thông minh hoạt động hiệu quả',
     'Offline mode': 'Chế độ ngoại tuyến',
     'Will be overwritten on start.': 'Sẽ bị ghi đè khi khởi động.',
-    'Error logging in, check your internet connections.':
-        'Lỗi đăng nhập, xin kiểm tra đường truyền.',
+    'Error logging in, check your internet connections.': 'Lỗi đăng nhập, xin kiểm tra đường truyền.',
     'Logging in...': 'Đang đăng nhập...',
     'Download path': 'Vị trí thư mục tải xuống',
     'Downloads naming': 'Phong cách đặt tên',
@@ -9363,11 +8892,9 @@ const crowdin = {
     'Create folders for artist': 'Tạo thư mục theo tên nghệ sĩ',
     'Create folders for albums': 'Tạo thư mục theo tên album',
     'Separate albums by discs': 'Tách album theo đĩa đơn',
-    'Overwrite already downloaded files':
-        'Ghi đè lên file trùng tên đã tải xuống',
+    'Overwrite already downloaded files': 'Ghi đè lên file trùng tên đã tải xuống',
     'Copy ARL': 'Sao chép ARL',
-    'Copy userToken/ARL Cookie for use in other apps.':
-        'Sao chép mã Token/ARL để dùng cho ứng dụng khác.',
+    'Copy userToken/ARL Cookie for use in other apps.': 'Sao chép mã Token/ARL để dùng cho ứng dụng khác.',
     'Copied': 'Đã sao chép',
     'Log out': 'Đăng xuất',
     'Due to plugin incompatibility, login using browser is unavailable without restart.':
@@ -9379,12 +8906,10 @@ const crowdin = {
     'Go up': 'Về trước',
     'Permission denied': 'Quyền truy cập bị từ chối',
     'Language': 'Ngôn ngữ',
-    'Language changed, please restart ReFreezer to apply!':
-        'Đã thay đổi ngôn ngữ, xin vui lòng khởi động lại Freezer!',
+    'Language changed, please restart ReFreezer to apply!': 'Đã thay đổi ngôn ngữ, xin vui lòng khởi động lại Freezer!',
     'Importing...': 'Đang nhập...',
     'Track is not available on Deezer!': 'Bài hát không có sẵn trên Deezer!',
-    'Failed to download track! Please restart.':
-        'Tải bài hát thất bại! Xin khởi động lại.',
+    'Failed to download track! Please restart.': 'Tải bài hát thất bại! Xin khởi động lại.',
     'Storage permission denied!': 'Quyền truy cập bộ nhớ bị từ chối!',
     'Failed': 'Thất bại',
     'Queued': 'Đã xếp hàng chờ',
@@ -9398,15 +8923,13 @@ const crowdin = {
     'Search or paste URL': 'Tìm kiếm hoặc nhập URL',
     'History': 'Lịch sử',
     'Download threads': 'Tải xuống đồng thời',
-    'Lyrics unavailable, empty or failed to load!':
-        'Lời bài hát không có sẵn, trống hoặc tải lỗi!',
+    'Lyrics unavailable, empty or failed to load!': 'Lời bài hát không có sẵn, trống hoặc tải lỗi!',
     'About': 'Giới thiệu',
     'Telegram Channel': 'Kênh Telegram',
     'To get latest releases': 'Để có cập nhật mới nhất',
     'Official chat': 'Kênh chat chính thức',
     'Telegram Group': 'Nhóm Telegram',
-    'Huge thanks to all the contributors! <3':
-        'Xin gửi lời cảm ơn tới tất cả những cá nhân đã đóng góp! <3',
+    'Huge thanks to all the contributors! <3': 'Xin gửi lời cảm ơn tới tất cả những cá nhân đã đóng góp! <3',
     'Edit playlist': 'Chỉnh sửa danh sách phát',
     'Update': 'Cập nhật',
     'Playlist updated!': 'Đã cập nhật danh sách phát!',
@@ -9428,8 +8951,7 @@ const crowdin = {
     'Using too many concurrent downloads on older/weaker devices might cause crashes!':
         'Tải xuống cùng lúc quá nhiều có thể gây treo ứng dụng trên máy cấu hình thấp!',
     'Create .nomedia files': 'Tạo file .nomedia',
-    'To prevent gallery being filled with album art':
-        'Để ngăn việc các ứng dụng thư viện nhận diện những ảnh bìa này',
+    'To prevent gallery being filled with album art': 'Để ngăn việc các ứng dụng thư viện nhận diện những ảnh bìa này',
     'Sleep timer': 'Hẹn giờ tắt',
     'Minutes:': 'Phút:',
     'Hours:': 'Giờ:',
@@ -9443,8 +8965,7 @@ const crowdin = {
     'Ask before downloading': 'Hỏi trước khi tải',
     'Search history': 'Lịch sử tìm kiếm',
     'Clear search history': 'Xóa lịch sử tìm kiếm',
-    'Login to enable scrobbling.':
-        'Đăng nhập để kích hoạt hệ thống đề xuất âm nhạc.',
+    'Login to enable scrobbling.': 'Đăng nhập để kích hoạt hệ thống đề xuất âm nhạc.',
     'Login to LastFM': 'Đăng nhập tài khoản LastFM',
     'Username': 'Tên đăng nhập',
     'Password': 'Mật khẩu',
@@ -9459,8 +8980,7 @@ const crowdin = {
     'Current version: ': 'Phiên bản hiện tại: ',
     'Unsupported platform!': 'Nền tảng không được hỗ trợ!',
     'ReFreezer Updates': 'Cập nhật ReFreezer',
-    'Update to latest version in the settings.':
-        'Cập nhật phiên bản mới nhất trong cài đặt.',
+    'Update to latest version in the settings.': 'Cập nhật phiên bản mới nhất trong cài đặt.',
     'Release date': 'Ngày phát hành',
     'Shows': 'Chương trình',
     'Charts': 'Bảng xếp hạng',
@@ -9470,8 +8990,7 @@ const crowdin = {
     'Share show': 'Chia sẻ chương trình',
     'Date added': 'Ngày thêm vào',
     'Official Discord server': 'Máy chủ Discord chính thức',
-    'Restart of app is required to properly log out!':
-        'Cần khởi động lại ứng dụng để đăng xuất hoàn toàn!',
+    'Restart of app is required to properly log out!': 'Cần khởi động lại ứng dụng để đăng xuất hoàn toàn!',
     'Artist separator': 'Dấu phân tách nghệ sĩ',
     'Singleton naming': 'Tên bài hát riêng lẻ',
     'Keep the screen on': 'Giữ màn hình luôn bật',
@@ -9485,8 +9004,7 @@ const crowdin = {
         'CẢNH BÁO: Độ phân giải trên 1200 không được hỗ trợ chính thức',
     'Album removed from library!': 'Album đã được xóa khỏi thư viện!',
     'Remove offline': 'Xoá bản ngoại tuyến',
-    'Playlist removed from library!':
-        'Danh sách phát đã được xóa khỏi thư viện!',
+    'Playlist removed from library!': 'Danh sách phát đã được xóa khỏi thư viện!',
     'Blur player background': 'Làm mờ trình phát ở nền',
     'Might have impact on performance': 'Có thễ sẽ ảnh hưởng đến hiệu suất',
     'Font': 'Font chữ',
@@ -9546,8 +9064,7 @@ const crowdin = {
     'Login using email': 'Đăng nhập với Email',
     'Track removed from offline!': 'Bài hát đã được xóa khỏi ngoại tuyến!',
     'Removed album from offline!': 'Album đã được xóa khỏi ngoại tuyến!',
-    'Playlist removed from offline!':
-        'Danh sách phát đã được xóa khỏi ngoại tuyến!',
+    'Playlist removed from offline!': 'Danh sách phát đã được xóa khỏi ngoại tuyến!',
     'Repeat': 'Lặp lại',
     'Repeat one': 'Lặp lại một lần',
     'Repeat off': 'Tắt lặp lại',
@@ -9576,8 +9093,7 @@ const crowdin = {
     'Home': '主页',
     'Search': '搜索',
     'Library': '曲库',
-    "Offline mode, can't play flow or smart track lists.":
-        '离线模式，不能使用 Flow 或智能曲目列表',
+    "Offline mode, can't play flow or smart track lists.": '离线模式，不能使用 Flow 或智能曲目列表',
     'Added to library': '已添加到曲库',
     'Download': '下载',
     'Disk': '专辑碟',
@@ -9602,13 +9118,11 @@ const crowdin = {
     "This won't delete currently downloading item": '这不会删除正在下载中的项目',
     'Are you sure you want to delete all queued downloads?': '确认删除所有队列中的下载任务吗？',
     'Clear downloads history': '清空下载记录',
-    'WARNING: This will only clear non-offline (external downloads)':
-        '警告：这只会删除本地文件（不是离线缓存）',
+    'WARNING: This will only clear non-offline (external downloads)': '警告：这只会删除本地文件（不是离线缓存）',
     'Please check your connection and try again later...': '请检查你的网络并重试',
     'Show more': '显示更多',
     'Importer': '导入',
-    'Currently supporting only Spotify, with 100 tracks limit':
-        '目前仅支持 Spotify，仅限导入 100 首歌曲',
+    'Currently supporting only Spotify, with 100 tracks limit': '目前仅支持 Spotify，仅限导入 100 首歌曲',
     'Due to API limitations': '因 API 限制',
     'Enter your playlist link below': '请在下方输入播放列表链接',
     'Error loading URL!': '链接加载错误',
@@ -9633,8 +9147,7 @@ const crowdin = {
     'Create new playlist': '创建播放列表',
     'Cannot create playlists in offline mode': '离线模式下无法创建播放列表',
     'Error': '错误',
-    'Error logging in! Please check your token and internet connection and try again.':
-        '登录出错，请检查您的 Token 和网络连接，然后重试',
+    'Error logging in! Please check your token and internet connection and try again.': '登录出错，请检查您的 Token 和网络连接，然后重试',
     'Dismiss': '忽略',
     'Welcome to': '欢迎使用',
     'Please login using your Deezer account.': '请使用您的 Deezer 帐户登录',
@@ -9642,11 +9155,9 @@ const crowdin = {
     'Login using token': '使用 Token 登录',
     'Enter ARL': '输入 ARL',
     'Save': '保存',
-    "If you don't have account, you can register on deezer.com for free.":
-        '如果您没有帐户，您可以在 deezer.com 上免费注册',
+    "If you don't have account, you can register on deezer.com for free.": '如果您没有帐户，您可以在 deezer.com 上免费注册',
     'Open in browser': '使用浏览器打开',
-    "By using this app, you don't agree with the Deezer ToS":
-        '使用这个软件，代表您不同意 Deezer 的使用条款',
+    "By using this app, you don't agree with the Deezer ToS": '使用这个软件，代表您不同意 Deezer 的使用条款',
     'Play next': '下一首播放此歌曲',
     'Add to queue': '加入队列',
     'Add track to favorites': '添加到收藏',
@@ -9724,12 +9235,10 @@ const crowdin = {
     'Separate albums by discs': '创建专辑碟号文件夹',
     'Overwrite already downloaded files': '覆盖已下载的文件',
     'Copy ARL': '复制 ARL',
-    'Copy userToken/ARL Cookie for use in other apps.':
-        '复制 userToken/ARL Cookie 在其它软件使用',
+    'Copy userToken/ARL Cookie for use in other apps.': '复制 userToken/ARL Cookie 在其它软件使用',
     'Copied': '复制成功',
     'Log out': '注销',
-    'Due to plugin incompatibility, login using browser is unavailable without restart.':
-        '插件不兼容，浏览器登录需要重启才可使用',
+    'Due to plugin incompatibility, login using browser is unavailable without restart.': '插件不兼容，浏览器登录需要重启才可使用',
     '(ARL ONLY) Continue': '(仅 ARL) 继续',
     'Log out & Exit': '注销并关闭',
     'Pick-a-Path': '选取一个路径',
@@ -9776,13 +9285,11 @@ const crowdin = {
     'Popularity': '热门程度',
     'User': '用户',
     'Track count': '歌曲数',
-    "If you want to use custom directory naming - use '/' as directory separator.":
-        '如果您想使用自定义目录名称 - 使用“/”作为目录分隔符',
+    "If you want to use custom directory naming - use '/' as directory separator.": '如果您想使用自定义目录名称 - 使用“/”作为目录分隔符',
     'Share': '分享',
     'Save album cover': '下载专辑封面',
     'Warning': '警告',
-    'Using too many concurrent downloads on older/weaker devices might cause crashes!':
-        '太多同时下载任务，在低性能设备上可能会崩溃',
+    'Using too many concurrent downloads on older/weaker devices might cause crashes!': '太多同时下载任务，在低性能设备上可能会崩溃',
     'Create .nomedia files': '创建 .nomedia 文件',
     'To prevent gallery being filled with album art': '为了防止本地图库有太多专辑封面',
     'Sleep timer': '定时关闭',
@@ -9833,8 +9340,7 @@ const crowdin = {
     'Episodes': '单集',
     'Show all episodes': '展示所有集数',
     'Album cover resolution': '专辑封面分辨率',
-    "WARNING: Resolutions above 1200 aren't officially supported":
-        '警告：官方不支持高于 1200 的分辨率',
+    "WARNING: Resolutions above 1200 aren't officially supported": '警告：官方不支持高于 1200 的分辨率',
     'Album removed from library!': '专辑已从曲库中移除',
     'Remove offline': '删除离线缓存',
     'Playlist removed from library!': '播放列表已从曲库中移除',
@@ -9845,11 +9351,9 @@ const crowdin = {
     "This app isn't made for supporting many fonts, it can break layouts and overflow. Use at your own risk!":
         '不兼容所有字体，可能会扰乱布局或溢出界面，请谨慎使用',
     'Enable equalizer': '启用均衡器',
-    'Might enable some equalizer apps to work. Requires restart of ReFreezer':
-        '可以调用某些均衡器软件，需要重启生效',
+    'Might enable some equalizer apps to work. Requires restart of ReFreezer': '可以调用某些均衡器软件，需要重启生效',
     'Visualizer': '音乐可视化',
-    'Show visualizers on lyrics page. WARNING: Requires microphone permission!':
-        '在歌词界面显示可视化效果。警告: 需要麦克风权限！',
+    'Show visualizers on lyrics page. WARNING: Requires microphone permission!': '在歌词界面显示可视化效果。警告: 需要麦克风权限！',
     'Tags': '标签',
     'Album': '专辑',
     'Track number': '歌曲编号',
