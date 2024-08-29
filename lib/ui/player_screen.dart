@@ -1094,22 +1094,43 @@ class QueueScreen extends StatefulWidget {
   _QueueScreenState createState() => _QueueScreenState();
 }
 
-class _QueueScreenState extends State<QueueScreen> {
+class _QueueScreenState extends State<QueueScreen> with WidgetsBindingObserver {
   AudioPlayerHandler audioHandler = GetIt.I<AudioPlayerHandler>();
   late StreamSubscription _queueStateSub;
+  late ScrollController _scrollController;
+  int? _previousMediaItemIndex;
 
   @override
   void initState() {
     super.initState();
+    _scrollController = ScrollController();
     _queueStateSub = audioHandler.queueStateStream.listen((queueState) {
       setState(() {});
+      if (queueState.queueIndex != _previousMediaItemIndex) {
+        _previousMediaItemIndex = queueState.queueIndex;
+        _scrollToCurrentItem();
+      }
     });
   }
 
   @override
   void dispose() {
     _queueStateSub.cancel();
+    _scrollController.dispose();
     super.dispose();
+  }
+
+  void _scrollToCurrentItem() {
+    final currentIndex = audioHandler.queueState.queueIndex ?? 0;
+    if (currentIndex > 0) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        _scrollController.animateTo(
+          currentIndex * 72.0, // Estimated TrackTile height
+          duration: const Duration(milliseconds: 300),
+          curve: Curves.easeInOut,
+        );
+      });
+    }
   }
 
   @override
@@ -1140,6 +1161,7 @@ class _QueueScreenState extends State<QueueScreen> {
       ),
       body: shuffleModeEnabled // No manual re-ordring in shuffle mode
           ? ListView.builder(
+              controller: _scrollController,
               itemCount: queueState.queue.length,
               itemBuilder: (context, index) {
                 final mediaItem = queueState.queue[index];
@@ -1164,6 +1186,7 @@ class _QueueScreenState extends State<QueueScreen> {
               },
             )
           : ReorderableListView.builder(
+              scrollController: _scrollController,
               itemCount: queueState.queue.length,
               onReorder: (int oldIndex, int newIndex) async {
                 // Circumvent bug in ReorderableListView that won't be fixed: https://github.com/flutter/flutter/pull/93146#issuecomment-1032082749
