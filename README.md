@@ -7,6 +7,7 @@
 [![Downloads Total](https://img.shields.io/github/downloads/DJDoubleD/ReFreezer/total?color=blue&label=downloads%20total)](../../releases)
 [![Flutter Version](https://shields.io/badge/Flutter-v3.24.1-darkgreen.svg)](https://docs.flutter.dev/tools/sdk)
 [![Dart Version](https://shields.io/badge/Dart-v3.5.1-darkgreen.svg)](https://dart.dev/get-dart)
+[![Crowdin](https://badges.crowdin.net/refreezer/localized.svg)](https://crowdin.com/project/refreezer)
 [![License](https://img.shields.io/github/license/DJDoubleD/ReFreezer?flat)](./LICENSE)
 
 [![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev/)
