@@ -1912,6 +1912,7 @@ const crowdin = {
     'ReFreezer Updates': 'Actualizaciones de ReFreezer',
     'Update to latest version in the settings.': 'Actualiza a la última versión en la configuración.',
     'Release date': 'Fecha de lanzamiento',
+    'Shows': 'Presentaciones',
     'Charts': 'Tablas',
     'Browse': 'Buscar',
     'Quick access': 'Acceso rápido',
@@ -2021,7 +2022,19 @@ const crowdin = {
     'Duration': 'Duración',
     'Sort': 'Ordenar',
     'Your ARL might be expired, try logging out and logging back in using new ARL or browser.':
-        'Puede que tu ARL haya caducado, prueba a cerrar la sesión y volver a iniciar sesión usando ARL o navegador.'
+        'Puede que tu ARL haya caducado, prueba a cerrar la sesión y volver a iniciar sesión usando ARL o navegador.',
+    'The original freezer development team': 'El equipo de desarrollo original de Freezer',
+    'Donate': 'Donar',
+    'You should rather support your favorite artists, instead of this app!':
+        '¡Mejor apoya a tus artistas favoritos en lugar de esta app!',
+    'No really, go support your favorite artists instead ;)': 'No, en serio, mejor apoya a tus artistas favoritos ;)',
+    'Storage permission is required to download content.\nPlease open settings and grant storage permission to ReFreezer.':
+        'Se necesita permiso de almacenamiento para descargar contenido.\nPor favor, abre la configuración y otorga permiso de almacenamiento a ReFreezer.',
+    'Open system settings': 'Abrir configuración del sistema',
+    'Application Log': 'Registro de la aplicación',
+    'Are you sure you want to log out?': '¿Estás seguro de que quieres cerrar sesión?',
+    'Download failed!': '¡Descarga fallida!',
+    'Permission denied, download canceled!': 'Permiso denegado, ¡descarga cancelada!'
   },
   'fa_ir': {
     'Home': 'صفحه اصلی',
