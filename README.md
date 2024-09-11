@@ -1,12 +1,11 @@
 ![ReFreezer](./assets/banner.png?raw=true)
 
-
 [![Latest Version](https://img.shields.io/github/v/release/DJDoubleD/ReFreezer?color=blue)](../../releases/latest)
 [![Release date](https://img.shields.io/github/release-date/DJDoubleD/ReFreezer)](../../releases/latest)
 [![Downloads Latest](https://img.shields.io/github/downloads/DJDoubleD/ReFreezer/latest/total?color=blue&label=downloads%20latest)](../../releases)
 [![Downloads Total](https://img.shields.io/github/downloads/DJDoubleD/ReFreezer/total?color=blue&label=downloads%20total)](../../releases)
-[![Flutter Version](https://shields.io/badge/Flutter-v3.24.1-darkgreen.svg)](https://docs.flutter.dev/tools/sdk)
-[![Dart Version](https://shields.io/badge/Dart-v3.5.1-darkgreen.svg)](https://dart.dev/get-dart)
+[![Flutter Version](https://shields.io/badge/Flutter-v3.24.2-darkgreen.svg)](https://docs.flutter.dev/tools/sdk)
+[![Dart Version](https://shields.io/badge/Dart-v3.5.2-darkgreen.svg)](https://dart.dev/get-dart)
 [![Crowdin](https://badges.crowdin.net/refreezer/localized.svg)](https://crowdin.com/project/refreezer)
 [![License](https://img.shields.io/github/license/DJDoubleD/ReFreezer?flat)](./LICENSE)
 
