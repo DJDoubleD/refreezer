@@ -2989,7 +2989,8 @@ const crowdin = {
     'Application Log': "Log de l'Application",
     'Are you sure you want to log out?': 'Êtes-vous sûr de vouloir vous déconnecter ?',
     'Download failed!': 'Le téléchargement a échoué !',
-    'Permission denied, download canceled!': 'Permission refusée, téléchargement annulé !'
+    'Permission denied, download canceled!': 'Permission refusée, téléchargement annulé !',
+    'Help translating this app on Crowdin!': 'Aidez à traduire cette application sur Crowdin !'
   },
   'he_il': {
     'Home': 'מסך הבית',
@@ -5637,7 +5638,8 @@ const crowdin = {
     'Application Log': 'Applicatie Logboek',
     'Are you sure you want to log out?': 'Weet u zeker dat u wilt uitloggen?',
     'Download failed!': 'Download mislukt!',
-    'Permission denied, download canceled!': 'Toestemming geweigerd, download geannuleerd!'
+    'Permission denied, download canceled!': 'Toestemming geweigerd, download geannuleerd!',
+    'Help translating this app on Crowdin!': 'Help deze app te vertalen op Crowdin!'
   },
   'pl_pl': {
     'Home': 'Strona główna',
@@ -8807,6 +8809,8 @@ const crowdin = {
     'Logged in as: ': 'Wogged in as: ',
     'Import playlists by URL': 'Impowt pwaywists by UWW',
     'URL': 'UWW',
+    'Invalid/Unsupported URL': 'Invawlid/unsuwpported url >///<',
+    'Please wait...': 'Pwease wait... x3',
     'Duration': 'Duwation',
     'Sort': 'Sowt',
     'Your ARL might be expired, try logging out and logging back in using new ARL or browser.':
@@ -8821,7 +8825,8 @@ const crowdin = {
     'Application Log': 'Appwication wog',
     'Are you sure you want to log out?': 'Awe uwu suwe uwu wawnt tuwu wog out?',
     'Download failed!': 'Downwoad faiwed! :(',
-    'Permission denied, download canceled!': 'Pewmission denied, downwoad cancewed!'
+    'Permission denied, download canceled!': 'Pewmission denied, downwoad cancewed!',
+    'Help translating this app on Crowdin!': 'I need your help uwu, please translate this app on crowdin! >w<'
   },
   'vi_vi': {
     'Home': 'Trang chủ',

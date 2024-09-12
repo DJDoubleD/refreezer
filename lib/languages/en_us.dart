@@ -3,8 +3,7 @@ const language_en_us = {
     'Home': 'Home',
     'Search': 'Search',
     'Library': 'Library',
-    "Offline mode, can't play flow or smart track lists.":
-        "Offline mode, can't play flow or smart track lists.",
+    "Offline mode, can't play flow or smart track lists.": "Offline mode, can't play flow or smart track lists.",
     'Added to library': 'Added to library',
     'Download': 'Download',
     'Disk': 'Disk',
@@ -22,20 +21,16 @@ const language_en_us = {
     'Post processing...': 'Post processing...',
     'Done': 'Done',
     'Delete': 'Delete',
-    'Are you sure you want to delete this download?':
-        'Are you sure you want to delete this download?',
+    'Are you sure you want to delete this download?': 'Are you sure you want to delete this download?',
     'Cancel': 'Cancel',
     'Downloads': 'Downloads',
     'Clear queue': 'Clear queue',
-    "This won't delete currently downloading item":
-        "This won't delete currently downloading item",
-    'Are you sure you want to delete all queued downloads?':
-        'Are you sure you want to delete all queued downloads?',
+    "This won't delete currently downloading item": "This won't delete currently downloading item",
+    'Are you sure you want to delete all queued downloads?': 'Are you sure you want to delete all queued downloads?',
     'Clear downloads history': 'Clear downloads history',
     'WARNING: This will only clear non-offline (external downloads)':
         'WARNING: This will only clear non-offline (external downloads)',
-    'Please check your connection and try again later...':
-        'Please check your connection and try again later...',
+    'Please check your connection and try again later...': 'Please check your connection and try again later...',
     'Show more': 'Show more',
     'Importer': 'Importer',
     'Currently supporting only Spotify, with 100 tracks limit':
@@ -63,15 +58,13 @@ const language_en_us = {
     'Favorites': 'Favorites',
     'All offline tracks': 'All offline tracks',
     'Create new playlist': 'Create new playlist',
-    'Cannot create playlists in offline mode':
-        'Cannot create playlists in offline mode',
+    'Cannot create playlists in offline mode': 'Cannot create playlists in offline mode',
     'Error': 'Error',
     'Error logging in! Please check your token and internet connection and try again.':
         'Error logging in! Please check your token and internet connection and try again.',
     'Dismiss': 'Dismiss',
     'Welcome to': 'Welcome to',
-    'Please login using your Deezer account.':
-        'Please login using your Deezer account.',
+    'Please login using your Deezer account.': 'Please login using your Deezer account.',
     'Login using browser': 'Login using browser',
     'Login using token': 'Login using token',
     'Enter ARL': 'Enter ARL',
@@ -80,8 +73,7 @@ const language_en_us = {
     "If you don't have account, you can register on deezer.com for free.":
         "If you don't have account, you can register on deezer.com for free.",
     'Open in browser': 'Open in browser',
-    "By using this app, you don't agree with the Deezer ToS":
-        "By using this app, you don't agree with the Deezer ToS",
+    "By using this app, you don't agree with the Deezer ToS": "By using this app, you don't agree with the Deezer ToS",
     'Play next': 'Play next',
     'Add to queue': 'Add to queue',
     'Add track to favorites': 'Add track to favorites',
@@ -138,8 +130,7 @@ const language_en_us = {
     'Wifi streaming': 'Wifi streaming',
     'External downloads': 'External downloads',
     'Content language': 'Content language',
-    'Not app language, used in headers. Now':
-        'Not app language, used in headers. Now',
+    'Not app language, used in headers. Now': 'Not app language, used in headers. Now',
     'Select language': 'Select language',
     'Content country': 'Content country',
     'Country used in headers. Now': 'Country used in headers. Now',
@@ -148,8 +139,7 @@ const language_en_us = {
         'Send track listen logs to Deezer, enable it for features like Flow to work properly',
     'Offline mode': 'Offline mode',
     'Will be overwritten on start.': 'Will be overwritten on start.',
-    'Error logging in, check your internet connections.':
-        'Error logging in, check your internet connections.',
+    'Error logging in, check your internet connections.': 'Error logging in, check your internet connections.',
     'Logging in...': 'Logging in...',
     'Download path': 'Download path',
     'Downloads naming': 'Downloads naming',
@@ -162,8 +152,7 @@ const language_en_us = {
     'Separate albums by discs': 'Separate albums by disks',
     'Overwrite already downloaded files': 'Overwrite already downloaded files',
     'Copy ARL': 'Copy ARL',
-    'Copy userToken/ARL Cookie for use in other apps.':
-        'Copy userToken/ARL Cookie for use in other apps.',
+    'Copy userToken/ARL Cookie for use in other apps.': 'Copy userToken/ARL Cookie for use in other apps.',
     'Copied': 'Copied',
     'Log out': 'Log out',
     'Due to plugin incompatibility, login using browser is unavailable without restart.':
@@ -175,14 +164,12 @@ const language_en_us = {
     'Go up': 'Go up',
     'Permission denied': 'Permission denied',
     'Language': 'Language',
-    'Language changed, please restart ReFreezer to apply!':
-        'Language changed, please restart ReFreezer to apply!',
+    'Language changed, please restart ReFreezer to apply!': 'Language changed, please restart ReFreezer to apply!',
     'Importing...': 'Importing...',
     'Radio': 'Radio',
     'Flow': 'Flow',
     'Track is not available on Deezer!': 'Track is not available on Deezer!',
-    'Failed to download track! Please restart.':
-        'Failed to download track! Please restart.',
+    'Failed to download track! Please restart.': 'Failed to download track! Please restart.',
 
     //0.5.0 Strings:
     'Storage permission denied!': 'Storage permission denied!',
@@ -203,15 +190,13 @@ const language_en_us = {
     //Updated 0.5.1
     'Download threads': 'Concurrent downloads',
     //0.5.0
-    'Lyrics unavailable, empty or failed to load!':
-        'Lyrics unavailable, empty or failed to load!',
+    'Lyrics unavailable, empty or failed to load!': 'Lyrics unavailable, empty or failed to load!',
     'About': 'About',
     'Telegram Channel': 'Telegram Channel',
     'To get latest releases': 'To get latest releases',
     'Official chat': 'Official chat',
     'Telegram Group': 'Telegram Group',
-    'Huge thanks to all the contributors! <3':
-        'Huge thanks to all the contributors! <3',
+    'Huge thanks to all the contributors! <3': 'Huge thanks to all the contributors! <3',
     'Edit playlist': 'Edit playlist',
     'Update': 'Update',
     'Playlist updated!': 'Playlist updated!',
@@ -243,8 +228,7 @@ const language_en_us = {
 
     //0.5.6 Strings:
     'Create .nomedia files': 'Create .nomedia files',
-    'To prevent gallery being filled with album art':
-        'To prevent gallery being filled with album art',
+    'To prevent gallery being filled with album art': 'To prevent gallery being filled with album art',
 
     //0.5.7 Strings:
     'Sleep timer': 'Sleep timer',
@@ -286,8 +270,7 @@ const language_en_us = {
     'Current version: ': 'Current version: ',
     'Unsupported platform!': 'Unsupported platform!',
     'ReFreezer Updates': 'ReFreezer Updates',
-    'Update to latest version in the settings.':
-        'Update to latest version in the settings.',
+    'Update to latest version in the settings.': 'Update to latest version in the settings.',
     'Release date': 'Release date',
 
     //0.6.4 Strings:
@@ -302,8 +285,7 @@ const language_en_us = {
     'Official Discord server': 'Official Discord server',
 
     //0.6.6
-    'Restart of app is required to properly log out!':
-        'Restart of app is required to properly log out!',
+    'Restart of app is required to properly log out!': 'Restart of app is required to properly log out!',
     'Artist separator': 'Artist separator',
     'Singleton naming': 'Standalone tracks filename',
 
@@ -429,13 +411,11 @@ const language_en_us = {
         'Your ARL might be expired, try logging out and logging back in using new ARL or browser.',
 
     //0.7.05
-    'The original freezer development team':
-        'The original freezer development team',
+    'The original freezer development team': 'The original freezer development team',
     'Donate': 'Donate',
     'You should rather support your favorite artists, instead of this app!':
         'You should rather support your favorite artists, instead of this app!',
-    'No really, go support your favorite artists instead ;)':
-        'No really, go support your favorite artists instead ;)',
+    'No really, go support your favorite artists instead ;)': 'No really, go support your favorite artists instead ;)',
     'Storage permission is required to download content.\nPlease open settings and grant storage permission to ReFreezer.':
         'Storage permission is required to download content.\nPlease open settings and grant storage permission to ReFreezer.',
     'Open system settings': 'Open system settings',
@@ -446,7 +426,8 @@ const language_en_us = {
     'Download failed!': 'Download failed!',
 
     // 0.7.14
-    'Permission denied, download canceled!':
-        'Permission denied, download canceled!',
+    'Permission denied, download canceled!': 'Permission denied, download canceled!',
+    'Crowdin': 'Crowdin',
+    'Help translating this app on Crowdin!': 'Help translating this app on Crowdin!'
   }
 };

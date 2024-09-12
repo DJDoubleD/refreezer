@@ -350,5 +350,7 @@
   "Application Log": "Application Log",
   "Are you sure you want to log out?": "Are you sure you want to log out?",
   "Download failed!": "Download failed!",
-  "Permission denied, download canceled!": "Permission denied, download canceled!"
+  "Permission denied, download canceled!": "Permission denied, download canceled!",
+  "Crowdin": "Crowdin",
+  "Help translating this app on Crowdin!": "Help translating this app on Crowdin!"
 }

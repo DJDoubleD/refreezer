@@ -26,6 +26,7 @@ import 'package:url_launcher/url_launcher_string.dart';
 
 import '../api/cache.dart';
 import '../api/deezer.dart';
+import '../fonts/refreezer_icons.dart';
 import '../main.dart';
 import '../utils/env.dart';
 import '../utils/navigator_keys.dart';
@@ -1571,7 +1572,6 @@ class _CreditsScreenState extends State<CreditsScreen> {
   static final List<List<String>> translators = [
     // ['Andrea', 'Italian'],
     ['ovosimpatico', 'Portuguese & Spanish'],
-    ['All Crowdin contributors', 'Various languages'],
   ];
 
   static final List<List<String>> freezerTranslators = [
@@ -1654,6 +1654,15 @@ class _CreditsScreenState extends State<CreditsScreen> {
             },
           ),
           ListTile(
+            title: Text('Crowdin'.i18n),
+            subtitle: Text('Help translating this app on Crowdin!'.i18n),
+            leading: const Icon(ReFreezerIcons.crowdin, color: Color(0xffbdc1c6), size: 36.0),
+            onTap: () {
+              launchUrlString('https://crowdin.com/project/refreezer');
+            },
+          ),
+          ListTile(
+            isThreeLine: true,
             title: Text('Donate'.i18n),
             subtitle: Text('You should rather support your favorite artists, instead of this app!'.i18n),
             leading: const Icon(FontAwesome5.paypal, color: Colors.blue, size: 36.0),
@@ -1677,7 +1686,6 @@ class _CreditsScreenState extends State<CreditsScreen> {
               // launchUrlString('https://paypal.me/exttex');
             },
           ),
-          const Padding(padding: EdgeInsets.all(8.0)),
           const FreezerDivider(),
           ...List.generate(
               translators.length,
@@ -1766,15 +1774,16 @@ class _CreditsScreenState extends State<CreditsScreen> {
                         title: Text(freezerTranslators[i][0]),
                         subtitle: Text(freezerTranslators[i][1]),
                       )),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(0, 4, 0, 8),
-                child: Text(
-                  'Huge thanks to all the contributors! <3'.i18n,
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(fontSize: 16.0),
-                ),
-              )
             ],
+          ),
+          const FreezerDivider(),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(0, 4, 0, 8),
+            child: Text(
+              'Huge thanks to all the contributors! <3'.i18n,
+              textAlign: TextAlign.center,
+              style: const TextStyle(fontSize: 16.0),
+            ),
           ),
           const FreezerDivider(),
         ],
