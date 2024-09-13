@@ -48,6 +48,8 @@ class AudioPlayerHandler extends BaseAudioHandler with QueueHandler, SeekHandler
   int? _prevAudioSession;
   bool _equalizerOpen = false;
 
+  final AndroidAuto _androidAuto = AndroidAuto(); // Create an instance of AndroidAuto
+
   // for some reason, dart can decide not to respect the 'await' due to weird task sceduling ...
   final Completer<void> _playerInitializedCompleter = Completer<void>();
   late AudioPlayer _player;
@@ -222,8 +224,6 @@ class AudioPlayerHandler extends BaseAudioHandler with QueueHandler, SeekHandler
     }
   }
 
-  final AndroidAuto _androidAuto = AndroidAuto(); // Create an instance of AndroidAuto
-
   @override
   Future<void> playFromMediaId(String mediaId, [Map<String, dynamic>? extras]) async {
     // Check if the mediaId is for Android Auto
@@ -384,8 +384,7 @@ class AudioPlayerHandler extends BaseAudioHandler with QueueHandler, SeekHandler
     Map<String, dynamic>? options,
   ]) async {
     //Android audio callback
-    AndroidAuto androidAuto = AndroidAuto();
-    return androidAuto.getScreen(parentMediaId);
+    return _androidAuto.getScreen(parentMediaId);
   }
 
   //----------------------------------------------
