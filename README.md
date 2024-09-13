@@ -4,8 +4,8 @@
 [![Release date](https://img.shields.io/github/release-date/DJDoubleD/ReFreezer)](../../releases/latest)
 [![Downloads Latest](https://img.shields.io/github/downloads/DJDoubleD/ReFreezer/latest/total?color=blue&label=downloads%20latest)](../../releases)
 [![Downloads Total](https://img.shields.io/github/downloads/DJDoubleD/ReFreezer/total?color=blue&label=downloads%20total)](../../releases)
-[![Flutter Version](https://shields.io/badge/Flutter-v3.24.2-darkgreen.svg)](https://docs.flutter.dev/tools/sdk)
-[![Dart Version](https://shields.io/badge/Dart-v3.5.2-darkgreen.svg)](https://dart.dev/get-dart)
+[![Flutter Version](https://shields.io/badge/Flutter-v3.24.3-darkgreen.svg)](https://docs.flutter.dev/tools/sdk)
+[![Dart Version](https://shields.io/badge/Dart-v3.5.3-darkgreen.svg)](https://dart.dev/get-dart)
 [![Crowdin](https://badges.crowdin.net/refreezer/localized.svg)](https://crowdin.com/project/refreezer)
 [![License](https://img.shields.io/github/license/DJDoubleD/ReFreezer?flat)](./LICENSE)
 
@@ -25,13 +25,27 @@ The entire codebase has been updated/rewritten to be compatible with the latest 
     <img src="./assets/screenshots/Home.jpg" width=200>
     <img src="./assets/screenshots/Player.jpg" width=200>
     <img src="./assets/screenshots/Lyrics.jpg" width=200>
+</p>
+
+<details><summary><b>More Android Phone</b></summary>
+<p align="center">
     <img src="./assets/screenshots/Search.jpg" width=200>
     <img src="./assets/screenshots/SearchResults.jpg" width=200>
     <img src="./assets/screenshots/Library.jpg" width=200>
     <img src="./assets/screenshots/DownloadRunning.jpg" width=200>
-<!---    <img src="./assets/screenshots/DownloadFinished.jpg" width=200> --->
+    <!---<img src="./assets/screenshots/DownloadFinished.jpg" width=200>--->
     <img src="./assets/screenshots/PlayerHorizontal.jpg" height=200>
 </p>
+</details>
+</br>
+<details><summary><b>Android Auto</b></summary>
+  <p align="center">
+    <img src="./assets/screenshots/Android_Auto-Head_Unit-home.png" max-height=400>
+    <img src="./assets/screenshots/Android_Auto-Head_Unit-more.png" max-height=400>
+    <img src="./assets/screenshots/Android_Auto-Head_Unit-play.png" max-height=400>
+    <img src="./assets/screenshots/Android_Auto-Head_Unit-wide-playing.png" max-height=400>
+  </p>
+</details>
 
 ## Features & changes
 
