@@ -358,8 +358,13 @@ const crowdin = {
     'Sort': 'ترتيب',
     'Your ARL might be expired, try logging out and logging back in using new ARL or browser.':
         'قد انتهت صلاحية الـ ARL الخاص بك، حاول تسجيل الخروج وتسجيل الدخول مرة أخرى باستخدام ARL أو بطريقة المتصفح.',
+    'Donate': 'تبرع',
+    'Open system settings': 'افتح إعدادات النظام',
     'Application Log': 'سجل التطبيق',
-    'Download failed!': 'فشل التنزيل!'
+    'Are you sure you want to log out?': 'هل أنت متأكد من أنك تريد تسجيل الخروج؟',
+    'Download failed!': 'فشل التنزيل!',
+    'Permission denied, download canceled!': 'تم رفض الإذن، تم إلغاء التنزيل!',
+    'Help translating this app on Crowdin!': 'ساعد في ترجمة هذا التطبيق على Crowdin!'
   },
   'ast_es': {
     'Home': 'Aniciu',
