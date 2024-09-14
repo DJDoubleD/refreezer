@@ -258,19 +258,7 @@ class _PlayerScreenHorizontalState extends State<PlayerScreenHorizontal> {
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
-                        IconButton(
-                          icon: Icon(
-                            //Icons.subtitles,
-                            ReFreezerIcons.lyrics_mic,
-                            size: ScreenUtil().setWidth(12),
-                            semanticLabel: 'Lyrics'.i18n,
-                          ),
-                          onPressed: () {
-                            Navigator.of(context).push(MaterialPageRoute(
-                                builder: (context) =>
-                                    LyricsScreen(trackId: GetIt.I<AudioPlayerHandler>().mediaItem.value!.id)));
-                          },
-                        ),
+                        LyricsIconButton(12, afterOnPressed: updateColor),
                         IconButton(
                           icon: Icon(
                             Icons.file_download,
@@ -378,29 +366,6 @@ class _PlayerScreenVerticalState extends State<PlayerScreenVertical> {
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
-              /*IconButton(
-                icon: Icon(
-                  //Icons.lyrics,
-                  ReFreezerIcons.lyrics_mic,
-                  size: ScreenUtil().setWidth(20),
-                  semanticLabel: 'Lyrics'.i18n,
-                ),
-                onPressed: () async {
-                  //Fix bottom buttons
-                  SystemChrome.setSystemUIOverlayStyle(
-                      const SystemUiOverlayStyle(
-                          statusBarColor: Colors.transparent));
-
-                  await Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => LyricsScreen(
-                          trackId: GetIt.I<AudioPlayerHandler>()
-                              .mediaItem
-                              .value!
-                              .id)));
-
-                  updateColor();
-                },
-              ),*/
               LyricsIconButton(20, afterOnPressed: updateColor),
               IconButton(
                 icon: Icon(
