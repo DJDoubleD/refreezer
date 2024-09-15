@@ -352,5 +352,6 @@
   "Download failed!": "Download failed!",
   "Permission denied, download canceled!": "Permission denied, download canceled!",
   "Crowdin": "Crowdin",
-  "Help translating this app on Crowdin!": "Help translating this app on Crowdin!"
+  "Help translating this app on Crowdin!": "Help translating this app on Crowdin!",
+  "Allow screen to turn off": "Allow screen to turn off"
 }

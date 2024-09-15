@@ -428,6 +428,9 @@ const language_en_us = {
     // 0.7.14
     'Permission denied, download canceled!': 'Permission denied, download canceled!',
     'Crowdin': 'Crowdin',
-    'Help translating this app on Crowdin!': 'Help translating this app on Crowdin!'
+    'Help translating this app on Crowdin!': 'Help translating this app on Crowdin!',
+
+    // 0.7.15
+    'Allow screen to turn off': 'Allow screen to turn off',
   }
 };
