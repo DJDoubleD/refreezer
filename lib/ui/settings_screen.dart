@@ -1572,6 +1572,7 @@ class _CreditsScreenState extends State<CreditsScreen> {
   static final List<List<String>> translators = [
     // ['Andrea', 'Italian'],
     ['ovosimpatico', 'Portuguese & Spanish'],
+    ['PanChi', 'German'],
   ];
 
   static final List<List<String>> freezerTranslators = [
