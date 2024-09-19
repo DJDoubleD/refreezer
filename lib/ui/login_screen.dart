@@ -57,8 +57,7 @@ class _LoginWidgetState extends State<LoginWidget> {
           builder: (context) => AlertDialog(
                 title: Text('Deezer is unavailable'.i18n),
                 content: Text(
-                    'Deezer is unavailable in your country, ReFreezer might not work properly. Please use a VPN'
-                        .i18n),
+                    'Deezer is unavailable in your country, ReFreezer might not work properly. Please use a VPN'.i18n),
                 actions: [
                   TextButton(
                     child: Text('Continue'.i18n),
@@ -94,9 +93,7 @@ class _LoginWidgetState extends State<LoginWidget> {
             content: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Text(
-                    'Error logging in! Please check your token and internet connection and try again.'
-                        .i18n),
+                Text('Error logging in! Please check your token and internet connection and try again.'.i18n),
                 if (_error != null) Text('\n\n$_error')
               ],
             ),
@@ -119,11 +116,11 @@ class _LoginWidgetState extends State<LoginWidget> {
     //Try logging in
     try {
       deezerAPI.arl = settings.arl;
-      bool resp = await deezerAPI.rawAuthorize(
-          onError: (e) => setState(() => _error = e.toString()));
+      bool resp = await deezerAPI.rawAuthorize(onError: (e) => setState(() => _error = e.toString()));
       if (resp == false) {
         //false, not null
-        if ((settings.arl ?? '').length != 192) {
+        int arlLength = (settings.arl ?? '').length;
+        if (arlLength != 175 && arlLength != 192) {
           _error = '${(_error ?? '')}Invalid ARL length!';
         }
         setState(() => settings.arl = null);
@@ -199,9 +196,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                       'Login using email'.i18n,
                     ),
                     onPressed: () {
-                      showDialog(
-                          context: context,
-                          builder: (context) => EmailLogin(_update));
+                      showDialog(context: context, builder: (context) => EmailLogin(_update));
                     },
                   )),
               Padding(
@@ -209,8 +204,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                 child: OutlinedButton(
                   child: Text('Login using browser'.i18n),
                   onPressed: () {
-                    Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => LoginBrowser(_update)));
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context) => LoginBrowser(_update)));
                   },
                 ),
               ),
@@ -222,17 +216,13 @@ class _LoginWidgetState extends State<LoginWidget> {
                     showDialog(
                         context: context,
                         builder: (context) {
-                          Future.delayed(
-                              const Duration(seconds: 1),
-                              () => {
-                                    focusNode.requestFocus()
-                                  }); // autofocus doesn't work - it's replacement
+                          Future.delayed(const Duration(seconds: 1),
+                              () => {focusNode.requestFocus()}); // autofocus doesn't work - it's replacement
                           return AlertDialog(
                             title: Text('Enter ARL'.i18n),
                             content: TextField(
                               onChanged: (String s) => _arl = s,
-                              decoration: InputDecoration(
-                                  labelText: 'Token (ARL)'.i18n),
+                              decoration: InputDecoration(labelText: 'Token (ARL)'.i18n),
                               focusNode: focusNode,
                               controller: controller,
                               onSubmitted: (String s) {
@@ -254,8 +244,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                 height: 16.0,
               ),
               Text(
-                "If you don't have account, you can register on deezer.com for free."
-                    .i18n,
+                "If you don't have account, you can register on deezer.com for free.".i18n,
                 textAlign: TextAlign.center,
                 style: const TextStyle(fontSize: 16.0),
               ),
@@ -264,8 +253,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                 child: OutlinedButton(
                   child: Text('Open in browser'.i18n),
                   onPressed: () {
-                    InAppBrowser.openWithSystemBrowser(
-                        url: WebUri('https://deezer.com/register'));
+                    InAppBrowser.openWithSystemBrowser(url: WebUri('https://deezer.com/register'));
                   },
                 ),
               ),
@@ -300,21 +288,15 @@ class LoginBrowser extends StatelessWidget {
       children: <Widget>[
         Expanded(
           child: InAppWebView(
-            initialUrlRequest:
-                URLRequest(url: WebUri('https://deezer.com/login')),
-            onLoadStart:
-                (InAppWebViewController controller, WebUri? loadedUri) async {
+            initialUrlRequest: URLRequest(url: WebUri('https://deezer.com/login')),
+            onLoadStart: (InAppWebViewController controller, WebUri? loadedUri) async {
               //Offers URL
-              if (!loadedUri!.path.contains('/login') &&
-                  !loadedUri.path.contains('/register')) {
-                controller.evaluateJavascript(
-                    source: 'window.location.href = "/open_app"');
+              if (!loadedUri!.path.contains('/login') && !loadedUri.path.contains('/register')) {
+                controller.evaluateJavascript(source: 'window.location.href = "/open_app"');
               }
 
               //Parse arl from url
-              if (loadedUri
-                  .toString()
-                  .startsWith('intent://deezer.page.link')) {
+              if (loadedUri.toString().startsWith('intent://deezer.page.link')) {
                 try {
                   //Actual url is in `link` query parameter
                   Uri linkUri = Uri.parse(loadedUri.queryParameters['link']!);
@@ -325,8 +307,7 @@ class LoginBrowser extends StatelessWidget {
                   Navigator.of(context).pop();
                   updateParent();
                 } catch (e) {
-                  Logger.root
-                      .severe('Error loading ARL from browser login: $e');
+                  Logger.root.severe('Error loading ARL from browser login: $e');
                 }
               }
             },
@@ -380,8 +361,7 @@ class _EmailLoginState extends State<EmailLogin> {
           context: context,
           builder: (context) => AlertDialog(
                 title: Text('Error logging in!'.i18n),
-                content: Text(
-                    'Error logging in using email, please check your credentials.\n\nError: ${exception!}'),
+                content: Text('Error logging in using email, please check your credentials.\n\nError: ${exception!}'),
                 actions: [
                   TextButton(
                     child: Text('Dismiss'.i18n),
