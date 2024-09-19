@@ -35,7 +35,8 @@ List<Language> languages = [
   Language('fil', 'PH', 'Filipino'),
   Language('ast', 'ES', 'Asturian'),
   Language('bul', 'BG', 'Bulgarian'),
-  Language('uwu', 'UWU', 'Furry')
+  Language('uwu', 'UWU', 'Furry'),
+  Language('te', 'IN', 'Telugu'),
 ];
 List<Locale> get supportedLocales => languages.map((l) => l.getLocale).toList();
 

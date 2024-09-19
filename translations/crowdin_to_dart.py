@@ -28,6 +28,7 @@ lang_crowdin = {
     "ru": "ru_ru",
     "sk": "sk_sk",
     "sl": "sl_sl",
+    "te": "te_in",
     "tr": "tr_tr",
     "uk": "uk_ua",
     "ur-PK": "ur_pk",
@@ -77,7 +78,7 @@ def generate_dart():
                         data, object_pairs_hook=collections.OrderedDict
                     )
 
-    with open("../lib/languages/crowdin_new.dart", "w", encoding="utf-8") as f:
+    with open("../lib/languages/crowdin.dart", "w", encoding="utf-8") as f:
         data = json.dumps(out, ensure_ascii=False, indent=2).replace("$", r"\$")
         single_quote_data = convert_to_single_quotes(data)
         out = f"const crowdin = {single_quote_data};"

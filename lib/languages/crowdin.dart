@@ -7834,6 +7834,7 @@ const crowdin = {
     'Your ARL might be expired, try logging out and logging back in using new ARL or browser.':
         'Vaš ARL je mogoče potekel, poskusite se odjaviti in prijaviti nazaj z novim ARL ali brskalnikom.'
   },
+  'te_in': {'Home': 'హోమ్'},
   'tr_tr': {
     'Home': 'Ana Sayfa',
     'Search': 'Ara',
