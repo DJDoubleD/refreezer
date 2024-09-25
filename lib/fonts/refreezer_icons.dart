@@ -13,7 +13,7 @@
 ///
 ///
 ///
-library refreezer_icons;
+library;
 
 import 'package:flutter/widgets.dart';
 
