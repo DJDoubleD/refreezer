@@ -40,7 +40,7 @@ dependencies:
   crypto: ^3.0.3
   custom_navigator:
     path: ./custom_navigator
-  device_info_plus: ^10.1.0
+  device_info_plus: ^11.1.0
   #disk_space_plus: ^0.2.3
   # Gradle 8 updated version:
   disk_space_plus:
