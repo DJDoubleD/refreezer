@@ -1570,7 +1570,7 @@ class _CreditsScreenState extends State<CreditsScreen> {
   String _version = '';
 
   static final List<List<String>> translators = [
-    // ['Andrea', 'Italian'],
+    ['Andrea', 'Resident Polyglot, Italian and just about everything else <3'],
     ['ovosimpatico', 'Portuguese & Spanish'],
     ['PanChi', 'German'],
   ];
