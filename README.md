@@ -79,6 +79,18 @@ git submodule init
 git submodule update
 ```
 
+Create a `.env` file in the `lib` folder of the project and add the following content:
+
+```text
+# Deezer API credentials
+deezerClientId = '<Your_Deezer_Client_Id>';
+deezerClientSecret = '<Your_Deezer_Client_Secret>';
+
+# LastFM API credentials
+lastFmApiKey = '<Your_LastFM_API_Key>'
+lastFmApiSecret = 'Your_LastFM_API_Secret'
+```
+
 Build generated files:
 
 Use following script to (re)build generated classes in submodules and main project:
@@ -102,6 +114,29 @@ Compile:
 ```
 
 NOTE: You have to use own keys, or build debug using `flutter build apk --debug`
+
+### Generate your own keys
+
+#### Step 1: create a JKS file
+
+Make sure your Java JDK folder is in your PATH variable and execute the following command in the ./android folder of the project:
+
+```bash
+keytool -genkey -v -keystore ./keys.jks -keyalg RSA -keysize 2048 -validity 10000 -alias <YourKeyAlias>
+```
+
+Follow the instructions show in the commandline to fill out the desired fields of your keystore.
+
+#### Step 2: create a key.properties file
+
+Inside the ./android (next to the keys.jks file from step 1), create a file `key.properties` with the following contents:
+
+```text
+storePassword=<storePassword>
+keyPassword=<keyPassword>
+keyAlias=<YourKeyAlias>
+storeFile=../keys.jks
+```
 
 ## Disclaimer & Legal
 
