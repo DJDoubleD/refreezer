@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
+import 'package:refreezer/fonts/deezer_icons.dart';
 
 import '../api/deezer.dart';
 import '../api/definitions.dart';
@@ -23,6 +24,8 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
         appBar: const HomeAppBar(),
         body: SingleChildScrollView(
+            child: Container(
+          padding: EdgeInsets.only(bottom: 72.0),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
@@ -32,7 +35,7 @@ class HomeScreen extends StatelessWidget {
               )
             ],
           ),
-        ));
+        )));
   }
 }
 
@@ -49,7 +52,7 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
       actions: <Widget>[
         IconButton(
           icon: Icon(
-            Icons.file_download,
+            DeezerIcons.download_fill,
             semanticLabel: 'Download'.i18n,
           ),
           onPressed: () {
@@ -59,7 +62,7 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
         ),
         IconButton(
           icon: Icon(
-            Icons.settings,
+            DeezerIcons.settings,
             semanticLabel: 'Settings'.i18n,
           ),
           onPressed: () {

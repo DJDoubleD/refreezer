@@ -117,10 +117,13 @@ class Settings {
 
   //Colors
   @JsonKey(toJson: _colorToJson, fromJson: _colorFromJson)
-  Color primaryColor = Colors.blue;
+  Color primaryColor = Color(0xFFA238FF);
+  static const deezerBg = Color(0xFF0F0D13);
+  static const deezerBottom = Color(0xFF1B191F);
+  static const secondaryText = Color(0xFFA9A6AA);
 
   static _colorToJson(Color c) => c.value;
-  static _colorFromJson(int? v) => v == null ? Colors.blue : Color(v);
+  static _colorFromJson(int? v) => v == null ? Color(0xFFA238FF) : Color(v);
 
   @JsonKey(defaultValue: false)
   bool useArtColor = false;
@@ -255,8 +258,6 @@ class Settings {
     return true;
   }
 
-  static const deezerBg = Color(0xFF1F1A16);
-  static const deezerBottom = Color(0xFF1b1714);
   TextTheme? get textTheme => (font == 'Deezer')
       ? null
       : GoogleFonts.getTextTheme(font,
@@ -394,18 +395,24 @@ class Settings {
               }),
             ),
             bottomAppBarTheme:
-                const BottomAppBarTheme(color: Color(0xff424242))),
+                const BottomAppBarTheme(color: Color(0xFF0F0D13))),
         Themes.Deezer: ThemeData(
             useMaterial3: false,
             brightness: Brightness.dark,
             textTheme: textTheme,
             fontFamily: _fontFamily,
             primaryColor: primaryColor,
+            unselectedWidgetColor: secondaryText,
             sliderTheme: _sliderTheme,
             scaffoldBackgroundColor: deezerBg,
-            dialogBackgroundColor: deezerBottom,
+            dialogBackgroundColor: deezerBg,
+            hintColor: secondaryText,
+            inputDecorationTheme: const InputDecorationTheme(
+              hintStyle: TextStyle(color: secondaryText),
+              labelStyle: TextStyle(color: secondaryText),
+            ),
             bottomSheetTheme:
-                const BottomSheetThemeData(backgroundColor: deezerBottom),
+                const BottomSheetThemeData(backgroundColor: deezerBg),
             cardColor: deezerBg,
             outlinedButtonTheme: outlinedButtonTheme,
             textButtonTheme: textButtonTheme,
@@ -459,15 +466,15 @@ class Settings {
                 return null;
               }),
             ),
-            bottomAppBarTheme: const BottomAppBarTheme(color: deezerBottom)),
+            bottomAppBarTheme: const BottomAppBarTheme(color: deezerBg)),
         Themes.Black: ThemeData(
             useMaterial3: false,
             brightness: Brightness.dark,
             textTheme: textTheme,
             fontFamily: _fontFamily,
             primaryColor: primaryColor,
-            scaffoldBackgroundColor: Colors.black,
-            dialogBackgroundColor: Colors.black,
+            scaffoldBackgroundColor: deezerBg,
+            dialogBackgroundColor: deezerBg,
             sliderTheme: _sliderTheme,
             bottomSheetTheme: const BottomSheetThemeData(
               backgroundColor: Colors.black,

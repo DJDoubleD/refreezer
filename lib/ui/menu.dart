@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get_it/get_it.dart';
 import 'package:numberpicker/numberpicker.dart';
+import 'package:refreezer/fonts/deezer_icons.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 import 'package:wakelock_plus/wakelock_plus.dart';
@@ -23,7 +24,8 @@ class MenuSheet {
   Function navigateCallback;
 
   // Use no-op callback if not provided
-  MenuSheet({Function? navigateCallback}) : navigateCallback = navigateCallback ?? (() {});
+  MenuSheet({Function? navigateCallback})
+      : navigateCallback = navigateCallback ?? (() {});
 
   //===================
   // DEFAULT
@@ -36,7 +38,10 @@ class MenuSheet {
         builder: (BuildContext context) {
           return ConstrainedBox(
             constraints: BoxConstraints(
-              maxHeight: (MediaQuery.of(context).orientation == Orientation.landscape) ? 220 : 350,
+              maxHeight:
+                  (MediaQuery.of(context).orientation == Orientation.landscape)
+                      ? 220
+                      : 350,
             ),
             child: SingleChildScrollView(
               child: Column(children: options),
@@ -83,7 +88,8 @@ class MenuSheet {
                           maxLines: 1,
                           textAlign: TextAlign.center,
                           overflow: TextOverflow.ellipsis,
-                          style: const TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold),
+                          style: const TextStyle(
+                              fontSize: 22.0, fontWeight: FontWeight.bold),
                         ),
                         Text(
                           track.artistString ?? '',
@@ -112,7 +118,10 @@ class MenuSheet {
               ),
               ConstrainedBox(
                 constraints: BoxConstraints(
-                  maxHeight: (MediaQuery.of(context).orientation == Orientation.landscape) ? 200 : 350,
+                  maxHeight: (MediaQuery.of(context).orientation ==
+                          Orientation.landscape)
+                      ? 200
+                      : 350,
                 ),
                 child: SingleChildScrollView(
                   child: Column(children: options),
@@ -125,7 +134,9 @@ class MenuSheet {
 
   //Default track options
   void defaultTrackMenu(Track track,
-      {required BuildContext context, List<Widget> options = const [], Function? onRemove}) {
+      {required BuildContext context,
+      List<Widget> options = const [],
+      Function? onRemove}) {
     showWithTrack(context, track, [
       addToQueueNext(track, context),
       addToQueue(track, context),
@@ -138,7 +149,8 @@ class MenuSheet {
       shareTile('track', track.id ?? ''),
       playMix(track, context),
       showAlbum(track.album!, context),
-      ...List.generate(track.artists?.length ?? 0, (i) => showArtist(track.artists![i], context)),
+      ...List.generate(track.artists?.length ?? 0,
+          (i) => showArtist(track.artists![i], context)),
       ...options
     ]);
   }
@@ -152,7 +164,8 @@ class MenuSheet {
       leading: const Icon(Icons.playlist_play),
       onTap: () async {
         //-1 = next
-        await GetIt.I<AudioPlayerHandler>().insertQueueItem(-1, t.toMediaItem());
+        await GetIt.I<AudioPlayerHandler>()
+            .insertQueueItem(-1, t.toMediaItem());
         if (context.mounted) _close(context);
       });
 
@@ -166,7 +179,7 @@ class MenuSheet {
 
   Widget addTrackFavorite(Track t, BuildContext context) => ListTile(
       title: Text('Add track to favorites'.i18n),
-      leading: const Icon(Icons.favorite),
+      leading: const Icon(DeezerIcons.heart_fill),
       onTap: () async {
         await deezerAPI.addFavoriteTrack(t.id!);
         //Make track offline, if favorites are offline
@@ -175,7 +188,9 @@ class MenuSheet {
           downloadManager.addOfflinePlaylist(p);
         }
         Fluttertoast.showToast(
-            msg: 'Added to library'.i18n, gravity: ToastGravity.BOTTOM, toastLength: Toast.LENGTH_SHORT);
+            msg: 'Added to library'.i18n,
+            gravity: ToastGravity.BOTTOM,
+            toastLength: Toast.LENGTH_SHORT);
         //Add to cache
         cache.libraryTracks ??= [];
         cache.libraryTracks?.add(t.id!);
@@ -185,9 +200,11 @@ class MenuSheet {
 
   Widget downloadTrack(Track t, BuildContext context) => ListTile(
         title: Text('Download'.i18n),
-        leading: const Icon(Icons.file_download),
+        leading: const Icon(DeezerIcons.download),
         onTap: () async {
-          if (await downloadManager.addOfflineTrack(t, private: false, isSingleton: true) != false) {
+          if (await downloadManager.addOfflineTrack(t,
+                  private: false, isSingleton: true) !=
+              false) {
             showDownloadStartedToast();
           }
           if (context.mounted) _close(context);
@@ -221,9 +238,10 @@ class MenuSheet {
         },
       );
 
-  Widget removeFromPlaylist(Track t, Playlist p, BuildContext context) => ListTile(
+  Widget removeFromPlaylist(Track t, Playlist p, BuildContext context) =>
+      ListTile(
         title: Text('Remove from playlist'.i18n),
-        leading: const Icon(Icons.delete),
+        leading: const Icon(DeezerIcons.trash),
         onTap: () async {
           await deezerAPI.removeFromPlaylist(t.id!, p.id!);
           Fluttertoast.showToast(
@@ -235,9 +253,10 @@ class MenuSheet {
         },
       );
 
-  Widget removeFavoriteTrack(Track t, BuildContext context, {onUpdate}) => ListTile(
+  Widget removeFavoriteTrack(Track t, BuildContext context, {onUpdate}) =>
+      ListTile(
         title: Text('Remove favorite'.i18n),
-        leading: const Icon(Icons.delete),
+        leading: const Icon(DeezerIcons.trash),
         onTap: () async {
           await deezerAPI.removeFavorite(t.id!);
           //Check if favorites playlist is offline, update it
@@ -248,7 +267,9 @@ class MenuSheet {
           //Remove from cache
           cache.libraryTracks?.removeWhere((i) => i == t.id);
           Fluttertoast.showToast(
-              msg: 'Track removed from library'.i18n, toastLength: Toast.LENGTH_SHORT, gravity: ToastGravity.BOTTOM);
+              msg: 'Track removed from library'.i18n,
+              toastLength: Toast.LENGTH_SHORT,
+              gravity: ToastGravity.BOTTOM);
           if (onUpdate != null) onUpdate();
           if (context.mounted) _close(context);
         },
@@ -264,7 +285,8 @@ class MenuSheet {
         leading: const Icon(Icons.recent_actors),
         onTap: () {
           if (context.mounted) _close(context);
-          customNavigatorKey.currentState?.push(MaterialPageRoute(builder: (context) => ArtistDetails(a)));
+          customNavigatorKey.currentState
+              ?.push(MaterialPageRoute(builder: (context) => ArtistDetails(a)));
 
           navigateCallback();
         },
@@ -279,7 +301,8 @@ class MenuSheet {
         leading: const Icon(Icons.album),
         onTap: () {
           if (context.mounted) _close(context);
-          customNavigatorKey.currentState?.push(MaterialPageRoute(builder: (context) => AlbumDetails(a)));
+          customNavigatorKey.currentState
+              ?.push(MaterialPageRoute(builder: (context) => AlbumDetails(a)));
 
           navigateCallback();
         },
@@ -323,7 +346,9 @@ class MenuSheet {
 
   //Default album options
   void defaultAlbumMenu(Album album,
-      {required BuildContext context, List<Widget> options = const [], Function? onRemove}) {
+      {required BuildContext context,
+      List<Widget> options = const [],
+      Function? onRemove}) {
     show(context, [
       (album.library != null && onRemove != null)
           ? removeAlbum(album, context, onRemove: onRemove)
@@ -341,7 +366,7 @@ class MenuSheet {
 
   Widget downloadAlbum(Album a, BuildContext context) => ListTile(
       title: Text('Download'.i18n),
-      leading: const Icon(Icons.file_download),
+      leading: const Icon(DeezerIcons.download),
       onTap: () async {
         if (context.mounted) _close(context);
         if (await downloadManager.addOfflineAlbum(a, private: false) != false) {
@@ -365,15 +390,18 @@ class MenuSheet {
         leading: const Icon(Icons.library_music),
         onTap: () async {
           await deezerAPI.addFavoriteAlbum(a.id!);
-          Fluttertoast.showToast(msg: 'Added to library'.i18n, gravity: ToastGravity.BOTTOM);
+          Fluttertoast.showToast(
+              msg: 'Added to library'.i18n, gravity: ToastGravity.BOTTOM);
           if (context.mounted) _close(context);
         },
       );
 
   //Remove album from favorites
-  Widget removeAlbum(Album a, BuildContext context, {required Function onRemove}) => ListTile(
+  Widget removeAlbum(Album a, BuildContext context,
+          {required Function onRemove}) =>
+      ListTile(
         title: Text('Remove album'.i18n),
-        leading: const Icon(Icons.delete),
+        leading: const Icon(DeezerIcons.trash),
         onTap: () async {
           await deezerAPI.removeAlbum(a.id!);
           await downloadManager.removeOfflineAlbum(a.id!);
@@ -392,9 +420,13 @@ class MenuSheet {
   //===================
 
   void defaultArtistMenu(Artist artist,
-      {required BuildContext context, List<Widget> options = const [], Function? onRemove}) {
+      {required BuildContext context,
+      List<Widget> options = const [],
+      Function? onRemove}) {
     show(context, [
-      (artist.library != null) ? removeArtist(artist, context, onRemove: onRemove) : favoriteArtist(artist, context),
+      (artist.library != null)
+          ? removeArtist(artist, context, onRemove: onRemove)
+          : favoriteArtist(artist, context),
       shareTile('artist', artist.id!),
       ...options
     ]);
@@ -404,13 +436,16 @@ class MenuSheet {
   // ARTIST OPTIONS
   //===================
 
-  Widget removeArtist(Artist a, BuildContext context, {Function? onRemove}) => ListTile(
+  Widget removeArtist(Artist a, BuildContext context, {Function? onRemove}) =>
+      ListTile(
         title: Text('Remove from favorites'.i18n),
-        leading: const Icon(Icons.delete),
+        leading: const Icon(DeezerIcons.trash),
         onTap: () async {
           await deezerAPI.removeArtist(a.id!);
           Fluttertoast.showToast(
-              msg: 'Artist removed from library'.i18n, toastLength: Toast.LENGTH_SHORT, gravity: ToastGravity.BOTTOM);
+              msg: 'Artist removed from library'.i18n,
+              toastLength: Toast.LENGTH_SHORT,
+              gravity: ToastGravity.BOTTOM);
           if (onRemove != null) onRemove();
           if (context.mounted) _close(context);
         },
@@ -418,11 +453,13 @@ class MenuSheet {
 
   Widget favoriteArtist(Artist a, BuildContext context) => ListTile(
         title: Text('Add to favorites'.i18n),
-        leading: const Icon(Icons.favorite),
+        leading: const Icon(DeezerIcons.heart_fill),
         onTap: () async {
           await deezerAPI.addFavoriteArtist(a.id!);
           Fluttertoast.showToast(
-              msg: 'Added to library'.i18n, toastLength: Toast.LENGTH_SHORT, gravity: ToastGravity.BOTTOM);
+              msg: 'Added to library'.i18n,
+              toastLength: Toast.LENGTH_SHORT,
+              gravity: ToastGravity.BOTTOM);
           if (context.mounted) _close(context);
         },
       );
@@ -432,7 +469,10 @@ class MenuSheet {
   //===================
 
   void defaultPlaylistMenu(Playlist playlist,
-      {required BuildContext context, List<Widget> options = const [], Function? onRemove, Function? onUpdate}) {
+      {required BuildContext context,
+      List<Widget> options = const [],
+      Function? onRemove,
+      Function? onUpdate}) {
     show(context, [
       (playlist.library != null)
           ? removePlaylistLibrary(playlist, context, onRemove: onRemove)
@@ -440,7 +480,8 @@ class MenuSheet {
       addPlaylistOffline(playlist, context),
       downloadPlaylist(playlist, context),
       shareTile('playlist', playlist.id!),
-      if (playlist.user?.id == deezerAPI.userId) editPlaylist(playlist, context: context, onUpdate: onUpdate),
+      if (playlist.user?.id == deezerAPI.userId)
+        editPlaylist(playlist, context: context, onUpdate: onUpdate),
       ...options
     ]);
   }
@@ -449,9 +490,11 @@ class MenuSheet {
   // PLAYLIST OPTIONS
   //===================
 
-  Widget removePlaylistLibrary(Playlist p, BuildContext context, {Function? onRemove}) => ListTile(
+  Widget removePlaylistLibrary(Playlist p, BuildContext context,
+          {Function? onRemove}) =>
+      ListTile(
         title: Text('Remove from library'.i18n),
-        leading: const Icon(Icons.delete),
+        leading: const Icon(DeezerIcons.trash),
         onTap: () async {
           if (p.user?.id?.trim() == deezerAPI.userId) {
             //Delete playlist if own
@@ -468,10 +511,12 @@ class MenuSheet {
 
   Widget addPlaylistLibrary(Playlist p, BuildContext context) => ListTile(
         title: Text('Add playlist to library'.i18n),
-        leading: const Icon(Icons.favorite),
+        leading: const Icon(DeezerIcons.heart_fill),
         onTap: () async {
           await deezerAPI.addPlaylist(p.id!);
-          Fluttertoast.showToast(msg: 'Added playlist to library'.i18n, gravity: ToastGravity.BOTTOM);
+          Fluttertoast.showToast(
+              msg: 'Added playlist to library'.i18n,
+              gravity: ToastGravity.BOTTOM);
           if (context.mounted) _close(context);
         },
       );
@@ -490,20 +535,25 @@ class MenuSheet {
 
   Widget downloadPlaylist(Playlist p, BuildContext context) => ListTile(
         title: Text('Download playlist'.i18n),
-        leading: const Icon(Icons.file_download),
+        leading: const Icon(DeezerIcons.download),
         onTap: () async {
           if (context.mounted) _close(context);
-          if (await downloadManager.addOfflinePlaylist(p, private: false) != false) {
+          if (await downloadManager.addOfflinePlaylist(p, private: false) !=
+              false) {
             showDownloadStartedToast();
           }
         },
       );
 
-  Widget editPlaylist(Playlist p, {required BuildContext context, Function? onUpdate}) => ListTile(
+  Widget editPlaylist(Playlist p,
+          {required BuildContext context, Function? onUpdate}) =>
+      ListTile(
         title: Text('Edit playlist'.i18n),
-        leading: const Icon(Icons.edit),
+        leading: const Icon(DeezerIcons.pen),
         onTap: () async {
-          await showDialog(context: context, builder: (context) => CreatePlaylistDialog(playlist: p));
+          await showDialog(
+              context: context,
+              builder: (context) => CreatePlaylistDialog(playlist: p));
           if (context.mounted) _close(context);
           if (onUpdate != null) onUpdate();
         },
@@ -513,13 +563,19 @@ class MenuSheet {
   // SHOW/EPISODE
   //===================
 
-  defaultShowEpisodeMenu(Show s, ShowEpisode e, {required BuildContext context, List<Widget> options = const []}) {
-    show(context, [shareTile('episode', e.id!), shareShow(s.id!), downloadExternalEpisode(e), ...options]);
+  defaultShowEpisodeMenu(Show s, ShowEpisode e,
+      {required BuildContext context, List<Widget> options = const []}) {
+    show(context, [
+      shareTile('episode', e.id!),
+      shareShow(s.id!),
+      downloadExternalEpisode(e),
+      ...options
+    ]);
   }
 
   Widget shareShow(String id) => ListTile(
         title: Text('Share show'.i18n),
-        leading: const Icon(Icons.share),
+        leading: const Icon(DeezerIcons.share_android),
         onTap: () async {
           Share.share('https://deezer.com/show/$id');
         },
@@ -528,7 +584,7 @@ class MenuSheet {
   //Open direct download link in browser
   Widget downloadExternalEpisode(ShowEpisode e) => ListTile(
         title: Text('Download externally'.i18n),
-        leading: const Icon(Icons.file_download),
+        leading: const Icon(DeezerIcons.download),
         onTap: () async {
           if (e.url != null) await launchUrlString(e.url!);
         },
@@ -539,7 +595,10 @@ class MenuSheet {
   //===================
 
   showDownloadStartedToast() {
-    Fluttertoast.showToast(msg: 'Downloads added!'.i18n, gravity: ToastGravity.BOTTOM, toastLength: Toast.LENGTH_SHORT);
+    Fluttertoast.showToast(
+        msg: 'Downloads added!'.i18n,
+        gravity: ToastGravity.BOTTOM,
+        toastLength: Toast.LENGTH_SHORT);
   }
 
   //Create playlist
@@ -572,20 +631,24 @@ class MenuSheet {
       );
 
   Widget wakelock(BuildContext context) => ListTile(
-        title: Text(cache.wakelock ? 'Allow screen to turn off'.i18n : 'Keep the screen on'.i18n),
+        title: Text(cache.wakelock
+            ? 'Allow screen to turn off'.i18n
+            : 'Keep the screen on'.i18n),
         leading: const Icon(Icons.screen_lock_portrait),
         onTap: () async {
           _close(context);
           //Enable
           if (!cache.wakelock) {
             WakelockPlus.enable();
-            Fluttertoast.showToast(msg: 'Wakelock enabled!'.i18n, gravity: ToastGravity.BOTTOM);
+            Fluttertoast.showToast(
+                msg: 'Wakelock enabled!'.i18n, gravity: ToastGravity.BOTTOM);
             cache.wakelock = true;
             return;
           }
           //Disable
           WakelockPlus.disable();
-          Fluttertoast.showToast(msg: 'Wakelock disabled!'.i18n, gravity: ToastGravity.BOTTOM);
+          Fluttertoast.showToast(
+              msg: 'Wakelock disabled!'.i18n, gravity: ToastGravity.BOTTOM);
           cache.wakelock = false;
         },
       );
@@ -622,7 +685,11 @@ class _SleepTimerDialogState extends State<SleepTimerDialog> {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Text('Hours:'.i18n),
-                  NumberPicker(value: hours, minValue: 0, maxValue: 69, onChanged: (v) => setState(() => hours = v)),
+                  NumberPicker(
+                      value: hours,
+                      minValue: 0,
+                      maxValue: 69,
+                      onChanged: (v) => setState(() => hours = v)),
                 ],
               ),
               Column(
@@ -630,7 +697,10 @@ class _SleepTimerDialogState extends State<SleepTimerDialog> {
                 children: [
                   Text('Minutes:'.i18n),
                   NumberPicker(
-                      value: minutes, minValue: 0, maxValue: 60, onChanged: (v) => setState(() => minutes = v)),
+                      value: minutes,
+                      minValue: 0,
+                      maxValue: 60,
+                      onChanged: (v) => setState(() => minutes = v)),
                 ],
               ),
             ],
@@ -666,7 +736,8 @@ class _SleepTimerDialogState extends State<SleepTimerDialog> {
             Duration duration = Duration(hours: hours, minutes: minutes);
             cache.sleepTimer?.cancel();
             //Create timer
-            cache.sleepTimer = Stream.fromFuture(Future.delayed(duration)).listen((_) {
+            cache.sleepTimer =
+                Stream.fromFuture(Future.delayed(duration)).listen((_) {
               GetIt.I<AudioPlayerHandler>().pause();
               cache.sleepTimer?.cancel();
               cache.sleepTimerTime = null;
@@ -837,16 +908,20 @@ class _CreatePlaylistDialogState extends State<CreatePlaylistDialog> {
           onPressed: () async {
             if (edit) {
               //Update
-              await deezerAPI.updatePlaylist(
-                  widget.playlist!.id!, _titleController!.value.text, _descController!.value.text,
+              await deezerAPI.updatePlaylist(widget.playlist!.id!,
+                  _titleController!.value.text, _descController!.value.text,
                   status: _playlistType);
-              Fluttertoast.showToast(msg: 'Playlist updated!'.i18n, gravity: ToastGravity.BOTTOM);
+              Fluttertoast.showToast(
+                  msg: 'Playlist updated!'.i18n, gravity: ToastGravity.BOTTOM);
             } else {
               List<String> tracks = [];
               tracks = widget.tracks?.map<String>((t) => t.id!).toList() ?? [];
               await deezerAPI.createPlaylist(_title,
-                  status: _playlistType, description: _description, trackIds: tracks);
-              Fluttertoast.showToast(msg: 'Playlist created!'.i18n, gravity: ToastGravity.BOTTOM);
+                  status: _playlistType,
+                  description: _description,
+                  trackIds: tracks);
+              Fluttertoast.showToast(
+                  msg: 'Playlist created!'.i18n, gravity: ToastGravity.BOTTOM);
             }
             if (context.mounted) Navigator.of(context).pop();
           },

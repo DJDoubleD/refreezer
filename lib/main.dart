@@ -2,6 +2,9 @@ import 'dart:async';
 
 import 'package:app_links/app_links.dart';
 import 'package:custom_navigator/custom_navigator.dart';
+import 'package:refreezer/fonts/deezer_icons.dart';
+import 'package:refreezer/ui/restartable.dart';
+import 'package:refreezer/ui/settings_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_displaymode/flutter_displaymode.dart';
@@ -12,7 +15,6 @@ import 'package:logging/logging.dart';
 import 'package:move_to_background/move_to_background.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:quick_actions/quick_actions.dart';
-import 'package:refreezer/ui/restartable.dart';
 //import 'package:restart_app/restart_app.dart';
 
 import 'api/cache.dart';
@@ -97,7 +99,7 @@ class _ReFreezerAppState extends State<ReFreezerApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'ReFreezer',
+      title: 'Deezer',
       shortcuts: <ShortcutActivator, Intent>{
         ...WidgetsApp.defaultShortcuts,
         LogicalKeySet(LogicalKeyboardKey.select):
@@ -202,8 +204,10 @@ class _MainScreenState extends State<MainScreen>
   late final AppLifecycleListener _lifeCycleListener;
   final List<Widget> _screens = [
     const HomeScreen(),
+    const LibraryScreen(),
+    const LibraryPlaylists(),
     const SearchScreen(),
-    const LibraryScreen()
+    const SettingsScreen()
   ];
   Future<void>? _initialization;
   int _selected = 0;
@@ -427,15 +431,26 @@ class _MainScreenState extends State<MainScreen>
               onKeyEvent: (event) =>
                   _handleKey(event, navigationBarFocusNode, screenFocusNode),
               child: Scaffold(
+                backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+                floatingActionButtonLocation:
+                    FloatingActionButtonLocation.centerFloat,
+                floatingActionButton: Container(
+                  margin: EdgeInsets.fromLTRB(6, 0, 6, 0),
+                  decoration: BoxDecoration(
+                    color: Colors.transparent,
+                  ),
+                  child: const PlayerBar(),
+                ),
                 bottomNavigationBar: FocusScope(
                     node: navigationBarFocusNode,
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: <Widget>[
-                        const PlayerBar(),
-                        BottomNavigationBar(
-                          backgroundColor:
-                              Theme.of(context).bottomAppBarTheme.color,
+                    child: Theme(
+                        data: Theme.of(context).copyWith(
+                            canvasColor:
+                                Theme.of(context).scaffoldBackgroundColor),
+                        child: BottomNavigationBar(
+                          type: BottomNavigationBarType.fixed,
+                          unselectedItemColor:
+                              Theme.of(context).unselectedWidgetColor,
                           currentIndex: _selected,
                           onTap: (int index) async {
                             //Pop all routes until home screen
@@ -448,29 +463,44 @@ class _MainScreenState extends State<MainScreen>
                             setState(() {
                               _selected = index;
                             });
-
                             //Fix statusbar
                             SystemChrome.setSystemUIOverlayStyle(
                                 const SystemUiOverlayStyle(
                               statusBarColor: Colors.transparent,
                             ));
                           },
-                          selectedItemColor: Theme.of(context).primaryColor,
+                          selectedItemColor:
+                              settings.primaryColor.withOpacity(0.8),
+                          showUnselectedLabels: true,
+                          selectedLabelStyle:
+                              TextStyle(color: settings.primaryColor),
+                          unselectedLabelStyle:
+                              TextStyle(color: Settings.secondaryText),
                           items: <BottomNavigationBarItem>[
                             BottomNavigationBarItem(
-                                icon: const Icon(Icons.home),
+                                activeIcon: const Icon(DeezerIcons.house_fill),
+                                icon: const Icon(DeezerIcons.house),
                                 label: 'Home'.i18n),
                             BottomNavigationBarItem(
-                              icon: const Icon(Icons.search),
+                                activeIcon:
+                                    const Icon(DeezerIcons.compass_fill),
+                                icon: const Icon(DeezerIcons.compass),
+                                label: 'Explore'.i18n),
+                            BottomNavigationBarItem(
+                                activeIcon: const Icon(DeezerIcons.heart_fill),
+                                icon: const Icon(DeezerIcons.heart),
+                                label: 'Favorites'.i18n),
+                            BottomNavigationBarItem(
+                              activeIcon: const Icon(DeezerIcons.search_fill),
+                              icon: const Icon(DeezerIcons.search),
                               label: 'Search'.i18n,
                             ),
                             BottomNavigationBarItem(
-                                icon: const Icon(Icons.library_music),
-                                label: 'Library'.i18n)
+                                activeIcon: const Icon(DeezerIcons.settings),
+                                icon: const Icon(DeezerIcons.settings),
+                                label: 'Settings'.i18n)
                           ],
-                        )
-                      ],
-                    )),
+                        ))),
                 body: CustomNavigator(
                     navigatorKey: customNavigatorKey,
                     home: Focus(
@@ -482,9 +512,11 @@ class _MainScreenState extends State<MainScreen>
               ));
         } else {
           // While audio_service is initializing
-          return const Scaffold(
+          return Scaffold(
             body: Center(
-              child: CircularProgressIndicator(),
+              child: CircularProgressIndicator(
+                color: Theme.of(context).primaryColor,
+              ),
             ),
           );
         }
