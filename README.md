@@ -1,13 +1,13 @@
-![ReFreezer](./assets/banner.png?raw=true)
+![Deezer](./assets/banner.png?raw=true)
 
-[![Latest Version](https://img.shields.io/github/v/release/DJDoubleD/ReFreezer?color=blue)](../../releases/latest)
-[![Release date](https://img.shields.io/github/release-date/DJDoubleD/ReFreezer)](../../releases/latest)
-[![Downloads Latest](https://img.shields.io/github/downloads/DJDoubleD/ReFreezer/latest/total?color=blue&label=downloads%20latest)](../../releases)
-[![Downloads Total](https://img.shields.io/github/downloads/DJDoubleD/ReFreezer/total?color=blue&label=downloads%20total)](../../releases)
+[![Latest Version](https://img.shields.io/github/v/release/PetitPrinc3/Deezer?color=blue)](../../releases/latest)
+[![Release date](https://img.shields.io/github/release-date/PetitPrinc3/Deezer)](../../releases/latest)
+[![Downloads Original](https://img.shields.io/github/downloads/DJDoubleD/ReFreezer/total?color=blue&label=downloads%20total)](../../releases)
+[![Downloads MOD](https://img.shields.io/github/downloads/PetitPrinc3/Deezer/total?color=blue&label=downloads%20total)](../../releases)
 [![Flutter Version](https://shields.io/badge/Flutter-v3.24.4-darkgreen.svg)](https://docs.flutter.dev/tools/sdk)
 [![Dart Version](https://shields.io/badge/Dart-v3.5.4-darkgreen.svg)](https://dart.dev/get-dart)
 [![Crowdin](https://badges.crowdin.net/refreezer/localized.svg)](https://crowdin.com/project/refreezer)
-[![License](https://img.shields.io/github/license/DJDoubleD/ReFreezer?flat)](./LICENSE)
+[![License](https://img.shields.io/github/license/PetitPrinc3/Deezer?flat)](./LICENSE)
 
 [![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev/)
 [![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev/)
@@ -15,17 +15,26 @@
 
 ---
 
-An alternative Deezer music streaming & downloading client, based on Freezer.
-The entire codebase has been updated/rewritten to be compatible with the latest version of flutter, the dart SDK & android (current build target is API level 34).
+This repo is a MOD of the [ReFreezer](https://github.com/DJDoubleD/ReFreezer) app by @DJDoubleD.
+My goal is to have a style closer to Deezer's original app.
+To apply the Deezer theme, select it under Settings > Appearance > Theme.
 
 ## Screenshots
 
+<p align="center">
+    <img src="./assets/screenshots/Mod_home.png" width=200>
+    <img src="./assets/screenshots/Mod_player.png" width=200>
+    <img src="./assets/screenshots/Mod_search.png" width=200>
+</p>
+
+<details><summary><b>Original ReFreezer App</b></summary>
 <p align="center">
     <img src="./assets/screenshots/Login.jpg" width=200>
     <img src="./assets/screenshots/Home.jpg" width=200>
     <img src="./assets/screenshots/Player.jpg" width=200>
     <img src="./assets/screenshots/Lyrics.jpg" width=200>
 </p>
+</details>
 
 <details><summary><b>More Android Phone</b></summary>
 <p align="center">
@@ -37,7 +46,6 @@ The entire codebase has been updated/rewritten to be compatible with the latest 
     <img src="./assets/screenshots/PlayerHorizontal.jpg" height=200>
 </p>
 </details>
-</br>
 <details><summary><b>Android Auto</b></summary>
   <p align="center">
     <img src="./assets/screenshots/Android_Auto-Head_Unit-home.png" max-height=400>
@@ -49,6 +57,11 @@ The entire codebase has been updated/rewritten to be compatible with the latest 
 
 ## Features & changes
 
+### Not working / On going
+- Offline playlist / titles access
+- Explore / Favorites page
+
+### ReFreezer :
 - Restored all features of the old Freezer app, most notably:
   - Restored all login options
   - Restored Highest quality streaming and download options (premium account required, free accounts limited to MP3 128kbps)
@@ -65,6 +78,13 @@ The entire codebase has been updated/rewritten to be compatible with the latest 
 - Implemented null-safety
 - Removed the need of custom just_audio & audio_service plugin versions & refactored source code to use the latest version of the official plugins
 - Multiple other fixes
+
+### MOD :
+- Floating player bar with background color based on title artwork
+- Deezer original icons
+- Deezer original navigation menu (+ settings)
+- Deezer clone player screen
+- Deezer similar info menu
 
 ## Compile from source
 

@@ -69,6 +69,7 @@ app.*.map.json
 # Envied
 .env
 lib/utils/env.g.dart
+lib/.env
 
 # Possible translations remnants
 translations/refreezer.zip

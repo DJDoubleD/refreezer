@@ -13,8 +13,9 @@ class LeadingIcon extends StatelessWidget {
     return Container(
       width: 42.0,
       height: 42.0,
-      decoration:
-          BoxDecoration(color: (color ?? Theme.of(context).primaryColor).withOpacity(1.0), shape: BoxShape.circle),
+      decoration: BoxDecoration(
+          color: (color ?? Theme.of(context).primaryColor).withOpacity(1.0),
+          shape: BoxShape.circle),
       child: Icon(
         icon,
         color: Colors.white,
@@ -40,7 +41,8 @@ class FreezerAppBar extends StatelessWidget implements PreferredSizeWidget {
   //Should be specified if bottom is specified
   final double height;
 
-  const FreezerAppBar(this.title, {super.key, this.actions = const [], this.bottom, this.height = 56.0});
+  const FreezerAppBar(this.title,
+      {super.key, this.actions = const [], this.bottom, this.height = 64.0});
 
   @override
   Size get preferredSize => Size.fromHeight(height);
@@ -48,18 +50,26 @@ class FreezerAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return Theme(
-      data: ThemeData(primaryColor: (Theme.of(context).brightness == Brightness.light) ? Colors.white : Colors.black),
+      data: ThemeData(
+          primaryColor: (Theme.of(context).brightness == Brightness.light)
+              ? Colors.white
+              : Colors.black),
       child: AppBar(
-        systemOverlayStyle: SystemUiOverlayStyle(statusBarBrightness: Theme.of(context).brightness),
+        systemOverlayStyle: SystemUiOverlayStyle(
+            statusBarBrightness: Theme.of(context).brightness),
         elevation: 0.0,
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-        foregroundColor: (Theme.of(context).brightness == Brightness.light) ? Colors.black : Colors.white,
-        title: Text(
+        foregroundColor: (Theme.of(context).brightness == Brightness.light)
+            ? Colors.black
+            : Colors.white,
+        title: Container(
+            child: Text(
           title,
           style: const TextStyle(
             fontWeight: FontWeight.w900,
+            fontSize: 48,
           ),
-        ),
+        )),
         actions: actions,
         bottom: bottom as PreferredSizeWidget?,
       ),
