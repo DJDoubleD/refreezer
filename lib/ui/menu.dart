@@ -59,76 +59,86 @@ class MenuSheet {
         isScrollControlled: true,
         context: context,
         builder: (BuildContext context) {
-          return Column(
-            mainAxisSize: MainAxisSize.min,
-            children: <Widget>[
-              Container(
-                height: 16.0,
-              ),
-              Row(
-                mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          return Container(
+              clipBehavior: Clip.hardEdge,
+              decoration: BoxDecoration(
+                  border: Border.all(color: Colors.transparent),
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(15),
+                      topRight: Radius.circular(15))),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
-                  Semantics(
-                    label: 'Album art'.i18n,
-                    image: true,
-                    child: CachedImage(
-                      url: track.albumArt?.full ?? '',
-                      height: 128,
-                      width: 128,
-                    ),
+                  Container(
+                    height: 16.0,
                   ),
-                  SizedBox(
-                    width: 240.0,
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: <Widget>[
-                        Text(
-                          track.title ?? '',
-                          maxLines: 1,
-                          textAlign: TextAlign.center,
-                          overflow: TextOverflow.ellipsis,
-                          style: const TextStyle(
-                              fontSize: 22.0, fontWeight: FontWeight.bold),
+                  Column(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Semantics(
+                        label: 'Album art'.i18n,
+                        image: true,
+                        child: CachedImage(
+                          url: track.albumArt?.full ?? '',
+                          height: 128,
+                          width: 128,
+                          circular: true,
                         ),
-                        Text(
-                          track.artistString ?? '',
-                          textAlign: TextAlign.center,
-                          overflow: TextOverflow.ellipsis,
-                          maxLines: 1,
-                          style: const TextStyle(fontSize: 20.0),
+                      ),
+                      Container(
+                        height: 8,
+                      ),
+                      SizedBox(
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: <Widget>[
+                            Text(
+                              track.title ?? '',
+                              maxLines: 1,
+                              textAlign: TextAlign.center,
+                              overflow: TextOverflow.ellipsis,
+                              style: const TextStyle(
+                                  fontSize: 18.0, fontWeight: FontWeight.bold),
+                            ),
+                            Text(
+                              track.artistString ?? '',
+                              textAlign: TextAlign.center,
+                              overflow: TextOverflow.ellipsis,
+                              maxLines: 1,
+                              style: const TextStyle(fontSize: 14.0),
+                            ),
+                            Container(
+                              height: 8.0,
+                            ),
+                            Text(
+                              track.album?.title ?? '',
+                              textAlign: TextAlign.center,
+                              overflow: TextOverflow.ellipsis,
+                              maxLines: 1,
+                            ),
+                            Text(track.durationString ?? '')
+                          ],
                         ),
-                        Container(
-                          height: 8.0,
-                        ),
-                        Text(
-                          track.album?.title ?? '',
-                          textAlign: TextAlign.center,
-                          overflow: TextOverflow.ellipsis,
-                          maxLines: 1,
-                        ),
-                        Text(track.durationString ?? '')
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
+                  Container(
+                    height: 16.0,
+                  ),
+                  ConstrainedBox(
+                    constraints: BoxConstraints(
+                      maxHeight: (MediaQuery.of(context).orientation ==
+                              Orientation.landscape)
+                          ? 200
+                          : 350,
+                    ),
+                    child: SingleChildScrollView(
+                      child: Column(children: options),
+                    ),
+                  )
                 ],
-              ),
-              Container(
-                height: 16.0,
-              ),
-              ConstrainedBox(
-                constraints: BoxConstraints(
-                  maxHeight: (MediaQuery.of(context).orientation ==
-                          Orientation.landscape)
-                      ? 200
-                      : 350,
-                ),
-                child: SingleChildScrollView(
-                  child: Column(children: options),
-                ),
-              )
-            ],
-          );
+              ));
         });
   }
 

@@ -153,6 +153,8 @@ flutter:
     - assets/icon.png
     - assets/favorites_thumb.jpg
     - assets/browse_icon.png
+    - assets/DJDoubleD.jpg
+    - assets/PetitPrince.png
 
   fonts:
     #    - family: Montserrat

@@ -25,7 +25,7 @@ class HomeScreen extends StatelessWidget {
         appBar: const HomeAppBar(),
         body: SingleChildScrollView(
             child: Container(
-          padding: EdgeInsets.only(bottom: 72.0),
+          padding: EdgeInsets.only(bottom: 80.0),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
@@ -52,7 +52,7 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
       actions: <Widget>[
         IconButton(
           icon: Icon(
-            DeezerIcons.download_fill,
+            DeezerIcons.download,
             semanticLabel: 'Download'.i18n,
           ),
           onPressed: () {
@@ -91,7 +91,7 @@ class FreezerTitle extends StatelessWidget {
             children: <Widget>[
               Image.asset('assets/icon.png', width: 64, height: 64),
               const Text(
-                'ReFreezer',
+                'Deezer',
                 style: TextStyle(fontSize: 56, fontWeight: FontWeight.w900),
               )
             ],

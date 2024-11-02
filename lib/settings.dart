@@ -198,9 +198,13 @@ class Settings {
   }
 
   SliderThemeData get _sliderTheme => SliderThemeData(
-      thumbColor: primaryColor,
       activeTrackColor: primaryColor,
-      inactiveTrackColor: primaryColor.withOpacity(0.2));
+      inactiveTrackColor: primaryColor.withOpacity(0.2),
+      trackHeight: 0.5,
+      thumbShape: RoundSliderThumbShape(enabledThumbRadius: 1),
+      thumbColor: primaryColor,
+      overlayShape: RoundSliderOverlayShape(overlayRadius: 4),
+      overlayColor: primaryColor.withOpacity(0.2));
 
   //Load settings/init
   Future<Settings> loadSettings() async {

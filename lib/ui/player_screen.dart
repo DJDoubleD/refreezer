@@ -16,6 +16,7 @@ import 'package:just_audio/just_audio.dart';
 import 'package:marquee/marquee.dart';
 import 'package:palette_generator/palette_generator.dart';
 import 'package:rxdart/rxdart.dart';
+import 'package:share_plus/share_plus.dart';
 import 'package:visibility_detector/visibility_detector.dart';
 
 import '../api/cache.dart';
@@ -218,13 +219,6 @@ class _PlayerScreenHorizontalState extends State<PlayerScreenHorizontal> {
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
-              Padding(
-                  padding: const EdgeInsets.fromLTRB(4, 8, 4, 0),
-                  child: PlayerScreenTopRow(
-                      textSize: ScreenUtil().setSp(28),
-                      iconSize: ScreenUtil().setSp(38),
-                      textWidth: ScreenUtil().setWidth(150),
-                      short: false)),
               Column(
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
@@ -242,7 +236,7 @@ class _PlayerScreenHorizontalState extends State<PlayerScreenHorizontal> {
                                   .value!
                                   .displayTitle!,
                               style: TextStyle(
-                                  fontSize: ScreenUtil().setSp(40),
+                                  fontSize: ScreenUtil().setSp(30),
                                   fontWeight: FontWeight.bold),
                               blankSpace: 32.0,
                               startPadding: 10.0,
@@ -257,7 +251,7 @@ class _PlayerScreenHorizontalState extends State<PlayerScreenHorizontal> {
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                               style: TextStyle(
-                                  fontSize: ScreenUtil().setSp(40),
+                                  fontSize: ScreenUtil().setSp(30),
                                   fontWeight: FontWeight.bold),
                             )),
                   Container(
@@ -283,7 +277,7 @@ class _PlayerScreenHorizontalState extends State<PlayerScreenHorizontal> {
                 padding: const EdgeInsets.symmetric(horizontal: 16.0),
                 child: const SeekBar(24.0),
               ),
-              PlaybackControls(ScreenUtil().setSp(60)),
+              PlaybackControls(ScreenUtil().setSp(40)),
               Padding(
                   //padding: EdgeInsets.fromLTRB(4, 0, 4, 8),
                   padding: const EdgeInsets.symmetric(vertical: 8.0),
@@ -336,6 +330,8 @@ class PlayerScreenVertical extends StatefulWidget {
 }
 
 class _PlayerScreenVerticalState extends State<PlayerScreenVertical> {
+  final GlobalKey iconButtonKey = GlobalKey();
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -361,73 +357,83 @@ class _PlayerScreenVerticalState extends State<PlayerScreenVertical> {
           ),
         ),
         Container(height: 4.0),
-        Column(
-          mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
-            SizedBox(
-                height: ScreenUtil().setSp(26),
-                child: (GetIt.I<AudioPlayerHandler>()
-                                    .mediaItem
-                                    .value
-                                    ?.displayTitle ??
-                                '')
-                            .length >=
-                        26
-                    ? Marquee(
-                        text: GetIt.I<AudioPlayerHandler>()
-                                .mediaItem
-                                .value
-                                ?.displayTitle ??
-                            '',
-                        style: TextStyle(
-                            fontSize: ScreenUtil().setSp(22),
-                            fontWeight: FontWeight.bold),
-                        blankSpace: 32.0,
-                        startPadding: 10.0,
-                        accelerationDuration: const Duration(seconds: 1),
-                        pauseAfterRound: const Duration(seconds: 2),
-                      )
-                    : Text(
-                        GetIt.I<AudioPlayerHandler>()
-                                .mediaItem
-                                .value
-                                ?.displayTitle ??
-                            '',
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
-                            fontSize: ScreenUtil().setSp(22),
-                            fontWeight: FontWeight.bold),
-                      )),
-            Container(
-              height: 4,
-            ),
-            Text(
-              GetIt.I<AudioPlayerHandler>().mediaItem.value?.displaySubtitle ??
-                  '',
-              maxLines: 1,
-              textAlign: TextAlign.center,
-              overflow: TextOverflow.clip,
-              style: TextStyle(
-                fontSize: ScreenUtil().setSp(16),
-                color: Theme.of(context).primaryColor,
+        ActionControls(24.0),
+        Container(
+          padding: EdgeInsets.fromLTRB(18, 0, 18, 16),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: <Widget>[
+              SeekBar(8.0),
+              Container(
+                height: 8.0,
               ),
-            ),
-          ],
+              SizedBox(
+                  height: ScreenUtil().setSp(18),
+                  child: (GetIt.I<AudioPlayerHandler>()
+                                      .mediaItem
+                                      .value
+                                      ?.displayTitle ??
+                                  '')
+                              .length >=
+                          26
+                      ? Marquee(
+                          text: GetIt.I<AudioPlayerHandler>()
+                                  .mediaItem
+                                  .value
+                                  ?.displayTitle ??
+                              '',
+                          style: TextStyle(
+                              fontSize: ScreenUtil().setSp(16),
+                              fontWeight: FontWeight.bold),
+                          blankSpace: 32.0,
+                          startPadding: 0,
+                          accelerationDuration: const Duration(seconds: 1),
+                          pauseAfterRound: const Duration(seconds: 2),
+                        )
+                      : Text(
+                          GetIt.I<AudioPlayerHandler>()
+                                  .mediaItem
+                                  .value
+                                  ?.displayTitle ??
+                              '',
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(
+                              fontSize: ScreenUtil().setSp(16),
+                              fontWeight: FontWeight.bold),
+                        )),
+              Container(
+                height: 4,
+              ),
+              Text(
+                GetIt.I<AudioPlayerHandler>()
+                        .mediaItem
+                        .value
+                        ?.displaySubtitle ??
+                    '',
+                maxLines: 1,
+                textAlign: TextAlign.center,
+                overflow: TextOverflow.clip,
+                style: TextStyle(
+                  fontSize: ScreenUtil().setSp(12),
+                  color: Theme.of(context).primaryColor,
+                ),
+              ),
+            ],
+          ),
         ),
-        const SeekBar(12.0),
-        PlaybackControls(ScreenUtil().setSp(36)),
+        PlaybackControls(ScreenUtil().setSp(25)),
         Padding(
-          padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 16.0),
+          padding: const EdgeInsets.all(16.0),
           child: Row(
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
-              LyricsIconButton(20, afterOnPressed: updateColor),
+              LyricsIconButton(24, afterOnPressed: updateColor),
               IconButton(
                 icon: Icon(
                   DeezerIcons.download,
-                  size: ScreenUtil().setWidth(20),
+                  size: ScreenUtil().setWidth(24),
                   semanticLabel: 'Download'.i18n,
                 ),
                 onPressed: () async {
@@ -444,8 +450,37 @@ class _PlayerScreenVerticalState extends State<PlayerScreenVertical> {
                 },
               ),
               const QualityInfoWidget(),
-              RepeatButton(ScreenUtil().setWidth(20)),
-              const PlayerMenuButton()
+              RepeatButton(ScreenUtil().setWidth(24)),
+              IconButton(
+                key: iconButtonKey,
+                icon: Icon(
+                  //Icons.menu,
+                  DeezerIcons.queue,
+                  semanticLabel: 'Queue'.i18n,
+                ),
+                iconSize: ScreenUtil().setWidth(24),
+                onPressed: () async {
+                  //Fix bottom buttons (Not needed anymore?)
+                  SystemChrome.setSystemUIOverlayStyle(
+                      const SystemUiOverlayStyle(
+                          statusBarColor: Colors.transparent));
+
+                  // Calculate the center of the icon
+                  final RenderBox buttonRenderBox =
+                      iconButtonKey.currentContext!.findRenderObject()
+                          as RenderBox;
+                  final Offset buttonOffset = buttonRenderBox
+                      .localToGlobal(buttonRenderBox.size.center(Offset.zero));
+                  //Navigate
+                  //await Navigator.of(context).push(MaterialPageRoute(builder: (context) => QueueScreen()));
+                  await Navigator.of(context).push(CircularExpansionRoute(
+                      widget: const QueueScreen(),
+                      //centerAlignment: Alignment.topRight,
+                      centerOffset: buttonOffset)); // Expand from icon
+                  //Fix colors
+                  updateColor();
+                },
+              ),
             ],
           ),
         )
@@ -659,15 +694,15 @@ class _RepeatButtonState extends State<RepeatButton> {
   }
 }
 
-class PlaybackControls extends StatefulWidget {
+class ActionControls extends StatefulWidget {
   final double iconSize;
-  const PlaybackControls(this.iconSize, {super.key});
+  const ActionControls(this.iconSize, {super.key});
 
   @override
-  _PlaybackControlsState createState() => _PlaybackControlsState();
+  _ActionControls createState() => _ActionControls();
 }
 
-class _PlaybackControlsState extends State<PlaybackControls> {
+class _ActionControls extends State<ActionControls> {
   AudioPlayerHandler audioHandler = GetIt.I<AudioPlayerHandler>();
   Icon get libraryIcon {
     if (cache.checkTrackFavorite(
@@ -675,40 +710,78 @@ class _PlaybackControlsState extends State<PlaybackControls> {
       return Icon(
         DeezerIcons.heart_fill,
         color: settings.primaryColor,
-        size: widget.iconSize * 0.44,
+        size: widget.iconSize,
         semanticLabel: 'Unlove'.i18n,
       );
     }
     return Icon(
       DeezerIcons.heart,
-      size: widget.iconSize * 0.44,
+      size: widget.iconSize,
       semanticLabel: 'Love'.i18n,
     );
   }
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 8.0),
+    String? id = Track.fromMediaItem(audioHandler.mediaItem.value!).id;
+    return Container(
+      padding: EdgeInsets.only(top: 8),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         mainAxisSize: MainAxisSize.max,
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           IconButton(
-              icon: Icon(
-                DeezerIcons.angry_face,
-                size: widget.iconSize * 0.44,
-                semanticLabel: 'Dislike'.i18n,
-              ),
               onPressed: () async {
-                await deezerAPI.dislikeTrack(audioHandler.mediaItem.value!.id);
-                if (audioHandler.queueState.hasNext) {
-                  audioHandler.skipToNext();
+                Share.share('https://deezer.com/track/$id');
+              },
+              icon: Icon(
+                DeezerIcons.share_android,
+                size: widget.iconSize,
+                semanticLabel: 'Share'.i18n,
+              )),
+          Container(
+            margin: EdgeInsets.fromLTRB(12, 0, 12, 0),
+            padding: EdgeInsets.all(2),
+            decoration: BoxDecoration(
+              border: Border.all(color: Settings.secondaryText, width: 1),
+              borderRadius: BorderRadius.circular(100),
+            ),
+            alignment: Alignment.center,
+            child: IconButton(
+              icon: Icon(
+                DeezerIcons.more_vert,
+                size: widget.iconSize * 1.25,
+                semanticLabel: 'Options'.i18n,
+              ),
+              onPressed: () {
+                Track t = Track.fromMediaItem(
+                    GetIt.I<AudioPlayerHandler>().mediaItem.value!);
+                MenuSheet m = MenuSheet(navigateCallback: () {
+                  Navigator.of(context).pop();
+                });
+                if (GetIt.I<AudioPlayerHandler>()
+                        .mediaItem
+                        .value!
+                        .extras?['show'] ==
+                    null) {
+                  m.defaultTrackMenu(t,
+                      context: context,
+                      options: [m.sleepTimer(context), m.wakelock(context)]);
+                } else {
+                  m.defaultShowEpisodeMenu(
+                      Show.fromJson(jsonDecode(GetIt.I<AudioPlayerHandler>()
+                          .mediaItem
+                          .value!
+                          .extras?['show'])),
+                      ShowEpisode.fromMediaItem(
+                          GetIt.I<AudioPlayerHandler>().mediaItem.value!),
+                      context: context,
+                      options: [m.sleepTimer(context), m.wakelock(context)]);
                 }
-              }),
-          PrevNextButton(widget.iconSize, prev: true),
-          PlayPauseButton(widget.iconSize),
-          PrevNextButton(widget.iconSize),
+              },
+            ),
+          ),
           IconButton(
             icon: libraryIcon,
             onPressed: () async {
@@ -731,6 +804,52 @@ class _PlaybackControlsState extends State<PlaybackControls> {
                 await cache.save();
               }
             },
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class PlaybackControls extends StatefulWidget {
+  final double iconSize;
+  const PlaybackControls(this.iconSize, {super.key});
+
+  @override
+  _PlaybackControlsState createState() => _PlaybackControlsState();
+}
+
+class _PlaybackControlsState extends State<PlaybackControls> {
+  AudioPlayerHandler audioHandler = GetIt.I<AudioPlayerHandler>();
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 64.0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisSize: MainAxisSize.max,
+        children: [
+          /*IconButton(
+              icon: Icon(
+                DeezerIcons.angry_face,
+                size: widget.iconSize * 0.44,
+                semanticLabel: 'Dislike'.i18n,
+              ),
+              onPressed: () async {
+                await deezerAPI.dislikeTrack(audioHandler.mediaItem.value!.id);
+                if (audioHandler.queueState.hasNext) {
+                  audioHandler.skipToNext();
+                }
+              }),*/
+          Padding(
+            padding: EdgeInsets.only(right: 12),
+            child: PrevNextButton(widget.iconSize, prev: true),
+          ),
+          PlayPauseButton(widget.iconSize),
+          Padding(
+            padding: EdgeInsets.only(left: 12),
+            child: PrevNextButton(widget.iconSize),
           )
         ],
       ),
@@ -923,35 +1042,6 @@ class PlayerScreenTopRow extends StatelessWidget {
             ),
           ),
         ),
-        IconButton(
-          key: iconButtonKey,
-          icon: Icon(
-            //Icons.menu,
-            Icons.queue_music,
-            semanticLabel: 'Queue'.i18n,
-          ),
-          iconSize: iconSize ?? ScreenUtil().setSp(52),
-          splashRadius: iconSize ?? ScreenUtil().setWidth(52),
-          onPressed: () async {
-            //Fix bottom buttons (Not needed anymore?)
-            SystemChrome.setSystemUIOverlayStyle(
-                const SystemUiOverlayStyle(statusBarColor: Colors.transparent));
-
-            // Calculate the center of the icon
-            final RenderBox buttonRenderBox =
-                iconButtonKey.currentContext!.findRenderObject() as RenderBox;
-            final Offset buttonOffset = buttonRenderBox
-                .localToGlobal(buttonRenderBox.size.center(Offset.zero));
-            //Navigate
-            //await Navigator.of(context).push(MaterialPageRoute(builder: (context) => QueueScreen()));
-            await Navigator.of(context).push(CircularExpansionRoute(
-                widget: const QueueScreen(),
-                //centerAlignment: Alignment.topRight,
-                centerOffset: buttonOffset)); // Expand from icon
-            //Fix colors
-            updateColor();
-          },
-        ),
       ],
     );
   }
@@ -994,59 +1084,64 @@ class _SeekBarState extends State<SeekBar> {
     return StreamBuilder(
       stream: Stream.periodic(const Duration(milliseconds: 250)),
       builder: (BuildContext context, AsyncSnapshot snapshot) {
-        return Column(
-          mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
-            Padding(
-              padding:
-                  const EdgeInsets.symmetric(vertical: 0.0, horizontal: 24.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Text(
-                    _timeString(position),
-                    style: TextStyle(
-                        fontSize: ScreenUtil().setSp(widget.relativeTextSize)),
+        return Padding(
+            padding: EdgeInsets.symmetric(vertical: 8),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                Padding(
+                  padding: const EdgeInsets.symmetric(
+                      vertical: 0.0, horizontal: 24.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Text(
+                        _timeString(position),
+                        style: TextStyle(
+                            fontSize:
+                                ScreenUtil().setSp(widget.relativeTextSize)),
+                      ),
+                      Text(
+                        _timeString(duration),
+                        style: TextStyle(
+                            fontSize:
+                                ScreenUtil().setSp(widget.relativeTextSize)),
+                      )
+                    ],
                   ),
-                  Text(
-                    _timeString(duration),
-                    style: TextStyle(
-                        fontSize: ScreenUtil().setSp(widget.relativeTextSize)),
-                  )
-                ],
-              ),
-            ),
-            SizedBox(
-              height: 32.0,
-              child: Slider(
-                focusNode: FocusNode(
-                    canRequestFocus: false,
-                    skipTraversal:
-                        true), // Don't focus on Slider - it doesn't work (and not needed)
-                value: position,
-                max: duration,
-                onChangeStart: (double d) {
-                  setState(() {
-                    _seeking = true;
-                    _pos = d;
-                  });
-                },
-                onChanged: (double d) {
-                  setState(() {
-                    _pos = d;
-                  });
-                },
-                onChangeEnd: (double d) async {
-                  await audioHandler.seek(Duration(milliseconds: d.round()));
-                  setState(() {
-                    _pos = d;
-                    _seeking = false;
-                  });
-                },
-              ),
-            )
-          ],
-        );
+                ),
+                SizedBox(
+                  height: 32.0,
+                  child: Slider(
+                    focusNode: FocusNode(
+                        canRequestFocus: false,
+                        skipTraversal:
+                            true), // Don't focus on Slider - it doesn't work (and not needed)
+                    value: position,
+                    max: duration,
+                    onChangeStart: (double d) {
+                      setState(() {
+                        _seeking = true;
+                        _pos = d;
+                      });
+                    },
+                    onChanged: (double d) {
+                      setState(() {
+                        _pos = d;
+                      });
+                    },
+                    onChangeEnd: (double d) async {
+                      await audioHandler
+                          .seek(Duration(milliseconds: d.round()));
+                      setState(() {
+                        _pos = d;
+                        _seeking = false;
+                      });
+                    },
+                  ),
+                )
+              ],
+            ));
       },
     );
   }
@@ -1127,7 +1222,7 @@ class _QueueScreenState extends State<QueueScreen> with WidgetsBindingObserver {
             padding: const EdgeInsets.fromLTRB(0, 4, 16, 0),
             child: IconButton(
               icon: Icon(
-                Icons.close,
+                DeezerIcons.trash,
                 semanticLabel: 'Clear all'.i18n,
               ),
               onPressed: () async {

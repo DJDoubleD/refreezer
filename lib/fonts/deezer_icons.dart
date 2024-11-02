@@ -157,4 +157,6 @@ class DeezerIcons {
       IconData(0xe8bf, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData sort =
       IconData(0xe8c1, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData more_vert =
+      IconData(0xe831, fontFamily: _kFontFam, fontPackage: _kFontPkg);
 }
