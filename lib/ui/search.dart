@@ -5,6 +5,8 @@ import 'package:flutter/services.dart';
 import 'package:fluttericon/font_awesome5_icons.dart';
 import 'package:fluttericon/typicons_icons.dart';
 import 'package:get_it/get_it.dart';
+import 'package:refreezer/fonts/deezer_icons.dart';
+import 'package:refreezer/settings.dart';
 
 import '../api/cache.dart';
 import '../api/deezer.dart';
@@ -161,7 +163,7 @@ class _SearchScreenState extends State<SearchScreen> {
         actions: <Widget>[
           IconButton(
             icon: Icon(
-              Icons.file_download,
+              DeezerIcons.download,
               semanticLabel: 'Download'.i18n,
             ),
             onPressed: () {
@@ -171,7 +173,7 @@ class _SearchScreenState extends State<SearchScreen> {
           ),
           IconButton(
             icon: Icon(
-              Icons.settings,
+              DeezerIcons.settings,
               semanticLabel: 'Settings'.i18n,
             ),
             onPressed: () {
@@ -218,6 +220,7 @@ class _SearchScreenState extends State<SearchScreen> {
                           focusNode: _textFieldFocusNode,
                           decoration: InputDecoration(
                             labelText: 'Search or paste URL'.i18n,
+                            hintStyle: TextStyle(color: settings.primaryColor),
                             fillColor:
                                 Theme.of(context).bottomAppBarTheme.color,
                             filled: true,
@@ -446,7 +449,7 @@ class _SearchScreenState extends State<SearchScreen> {
                 _suggestions.length,
                 (i) => ListTile(
                       title: Text(_suggestions[i]),
-                      leading: const Icon(Icons.search),
+                      leading: const Icon(DeezerIcons.search),
                       onTap: () {
                         setState(() => _query = _suggestions[i]);
                         _submit(context);

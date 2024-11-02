@@ -6,6 +6,7 @@ import 'package:fluttericon/font_awesome5_icons.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get_it/get_it.dart';
 import 'package:logging/logging.dart';
+import 'package:refreezer/fonts/deezer_icons.dart';
 
 import '../api/cache.dart';
 import '../api/deezer.dart';
@@ -37,7 +38,7 @@ class LibraryAppBar extends StatelessWidget implements PreferredSizeWidget {
       actions: <Widget>[
         IconButton(
           icon: Icon(
-            Icons.file_download,
+            DeezerIcons.download,
             semanticLabel: 'Download'.i18n,
           ),
           onPressed: () {
@@ -47,7 +48,7 @@ class LibraryAppBar extends StatelessWidget implements PreferredSizeWidget {
         ),
         IconButton(
           icon: Icon(
-            Icons.settings,
+            DeezerIcons.settings,
             semanticLabel: 'Settings'.i18n,
           ),
           onPressed: () {
@@ -76,7 +77,7 @@ class LibraryScreen extends StatelessWidget {
             ListTile(
               title: Text('Downloads'.i18n),
               leading:
-                  const LeadingIcon(Icons.file_download, color: Colors.grey),
+                  const LeadingIcon(DeezerIcons.download, color: Colors.grey),
               subtitle: Text(
                   'Downloading is currently stopped, click here to resume.'
                       .i18n),
@@ -88,7 +89,8 @@ class LibraryScreen extends StatelessWidget {
             ),
           ListTile(
             title: Text('Shuffle'.i18n),
-            leading: const LeadingIcon(Icons.shuffle, color: Color(0xffeca704)),
+            leading: const LeadingIcon(DeezerIcons.shuffle,
+                color: Color(0xffeca704)),
             onTap: () async {
               List<Track> tracks = await deezerAPI.libraryShuffle();
               GetIt.I<AudioPlayerHandler>().playFromTrackList(
@@ -112,7 +114,8 @@ class LibraryScreen extends StatelessWidget {
           ),
           ListTile(
             title: Text('Albums'.i18n),
-            leading: const LeadingIcon(Icons.album, color: Color(0xff4b2e7e)),
+            leading:
+                const LeadingIcon(DeezerIcons.album, color: Color(0xff4b2e7e)),
             onTap: () {
               Navigator.of(context).push(MaterialPageRoute(
                   builder: (context) => const LibraryAlbums()));
@@ -224,7 +227,7 @@ class LibraryScreen extends StatelessWidget {
                       ),
                       ListTile(
                         title: Text('Offline albums'.i18n),
-                        leading: const Icon(Icons.album),
+                        leading: const Icon(DeezerIcons.album),
                         trailing: Text(data[1]),
                       ),
                       ListTile(
@@ -715,7 +718,7 @@ class _LibraryAlbumsState extends State<LibraryAlbums> {
             ),
             PopupMenuButton(
               color: Theme.of(context).scaffoldBackgroundColor,
-              child: const Icon(Icons.sort, size: 32.0),
+              child: const Icon(DeezerIcons.sort, size: 32.0),
               onSelected: (SortType s) async {
                 setState(() => _sort.type = s);
                 //Save to cache
@@ -962,7 +965,7 @@ class _LibraryArtistsState extends State<LibraryArtists> {
                   child: Text('Popularity'.i18n, style: popupMenuTextStyle()),
                 ),
               ],
-              child: const Icon(Icons.sort, size: 32.0),
+              child: const Icon(DeezerIcons.sort, size: 32.0),
             ),
             Container(width: 8.0),
           ],
@@ -1138,7 +1141,7 @@ class _LibraryPlaylistsState extends State<LibraryPlaylists> {
                   child: Text('Alphabetic'.i18n, style: popupMenuTextStyle()),
                 ),
               ],
-              child: const Icon(Icons.sort, size: 32.0),
+              child: const Icon(DeezerIcons.sort, size: 32.0),
             ),
             Container(width: 8.0),
           ],
