@@ -288,7 +288,7 @@ class _MakeAlbumOfflineState extends State<MakeAlbumOffline> {
             if (v) {
               //Add to offline
               await deezerAPI.addFavoriteAlbum(widget.album?.id ?? '');
-              downloadManager.addOfflineAlbum(widget.album ?? Album(), private: true);
+              await downloadManager.addOfflineAlbum(widget.album ?? Album(), private: true);
               MenuSheet().showDownloadStartedToast();
               setState(() {
                 _offline = true;
