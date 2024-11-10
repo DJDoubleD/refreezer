@@ -262,8 +262,8 @@ class LibraryTracks extends StatefulWidget {
 }
 
 class _LibraryTracksState extends State<LibraryTracks> {
-  bool _loading = false;
-  bool _loadingTracks = false;
+  bool _isLoading = false;
+  bool _isLoadingTracks = false;
   final ScrollController _scrollController = ScrollController();
   List<Track> tracks = [];
   List<Track> allTracks = [];
@@ -327,7 +327,7 @@ class _LibraryTracksState extends State<LibraryTracks> {
         await Connectivity().checkConnectivity();
     if (connectivity.isNotEmpty &&
         !connectivity.contains(ConnectivityResult.none)) {
-      if (mounted) setState(() => _loading = true);
+      if (mounted) setState(() => _isLoading = true);
       int pos = tracks.length;
 
       if (tracks.isEmpty) {
@@ -343,7 +343,7 @@ class _LibraryTracksState extends State<LibraryTracks> {
         }
         //Error loading
         if (favPlaylist == null) {
-          if (mounted) setState(() => _loading = false);
+          if (mounted) setState(() => _isLoading = false);
           return;
         }
         //Update
@@ -352,15 +352,15 @@ class _LibraryTracksState extends State<LibraryTracks> {
             trackCount = favPlaylist!.trackCount;
             if (tracks.isEmpty) tracks = favPlaylist.tracks!;
             _makeFavorite();
-            _loading = false;
+            _isLoading = false;
           });
         }
         return;
       }
 
       //Load another page of tracks from deezer
-      if (_loadingTracks) return;
-      _loadingTracks = true;
+      if (_isLoadingTracks) return;
+      _isLoadingTracks = true;
 
       List<Track>? t;
       try {
@@ -380,8 +380,8 @@ class _LibraryTracksState extends State<LibraryTracks> {
         setState(() {
           tracks.addAll(t!);
           _makeFavorite();
-          _loading = false;
-          _loadingTracks = false;
+          _isLoading = false;
+          _isLoadingTracks = false;
         });
       }
     }
@@ -577,7 +577,7 @@ class _LibraryTracksState extends State<LibraryTracks> {
                     },
                   );
                 }),
-                if (_loading)
+                if (_isLoading)
                   const Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
@@ -629,59 +629,16 @@ class LibraryAlbums extends StatefulWidget {
 }
 
 class _LibraryAlbumsState extends State<LibraryAlbums> {
-  List<Album>? _albums;
   Sorting _sort = Sorting(sourceType: SortSourceTypes.ALBUMS);
   final ScrollController _scrollController = ScrollController();
 
-  List<Album> get _sorted {
-    List<Album> albums = List.from(_albums ?? []);
-    if (albums.isNotEmpty) {
-      albums.sort((a, b) => a.favoriteDate!.compareTo(b.favoriteDate!));
-      switch (_sort.type) {
-        case SortType.DEFAULT:
-          break;
-        case SortType.ALPHABETIC:
-          albums.sort((a, b) =>
-              a.title!.toLowerCase().compareTo(b.title!.toLowerCase()));
-          break;
-        case SortType.ARTIST:
-          albums.sort((a, b) => a.artists![0].name!
-              .toLowerCase()
-              .compareTo(b.artists![0].name!.toLowerCase()));
-          break;
-        case SortType.RELEASE_DATE:
-          albums.sort((a, b) => DateTime.parse(a.releaseDate!)
-              .compareTo(DateTime.parse(b.releaseDate!)));
-          break;
-        default:
-          break;
-      }
-    }
-    //Reverse
-    if (_sort.reverse) return albums.reversed.toList();
-    return albums;
+  Future<List<Album>> _loadOnlineAlbums() async {
+    if (settings.offlineMode) return [];
+    return await deezerAPI.getAlbums();
   }
 
-  Future _load() async {
-    if (settings.offlineMode) return;
-    try {
-      List<Album> albums = await deezerAPI.getAlbums();
-      if (mounted) setState(() => _albums = albums);
-    } catch (e) {
-      Logger.root.severe('Error loading albums: $e', StackTrace);
-    }
-  }
-
-  @override
-  void initState() {
-    _load();
-    //Load sorting
-    int? index = Sorting.index(SortSourceTypes.ALBUMS);
-    if (index != null) {
-      _sort = cache.sorts[index];
-    }
-
-    super.initState();
+  Future<List<Album>> _loadOfflineAlbums() async {
+    return await downloadManager.getOfflineAlbums();
   }
 
   Future _reverse() async {
@@ -694,6 +651,16 @@ class _LibraryAlbumsState extends State<LibraryAlbums> {
       cache.sorts.add(_sort);
     }
     await cache.save();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    //Load sorting
+    int? index = Sorting.index(SortSourceTypes.ALBUMS);
+    if (index != null) {
+      _sort = cache.sorts[index];
+    }
   }
 
   @override
@@ -755,80 +722,152 @@ class _LibraryAlbumsState extends State<LibraryAlbums> {
           child: ListView(
             controller: _scrollController,
             children: <Widget>[
-              Container(
-                height: 8.0,
+              Container(height: 8.0),
+              AlbumList(
+                loadAlbums: _loadOnlineAlbums,
+                sort: _sort,
               ),
-              if (!settings.offlineMode && _albums == null)
-                const Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[CircularProgressIndicator()],
-                ),
-              if (_albums != null)
-                ...List.generate(_albums?.length ?? 0, (int i) {
-                  Album a = _sorted[i];
-                  return AlbumTile(
-                    a,
-                    onTap: () {
-                      Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => AlbumDetails(a)));
-                    },
-                    onHold: () async {
-                      MenuSheet m = MenuSheet();
-                      m.defaultAlbumMenu(a, context: context, onRemove: () {
-                        setState(() => _albums?.remove(a));
-                      });
-                    },
-                  );
-                }),
-              FutureBuilder(
-                future: downloadManager.getOfflineAlbums(),
-                builder: (context, snapshot) {
-                  if (snapshot.hasError ||
-                      !snapshot.hasData ||
-                      snapshot.data!.isEmpty) {
-                    return const SizedBox(
-                      height: 0,
-                      width: 0,
-                    );
-                  }
-
-                  List<Album> albums = snapshot.data!;
-                  return Column(
-                    children: <Widget>[
-                      const FreezerDivider(),
-                      Text(
-                        'Offline albums'.i18n,
-                        textAlign: TextAlign.center,
-                        style: const TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 24.0),
-                      ),
-                      ...List.generate(albums.length, (i) {
-                        Album a = albums[i];
-                        return AlbumTile(
-                          a,
-                          onTap: () {
-                            Navigator.of(context).push(MaterialPageRoute(
-                                builder: (context) => AlbumDetails(a)));
-                          },
-                          onHold: () async {
-                            MenuSheet m = MenuSheet();
-                            m.defaultAlbumMenu(a, context: context,
-                                onRemove: () {
-                              setState(() {
-                                albums.remove(a);
-                                _albums?.remove(a);
-                              });
-                            });
-                          },
-                        );
-                      })
-                    ],
-                  );
-                },
-              )
+              AlbumList(
+                loadAlbums: _loadOfflineAlbums,
+                sort: _sort,
+                offline: true,
+              ),
             ],
           ),
         ));
+  }
+}
+
+class AlbumList extends StatefulWidget {
+  final Future<List<Album>> Function() loadAlbums;
+  final Sorting sort;
+  final bool offline;
+
+  const AlbumList({
+    super.key,
+    required this.loadAlbums,
+    required this.sort,
+    this.offline = false,
+  });
+
+  @override
+  _AlbumListState createState() => _AlbumListState();
+}
+
+class _AlbumListState extends State<AlbumList> {
+  List<Album> _albums = [];
+  bool _isLoading = true;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadAlbums();
+  }
+
+  Future<void> _loadAlbums() async {
+    setState(() => _isLoading = true);
+    try {
+      _albums = await widget.loadAlbums();
+    } catch (e) {
+      Logger.root.severe('Error loading albums: $e', StackTrace.current);
+    } finally {
+      if (mounted) setState(() => _isLoading = false);
+    }
+  }
+
+  List<Album> get _sortedAlbums => _sortAlbums(_albums);
+
+  List<Album> _sortAlbums(List<Album> albums) {
+    List<Album> sortedAlbums = List.from(albums);
+    if (sortedAlbums.isNotEmpty) {
+      sortedAlbums
+          .sort((a, b) => _compareDates(a.favoriteDate, b.favoriteDate));
+
+      switch (widget.sort.type) {
+        case SortType.DEFAULT:
+          break;
+        case SortType.ALPHABETIC:
+          sortedAlbums.sort((a, b) => (a.title ?? '')
+              .toLowerCase()
+              .compareTo((b.title ?? '').toLowerCase()));
+          break;
+        case SortType.ARTIST:
+          sortedAlbums.sort((a, b) => (a.artists?.firstOrNull?.name ?? '')
+              .toLowerCase()
+              .compareTo((b.artists?.firstOrNull?.name ?? '').toLowerCase()));
+          break;
+        case SortType.RELEASE_DATE:
+          sortedAlbums
+              .sort((a, b) => _compareDates(a.releaseDate, b.releaseDate));
+          break;
+        default:
+          break;
+      }
+    }
+    return widget.sort.reverse ? sortedAlbums.reversed.toList() : sortedAlbums;
+  }
+
+  int _compareDates(String? dateA, String? dateB) {
+    if (dateA == null && dateB == null) return 0;
+    if (dateA == null) return 1;
+    if (dateB == null) return -1;
+    return DateTime.parse(dateA).compareTo(DateTime.parse(dateB));
+  }
+
+  @override
+  void didUpdateWidget(covariant AlbumList oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.sort != widget.sort) {
+      setState(() {});
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    if (_isLoading) {
+      return const Padding(
+        padding: EdgeInsets.all(8.0),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [CircularProgressIndicator()],
+        ),
+      );
+    }
+    return Column(
+      children: [
+        if (widget.offline && _albums.isNotEmpty) ...[
+          const FreezerDivider(),
+          Text(
+            'Offline albums'.i18n,
+            textAlign: TextAlign.center,
+            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 24.0),
+          ),
+        ],
+        ListView.builder(
+          shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
+          itemCount: _sortedAlbums.length,
+          itemBuilder: (context, index) {
+            Album album = _sortedAlbums[index];
+            return AlbumTile(
+              album,
+              onTap: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => AlbumDetails(album)));
+              },
+              onHold: () {
+                MenuSheet m = MenuSheet();
+                m.defaultAlbumMenu(album, context: context, onRemove: () {
+                  setState(() {
+                    _albums.remove(album);
+                  });
+                });
+              },
+            );
+          },
+        ),
+      ],
+    );
   }
 }
 
