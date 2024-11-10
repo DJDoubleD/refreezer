@@ -189,7 +189,9 @@ class Track {
         favorite: (data['favorite'] == 1) ? true : false,
         diskNumber: data['diskNumber'],
         explicit: (data['explicit'] == 1) ? true : false,
-        fallback: data['fallback'] != null ? Track(id: data['fallback']) : null,
+        fallback: data['fallback'] != null
+            ? Track(id: data['fallback'].toString())
+            : null,
         //favoriteDate: data['favoriteDate']
       );
 
@@ -243,13 +245,20 @@ class Album {
     }
     if (json['ROLE_ID'] == 5) type = AlbumType.FEATURED;
 
+    List<Artist> artists = (json['ARTISTS'] ?? [])
+        .map<Artist>((dynamic art) => Artist.fromPrivateJson(art))
+        .toList();
+
+    // If artists list is empty, check for ART_NAME
+    if (artists.isEmpty && (json['ART_NAME'] ?? '').isNotEmpty) {
+      artists.add(Artist(name: json['ART_NAME']));
+    }
+
     return Album(
         id: json['ALB_ID'].toString(),
         title: json['ALB_TITLE'],
         art: ImageDetails.fromPrivateString(json['ALB_PICTURE']),
-        artists: (json['ARTISTS'] ?? [])
-            .map<Artist>((dynamic art) => Artist.fromPrivateJson(art))
-            .toList(),
+        artists: artists,
         tracks: (songsJson['data'] ?? [])
             .map<Track>((dynamic track) => Track.fromPrivateJson(track))
             .toList(),
