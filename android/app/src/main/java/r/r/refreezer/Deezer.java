@@ -118,6 +118,7 @@ public class Deezer {
             }
         } catch (Exception e) {
             e.printStackTrace();
+            logger.error("Error posting Deezer request: " + e);
         }
 
         return result;
@@ -187,7 +188,7 @@ public class Deezer {
 
     // Method to call the Pipe API
     public JSONObject callPipeApi(Map<String, Object> params) throws Exception {
-        String jwtToken = "";
+        String jwtToken;
         try {
             jwtToken = getJsonWebToken();
         } catch (Exception e) {
@@ -220,8 +221,7 @@ public class Deezer {
         String response = POST(urlString, "", cookies);
 
         // Parse JSON and return JWT
-        JSONObject body = null;
-        body = new JSONObject(response);
+        JSONObject body = new JSONObject(response);
         return body.has("jwt") ? body.getString("jwt") : "";
     }
 
@@ -397,18 +397,18 @@ public class Deezer {
         }
 
         //Artists
-        String artists = "";
-        String feats = "";
+        StringBuilder artists = new StringBuilder();
+        StringBuilder feats = new StringBuilder();
         for (int i=0; i<publicTrack.getJSONArray("contributors").length(); i++) {
             String artist = publicTrack.getJSONArray("contributors").getJSONObject(i).getString("name");
-            if (!artists.contains(artist))
-                artists += ", " + artist;
-            if (i > 0 && !artists.contains(artist) && !feats.contains(artist))
-                feats += ", " + artist;
+            if (!artists.toString().contains(artist))
+                artists.append(", ").append(artist);
+            if (i > 0 && !artists.toString().contains(artist) && !feats.toString().contains(artist))
+                feats.append(", ").append(artist);
         }
-        original = original.replaceAll("%artists%", sanitize(artists).substring(2));
+        original = original.replaceAll("%artists%", sanitize(artists.toString()).substring(2));
         if (feats.length() >= 2)
-            original = original.replaceAll("%feats%", sanitize(feats).substring(2));
+            original = original.replaceAll("%feats%", sanitize(feats.toString()).substring(2));
         //Track number
         int trackNumber = publicTrack.getInt("track_position");
         original = original.replaceAll("%trackNumber%", Integer.toString(trackNumber));
@@ -450,11 +450,11 @@ public class Deezer {
         if (settings.tags.title) tag.setField(FieldKey.TITLE, publicTrack.getString("title"));
         if (settings.tags.album) tag.setField(FieldKey.ALBUM, publicTrack.getJSONObject("album").getString("title"));
         //Artist
-        String artists = "";
+        StringBuilder artists = new StringBuilder();
         for (int i=0; i<publicTrack.getJSONArray("contributors").length(); i++) {
             String artist = publicTrack.getJSONArray("contributors").getJSONObject(i).getString("name");
-            if (!artists.contains(artist))
-                artists += settings.artistSeparator + artist;
+            if (!artists.toString().contains(artist))
+                artists.append(settings.artistSeparator).append(artist);
         }
         boolean albumAvailable = !publicAlbum.has("error");
         if (settings.tags.artist) tag.addField(FieldKey.ARTIST, artists.substring(settings.artistSeparator.length()));
@@ -481,12 +481,12 @@ public class Deezer {
         }
 
         //Genres
-        String genres = "";
+        StringBuilder genres = new StringBuilder();
         if (albumAvailable) {
             for (int i=0; i<publicAlbum.getJSONObject("genres").getJSONArray("data").length(); i++) {
                 String genre = publicAlbum.getJSONObject("genres").getJSONArray("data").getJSONObject(0).getString("name");
-                if (!genres.contains(genre)) {
-                    genres += ", " + genre;
+                if (!genres.toString().contains(genre)) {
+                    genres.append(", ").append(genre);
                 }
             }
             if (genres.length() > 2 && settings.tags.genre)
@@ -501,36 +501,36 @@ public class Deezer {
                     //Composer
                     if (contrib.has("composer")) {
                         JSONArray composers = contrib.getJSONArray("composer");
-                        String composer = "";
+                        StringBuilder composer = new StringBuilder();
                         for (int i = 0; i < composers.length(); i++)
-                            composer += settings.artistSeparator + composers.getString(i);
+                            composer.append(settings.artistSeparator).append(composers.getString(i));
                         if (composer.length() > 2)
                             tag.setField(FieldKey.COMPOSER, composer.substring(settings.artistSeparator.length()));
                     }
                     //Engineer
                     if (contrib.has("engineer")) {
                         JSONArray engineers = contrib.getJSONArray("engineer");
-                        String engineer = "";
+                        StringBuilder engineer = new StringBuilder();
                         for (int i = 0; i < engineers.length(); i++)
-                            engineer += settings.artistSeparator + engineers.getString(i);
+                            engineer.append(settings.artistSeparator).append(engineers.getString(i));
                         if (engineer.length() > 2)
                             tag.setField(FieldKey.ENGINEER, engineer.substring(settings.artistSeparator.length()));
                     }
                     //Mixer
                     if (contrib.has("mixer")) {
                         JSONArray mixers = contrib.getJSONArray("mixer");
-                        String mixer = "";
+                        StringBuilder mixer = new StringBuilder();
                         for (int i = 0; i < mixers.length(); i++)
-                            mixer += settings.artistSeparator + mixers.getString(i);
+                            mixer.append(settings.artistSeparator).append(mixers.getString(i));
                         if (mixer.length() > 2)
                             tag.setField(FieldKey.MIXER, mixer.substring(settings.artistSeparator.length()));
                     }
                     //Producer
                     if (contrib.has("producer")) {
                         JSONArray producers = contrib.getJSONArray("producer");
-                        String producer = "";
+                        StringBuilder producer = new StringBuilder();
                         for (int i = 0; i < producers.length(); i++)
-                            producer += settings.artistSeparator + producers.getString(i);
+                            producer.append(settings.artistSeparator).append(producers.getString(i));
                         if (producer.length() > 2)
                             tag.setField(FieldKey.MIXER, producer.substring(settings.artistSeparator.length()));
                     }
@@ -540,18 +540,18 @@ public class Deezer {
                         //Author
                         if (contrib.has("author")) {
                             JSONArray authors = contrib.getJSONArray("author");
-                            String author = "";
+                            StringBuilder author = new StringBuilder();
                             for (int i = 0; i < authors.length(); i++)
-                                author += settings.artistSeparator + authors.getString(i);
+                                author.append(settings.artistSeparator).append(authors.getString(i));
                             if (author.length() > 2)
                                 ((FlacTag) tag).setField("AUTHOR", author.substring(settings.artistSeparator.length()));
                         }
                         //Writer
                         if (contrib.has("writer")) {
                             JSONArray writers = contrib.getJSONArray("writer");
-                            String writer = "";
+                            StringBuilder writer = new StringBuilder();
                             for (int i = 0; i < writers.length(); i++)
-                                writer += settings.artistSeparator + writers.getString(i);
+                                writer.append(settings.artistSeparator).append(writers.getString(i));
                             if (writer.length() > 2)
                                 ((FlacTag) tag).setField("WRITER", writer.substring(settings.artistSeparator.length()));
                         }
@@ -605,9 +605,9 @@ public class Deezer {
         //Create metadata
         String title = publicTrack.getString("title");
         String album = publicTrack.getJSONObject("album").getString("title");
-        String artists = "";
+        StringBuilder artists = new StringBuilder();
         for (int i=0; i<publicTrack.getJSONArray("contributors").length(); i++) {
-            artists += ", " + publicTrack.getJSONArray("contributors").getJSONObject(i).getString("name");
+            artists.append(", ").append(publicTrack.getJSONArray("contributors").getJSONObject(i).getString("name"));
         }
         //Write metadata
         output.append("[ar:").append(artists.substring(2)).append("]\r\n[al:").append(album).append("]\r\n[ti:").append(title).append("]\r\n");
@@ -724,7 +724,7 @@ public class Deezer {
             }
             //Track not available
             if (urlResponseCode > 400) {
-                logger.warn("Quality fallback, response code: " + urlResponseCode + ", current: " + Integer.toString(quality));
+                logger.warn("Quality fallback, response code: " + urlResponseCode + ", current: " + quality);
                 //-1 if no quality available
                 if (quality == 1) {
                     quality = -1;
