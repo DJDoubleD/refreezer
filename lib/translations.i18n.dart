@@ -15,7 +15,7 @@ List<Language> languages = [
   Language('hr', 'HR', 'Croatian'),
   Language('el', 'GR', 'Greek'),
   Language('ko', 'KO', 'Korean'),
-  Language('fr', 'FR', 'Baguette'),
+  Language('fr', 'FR', 'French'),
   Language('he', 'IL', 'Hebrew'),
   Language('tr', 'TR', 'Turkish'),
   Language('ro', 'RO', 'Romanian'),
