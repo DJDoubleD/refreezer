@@ -685,23 +685,6 @@ public class Deezer {
                 logger.error("ID fallback failed! ID: " + trackId + " " + e);
             }
 
-            //ISRC Fallback
-            try {
-                JSONObject newTrackJson = deezer.callPublicAPI("track", "isrc:" + privateJson.getString("ISRC"));
-                //Same track check
-                if (newTrackJson.getInt("id") == Integer.parseInt(trackId)) throw new Exception("No more to ISRC fallback!");
-                //Get private data
-                privateJson = deezer.callGWAPI("song.getListData", "{\"sng_ids\": [" + newTrackJson.getInt("id") + "]}");
-                JSONObject trackData = privateJson.getJSONObject("results").getJSONArray("data").getJSONObject(0);
-                trackId = trackData.getString("SNG_ID");
-                trackToken = trackData.getString("TRACK_TOKEN");
-                md5origin = trackData.getString("MD5_ORIGIN");
-                mediaVersion = trackData.getString("MEDIA_VERSION");
-                return fallback(deezer);
-            } catch (Exception e) {
-                logger.error("ISRC Fallback failed, track unavailable! ID: " + trackId + " " + e);
-            }
-
             return null;
         }
 
