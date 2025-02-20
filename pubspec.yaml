@@ -45,7 +45,7 @@ dependencies:
   # Gradle 8 updated version:
   disk_space_plus:
     git:
-      url: https://github.com/famasf1/disk_space_plus.git
+      url: https://github.com/ekuleshov/disk_space_plus.git
   draggable_scrollbar: ^0.1.0
   encrypt: ^5.0.3
   envied: ^1.0.0
@@ -95,7 +95,11 @@ dependencies:
   move_to_background:
     path: ./move_to_background
   numberpicker: ^2.1.2
-  open_filex: ^4.4.0
+  # Awaiting release with fix for flutter 3.29.0:
+  #open_filex: ^4.6.0
+  open_filex:
+    git:
+      url: https://github.com/mufassalhussain/open_filex
   package_info_plus: ^8.0.0
   palette_generator: ^0.3.3+3
   path: ^1.8.3
