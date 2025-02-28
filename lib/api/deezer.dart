@@ -158,7 +158,7 @@ class DeezerAPI {
       return DeezerLinkResponse(type: type, id: uri.pathSegments[uri.pathSegments.length - 1]);
     }
     //Share URL
-    if (uri.host == 'deezer.page.link' || uri.host == 'www.deezer.page.link') {
+    if (uri.host == 'dzr.page.link' || uri.host == 'www.dzr.page.link') {
       http.BaseRequest request = http.Request('HEAD', Uri.parse(url));
       request.followRedirects = false;
       http.StreamedResponse response = await request.send();
