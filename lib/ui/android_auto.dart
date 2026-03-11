@@ -1,6 +1,7 @@
 import 'package:audio_service/audio_service.dart';
 import 'package:flutter/foundation.dart';
 import 'package:get_it/get_it.dart';
+import 'package:logging/logging.dart';
 import '../api/deezer.dart';
 import '../api/definitions.dart';
 import '../service/audio_service.dart';
@@ -21,75 +22,95 @@ class AndroidAuto {
 
     // Playlists screen
     if (parentId == 'playlists') {
-      // Fetch
-      List<Playlist> playlists = await deezerAPI.getPlaylists();
+      try {
+        List<Playlist> playlists = await deezerAPI.getPlaylists();
 
-      List<MediaItem> out = playlists.map<MediaItem>((p) {
-        return MediaItem(
-          id: '${prefix}playlist${p.id}',
-          title: p.title ?? '',
-          album: '',
-          displayTitle: p.title,
-          displaySubtitle: '${p.trackCount} ${'Tracks'.i18n}',
-          playable: true,
-          artUri: Uri.tryParse(p.image?.thumb ?? ''),
-        );
-      }).toList();
-      return out;
+        List<MediaItem> out = playlists.map<MediaItem>((p) {
+          return MediaItem(
+            id: '${prefix}playlist${p.id}',
+            title: p.title ?? '',
+            album: '',
+            displayTitle: p.title,
+            displaySubtitle: '${p.trackCount} ${'Tracks'.i18n}',
+            playable: true,
+            artUri: Uri.tryParse(p.image?.thumb ?? ''),
+          );
+        }).toList();
+        return out;
+      } catch (e, st) {
+        Logger.root.severe('AndroidAuto: getScreen playlists failed', e, st);
+        return [];
+      }
     }
 
     // Albums screen
     if (parentId == 'albums') {
-      List<Album> albums = await deezerAPI.getAlbums();
+      try {
+        List<Album> albums = await deezerAPI.getAlbums();
 
-      List<MediaItem> out = albums.map<MediaItem>((a) {
-        return MediaItem(
-          id: '${prefix}album${a.id}',
-          title: a.title ?? '',
-          album: a.title ?? '',
-          displayTitle: a.title,
-          displaySubtitle: a.artistString,
-          playable: true,
-          artUri: Uri.tryParse(a.art?.thumb ?? ''),
-        );
-      }).toList();
-      return out;
+        List<MediaItem> out = albums.map<MediaItem>((a) {
+          return MediaItem(
+            id: '${prefix}album${a.id}',
+            title: a.title ?? '',
+            album: a.title ?? '',
+            displayTitle: a.title,
+            displaySubtitle: a.artistString,
+            playable: true,
+            artUri: Uri.tryParse(a.art?.thumb ?? ''),
+          );
+        }).toList();
+        return out;
+      } catch (e, st) {
+        Logger.root.severe('AndroidAuto: getScreen albums failed', e, st);
+        return [];
+      }
     }
 
     // Artists screen
     if (parentId == 'artists') {
-      List<Artist> artists = await deezerAPI.getArtists();
+      try {
+        List<Artist> artists = await deezerAPI.getArtists();
 
-      List<MediaItem> out = artists.map<MediaItem>((a) {
-        return MediaItem(
-          id: '${prefix}albums${a.id}',
-          title: a.name ?? '',
-          album: '',
-          displayTitle: a.name,
-          playable: false,
-          artUri: Uri.tryParse(a.picture?.thumb ?? ''),
-        );
-      }).toList();
-      return out;
+        List<MediaItem> out = artists.map<MediaItem>((a) {
+          return MediaItem(
+            id: '${prefix}albums${a.id}',
+            title: a.name ?? '',
+            album: '',
+            displayTitle: a.name,
+            playable: false,
+            artUri: Uri.tryParse(a.picture?.thumb ?? ''),
+          );
+        }).toList();
+        return out;
+      } catch (e, st) {
+        Logger.root.severe('AndroidAuto: getScreen artists failed', e, st);
+        return [];
+      }
     }
 
     // Artist screen (albums, etc)
     if (parentId.startsWith('${prefix}albums')) {
       String artistId = parentId.replaceFirst('${prefix}albums', '');
-      List<Album> albums = await deezerAPI.discographyPage(artistId);
+      try {
+        List<Album> albums = await deezerAPI.discographyPage(artistId);
 
-      List<MediaItem> out = albums.map<MediaItem>((a) {
-        return MediaItem(
-          id: '${prefix}album${a.id}',
-          title: a.title ?? '',
-          album: a.title ?? '',
-          displayTitle: a.title,
-          displaySubtitle: a.artistString,
-          playable: true,
-          artUri: Uri.tryParse(a.art?.thumb ?? ''),
-        );
-      }).toList();
-      return out;
+        List<MediaItem> out = albums.map<MediaItem>((a) {
+          return MediaItem(
+            id: '${prefix}album${a.id}',
+            title: a.title ?? '',
+            album: a.title ?? '',
+            displayTitle: a.title,
+            displaySubtitle: a.artistString,
+            playable: true,
+            artUri: Uri.tryParse(a.art?.thumb ?? ''),
+          );
+        }).toList();
+        return out;
+      } catch (e, st) {
+        Logger.root
+            .severe('AndroidAuto: getScreen artist albums failed', e, st);
+        return [];
+      }
     }
 
     // Homescreen
@@ -172,47 +193,69 @@ class AndroidAuto {
       print(id);
     }
 
-    // Play flow
-    if (id == '${prefix}flow' || id == '${prefix}stlflow') {
-      await GetIt.I<AudioPlayerHandler>()
-          .playFromSmartTrackList(SmartTrackList(id: 'flow', title: 'Flow'.i18n));
-      return;
-    }
-    // Play library tracks
-    if (id == '${prefix}tracks') {
-      // Load tracks
-      Playlist? favPlaylist;
-      try {
-        favPlaylist = await deezerAPI.fullPlaylist(deezerAPI.favoritesPlaylistId ?? '');
-      } catch (e) {
-        if (kDebugMode) {
-          print(e);
-        }
+    try {
+      // Play flow
+      if (id == '${prefix}flow' || id == '${prefix}stlflow') {
+        await GetIt.I<AudioPlayerHandler>().playFromSmartTrackList(
+            SmartTrackList(id: 'flow', title: 'Flow'.i18n));
+        return;
       }
-      if ((favPlaylist?.tracks?.length ?? 0) == 0) return;
+      // Play library tracks
+      if (id == '${prefix}tracks') {
+        Playlist? favPlaylist;
+        try {
+          favPlaylist = await deezerAPI
+              .fullPlaylist(deezerAPI.favoritesPlaylistId ?? '');
+        } catch (e, st) {
+          Logger.root.severe(
+              'AndroidAuto: playItem failed to load favorites playlist', e, st);
+        }
+        if ((favPlaylist?.tracks?.length ?? 0) == 0) return;
 
-      await GetIt.I<AudioPlayerHandler>().playFromTrackList(
-          favPlaylist!.tracks!, favPlaylist.tracks![0].id ?? '',
-          QueueSource(id: 'allTracks', text: 'All offline tracks'.i18n, source: 'offline'));
-      return;
-    }
-    // Play playlists
-    if (id.startsWith('${prefix}playlist')) {
-      Playlist p = await deezerAPI.fullPlaylist(id.replaceFirst('${prefix}playlist', ''));
-      await GetIt.I<AudioPlayerHandler>().playFromPlaylist(p, p.tracks?[0].id ?? '');
-      return;
-    }
-    // Play albums
-    if (id.startsWith('${prefix}album')) {
-      Album a = await deezerAPI.album(id.replaceFirst('${prefix}album', ''));
-      await GetIt.I<AudioPlayerHandler>().playFromAlbum(a, a.tracks?[0].id ?? '');
-      return;
-    }
-    // Play smart track list
-    if (id.startsWith('${prefix}stl')) {
-      SmartTrackList stl = await deezerAPI.smartTrackList(id.replaceFirst('${prefix}stl', ''));
-      await GetIt.I<AudioPlayerHandler>().playFromSmartTrackList(stl);
-      return;
+        await GetIt.I<AudioPlayerHandler>().playFromTrackList(
+            favPlaylist!.tracks!,
+            favPlaylist.tracks![0].id ?? '',
+            QueueSource(
+                id: 'allTracks',
+                text: 'All offline tracks'.i18n,
+                source: 'offline'));
+        return;
+      }
+      // Play playlists
+      if (id.startsWith('${prefix}playlist')) {
+        Playlist p = await deezerAPI
+            .fullPlaylist(id.replaceFirst('${prefix}playlist', ''));
+        if (p.tracks == null || p.tracks!.isEmpty) {
+          Logger.root.warning(
+              'AndroidAuto: playItem playlist has no tracks for id=$id');
+          return;
+        }
+        await GetIt.I<AudioPlayerHandler>()
+            .playFromPlaylist(p, p.tracks![0].id ?? '');
+        return;
+      }
+      // Play albums
+      if (id.startsWith('${prefix}album')) {
+        Album a =
+            await deezerAPI.album(id.replaceFirst('${prefix}album', ''));
+        if (a.tracks == null || a.tracks!.isEmpty) {
+          Logger.root
+              .warning('AndroidAuto: playItem album has no tracks for id=$id');
+          return;
+        }
+        await GetIt.I<AudioPlayerHandler>()
+            .playFromAlbum(a, a.tracks![0].id ?? '');
+        return;
+      }
+      // Play smart track list
+      if (id.startsWith('${prefix}stl')) {
+        SmartTrackList stl = await deezerAPI
+            .smartTrackList(id.replaceFirst('${prefix}stl', ''));
+        await GetIt.I<AudioPlayerHandler>().playFromSmartTrackList(stl);
+        return;
+      }
+    } catch (e, st) {
+      Logger.root.severe('AndroidAuto: playItem failed for id=$id', e, st);
     }
   }
 
