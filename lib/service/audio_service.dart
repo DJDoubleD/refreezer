@@ -245,7 +245,14 @@ class AudioPlayerHandler extends BaseAudioHandler
     // Check if the mediaId is for Android Auto
     if (mediaId.startsWith(AndroidAuto.prefix)) {
       // Forward the event to Android Auto
-      await _androidAuto.playItem(mediaId);
+      try {
+        await _androidAuto.playItem(mediaId);
+      } catch (e, st) {
+        Logger.root.severe(
+            'playFromMediaId: Android Auto playItem failed for id=$mediaId',
+            e,
+            st);
+      }
       return;
     }
 
