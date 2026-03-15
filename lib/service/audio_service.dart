@@ -271,7 +271,7 @@ class AudioPlayerHandler extends BaseAudioHandler
   Future<void> stop() async {
     // Save queue before stopping player to save player details
     Logger.root.info('saving queue');
-    _saveQueueToFile();
+    await _saveQueueToFile();
     Logger.root.info('stopping player');
     await _player.stop();
     await super.stop();
@@ -704,7 +704,19 @@ class AudioPlayerHandler extends BaseAudioHandler
 
   //Export queue to JSON
   Future _saveQueueToFile() async {
-    if (_player.currentIndex == 0 && queue.value.isEmpty) return;
+    // Snapshot all player state synchronously before any await so that a
+    // concurrent _player.stop() call (which resets currentIndex to null on
+    // the Android platform) cannot corrupt the values we write to disk.
+    final int? index = _player.currentIndex;
+    final List<MediaItem> currentQueue = queue.value;
+    final int positionMs = _player.position.inMilliseconds;
+    final QueueSource? currentQueueSource = queueSource;
+    final int loopModeIndex = LoopMode.values.indexOf(_player.loopMode);
+
+    // Skip saving when there is nothing meaningful to persist:
+    // index == null means the player is uninitialised; index == 0 with an
+    // empty queue means the player has been reset to its initial state.
+    if ((index ?? 0) == 0 && currentQueue.isEmpty) return;
 
     String path = await _getQueueFilePath();
     File f = File(path);
@@ -713,14 +725,14 @@ class AudioPlayerHandler extends BaseAudioHandler
       f = await f.create();
     }
     Map data = {
-      'index': _player.currentIndex,
-      'queue': queue.value
+      'index': index,
+      'queue': currentQueue
           .map<Map<String, dynamic>>(
               (mi) => MediaItemConverter.mediaItemToMap(mi))
           .toList(),
-      'position': _player.position.inMilliseconds,
-      'queueSource': (queueSource ?? QueueSource()).toJson(),
-      'loopMode': LoopMode.values.indexOf(_player.loopMode)
+      'position': positionMs,
+      'queueSource': (currentQueueSource ?? QueueSource()).toJson(),
+      'loopMode': loopModeIndex
     };
     await f.writeAsString(jsonEncode(data));
   }
