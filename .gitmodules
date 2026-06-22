@@ -1,7 +1,3 @@
-[submodule "custom_navigator"]
-	path = custom_navigator
-	url = https://github.com/DJDoubleD/custom_navigator.git
-	branch = master
 [submodule "equalizer_flutter"]
 	path = equalizer_flutter
 	url = https://github.com/DJDoubleD/equalizer_flutter.git
