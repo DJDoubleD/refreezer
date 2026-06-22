@@ -122,6 +122,9 @@ dependencies:
   visibility_detector: ^0.4.0+2
   wakelock_plus: ^1.2.10
 
+dependency_overrides:
+  sqflite_android: 2.4.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

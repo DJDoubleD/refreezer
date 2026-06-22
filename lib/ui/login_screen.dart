@@ -291,9 +291,46 @@ class _LoginWidgetState extends State<LoginWidget> {
   }
 }
 
-class LoginBrowser extends StatelessWidget {
+class LoginBrowser extends StatefulWidget {
   final Function updateParent;
   const LoginBrowser(this.updateParent, {super.key});
+
+  @override
+  State<LoginBrowser> createState() => _LoginBrowserState();
+}
+
+class _LoginBrowserState extends State<LoginBrowser> {
+  bool _done = false;
+
+  Future<void> _finishLogin(String arl) async {
+    if (_done) return;
+    _done = true;
+    settings.arl = arl;
+    await CookieManager.instance().deleteAllCookies();
+    if (mounted) Navigator.of(context).pop();
+    widget.updateParent();
+  }
+
+  Future<void> _tryExtractArlFromCookies(WebUri? loadedUri) async {
+    if (_done || loadedUri == null) return;
+
+    if (loadedUri.path.contains('/login') ||
+        loadedUri.path.contains('/register')) {
+      return;
+    }
+
+    try {
+      Cookie? arlCookie = await CookieManager.instance().getCookie(
+        url: WebUri('https://www.deezer.com'),
+        name: 'arl',
+      );
+      if (arlCookie != null && arlCookie.value.toString().isNotEmpty) {
+        await _finishLogin(arlCookie.value.toString());
+      }
+    } catch (e) {
+      Logger.root.severe('Error extracting ARL from cookies: $e');
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -303,34 +340,9 @@ class LoginBrowser extends StatelessWidget {
           child: InAppWebView(
             initialUrlRequest:
                 URLRequest(url: WebUri('https://deezer.com/login')),
-            onLoadStart:
-                (InAppWebViewController controller, WebUri? loadedUri) async {
-              //Offers URL
-              if (!loadedUri!.path.contains('/login') &&
-                  !loadedUri.path.contains('/register')) {
-                controller.evaluateJavascript(
-                    source: 'window.location.href = "/open_app"');
-              }
-
-              //Parse arl from url
-              if (loadedUri
-                      .toString()
-                      .startsWith('intent://deezer.page.link') ||
-                  loadedUri.toString().startsWith('intent://dzr.page.link')) {
-                try {
-                  //Actual url is in `link` query parameter
-                  Uri linkUri = Uri.parse(loadedUri.queryParameters['link']!);
-                  String? arl = linkUri.queryParameters['arl'];
-                  settings.arl = arl;
-                  // Clear cookies for next login after logout
-                  CookieManager.instance().deleteAllCookies();
-                  Navigator.of(context).pop();
-                  updateParent();
-                } catch (e) {
-                  Logger.root
-                      .severe('Error loading ARL from browser login: $e');
-                }
-              }
+            onLoadStop: (InAppWebViewController controller,
+                WebUri? loadedUri) async {
+              await _tryExtractArlFromCookies(loadedUri);
             },
           ),
         ),
