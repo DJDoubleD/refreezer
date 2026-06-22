@@ -30,9 +30,9 @@ if (flutterVersionName == null) {
 
 android {
     namespace 'r.r.refreezer'
-    compileSdk 35
+    compileSdk 36
     //ndkVersion flutter.ndkVersion
-    ndkVersion "27.0.12077973"
+    ndkVersion "28.2.13676358"
     buildFeatures.buildConfig = true
     
     compileOptions {
@@ -51,7 +51,7 @@ android {
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
         applicationId "r.r.refreezer"
-        minSdk 21
+        minSdkVersion flutter.minSdkVersion
         targetSdk 35
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
