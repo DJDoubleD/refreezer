@@ -55,7 +55,7 @@ const language_ru_ru = {
     'Tracks': 'Треки',
     'Albums': 'Альбомы',
     'Artists': 'Артисты',
-    'Playlists': 'Playlists',
+    'Playlists': 'Плейлисты',
     'Import': 'Импорт плейлистов',
     'Import playlists from Spotify':
         'В настоящий момент поддерживается только Spotify',
@@ -179,14 +179,14 @@ const language_ru_ru = {
     'Log out & Exit': 'Выйти и перезапустить',
     'Pick-a-Path': 'Выберите папку',
     'Select storage': 'Выбрерите хранилище',
-    'Go up': 'На уровень вверх',
+    'Go up': 'Перейти вверх',
     'Permission denied': 'Доступ запрещен',
     'Language': 'Язык',
     'Language changed, please restart ReFreezer to apply!':
         'Язык изменен, перезапустите приложения для применения',
     'Importing...': 'Импорт...',
     'Radio': 'Радио',
-    'Flow': 'Flow',
+    'Flow': 'Поток',
     'Track is not available on Deezer!': 'Трек недоступен на Deezer!',
     'Failed to download track! Please restart.':
         'Ошибка заргузки.Попробуйте снова.',
@@ -202,7 +202,7 @@ const language_ru_ru = {
     'Clear failed': 'Не удалось очистить',
     'Download Settings': 'Настройки загрузок',
     'Create folder for playlist': 'Создавать папки для плейлистов',
-    'Download .LRC lyrics': 'Скачивать тексты .LRC',
+    'Download .LRC lyrics': 'Скачать тексты песен в.LRC',
     'Proxy': 'Настройки прокси',
     'Not set': 'Прокси не настроен',
     'Search or paste URL': 'Введите запрос или ссылку',
@@ -226,11 +226,11 @@ const language_ru_ru = {
     //0.5.1 Strings:
     'Save cover file for every track':
         'Обложки для каждого трека отдельным файлом',
-    'Download Log': 'Лог загрузок (технические данные)',
+    'Download Log': 'Скачать журнал',
     'Repository': 'Репозиторий',
-    'Source code, report issues there.': 'Исходный код, вопросы, предложения.',
+    'Source code, report issues there.': 'Исходный код, сообщайте о проблемах туда.',
     //0.5.2 Strings:
-    'Use system theme': 'Использовать тему системы',
+    'Use system theme': 'Системная',
     'Light': 'Светлая'
   }
 };
